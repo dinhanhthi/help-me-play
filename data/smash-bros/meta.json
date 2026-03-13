@@ -1,0 +1,13 @@
+{
+  "slug": "smash-bros",
+  "title": "Super Smash Bros. Ultimate",
+  "description": "The ultimate crossover fighting game featuring 80+ fighters from across gaming history. Learn combos, special moves, and advanced techniques for every character.",
+  "coverImage": "/images/games/smash-bros.jpg",
+  "tips": [
+    "Use short hop aerials (press jump briefly) for faster aerial attacks.",
+    "Shield (ZL/ZR) and grab (A + shield) are essential defensive tools.",
+    "Learn to DI (Directional Influence) by holding the stick away from the direction you're being launched.",
+    "Practice edge-guarding — go offstage to intercept recovering opponents.",
+    "Each character has a unique weight and fall speed that affects combos."
+  ]
+}

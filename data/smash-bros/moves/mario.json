@@ -1,0 +1,57 @@
+[
+  {
+    "id": "fireball",
+    "name": "Fireball",
+    "description": "Mario shoots a bouncing fireball. A great tool for controlling space and approaching.",
+    "category": "special",
+    "combos": {
+      "handheld": [{ "buttons": ["b"], "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["b"], "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://ssb.wiki.gallery/images/a/a3/Mario_Neutral_B_SSBU.gif"
+  },
+  {
+    "id": "super-jump-punch",
+    "name": "Super Jump Punch",
+    "description": "Mario jumps upward with a fist raised, hitting a coin block. Good for recovery and out-of-shield punish.",
+    "category": "special",
+    "combos": {
+      "handheld": [{ "buttons": ["left-stick", "b"], "direction": "up", "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["stick", "b"], "direction": "up", "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-mario-upb"
+  },
+  {
+    "id": "cape",
+    "name": "Cape",
+    "description": "Mario swings his cape, reflecting projectiles and reversing opponent direction.",
+    "category": "special",
+    "combos": {
+      "handheld": [{ "buttons": ["left-stick", "b"], "direction": "left", "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["stick", "b"], "direction": "left", "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-mario-cape"
+  },
+  {
+    "id": "fludd",
+    "name": "F.L.U.D.D.",
+    "description": "Mario charges and releases a water jet that pushes opponents. Hold B to charge, release to fire.",
+    "category": "special",
+    "combos": {
+      "handheld": [{ "buttons": ["left-stick", "b"], "direction": "down", "inputType": "Hold" }],
+      "single-joycon": [{ "buttons": ["stick", "b"], "direction": "down", "inputType": "Hold" }]
+    },
+    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-mario-fludd"
+  },
+  {
+    "id": "forward-smash",
+    "name": "Forward Smash",
+    "description": "A powerful forward punch. One of Mario's best KO moves.",
+    "category": "smash",
+    "combos": {
+      "handheld": [{ "buttons": ["left-stick", "a"], "direction": "right", "inputType": "Smash" }],
+      "single-joycon": [{ "buttons": ["stick", "a"], "direction": "right", "inputType": "Smash" }]
+    },
+    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-mario-fsmash"
+  }
+]

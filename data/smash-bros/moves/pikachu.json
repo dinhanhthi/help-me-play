@@ -1,0 +1,72 @@
+[
+  {
+    "id": "thunder-jolt",
+    "name": "Thunder Jolt",
+    "description": "Pikachu sends a ball of electricity that bounces along the ground. Great for edgeguarding.",
+    "category": "special",
+    "combos": {
+      "handheld": [{ "buttons": ["b"], "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["b"], "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-pikachu-thunderjolt"
+  },
+  {
+    "id": "skull-bash",
+    "name": "Skull Bash",
+    "description": "Pikachu charges and launches forward headfirst. Hold B to charge for more distance and damage.",
+    "category": "special",
+    "combos": {
+      "handheld": [
+        {
+          "buttons": ["left-stick", "b"],
+          "direction": "left",
+          "inputType": "Hold",
+          "duration": 2000
+        }
+      ],
+      "single-joycon": [
+        { "buttons": ["stick", "b"], "direction": "left", "inputType": "Hold", "duration": 2000 }
+      ]
+    },
+    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-pikachu-skullbash"
+  },
+  {
+    "id": "quick-attack",
+    "name": "Quick Attack",
+    "description": "Pikachu dashes in a direction. Can change direction mid-dash for a second burst. Excellent recovery.",
+    "category": "special",
+    "combos": {
+      "handheld": [
+        { "buttons": ["left-stick", "b"], "direction": "up", "inputType": "Tap" },
+        { "buttons": ["left-stick"], "direction": "right", "inputType": "Tap" }
+      ],
+      "single-joycon": [
+        { "buttons": ["stick", "b"], "direction": "up", "inputType": "Tap" },
+        { "buttons": ["stick"], "direction": "right", "inputType": "Tap" }
+      ]
+    },
+    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-pikachu-quickattack"
+  },
+  {
+    "id": "thunder",
+    "name": "Thunder",
+    "description": "A bolt of lightning strikes down on Pikachu. If it connects with Pikachu, creates a powerful shockwave.",
+    "category": "special",
+    "combos": {
+      "handheld": [{ "buttons": ["left-stick", "b"], "direction": "down", "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["stick", "b"], "direction": "down", "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-pikachu-thunder"
+  },
+  {
+    "id": "down-smash",
+    "name": "Down Smash",
+    "description": "Pikachu discharges electricity on both sides. Great for punishing rolls.",
+    "category": "smash",
+    "combos": {
+      "handheld": [{ "buttons": ["left-stick", "a"], "direction": "down", "inputType": "Smash" }],
+      "single-joycon": [{ "buttons": ["stick", "a"], "direction": "down", "inputType": "Smash" }]
+    },
+    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-pikachu-dsmash"
+  }
+]

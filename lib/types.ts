@@ -1,0 +1,73 @@
+export type ControllerMode = "handheld" | "single-joycon";
+
+export interface ButtonDefinition {
+  id: string;
+  label: string;
+  /** Available in these controller modes */
+  modes: ControllerMode[];
+}
+
+export interface ButtonPosition {
+  /** X position as percentage (0-100) relative to controller container */
+  x: number;
+  /** Y position as percentage (0-100) relative to controller container */
+  y: number;
+  /** Width as percentage */
+  width: number;
+  /** Height as percentage */
+  height: number;
+  /** Shape of the button for rendering */
+  shape: "circle" | "rect" | "pill" | "dpad";
+}
+
+export interface ComboStep {
+  /** Button IDs pressed simultaneously in this step */
+  buttons: string[];
+  /** Optional direction for analog stick (e.g., "up", "down", "left", "right") */
+  direction?: string;
+  /** How long to hold this step in ms */
+  duration?: number;
+  /** Label for this step (e.g., "Hold", "Tap", "Mash") */
+  inputType?: string;
+}
+
+export interface Move {
+  id: string;
+  name: string;
+  description?: string;
+  /** Category: e.g. "special", "smash", "tilt", "throw", "other" */
+  category: string;
+  combos: Record<ControllerMode, ComboStep[]>;
+  /** URL to video (YouTube, Vimeo, etc.) or GIF (Giphy, Cloudinary, direct) */
+  mediaUrl: string;
+  /** Auto-detected from URL, but can be overridden */
+  mediaType?: "video" | "gif" | "image";
+}
+
+export interface Character {
+  slug: string;
+  name: string;
+  /** Path to portrait image relative to /public */
+  portrait?: string;
+  /** Brief description */
+  description?: string;
+  /** Tags for filtering: e.g. "heavyweight", "swordfighter" */
+  tags?: string[];
+}
+
+export interface GameMeta {
+  slug: string;
+  title: string;
+  description: string;
+  /** Path to cover image relative to /public */
+  coverImage?: string;
+  /** General tips for the game */
+  tips?: string[];
+}
+
+export interface Game {
+  slug: string;
+  title: string;
+  description: string;
+  coverImage?: string;
+}

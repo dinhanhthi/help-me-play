@@ -1,0 +1,69 @@
+[
+  {
+    "id": "bow-and-arrows",
+    "name": "Bow and Arrows",
+    "description": "Link draws his bow and fires an arrow. Hold B to charge for more damage and distance.",
+    "category": "special",
+    "combos": {
+      "handheld": [{ "buttons": ["b"], "inputType": "Hold", "duration": 1500 }],
+      "single-joycon": [{ "buttons": ["b"], "inputType": "Hold", "duration": 1500 }]
+    },
+    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-link-bow"
+  },
+  {
+    "id": "boomerang",
+    "name": "Boomerang",
+    "description": "Link throws a boomerang forward. It returns on the way back, hitting opponents twice.",
+    "category": "special",
+    "combos": {
+      "handheld": [{ "buttons": ["left-stick", "b"], "direction": "left", "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["stick", "b"], "direction": "left", "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-link-boomerang"
+  },
+  {
+    "id": "spin-attack",
+    "name": "Spin Attack",
+    "description": "Link spins with his sword, hitting all around him. In the air, it provides recovery.",
+    "category": "special",
+    "combos": {
+      "handheld": [{ "buttons": ["left-stick", "b"], "direction": "up", "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["stick", "b"], "direction": "up", "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-link-spinattack"
+  },
+  {
+    "id": "remote-bomb",
+    "name": "Remote Bomb",
+    "description": "Link places a remote bomb. Press Down-B again to detonate it.",
+    "category": "special",
+    "combos": {
+      "handheld": [
+        { "buttons": ["left-stick", "b"], "direction": "down", "inputType": "Tap" },
+        { "buttons": ["left-stick", "b"], "direction": "down", "inputType": "Tap" }
+      ],
+      "single-joycon": [
+        { "buttons": ["stick", "b"], "direction": "down", "inputType": "Tap" },
+        { "buttons": ["stick", "b"], "direction": "down", "inputType": "Tap" }
+      ]
+    },
+    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-link-bomb"
+  },
+  {
+    "id": "forward-smash",
+    "name": "Forward Smash",
+    "description": "A two-hit sword slash. First hit can combo into the second for big damage.",
+    "category": "smash",
+    "combos": {
+      "handheld": [
+        { "buttons": ["left-stick", "a"], "direction": "right", "inputType": "Smash" },
+        { "buttons": ["a"], "inputType": "Tap" }
+      ],
+      "single-joycon": [
+        { "buttons": ["stick", "a"], "direction": "right", "inputType": "Smash" },
+        { "buttons": ["a"], "inputType": "Tap" }
+      ]
+    },
+    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-link-fsmash"
+  }
+]

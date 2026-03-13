@@ -1,0 +1,45 @@
+{
+  "site": {
+    "title": "Help Me Play - Hướng dẫn chơi game Nintendo Switch",
+    "description": "Học cách chơi game Nintendo Switch với hướng dẫn combo trực quan và video minh họa"
+  },
+  "header": {
+    "brand": "Help Me Play",
+    "games": "Trò chơi"
+  },
+  "footer": {
+    "copyright": "Help Me Play. Hướng dẫn combo trực quan cho game Nintendo Switch."
+  },
+  "home": {
+    "titlePart1": "Help Me",
+    "titlePart2": "Play",
+    "subtitle": "Hướng dẫn combo trực quan và video minh họa cho game Nintendo Switch. Làm chủ mọi nhân vật, từng nút bấm một.",
+    "badgeControllers": "Tay cầm tương tác",
+    "badgeVideos": "Video minh họa",
+    "gamesHeading": "Trò chơi"
+  },
+  "game": {
+    "tabCharacters": "Nhân vật",
+    "tabTips": "Mẹo chung",
+    "noTips": "Chưa có mẹo nào."
+  },
+  "character": {
+    "controllerInput": "Nút bấm",
+    "demonstration": "Minh họa",
+    "noMoves": "Chưa có chiêu thức nào cho nhân vật này."
+  },
+  "controls": {
+    "handheldMode": "Cầm tay",
+    "singleJoyCon": "Joy-Con đơn",
+    "controllerMode": "Chế độ tay cầm",
+    "noComboSteps": "Chưa có combo nào.",
+    "step": "Bước",
+    "pauseAnimation": "Tạm dừng",
+    "playAnimation": "Phát",
+    "restartAnimation": "Chơi lại"
+  },
+  "media": {
+    "invalidUrl": "URL không hợp lệ",
+    "embeddedMedia": "Nội dung nhúng"
+  }
+}

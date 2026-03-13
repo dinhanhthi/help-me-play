@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+  /* Cozy warm dark — navy-tinted, not pure black */
+  --background: #121620;
+  --foreground: #eef0f6;
+  --card: #1a1f2e;
+  --card-hover: #222838;
+  --surface: #161b28;
+  --muted: #a0a8be;
+  --border: #2a3040;
+  --border-hover: #3a4258;
+
+  /* Sky blue accent */
+  --accent: #38bdf8;
+  --accent-dim: #0ea5e9;
+  --accent-subtle: rgba(56, 189, 248, 0.1);
+  --accent-muted: rgba(56, 189, 248, 0.15);
+
+  /* Category colors */
+  --cat-special: #f59e0b;
+  --cat-smash: #ef4444;
+  --cat-tilt: #22c55e;
+  --cat-throw: #a855f7;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-hover: var(--card-hover);
+  --color-surface: var(--surface);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-border-hover: var(--border-hover);
+  --color-accent: var(--accent);
+  --color-accent-dim: var(--accent-dim);
+  --color-accent-subtle: var(--accent-subtle);
+  --color-accent-muted: var(--accent-muted);
+  --font-sans: var(--font-nunito);
+  --font-display: var(--font-fredoka);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: rgba(56, 189, 248, 0.25);
+  color: #fff;
+}

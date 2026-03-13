@@ -1,0 +1,25 @@
+{
+  "buttons": [
+    { "id": "a", "label": "A", "modes": ["handheld", "single-joycon"] },
+    { "id": "b", "label": "B", "modes": ["handheld", "single-joycon"] },
+    { "id": "x", "label": "X", "modes": ["handheld", "single-joycon"] },
+    { "id": "y", "label": "Y", "modes": ["handheld", "single-joycon"] },
+    { "id": "l", "label": "L", "modes": ["handheld"] },
+    { "id": "r", "label": "R", "modes": ["handheld"] },
+    { "id": "zl", "label": "ZL", "modes": ["handheld"] },
+    { "id": "zr", "label": "ZR", "modes": ["handheld"] },
+    { "id": "sl", "label": "SL", "modes": ["single-joycon"] },
+    { "id": "sr", "label": "SR", "modes": ["single-joycon"] },
+    { "id": "plus", "label": "+", "modes": ["handheld"] },
+    { "id": "minus", "label": "-", "modes": ["handheld"] },
+    { "id": "home", "label": "Home", "modes": ["handheld"] },
+    { "id": "capture", "label": "Capture", "modes": ["handheld"] },
+    { "id": "left-stick", "label": "Left Stick", "modes": ["handheld"] },
+    { "id": "right-stick", "label": "Right Stick", "modes": ["handheld"] },
+    { "id": "stick", "label": "Stick", "modes": ["single-joycon"] },
+    { "id": "dpad-up", "label": "Up", "modes": ["handheld"] },
+    { "id": "dpad-down", "label": "Down", "modes": ["handheld"] },
+    { "id": "dpad-left", "label": "Left", "modes": ["handheld"] },
+    { "id": "dpad-right", "label": "Right", "modes": ["handheld"] }
+  ]
+}

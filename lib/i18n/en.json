@@ -1,0 +1,45 @@
+{
+  "site": {
+    "title": "Help Me Play - Nintendo Switch Game Guides",
+    "description": "Learn how to play Nintendo Switch games with visual combo guides and video demonstrations"
+  },
+  "header": {
+    "brand": "Help Me Play",
+    "games": "Games"
+  },
+  "footer": {
+    "copyright": "Help Me Play. Visual combo guides for Nintendo Switch games."
+  },
+  "home": {
+    "titlePart1": "Help Me",
+    "titlePart2": "Play",
+    "subtitle": "Visual combo guides and video demonstrations for Nintendo Switch games. Master every character, one button at a time.",
+    "badgeControllers": "Interactive Controllers",
+    "badgeVideos": "Video Demos",
+    "gamesHeading": "Games"
+  },
+  "game": {
+    "tabCharacters": "Characters",
+    "tabTips": "General Tips",
+    "noTips": "No tips available yet."
+  },
+  "character": {
+    "controllerInput": "Controller Input",
+    "demonstration": "Demonstration",
+    "noMoves": "No moves available for this character yet."
+  },
+  "controls": {
+    "handheldMode": "Handheld Mode",
+    "singleJoyCon": "Single Joy-Con",
+    "controllerMode": "Controller mode",
+    "noComboSteps": "No combo steps defined.",
+    "step": "Step",
+    "pauseAnimation": "Pause animation",
+    "playAnimation": "Play animation",
+    "restartAnimation": "Restart animation"
+  },
+  "media": {
+    "invalidUrl": "Invalid media URL",
+    "embeddedMedia": "Embedded media"
+  }
+}

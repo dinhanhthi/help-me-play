@@ -11,10 +11,25 @@
     },
     "category": "ground",
     "combos": {
-      "handheld": [{ "buttons": ["a"], "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["a"], "inputType": "Tap" }]
+      "handheld": [
+        {
+          "buttons": [
+            "a"
+          ],
+          "inputType": "Tap"
+        }
+      ],
+      "single-joycon": [
+        {
+          "buttons": [
+            "a"
+          ],
+          "inputType": "Tap"
+        }
+      ]
     },
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/2/2d/Mario_Jab_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499978/help-me-play/smash-bros/mario/jab.webp",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/2/2d/Mario_Jab_SSBU.gif"
   },
   {
     "id": "dash-attack",
@@ -29,15 +44,38 @@
     "category": "ground",
     "combos": {
       "handheld": [
-        { "buttons": ["left-stick"], "direction": "right", "inputType": "Tap" },
-        { "buttons": ["a"], "inputType": "Tap" }
+        {
+          "buttons": [
+            "left-stick"
+          ],
+          "direction": "right",
+          "inputType": "Tap"
+        },
+        {
+          "buttons": [
+            "a"
+          ],
+          "inputType": "Tap"
+        }
       ],
       "single-joycon": [
-        { "buttons": ["stick"], "direction": "right", "inputType": "Tap" },
-        { "buttons": ["a"], "inputType": "Tap" }
+        {
+          "buttons": [
+            "stick"
+          ],
+          "direction": "right",
+          "inputType": "Tap"
+        },
+        {
+          "buttons": [
+            "a"
+          ],
+          "inputType": "Tap"
+        }
       ]
     },
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/b/ba/Mario_Dash_Attack_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499979/help-me-play/smash-bros/mario/dash-attack.webp",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/b/ba/Mario_Dash_Attack_SSBU.gif"
   },
   {
     "id": "forward-tilt",
@@ -51,10 +89,29 @@
     },
     "category": "tilt",
     "combos": {
-      "handheld": [{ "buttons": ["left-stick", "a"], "direction": "right", "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["stick", "a"], "direction": "right", "inputType": "Tap" }]
+      "handheld": [
+        {
+          "buttons": [
+            "left-stick",
+            "a"
+          ],
+          "direction": "right",
+          "inputType": "Tap"
+        }
+      ],
+      "single-joycon": [
+        {
+          "buttons": [
+            "stick",
+            "a"
+          ],
+          "direction": "right",
+          "inputType": "Tap"
+        }
+      ]
     },
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/d/dd/Mario_Side_Tilt_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499981/help-me-play/smash-bros/mario/forward-tilt.webp",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/dd/Mario_Side_Tilt_SSBU.gif"
   },
   {
     "id": "up-tilt",
@@ -68,10 +125,29 @@
     },
     "category": "tilt",
     "combos": {
-      "handheld": [{ "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["stick", "a"], "direction": "up", "inputType": "Tap" }]
+      "handheld": [
+        {
+          "buttons": [
+            "left-stick",
+            "a"
+          ],
+          "direction": "up",
+          "inputType": "Tap"
+        }
+      ],
+      "single-joycon": [
+        {
+          "buttons": [
+            "stick",
+            "a"
+          ],
+          "direction": "up",
+          "inputType": "Tap"
+        }
+      ]
     },
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/d/da/Mario_Up_Tilt_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499982/help-me-play/smash-bros/mario/up-tilt.webp",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/da/Mario_Up_Tilt_SSBU.gif"
   },
   {
     "id": "down-tilt",
@@ -85,10 +161,29 @@
     },
     "category": "tilt",
     "combos": {
-      "handheld": [{ "buttons": ["left-stick", "a"], "direction": "down", "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["stick", "a"], "direction": "down", "inputType": "Tap" }]
+      "handheld": [
+        {
+          "buttons": [
+            "left-stick",
+            "a"
+          ],
+          "direction": "down",
+          "inputType": "Tap"
+        }
+      ],
+      "single-joycon": [
+        {
+          "buttons": [
+            "stick",
+            "a"
+          ],
+          "direction": "down",
+          "inputType": "Tap"
+        }
+      ]
     },
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/7/75/Mario_Down_Tilt_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499985/help-me-play/smash-bros/mario/down-tilt.webp",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/7/75/Mario_Down_Tilt_SSBU.gif"
   },
   {
     "id": "forward-smash",
@@ -102,10 +197,29 @@
     },
     "category": "smash",
     "combos": {
-      "handheld": [{ "buttons": ["left-stick", "a"], "direction": "right", "inputType": "Smash" }],
-      "single-joycon": [{ "buttons": ["stick", "a"], "direction": "right", "inputType": "Smash" }]
+      "handheld": [
+        {
+          "buttons": [
+            "left-stick",
+            "a"
+          ],
+          "direction": "right",
+          "inputType": "Smash"
+        }
+      ],
+      "single-joycon": [
+        {
+          "buttons": [
+            "stick",
+            "a"
+          ],
+          "direction": "right",
+          "inputType": "Smash"
+        }
+      ]
     },
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/4/45/Mario_Forward_Smash_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499986/help-me-play/smash-bros/mario/forward-smash.webp",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/4/45/Mario_Forward_Smash_SSBU.gif"
   },
   {
     "id": "up-smash",
@@ -119,10 +233,29 @@
     },
     "category": "smash",
     "combos": {
-      "handheld": [{ "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Smash" }],
-      "single-joycon": [{ "buttons": ["stick", "a"], "direction": "up", "inputType": "Smash" }]
+      "handheld": [
+        {
+          "buttons": [
+            "left-stick",
+            "a"
+          ],
+          "direction": "up",
+          "inputType": "Smash"
+        }
+      ],
+      "single-joycon": [
+        {
+          "buttons": [
+            "stick",
+            "a"
+          ],
+          "direction": "up",
+          "inputType": "Smash"
+        }
+      ]
     },
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/f/f5/Mario_Up_Smash_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499987/help-me-play/smash-bros/mario/up-smash.webp",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/f/f5/Mario_Up_Smash_SSBU.gif"
   },
   {
     "id": "down-smash",
@@ -136,10 +269,29 @@
     },
     "category": "smash",
     "combos": {
-      "handheld": [{ "buttons": ["left-stick", "a"], "direction": "down", "inputType": "Smash" }],
-      "single-joycon": [{ "buttons": ["stick", "a"], "direction": "down", "inputType": "Smash" }]
+      "handheld": [
+        {
+          "buttons": [
+            "left-stick",
+            "a"
+          ],
+          "direction": "down",
+          "inputType": "Smash"
+        }
+      ],
+      "single-joycon": [
+        {
+          "buttons": [
+            "stick",
+            "a"
+          ],
+          "direction": "down",
+          "inputType": "Smash"
+        }
+      ]
     },
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/d/db/Mario_Down_Smash_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499989/help-me-play/smash-bros/mario/down-smash.webp",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/db/Mario_Down_Smash_SSBU.gif"
   },
   {
     "id": "neutral-air",
@@ -153,10 +305,25 @@
     },
     "category": "aerial",
     "combos": {
-      "handheld": [{ "buttons": ["a"], "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["a"], "inputType": "Tap" }]
+      "handheld": [
+        {
+          "buttons": [
+            "a"
+          ],
+          "inputType": "Tap"
+        }
+      ],
+      "single-joycon": [
+        {
+          "buttons": [
+            "a"
+          ],
+          "inputType": "Tap"
+        }
+      ]
     },
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/a/aa/Mario_Neutral_Air_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499990/help-me-play/smash-bros/mario/neutral-air.webp",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/a/aa/Mario_Neutral_Air_SSBU.gif"
   },
   {
     "id": "forward-air",
@@ -170,10 +337,29 @@
     },
     "category": "aerial",
     "combos": {
-      "handheld": [{ "buttons": ["left-stick", "a"], "direction": "right", "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["stick", "a"], "direction": "right", "inputType": "Tap" }]
+      "handheld": [
+        {
+          "buttons": [
+            "left-stick",
+            "a"
+          ],
+          "direction": "right",
+          "inputType": "Tap"
+        }
+      ],
+      "single-joycon": [
+        {
+          "buttons": [
+            "stick",
+            "a"
+          ],
+          "direction": "right",
+          "inputType": "Tap"
+        }
+      ]
     },
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/0/0e/Mario_Forward_Air_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499994/help-me-play/smash-bros/mario/forward-air.webp",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/0/0e/Mario_Forward_Air_SSBU.gif"
   },
   {
     "id": "back-air",
@@ -187,10 +373,29 @@
     },
     "category": "aerial",
     "combos": {
-      "handheld": [{ "buttons": ["left-stick", "a"], "direction": "left", "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["stick", "a"], "direction": "left", "inputType": "Tap" }]
+      "handheld": [
+        {
+          "buttons": [
+            "left-stick",
+            "a"
+          ],
+          "direction": "left",
+          "inputType": "Tap"
+        }
+      ],
+      "single-joycon": [
+        {
+          "buttons": [
+            "stick",
+            "a"
+          ],
+          "direction": "left",
+          "inputType": "Tap"
+        }
+      ]
     },
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/6/6e/Mario_Back_Air_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499996/help-me-play/smash-bros/mario/back-air.webp",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/6/6e/Mario_Back_Air_SSBU.gif"
   },
   {
     "id": "up-air",
@@ -204,10 +409,29 @@
     },
     "category": "aerial",
     "combos": {
-      "handheld": [{ "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["stick", "a"], "direction": "up", "inputType": "Tap" }]
+      "handheld": [
+        {
+          "buttons": [
+            "left-stick",
+            "a"
+          ],
+          "direction": "up",
+          "inputType": "Tap"
+        }
+      ],
+      "single-joycon": [
+        {
+          "buttons": [
+            "stick",
+            "a"
+          ],
+          "direction": "up",
+          "inputType": "Tap"
+        }
+      ]
     },
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/9/93/Mario_Up_Air_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499997/help-me-play/smash-bros/mario/up-air.webp",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/9/93/Mario_Up_Air_SSBU.gif"
   },
   {
     "id": "down-air",
@@ -221,10 +445,29 @@
     },
     "category": "aerial",
     "combos": {
-      "handheld": [{ "buttons": ["left-stick", "a"], "direction": "down", "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["stick", "a"], "direction": "down", "inputType": "Tap" }]
+      "handheld": [
+        {
+          "buttons": [
+            "left-stick",
+            "a"
+          ],
+          "direction": "down",
+          "inputType": "Tap"
+        }
+      ],
+      "single-joycon": [
+        {
+          "buttons": [
+            "stick",
+            "a"
+          ],
+          "direction": "down",
+          "inputType": "Tap"
+        }
+      ]
     },
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/d/d6/Mario_Down_Air_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499999/help-me-play/smash-bros/mario/down-air.webp",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d6/Mario_Down_Air_SSBU.gif"
   },
   {
     "id": "fireball",
@@ -238,10 +481,25 @@
     },
     "category": "special",
     "combos": {
-      "handheld": [{ "buttons": ["b"], "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["b"], "inputType": "Tap" }]
+      "handheld": [
+        {
+          "buttons": [
+            "b"
+          ],
+          "inputType": "Tap"
+        }
+      ],
+      "single-joycon": [
+        {
+          "buttons": [
+            "b"
+          ],
+          "inputType": "Tap"
+        }
+      ]
     },
-    "mediaUrl": "https://ssb.wiki.gallery/images/a/a3/Mario_Neutral_B_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500000/help-me-play/smash-bros/mario/fireball.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/a/a3/Mario_Neutral_B_SSBU.gif"
   },
   {
     "id": "cape",
@@ -255,10 +513,29 @@
     },
     "category": "special",
     "combos": {
-      "handheld": [{ "buttons": ["left-stick", "b"], "direction": "right", "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["stick", "b"], "direction": "right", "inputType": "Tap" }]
+      "handheld": [
+        {
+          "buttons": [
+            "left-stick",
+            "b"
+          ],
+          "direction": "right",
+          "inputType": "Tap"
+        }
+      ],
+      "single-joycon": [
+        {
+          "buttons": [
+            "stick",
+            "b"
+          ],
+          "direction": "right",
+          "inputType": "Tap"
+        }
+      ]
     },
-    "mediaUrl": "https://ssb.wiki.gallery/images/1/1a/Mario_Side_B_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500001/help-me-play/smash-bros/mario/cape.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/1/1a/Mario_Side_B_SSBU.gif"
   },
   {
     "id": "super-jump-punch",
@@ -272,10 +549,29 @@
     },
     "category": "special",
     "combos": {
-      "handheld": [{ "buttons": ["left-stick", "b"], "direction": "up", "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["stick", "b"], "direction": "up", "inputType": "Tap" }]
+      "handheld": [
+        {
+          "buttons": [
+            "left-stick",
+            "b"
+          ],
+          "direction": "up",
+          "inputType": "Tap"
+        }
+      ],
+      "single-joycon": [
+        {
+          "buttons": [
+            "stick",
+            "b"
+          ],
+          "direction": "up",
+          "inputType": "Tap"
+        }
+      ]
     },
-    "mediaUrl": "https://ssb.wiki.gallery/images/1/13/Mario_Up_B_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500003/help-me-play/smash-bros/mario/super-jump-punch.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/1/13/Mario_Up_B_SSBU.gif"
   },
   {
     "id": "fludd",
@@ -289,10 +585,29 @@
     },
     "category": "special",
     "combos": {
-      "handheld": [{ "buttons": ["left-stick", "b"], "direction": "down", "inputType": "Hold" }],
-      "single-joycon": [{ "buttons": ["stick", "b"], "direction": "down", "inputType": "Hold" }]
+      "handheld": [
+        {
+          "buttons": [
+            "left-stick",
+            "b"
+          ],
+          "direction": "down",
+          "inputType": "Hold"
+        }
+      ],
+      "single-joycon": [
+        {
+          "buttons": [
+            "stick",
+            "b"
+          ],
+          "direction": "down",
+          "inputType": "Hold"
+        }
+      ]
     },
-    "mediaUrl": "https://ssb.wiki.gallery/images/8/8a/Mario_Down_B_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500006/help-me-play/smash-bros/mario/fludd.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/8/8a/Mario_Down_B_SSBU.gif"
   },
   {
     "id": "grab",
@@ -306,10 +621,26 @@
     },
     "category": "grab",
     "combos": {
-      "handheld": [{ "buttons": ["zl"], "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["sl", "sr"], "inputType": "Tap" }]
+      "handheld": [
+        {
+          "buttons": [
+            "zl"
+          ],
+          "inputType": "Tap"
+        }
+      ],
+      "single-joycon": [
+        {
+          "buttons": [
+            "sl",
+            "sr"
+          ],
+          "inputType": "Tap"
+        }
+      ]
     },
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/0/0d/Mario_Grab_%26_Pummel_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500010/help-me-play/smash-bros/mario/grab.webp",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/0/0d/Mario_Grab_%26_Pummel_SSBU.gif"
   },
   {
     "id": "pummel",
@@ -323,10 +654,25 @@
     },
     "category": "grab",
     "combos": {
-      "handheld": [{ "buttons": ["a"], "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["a"], "inputType": "Tap" }]
+      "handheld": [
+        {
+          "buttons": [
+            "a"
+          ],
+          "inputType": "Tap"
+        }
+      ],
+      "single-joycon": [
+        {
+          "buttons": [
+            "a"
+          ],
+          "inputType": "Tap"
+        }
+      ]
     },
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/0/0d/Mario_Grab_%26_Pummel_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500011/help-me-play/smash-bros/mario/pummel.webp",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/0/0d/Mario_Grab_%26_Pummel_SSBU.gif"
   },
   {
     "id": "forward-throw",
@@ -340,10 +686,27 @@
     },
     "category": "grab",
     "combos": {
-      "handheld": [{ "buttons": ["left-stick"], "direction": "right", "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["stick"], "direction": "right", "inputType": "Tap" }]
+      "handheld": [
+        {
+          "buttons": [
+            "left-stick"
+          ],
+          "direction": "right",
+          "inputType": "Tap"
+        }
+      ],
+      "single-joycon": [
+        {
+          "buttons": [
+            "stick"
+          ],
+          "direction": "right",
+          "inputType": "Tap"
+        }
+      ]
     },
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/e/e8/Mario_Forward_Throw_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500012/help-me-play/smash-bros/mario/forward-throw.webp",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/e/e8/Mario_Forward_Throw_SSBU.gif"
   },
   {
     "id": "back-throw",
@@ -357,10 +720,27 @@
     },
     "category": "grab",
     "combos": {
-      "handheld": [{ "buttons": ["left-stick"], "direction": "left", "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["stick"], "direction": "left", "inputType": "Tap" }]
+      "handheld": [
+        {
+          "buttons": [
+            "left-stick"
+          ],
+          "direction": "left",
+          "inputType": "Tap"
+        }
+      ],
+      "single-joycon": [
+        {
+          "buttons": [
+            "stick"
+          ],
+          "direction": "left",
+          "inputType": "Tap"
+        }
+      ]
     },
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/1/10/Mario_Back_Throw_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500016/help-me-play/smash-bros/mario/back-throw.webp",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/1/10/Mario_Back_Throw_SSBU.gif"
   },
   {
     "id": "up-throw",
@@ -374,10 +754,27 @@
     },
     "category": "grab",
     "combos": {
-      "handheld": [{ "buttons": ["left-stick"], "direction": "up", "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["stick"], "direction": "up", "inputType": "Tap" }]
+      "handheld": [
+        {
+          "buttons": [
+            "left-stick"
+          ],
+          "direction": "up",
+          "inputType": "Tap"
+        }
+      ],
+      "single-joycon": [
+        {
+          "buttons": [
+            "stick"
+          ],
+          "direction": "up",
+          "inputType": "Tap"
+        }
+      ]
     },
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/3/37/Mario_Up_Throw_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500018/help-me-play/smash-bros/mario/up-throw.webp",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/3/37/Mario_Up_Throw_SSBU.gif"
   },
   {
     "id": "down-throw",
@@ -391,10 +788,27 @@
     },
     "category": "grab",
     "combos": {
-      "handheld": [{ "buttons": ["left-stick"], "direction": "down", "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["stick"], "direction": "down", "inputType": "Tap" }]
+      "handheld": [
+        {
+          "buttons": [
+            "left-stick"
+          ],
+          "direction": "down",
+          "inputType": "Tap"
+        }
+      ],
+      "single-joycon": [
+        {
+          "buttons": [
+            "stick"
+          ],
+          "direction": "down",
+          "inputType": "Tap"
+        }
+      ]
     },
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/4/4c/Mario_Down_Throw_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500019/help-me-play/smash-bros/mario/down-throw.webp",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/4/4c/Mario_Down_Throw_SSBU.gif"
   },
   {
     "id": "ledge-attack",
@@ -408,10 +822,25 @@
     },
     "category": "other",
     "combos": {
-      "handheld": [{ "buttons": ["a"], "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["a"], "inputType": "Tap" }]
+      "handheld": [
+        {
+          "buttons": [
+            "a"
+          ],
+          "inputType": "Tap"
+        }
+      ],
+      "single-joycon": [
+        {
+          "buttons": [
+            "a"
+          ],
+          "inputType": "Tap"
+        }
+      ]
     },
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/5/56/Mario_Edge_Attack_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500021/help-me-play/smash-bros/mario/ledge-attack.webp",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/5/56/Mario_Edge_Attack_SSBU.gif"
   },
   {
     "id": "floor-attack-face-up",
@@ -425,10 +854,25 @@
     },
     "category": "other",
     "combos": {
-      "handheld": [{ "buttons": ["a"], "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["a"], "inputType": "Tap" }]
+      "handheld": [
+        {
+          "buttons": [
+            "a"
+          ],
+          "inputType": "Tap"
+        }
+      ],
+      "single-joycon": [
+        {
+          "buttons": [
+            "a"
+          ],
+          "inputType": "Tap"
+        }
+      ]
     },
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/a/ac/Mario_Front_Floor_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500022/help-me-play/smash-bros/mario/floor-attack-face-up.webp",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/a/ac/Mario_Front_Floor_SSBU.gif"
   },
   {
     "id": "floor-attack-face-down",
@@ -442,10 +886,25 @@
     },
     "category": "other",
     "combos": {
-      "handheld": [{ "buttons": ["a"], "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["a"], "inputType": "Tap" }]
+      "handheld": [
+        {
+          "buttons": [
+            "a"
+          ],
+          "inputType": "Tap"
+        }
+      ],
+      "single-joycon": [
+        {
+          "buttons": [
+            "a"
+          ],
+          "inputType": "Tap"
+        }
+      ]
     },
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/5/5b/Mario_Back_Floor_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500023/help-me-play/smash-bros/mario/floor-attack-face-down.webp",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/5/5b/Mario_Back_Floor_SSBU.gif"
   },
   {
     "id": "floor-attack-trip",
@@ -459,10 +918,25 @@
     },
     "category": "other",
     "combos": {
-      "handheld": [{ "buttons": ["a"], "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["a"], "inputType": "Tap" }]
+      "handheld": [
+        {
+          "buttons": [
+            "a"
+          ],
+          "inputType": "Tap"
+        }
+      ],
+      "single-joycon": [
+        {
+          "buttons": [
+            "a"
+          ],
+          "inputType": "Tap"
+        }
+      ]
     },
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/5/54/Mario_Trip_Attack_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500025/help-me-play/smash-bros/mario/floor-attack-trip.webp",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/5/54/Mario_Trip_Attack_SSBU.gif"
   },
   {
     "id": "mario-finale",
@@ -476,10 +950,25 @@
     },
     "category": "other",
     "combos": {
-      "handheld": [{ "buttons": ["b"], "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["b"], "inputType": "Tap" }]
+      "handheld": [
+        {
+          "buttons": [
+            "b"
+          ],
+          "inputType": "Tap"
+        }
+      ],
+      "single-joycon": [
+        {
+          "buttons": [
+            "b"
+          ],
+          "inputType": "Tap"
+        }
+      ]
     },
-    "mediaUrl": "https://ssb.wiki.gallery/images/2/2a/Mario_Final_Smash_SSBU.gif"
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500026/help-me-play/smash-bros/mario/mario-finale.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/2/2a/Mario_Final_Smash_SSBU.gif"
   },
   {
     "id": "up-air-ladder-combo",
@@ -494,18 +983,88 @@
     "category": "other",
     "combos": {
       "handheld": [
-        { "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Tap" },
-        { "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Tap" },
-        { "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Tap" },
-        { "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Tap" },
-        { "buttons": ["left-stick", "b"], "direction": "up", "inputType": "Tap" }
+        {
+          "buttons": [
+            "left-stick",
+            "a"
+          ],
+          "direction": "up",
+          "inputType": "Tap"
+        },
+        {
+          "buttons": [
+            "left-stick",
+            "a"
+          ],
+          "direction": "up",
+          "inputType": "Tap"
+        },
+        {
+          "buttons": [
+            "left-stick",
+            "a"
+          ],
+          "direction": "up",
+          "inputType": "Tap"
+        },
+        {
+          "buttons": [
+            "left-stick",
+            "a"
+          ],
+          "direction": "up",
+          "inputType": "Tap"
+        },
+        {
+          "buttons": [
+            "left-stick",
+            "b"
+          ],
+          "direction": "up",
+          "inputType": "Tap"
+        }
       ],
       "single-joycon": [
-        { "buttons": ["stick", "a"], "direction": "up", "inputType": "Tap" },
-        { "buttons": ["stick", "a"], "direction": "up", "inputType": "Tap" },
-        { "buttons": ["stick", "a"], "direction": "up", "inputType": "Tap" },
-        { "buttons": ["stick", "a"], "direction": "up", "inputType": "Tap" },
-        { "buttons": ["stick", "b"], "direction": "up", "inputType": "Tap" }
+        {
+          "buttons": [
+            "stick",
+            "a"
+          ],
+          "direction": "up",
+          "inputType": "Tap"
+        },
+        {
+          "buttons": [
+            "stick",
+            "a"
+          ],
+          "direction": "up",
+          "inputType": "Tap"
+        },
+        {
+          "buttons": [
+            "stick",
+            "a"
+          ],
+          "direction": "up",
+          "inputType": "Tap"
+        },
+        {
+          "buttons": [
+            "stick",
+            "a"
+          ],
+          "direction": "up",
+          "inputType": "Tap"
+        },
+        {
+          "buttons": [
+            "stick",
+            "b"
+          ],
+          "direction": "up",
+          "inputType": "Tap"
+        }
       ]
     },
     "mediaUrl": "https://www.youtube.com/watch?v=HqEKhUjIdKo"
@@ -523,14 +1082,54 @@
     "category": "other",
     "combos": {
       "handheld": [
-        { "buttons": ["left-stick"], "direction": "down", "inputType": "Tap" },
-        { "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Tap" },
-        { "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Tap" }
+        {
+          "buttons": [
+            "left-stick"
+          ],
+          "direction": "down",
+          "inputType": "Tap"
+        },
+        {
+          "buttons": [
+            "left-stick",
+            "a"
+          ],
+          "direction": "up",
+          "inputType": "Tap"
+        },
+        {
+          "buttons": [
+            "left-stick",
+            "a"
+          ],
+          "direction": "up",
+          "inputType": "Tap"
+        }
       ],
       "single-joycon": [
-        { "buttons": ["stick"], "direction": "down", "inputType": "Tap" },
-        { "buttons": ["stick", "a"], "direction": "up", "inputType": "Tap" },
-        { "buttons": ["stick", "a"], "direction": "up", "inputType": "Tap" }
+        {
+          "buttons": [
+            "stick"
+          ],
+          "direction": "down",
+          "inputType": "Tap"
+        },
+        {
+          "buttons": [
+            "stick",
+            "a"
+          ],
+          "direction": "up",
+          "inputType": "Tap"
+        },
+        {
+          "buttons": [
+            "stick",
+            "a"
+          ],
+          "direction": "up",
+          "inputType": "Tap"
+        }
       ]
     },
     "mediaUrl": "https://www.youtube.com/watch?v=HqEKhUjIdKo"
@@ -548,12 +1147,36 @@
     "category": "other",
     "combos": {
       "handheld": [
-        { "buttons": ["a"], "inputType": "Tap" },
-        { "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Smash" }
+        {
+          "buttons": [
+            "a"
+          ],
+          "inputType": "Tap"
+        },
+        {
+          "buttons": [
+            "left-stick",
+            "a"
+          ],
+          "direction": "up",
+          "inputType": "Smash"
+        }
       ],
       "single-joycon": [
-        { "buttons": ["a"], "inputType": "Tap" },
-        { "buttons": ["stick", "a"], "direction": "up", "inputType": "Smash" }
+        {
+          "buttons": [
+            "a"
+          ],
+          "inputType": "Tap"
+        },
+        {
+          "buttons": [
+            "stick",
+            "a"
+          ],
+          "direction": "up",
+          "inputType": "Smash"
+        }
       ]
     },
     "mediaUrl": "https://www.youtube.com/watch?v=HqEKhUjIdKo"
@@ -571,12 +1194,36 @@
     "category": "other",
     "combos": {
       "handheld": [
-        { "buttons": ["x"], "inputType": "Tap" },
-        { "buttons": ["left-stick", "b"], "direction": "right", "inputType": "Tap" }
+        {
+          "buttons": [
+            "x"
+          ],
+          "inputType": "Tap"
+        },
+        {
+          "buttons": [
+            "left-stick",
+            "b"
+          ],
+          "direction": "right",
+          "inputType": "Tap"
+        }
       ],
       "single-joycon": [
-        { "buttons": ["x"], "inputType": "Tap" },
-        { "buttons": ["stick", "b"], "direction": "right", "inputType": "Tap" }
+        {
+          "buttons": [
+            "x"
+          ],
+          "inputType": "Tap"
+        },
+        {
+          "buttons": [
+            "stick",
+            "b"
+          ],
+          "direction": "right",
+          "inputType": "Tap"
+        }
       ]
     },
     "mediaUrl": "https://www.youtube.com/watch?v=HqEKhUjIdKo"
@@ -594,12 +1241,42 @@
     "category": "other",
     "combos": {
       "handheld": [
-        { "buttons": ["left-stick", "b"], "direction": "down", "inputType": "Hold", "duration": 3000 },
-        { "buttons": ["left-stick", "b"], "direction": "down", "inputType": "Tap" }
+        {
+          "buttons": [
+            "left-stick",
+            "b"
+          ],
+          "direction": "down",
+          "inputType": "Hold",
+          "duration": 3000
+        },
+        {
+          "buttons": [
+            "left-stick",
+            "b"
+          ],
+          "direction": "down",
+          "inputType": "Tap"
+        }
       ],
       "single-joycon": [
-        { "buttons": ["stick", "b"], "direction": "down", "inputType": "Hold", "duration": 3000 },
-        { "buttons": ["stick", "b"], "direction": "down", "inputType": "Tap" }
+        {
+          "buttons": [
+            "stick",
+            "b"
+          ],
+          "direction": "down",
+          "inputType": "Hold",
+          "duration": 3000
+        },
+        {
+          "buttons": [
+            "stick",
+            "b"
+          ],
+          "direction": "down",
+          "inputType": "Tap"
+        }
       ]
     },
     "mediaUrl": "https://www.youtube.com/watch?v=HqEKhUjIdKo"

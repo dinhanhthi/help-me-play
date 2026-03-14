@@ -166,7 +166,7 @@ export default function CharacterPageClient({
             <button
               key={cat}
               onClick={() => toggleCategory(cat)}
-              className={`cursor-pointer rounded-lg border px-2.5 py-1 text-xs font-semibold transition-opacity ${colorClass} ${isActive ? "opacity-100" : "opacity-40"}`}
+              className={`cursor-pointer rounded-lg border px-2.5 py-1 text-xs font-semibold transition-all ${colorClass} ${isActive ? "opacity-100 ring-1 ring-current scale-105" : "opacity-60 hover:opacity-80"}`}
             >
               {catLabels[cat] ?? cat}
             </button>
@@ -185,7 +185,7 @@ export default function CharacterPageClient({
             <button
               key={btn}
               onClick={() => toggleButton(btn)}
-              className={`cursor-pointer rounded-lg border border-border bg-surface px-2.5 py-1 text-xs font-semibold uppercase transition-opacity ${isActive ? "opacity-100 text-foreground" : "opacity-40 text-muted"}`}
+              className={`cursor-pointer rounded-lg border border-border bg-surface px-2.5 py-1 text-xs font-semibold uppercase transition-all ${isActive ? "opacity-100 text-foreground ring-1 ring-accent scale-105" : "opacity-60 text-muted hover:opacity-80"}`}
             >
               {btn}
             </button>

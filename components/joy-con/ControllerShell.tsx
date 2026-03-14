@@ -19,6 +19,7 @@ const btnBase = "rounded-full flex items-center justify-center transition-colors
 /** Color per input type */
 export const inputTypeColors: Record<string, string> = {
   Tap: "#38bdf8", // sky blue
+  Tilt: "#a78bfa", // violet
   Hold: "#f59e0b", // amber
   Smash: "#ef4444", // red
 };

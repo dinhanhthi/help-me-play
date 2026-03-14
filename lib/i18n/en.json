@@ -41,8 +41,8 @@
     },
     "categoryDescriptions": {
       "ground": "Basic attacks performed while standing or running",
-      "tilt": "Attacks using stick tilt + A button, moderate strength",
-      "smash": "Powerful KO attacks using stick flick + A button",
+      "tilt": "Gently tilt stick + A (or walk/crouch then A). Faster, weaker — great for combos",
+      "smash": "Quickly flick stick to max + A at the same time. Slower, powerful KO moves. Can be charged by holding A",
       "aerial": "Attacks performed while airborne",
       "special": "Unique character moves using the B button",
       "grab": "Grab, pummel, and throw attacks",
@@ -63,8 +63,9 @@
     "inputTypeLegend": "Input Types",
     "inputTypes": {
       "Tap": "Press and release quickly",
+      "Tilt": "Gently tilt stick + press A (don't flick!)",
       "Hold": "Press and hold the button",
-      "Smash": "Flick stick + press button simultaneously"
+      "Smash": "Flick stick hard + press A at the same time (can charge by holding A)"
     }
   },
   "directions": {

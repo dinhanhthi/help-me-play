@@ -12,12 +12,14 @@
   },
   "dependencies": {
     "@radix-ui/react-tooltip": "^1.2.8",
+    "clsx": "^2.1.1",
     "geist": "^1.7.0",
     "lucide-react": "^0.577.0",
     "next": "16.1.6",
     "pagefind": "^1.4.0",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

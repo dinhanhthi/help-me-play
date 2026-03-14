@@ -19,6 +19,7 @@
 - Side-by-side layout: combo buttons (left) + video/GIF demo (right)
 - Two controller modes: Handheld Mode and Single Joy-Con Mode
 - Embedded media support: YouTube, Vimeo, Dailymotion, Giphy, Cloudinary, direct URLs
+- Bilingual support (English + Vietnamese) with locale switcher
 - JSON-driven data — easy to add new games, characters, and moves
 - Static site — fast, no backend required
 - Responsive design for mobile and desktop
@@ -84,13 +85,14 @@ components/
   joy-con/     # Controller visualization (SVG shells, button highlights, combo animation)
   layout/      # Header, Footer, GameCard, CharacterCard
   media/       # MediaEmbed (YouTube, Vimeo, GIF, etc.)
-  ui/          # Tabs, ModeToggle
+  ui/          # Tabs, ModeToggle, LocaleSwitcher
 lib/
   types.ts           # TypeScript interfaces
   data.ts            # JSON data loading utilities
   embed.ts           # Media URL parser
   button-positions.ts # Button coordinate maps
   button-labels.ts   # Button metadata
+  i18n/              # Locale context, en.json, vi.json
 data/
   games.json         # List of all games
   buttons.json       # Switch button definitions
@@ -102,6 +104,20 @@ data/
       link.json       # Link's moves and combos
       pikachu.json    # Pikachu's moves and combos
 ```
+
+## Localization
+
+The site supports **English** (`en`) and **Vietnamese** (`vi`). When adding or editing text in data files, always provide both languages:
+
+```json
+{
+  "name": { "en": "Jab", "vi": "Đấm liên hoàn" },
+  "description": { "en": "A quick punch combo", "vi": "Combo đấm nhanh" }
+}
+```
+
+- **Move data** (`data/*/moves/*.json`): `name` and `description` fields use `LocalizedString` — provide both `en` and `vi` values.
+- **UI strings** (`lib/i18n/en.json`, `lib/i18n/vi.json`): Keep both files in sync when adding or changing UI text.
 
 ## Contributing
 

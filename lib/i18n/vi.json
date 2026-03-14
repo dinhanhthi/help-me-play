@@ -41,8 +41,8 @@
     },
     "categoryDescriptions": {
       "ground": "Đòn cơ bản khi đứng hoặc chạy",
-      "tilt": "Đòn dùng nghiêng cần + nút A, sức mạnh trung bình",
-      "smash": "Đòn mạnh hạ gục dùng đẩy mạnh cần + nút A",
+      "tilt": "Nghiêng nhẹ cần + A (hoặc đi bộ/ngồi rồi bấm A). Nhanh, yếu hơn — tốt cho combo",
+      "smash": "Đẩy mạnh cần tới cùng + A cùng lúc. Chậm hơn, mạnh, dùng để hạ gục. Giữ A để tích lực",
       "aerial": "Đòn tấn công khi ở trên không",
       "special": "Chiêu đặc biệt riêng của nhân vật dùng nút B",
       "grab": "Tóm, đánh khi tóm, và ném",
@@ -63,8 +63,9 @@
     "inputTypeLegend": "Loại thao tác",
     "inputTypes": {
       "Tap": "Nhấn và thả nhanh",
+      "Tilt": "Nghiêng nhẹ cần + bấm A (đừng đẩy mạnh!)",
       "Hold": "Nhấn và giữ nút",
-      "Smash": "Đẩy mạnh cần + nhấn nút cùng lúc"
+      "Smash": "Đẩy mạnh cần + bấm A cùng lúc (giữ A để tích lực)"
     }
   },
   "directions": {

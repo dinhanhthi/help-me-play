@@ -8,6 +8,7 @@ import { inputTypeColors } from "./ControllerShell";
 import { Tooltip } from "@/components/ui/Tooltip";
 import JoyConHandheld from "./JoyConHandheld";
 import JoyConSingle from "./JoyConSingle";
+import { cn } from "@/lib/cn";
 
 const directionArrows: Record<string, string> = {
   left: "\u2190",
@@ -144,10 +145,17 @@ export default function ComboSequence({ steps, mode }: ComboSequenceProps) {
       </div>
 
       {/* Info tags */}
-      <div className="flex flex-wrap items-center justify-start gap-2 w-full">
+
+      <div
+        className={cn("flex flex-wrap items-center gap-3 w-full h-6", {
+          "justify-start": stepCount > 1,
+          "justify-center": stepCount <= 1,
+        })}
+      >
         {stepCount > 1 && (
-          <span className="rounded-lg bg-surface px-2.5 py-1 font-mono text-xs text-muted">
-            {t.controls.step} {currentStep + 1}/{stepCount}
+          <span className="font-mono text-xs text-muted">
+            {t.controls.step}{" "}
+            <span className="font-semibold text-foreground">{currentStep + 1}</span>/{stepCount}
           </span>
         )}
         {!direction &&

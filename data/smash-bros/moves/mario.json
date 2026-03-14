@@ -97,14 +97,14 @@
         {
           "buttons": ["left-stick", "a"],
           "direction": "right",
-          "inputType": "Tap"
+          "inputType": "Tilt"
         }
       ],
       "single-joycon": [
         {
           "buttons": ["stick", "a"],
           "direction": "right",
-          "inputType": "Tap"
+          "inputType": "Tilt"
         }
       ]
     },
@@ -127,14 +127,14 @@
         {
           "buttons": ["left-stick", "a"],
           "direction": "up",
-          "inputType": "Tap"
+          "inputType": "Tilt"
         }
       ],
       "single-joycon": [
         {
           "buttons": ["stick", "a"],
           "direction": "up",
-          "inputType": "Tap"
+          "inputType": "Tilt"
         }
       ]
     },
@@ -157,14 +157,14 @@
         {
           "buttons": ["left-stick", "a"],
           "direction": "down",
-          "inputType": "Tap"
+          "inputType": "Tilt"
         }
       ],
       "single-joycon": [
         {
           "buttons": ["stick", "a"],
           "direction": "down",
-          "inputType": "Tap"
+          "inputType": "Tilt"
         }
       ]
     },

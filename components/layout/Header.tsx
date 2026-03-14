@@ -26,7 +26,7 @@ export default function Header() {
   return (
     <>
       <header className="sticky top-0 z-50 border-b border-border bg-surface">
-        <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
+        <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3 sm:px-8">
           <Link href="/" className="flex items-center gap-2.5 transition-opacity hover:opacity-80">
             <img src="/logo.svg" alt="Logo" className="h-8 w-8" />
             <span className="font-display text-lg font-semibold tracking-tight">
@@ -36,13 +36,10 @@ export default function Header() {
           <div className="flex items-center gap-5">
             <button
               onClick={() => setSearchOpen(true)}
-              className="flex cursor-pointer items-center gap-2 rounded-lg border border-border bg-background px-3 py-1.5 text-sm text-muted transition-colors hover:border-border-hover hover:text-foreground"
+              className="flex cursor-pointer items-center gap-2 rounded-full border border-border bg-background px-4 py-1.5 text-sm text-muted transition-colors hover:border-border-hover hover:text-foreground"
             >
               <Search className="h-3.5 w-3.5" />
               <span className="hidden sm:inline">{t.search.openSearch}</span>
-              <kbd className="hidden rounded border border-border bg-surface px-1.5 py-0.5 font-mono text-[10px] text-muted sm:inline">
-                ⌘K
-              </kbd>
             </button>
             <Link
               href="/#games"

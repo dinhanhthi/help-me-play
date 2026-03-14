@@ -66,36 +66,43 @@ export default function CharacterPageClient({
         </div>
       </div>
 
-      <div className="space-y-5">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
         {moves.map((move) => {
           const comboSteps = move.combos[mode] ?? [];
           const colorClass = categoryColors[move.category] ?? categoryColors["other"];
 
           return (
-            <div
-              key={move.id}
-              className="overflow-hidden rounded-2xl border border-border bg-card"
-            >
+            <div key={move.id} className="overflow-hidden rounded-2xl border border-border bg-card">
               {/* Move header */}
               <div className="border-b border-border px-5 py-4">
                 <div className="flex flex-wrap items-center gap-2">
-                  <h2 className="font-display text-base font-semibold">{localize(move.name, locale)}</h2>
-                  <span className={`rounded-lg border px-2 py-0.5 text-[11px] font-semibold ${colorClass}`}>
+                  <h2 className="font-display text-base font-semibold">
+                    {localize(move.name, locale)}
+                  </h2>
+                  <span
+                    className={`rounded-lg border px-2 py-0.5 text-[11px] font-semibold ${colorClass}`}
+                  >
                     {move.category}
                   </span>
                 </div>
                 {localize(move.description, locale) && (
-                  <p className="mt-1.5 text-sm text-muted leading-relaxed">{localize(move.description, locale)}</p>
+                  <p className="mt-1.5 text-sm text-muted leading-relaxed">
+                    {localize(move.description, locale)}
+                  </p>
                 )}
               </div>
 
               {/* Side-by-side */}
               <div className="grid grid-cols-1 gap-5 p-5 md:grid-cols-2 md:items-center">
-                <div>
+                <div className="order-2 md:order-1">
                   <ComboSequence steps={comboSteps} mode={mode} />
                 </div>
-                <div>
-                  <MediaEmbed url={move.mediaUrl} title={localize(move.name, locale) ?? move.id} editUrl={editUrl} />
+                <div className="order-1 md:order-2">
+                  <MediaEmbed
+                    url={move.mediaUrl}
+                    title={localize(move.name, locale) ?? move.id}
+                    editUrl={editUrl}
+                  />
                 </div>
               </div>
             </div>

@@ -17,8 +17,8 @@ const btnBase = "rounded-full flex items-center justify-center transition-colors
 
 /** Color per input type */
 export const inputTypeColors: Record<string, string> = {
-  Tap: "#38bdf8",   // sky blue
-  Hold: "#f59e0b",  // amber
+  Tap: "#38bdf8", // sky blue
+  Hold: "#f59e0b", // amber
   Smash: "#ef4444", // red
 };
 const defaultActiveColor = "#38bdf8";
@@ -31,7 +31,10 @@ const faceLabels: Record<string, string> = { a: "A", b: "B", x: "X", y: "Y" };
 
 /** Direction arrow angles */
 const directionAngles: Record<string, number> = {
-  up: 0, right: 90, down: 180, left: 270,
+  up: 0,
+  right: 90,
+  down: 180,
+  left: 270,
 };
 
 /** Tooltip bubble shown on hover */
@@ -44,7 +47,21 @@ function Tooltip({ text }: { text: string }) {
 }
 
 /** A circular button that shows active state */
-function Btn({ id, active, label, color, tooltip, className = "" }: { id: string; active: boolean; label?: string; color: string; tooltip?: string; className?: string }) {
+function Btn({
+  id,
+  active,
+  label,
+  color,
+  tooltip,
+  className = "",
+}: {
+  id: string;
+  active: boolean;
+  label?: string;
+  color: string;
+  tooltip?: string;
+  className?: string;
+}) {
   return (
     <div
       data-button-id={id}
@@ -63,7 +80,19 @@ function Btn({ id, active, label, color, tooltip, className = "" }: { id: string
 }
 
 /** A pill-shaped button (triggers/shoulders) */
-function PillBtn({ id, active, color, tooltip, className = "" }: { id: string; active: boolean; color: string; tooltip?: string; className?: string }) {
+function PillBtn({
+  id,
+  active,
+  color,
+  tooltip,
+  className = "",
+}: {
+  id: string;
+  active: boolean;
+  color: string;
+  tooltip?: string;
+  className?: string;
+}) {
   return (
     <div
       data-button-id={id}
@@ -77,7 +106,13 @@ function PillBtn({ id, active, color, tooltip, className = "" }: { id: string; a
 }
 
 /** Diamond layout for 4 buttons (face buttons or d-pad) */
-function ButtonDiamond({ ids, activeButtons, labels, color, tooltip }: {
+function ButtonDiamond({
+  ids,
+  activeButtons,
+  labels,
+  color,
+  tooltip,
+}: {
   ids: { top: string; right: string; bottom: string; left: string };
   activeButtons: string[];
   labels?: Record<string, string>;
@@ -86,41 +121,53 @@ function ButtonDiamond({ ids, activeButtons, labels, color, tooltip }: {
 }) {
   const is = (id: string) => activeButtons.includes(id);
   return (
-    <div className="grid grid-cols-3 grid-rows-3 gap-0.5 w-full aspect-square">
+    <div className="grid grid-cols-3 grid-rows-3 place-items-center" style={{ width: 22 * 3, height: 22 * 3 }}>
       <div />
-      <Btn id={ids.top} active={is(ids.top)} label={labels?.[ids.top]} color={color} tooltip={tooltip} className="w-full h-full" />
+      <Btn id={ids.top} active={is(ids.top)} label={labels?.[ids.top]} color={color} tooltip={tooltip} className="w-[22px] h-[22px]" />
       <div />
-      <Btn id={ids.left} active={is(ids.left)} label={labels?.[ids.left]} color={color} tooltip={tooltip} className="w-full h-full" />
+      <Btn id={ids.left} active={is(ids.left)} label={labels?.[ids.left]} color={color} tooltip={tooltip} className="w-[22px] h-[22px]" />
       <div />
-      <Btn id={ids.right} active={is(ids.right)} label={labels?.[ids.right]} color={color} tooltip={tooltip} className="w-full h-full" />
+      <Btn id={ids.right} active={is(ids.right)} label={labels?.[ids.right]} color={color} tooltip={tooltip} className="w-[22px] h-[22px]" />
       <div />
-      <Btn id={ids.bottom} active={is(ids.bottom)} label={labels?.[ids.bottom]} color={color} tooltip={tooltip} className="w-full h-full" />
+      <Btn id={ids.bottom} active={is(ids.bottom)} label={labels?.[ids.bottom]} color={color} tooltip={tooltip} className="w-[22px] h-[22px]" />
       <div />
     </div>
   );
 }
 
 /** Stick with outer ring, inner cap, and optional direction highlight */
-function Stick({ id, active, direction, color, tooltip, size = "lg" }: {
+function Stick({
+  id,
+  active,
+  direction,
+  color,
+  tooltip,
+}: {
   id: string;
   active: boolean;
   direction?: string;
   color: string;
   tooltip?: string;
-  size?: "lg" | "sm";
 }) {
-  const outer = size === "lg" ? "w-full" : "w-3/4 mx-auto";
   const angle = direction ? directionAngles[direction] : undefined;
-  const bg = angle !== undefined
-    ? `conic-gradient(from ${angle - 60}deg, ${color} 0deg, ${color} 120deg, transparent 120deg), #2a3348`
-    : undefined;
+  const bg =
+    angle !== undefined
+      ? `conic-gradient(from ${angle - 60}deg, ${color} 0deg, ${color} 120deg, transparent 120deg), #2a3348`
+      : undefined;
   const showTooltip = (active || bg) && tooltip;
   return (
-    <div className={`${outer} aspect-square rounded-full ${outline} flex items-center justify-center`}>
+    <div
+      className={`rounded-full ${outline} flex items-center justify-center`}
+      style={{ width: 50, height: 50 }}
+    >
       <div
         data-button-id={id}
-        className={`relative ${showTooltip ? "group" : ""} w-1/2 aspect-square rounded-full ${btnBase} ${capStyle}`}
-        style={bg ? { background: bg } : active ? { backgroundColor: color } : undefined}
+        className={`relative ${showTooltip ? "group" : ""} rounded-full ${btnBase} ${capStyle}`}
+        style={{
+          width: 22,
+          height: 22,
+          ...(bg ? { background: bg } : active ? { backgroundColor: color } : {}),
+        }}
         aria-label={`${id}${active ? " (active)" : ""}`}
       >
         {showTooltip && <Tooltip text={tooltip!} />}
@@ -129,7 +176,17 @@ function Stick({ id, active, direction, color, tooltip, size = "lg" }: {
   );
 }
 
-function HandheldShell({ activeButtons = [], direction, color, tooltip }: { activeButtons: string[]; direction?: string; color: string; tooltip?: string }) {
+function HandheldShell({
+  activeButtons = [],
+  direction,
+  color,
+  tooltip,
+}: {
+  activeButtons: string[];
+  direction?: string;
+  color: string;
+  tooltip?: string;
+}) {
   const is = (id: string) => activeButtons.includes(id);
 
   return (
@@ -142,24 +199,38 @@ function HandheldShell({ activeButtons = [], direction, color, tooltip }: { acti
       <div className="flex-1 flex flex-col items-center gap-2">
         {/* ZL + L */}
         <div className="w-full flex flex-col gap-1">
-          <PillBtn id="zl" active={is("zl")} color={color} tooltip={tooltip} className="w-full h-5 rounded-full" />
-          <PillBtn id="l" active={is("l")} color={color} tooltip={tooltip} className="w-full h-4 rounded-full" />
+          <PillBtn
+            id="zl"
+            active={is("zl")}
+            color={color}
+            tooltip={tooltip}
+            className="w-full h-5 rounded-full"
+          />
+          <PillBtn
+            id="l"
+            active={is("l")}
+            color={color}
+            tooltip={tooltip}
+            className="w-full h-4 rounded-full"
+          />
         </div>
         {/* Joy-Con body */}
-        <div className={`w-full rounded-[48px] ${filled} flex flex-col items-center gap-3 px-3 py-5`}>
+        <div className={`rounded-full ${filled} flex flex-col items-center gap-3 px-2 py-4`}>
           {/* Left Stick */}
-          <div className="w-[60%]">
-            <Stick id="left-stick" active={is("left-stick")} direction={direction} color={color} tooltip={tooltip} size="lg" />
-          </div>
+          <Stick
+            id="left-stick"
+            active={is("left-stick")}
+            direction={direction}
+            color={color}
+            tooltip={tooltip}
+          />
           {/* D-Pad */}
-          <div className="w-[85%]">
-            <ButtonDiamond
-              ids={{ top: "dpad-up", right: "dpad-right", bottom: "dpad-down", left: "dpad-left" }}
-              activeButtons={activeButtons}
-              color={color}
-              tooltip={tooltip}
-            />
-          </div>
+          <ButtonDiamond
+            ids={{ top: "dpad-up", right: "dpad-right", bottom: "dpad-down", left: "dpad-left" }}
+            activeButtons={activeButtons}
+            color={color}
+            tooltip={tooltip}
+          />
         </div>
       </div>
 
@@ -167,32 +238,55 @@ function HandheldShell({ activeButtons = [], direction, color, tooltip }: { acti
       <div className="flex-1 flex flex-col items-center gap-2">
         {/* ZR + R */}
         <div className="w-full flex flex-col gap-1">
-          <PillBtn id="zr" active={is("zr")} color={color} tooltip={tooltip} className="w-full h-5 rounded-full" />
-          <PillBtn id="r" active={is("r")} color={color} tooltip={tooltip} className="w-full h-4 rounded-full" />
+          <PillBtn
+            id="zr"
+            active={is("zr")}
+            color={color}
+            tooltip={tooltip}
+            className="w-full h-5 rounded-full"
+          />
+          <PillBtn
+            id="r"
+            active={is("r")}
+            color={color}
+            tooltip={tooltip}
+            className="w-full h-4 rounded-full"
+          />
         </div>
         {/* Joy-Con body */}
-        <div className={`w-full rounded-[48px] ${filled} flex flex-col items-center gap-3 px-3 py-5`}>
+        <div className={`rounded-[48px] ${filled} flex flex-col items-center gap-3 px-2 py-4`}>
           {/* Face buttons */}
-          <div className="w-[85%]">
-            <ButtonDiamond
-              ids={{ top: "x", right: "a", bottom: "b", left: "y" }}
-              activeButtons={activeButtons}
-              labels={faceLabels}
-              color={color}
-              tooltip={tooltip}
-            />
-          </div>
+          <ButtonDiamond
+            ids={{ top: "x", right: "a", bottom: "b", left: "y" }}
+            activeButtons={activeButtons}
+            labels={faceLabels}
+            color={color}
+            tooltip={tooltip}
+          />
           {/* Right Stick */}
-          <div className="w-[60%]">
-            <Stick id="right-stick" active={is("right-stick")} color={color} tooltip={tooltip} size="lg" />
-          </div>
+          <Stick
+            id="right-stick"
+            active={is("right-stick")}
+            color={color}
+            tooltip={tooltip}
+          />
         </div>
       </div>
     </div>
   );
 }
 
-function SingleJoyConShell({ activeButtons = [], direction, color, tooltip }: { activeButtons: string[]; direction?: string; color: string; tooltip?: string }) {
+function SingleJoyConShell({
+  activeButtons = [],
+  direction,
+  color,
+  tooltip,
+}: {
+  activeButtons: string[];
+  direction?: string;
+  color: string;
+  tooltip?: string;
+}) {
   const is = (id: string) => activeButtons.includes(id);
 
   return (
@@ -203,33 +297,67 @@ function SingleJoyConShell({ activeButtons = [], direction, color, tooltip }: { 
     >
       {/* SL + SR */}
       <div className="w-full flex gap-2">
-        <PillBtn id="sl" active={is("sl")} color={color} tooltip={tooltip} className="flex-1 h-5 rounded-full" />
-        <PillBtn id="sr" active={is("sr")} color={color} tooltip={tooltip} className="flex-1 h-5 rounded-full" />
+        <PillBtn
+          id="sl"
+          active={is("sl")}
+          color={color}
+          tooltip={tooltip}
+          className="flex-1 h-5 rounded-full"
+        />
+        <PillBtn
+          id="sr"
+          active={is("sr")}
+          color={color}
+          tooltip={tooltip}
+          className="flex-1 h-5 rounded-full"
+        />
       </div>
       {/* Body – horizontal: stick left, face buttons right */}
-      <div className={`w-full rounded-[48px] ${filled} flex items-center gap-3 px-5 py-4`}>
+      <div className={`rounded-[48px] ${filled} flex items-center gap-3 px-2 py-4`}>
         {/* Stick */}
-        <div className="w-[40%]">
-          <Stick id="stick" active={is("stick")} direction={direction} color={color} tooltip={tooltip} size="lg" />
-        </div>
+        <Stick
+          id="stick"
+          active={is("stick")}
+          direction={direction}
+          color={color}
+          tooltip={tooltip}
+        />
         {/* Face buttons – no labels */}
-        <div className="w-[45%]">
-          <ButtonDiamond
-            ids={{ top: "x", right: "a", bottom: "b", left: "y" }}
-            activeButtons={activeButtons}
-            color={color}
-            tooltip={tooltip}
-          />
-        </div>
+        <ButtonDiamond
+          ids={{ top: "x", right: "a", bottom: "b", left: "y" }}
+          activeButtons={activeButtons}
+          color={color}
+          tooltip={tooltip}
+        />
       </div>
     </div>
   );
 }
 
-export default function ControllerShell({ mode, activeButtons = [], direction, inputType, tooltip }: ControllerShellProps) {
+export default function ControllerShell({
+  mode,
+  activeButtons = [],
+  direction,
+  inputType,
+  tooltip,
+}: ControllerShellProps) {
   const color = getActiveColor(inputType);
   if (mode === "single-joycon") {
-    return <SingleJoyConShell activeButtons={activeButtons} direction={direction} color={color} tooltip={tooltip} />;
+    return (
+      <SingleJoyConShell
+        activeButtons={activeButtons}
+        direction={direction}
+        color={color}
+        tooltip={tooltip}
+      />
+    );
   }
-  return <HandheldShell activeButtons={activeButtons} direction={direction} color={color} tooltip={tooltip} />;
+  return (
+    <HandheldShell
+      activeButtons={activeButtons}
+      direction={direction}
+      color={color}
+      tooltip={tooltip}
+    />
+  );
 }

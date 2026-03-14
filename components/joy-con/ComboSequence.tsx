@@ -4,8 +4,16 @@ import { useState, useEffect, useCallback, useRef } from "react";
 import type { ComboStep, ControllerMode } from "@/lib/types";
 import { useI18n } from "@/lib/i18n/context";
 import { ChevronLeft, ChevronRight, Pause, Play, RotateCcw } from "lucide-react";
+import { inputTypeColors } from "./ControllerShell";
 import JoyConHandheld from "./JoyConHandheld";
 import JoyConSingle from "./JoyConSingle";
+
+const directionArrows: Record<string, string> = {
+  left: "\u2190",
+  right: "\u2192",
+  up: "\u2191",
+  down: "\u2193",
+};
 
 interface ComboSequenceProps {
   steps: ComboStep[];
@@ -31,7 +39,6 @@ export default function ComboSequence({ steps, mode }: ComboSequenceProps) {
   const restart = useCallback(() => {
     clearTimer();
     setCurrentStep(0);
-    setIsPlaying(true);
   }, [clearTimer]);
 
   const togglePlayPause = useCallback(() => {
@@ -83,17 +90,29 @@ export default function ComboSequence({ steps, mode }: ComboSequenceProps) {
             {t.controls.step} {currentStep + 1}/{stepCount}
           </span>
         )}
-        {inputType && (
-          <span className="rounded-lg bg-accent-subtle px-2.5 py-1 text-xs font-semibold text-accent">
-            {inputType}
+        {!direction && activeButtons.map((btn) => (
+          <span
+            key={btn}
+            className="group relative rounded-lg px-2.5 py-1 text-xs font-semibold text-white uppercase"
+            style={{ backgroundColor: inputTypeColors[inputType ?? ""] ?? "#38bdf8" }}
+          >
+            {btn}
+            {tooltip && (
+              <span className="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden w-max max-w-[200px] rounded-lg bg-surface border border-border px-3 py-2 text-xs text-foreground shadow-lg group-hover:block">
+                {tooltip}
+              </span>
+            )}
           </span>
-        )}
-        {inputType && direction && (
-          <span className="text-xs text-muted font-bold">+</span>
-        )}
+        ))}
         {direction && (
-          <span className="rounded-lg bg-accent-subtle px-2.5 py-1 text-xs font-semibold text-accent">
-            {(t.directions as Record<string, string>)[direction] ?? direction[0].toUpperCase() + direction.slice(1)}
+          <span
+            className="group relative rounded-lg px-2.5 py-1 text-sm font-bold text-white"
+            style={{ backgroundColor: inputTypeColors[inputType ?? ""] ?? "#38bdf8" }}
+          >
+            {directionArrows[direction] ?? direction}
+            <span className="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden w-max max-w-[200px] rounded-lg bg-surface border border-border px-3 py-2 text-xs text-foreground shadow-lg group-hover:block">
+              {(t.directions as Record<string, string>)[direction] ?? direction}
+            </span>
           </span>
         )}
       </div>
@@ -125,13 +144,15 @@ export default function ComboSequence({ steps, mode }: ComboSequenceProps) {
             <ChevronRight className="h-4 w-4" />
           </button>
         )}
-        <button
-          onClick={restart}
-          className="cursor-pointer inline-flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-          aria-label={t.controls.restartAnimation}
-        >
-          <RotateCcw className="h-3.5 w-3.5" />
-        </button>
+        {!isPlaying && (
+          <button
+            onClick={restart}
+            className="cursor-pointer inline-flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            aria-label={t.controls.restartAnimation}
+          >
+            <RotateCcw className="h-3.5 w-3.5" />
+          </button>
+        )}
       </div>}
     </div>
   );

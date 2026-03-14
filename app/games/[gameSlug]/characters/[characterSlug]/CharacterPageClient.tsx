@@ -12,6 +12,8 @@ interface CharacterPageClientProps {
   characterName: string;
   characterDescription?: string;
   moves: Move[];
+  gameSlug: string;
+  characterSlug: string;
 }
 
 const categoryColors: Record<string, string> = {
@@ -22,13 +24,18 @@ const categoryColors: Record<string, string> = {
   other: "bg-slate-500/10 text-slate-400 border-slate-500/20",
 };
 
+const GITHUB_BASE = "https://github.com/dinhanhthi/help-me-play/edit/main";
+
 export default function CharacterPageClient({
   characterName,
   characterDescription,
   moves,
+  gameSlug,
+  characterSlug,
 }: CharacterPageClientProps) {
   const { t } = useI18n();
   const [mode, setMode] = useState<ControllerMode>("handheld");
+  const editUrl = `${GITHUB_BASE}/data/${gameSlug}/moves/${characterSlug}.json`;
 
   return (
     <div className="mx-auto max-w-6xl px-5 py-12 sm:px-8">
@@ -87,7 +94,7 @@ export default function CharacterPageClient({
                   <ComboSequence steps={comboSteps} mode={mode} />
                 </div>
                 <div>
-                  <MediaEmbed url={move.mediaUrl} title={move.name} />
+                  <MediaEmbed url={move.mediaUrl} title={move.name} editUrl={editUrl} />
                 </div>
               </div>
             </div>

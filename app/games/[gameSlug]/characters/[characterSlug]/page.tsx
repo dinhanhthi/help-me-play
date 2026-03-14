@@ -41,6 +41,8 @@ export default async function CharacterPage({ params }: CharacterPageProps) {
       characterName={character.name}
       characterDescription={character.description}
       moves={moves}
+      gameSlug={gameSlug}
+      characterSlug={characterSlug}
     />
   );
 }

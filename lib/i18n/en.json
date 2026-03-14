@@ -46,6 +46,8 @@
   },
   "media": {
     "invalidUrl": "Invalid media URL",
-    "embeddedMedia": "Embedded media"
+    "embeddedMedia": "Embedded media",
+    "source": "Source",
+    "fixBroken": "Fix broken"
   }
 }

@@ -10,9 +10,9 @@ interface ControllerShellProps {
 }
 
 /* ── Styles ── */
-const outline = "border border-[#2a3040]";
+const outline = "border border-[#3a4560]";
 const filled = "bg-[#1a1f2e] border border-[#2a3040]";
-const capStyle = "bg-[#222838] border border-[#2a3040]";
+const capStyle = "bg-[#2a3348] border border-[#3a4560]";
 const btnBase = "rounded-full flex items-center justify-center transition-colors duration-150";
 
 /** Color per input type */
@@ -53,7 +53,7 @@ function Btn({ id, active, label, color, tooltip, className = "" }: { id: string
       aria-label={`${label ?? id} button${active ? " (active)" : ""}`}
     >
       {label && (
-        <span className={`select-none leading-none font-semibold text-[10px] ${active ? "text-white" : "text-muted/50"}`}>
+        <span className="select-none leading-none font-semibold text-[10px] text-white">
           {label}
         </span>
       )}
@@ -112,7 +112,7 @@ function Stick({ id, active, direction, color, tooltip, size = "lg" }: {
   const outer = size === "lg" ? "w-full" : "w-3/4 mx-auto";
   const angle = direction ? directionAngles[direction] : undefined;
   const bg = angle !== undefined
-    ? `conic-gradient(from ${angle - 60}deg, ${color} 0deg, ${color} 120deg, transparent 120deg), #222838`
+    ? `conic-gradient(from ${angle - 60}deg, ${color} 0deg, ${color} 120deg, transparent 120deg), #2a3348`
     : undefined;
   const showTooltip = (active || bg) && tooltip;
   return (

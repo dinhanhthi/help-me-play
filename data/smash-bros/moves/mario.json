@@ -1,8 +1,151 @@
 [
   {
+    "id": "jab",
+    "name": "Jab (Punch-Punch-Kick)",
+    "description": "A quick 3-hit combo: left punch, right punch, front kick. Deals 7.9% total. Comes out frame 2, great for jab resets and close-range pressure.",
+    "category": "ground",
+    "combos": {
+      "handheld": [{ "buttons": ["a"], "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["a"], "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://ssb.wiki.gallery/images/0/07/MarioJab1SSBU.gif"
+  },
+  {
+    "id": "dash-attack",
+    "name": "Dash Attack (Slide Kick)",
+    "description": "Running slide kick from Super Mario 64. Deals 8% clean / 6% late. Starts frame 6. Good for punishing landings and 2-frame ledge punishes.",
+    "category": "ground",
+    "combos": {
+      "handheld": [{ "buttons": ["left-stick", "a"], "direction": "right", "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["stick", "a"], "direction": "right", "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://ssb.wiki.gallery/images/8/8e/MarioDashAttackSSBU.gif"
+  },
+  {
+    "id": "forward-tilt",
+    "name": "Forward Tilt (Wheel Kick)",
+    "description": "A medium roundhouse kick dealing 7%. Starts frame 5. Can be angled up or down. Good for spacing at close range.",
+    "category": "tilt",
+    "combos": {
+      "handheld": [{ "buttons": ["left-stick", "a"], "direction": "right", "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["stick", "a"], "direction": "right", "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://ssb.wiki.gallery/images/5/51/MarioFTiltSSBU.gif"
+  },
+  {
+    "id": "up-tilt",
+    "name": "Up Tilt (Spinning Uppercut)",
+    "description": "Spinning uppercut dealing 5.5%. Starts frame 5. Excellent combo tool — chains into itself at low %, into aerials at mid %. Can KO around 160%.",
+    "category": "tilt",
+    "combos": {
+      "handheld": [{ "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["stick", "a"], "direction": "up", "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://ssb.wiki.gallery/images/9/91/MarioUTiltSSBU.gif"
+  },
+  {
+    "id": "down-tilt",
+    "name": "Down Tilt (Legsweep)",
+    "description": "Crouching leg sweep dealing 5% (foot) / 7% (leg). Starts frame 5. One of Mario's best combo starters. Can hit opponents hanging on ledge.",
+    "category": "tilt",
+    "combos": {
+      "handheld": [{ "buttons": ["left-stick", "a"], "direction": "down", "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["stick", "a"], "direction": "down", "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://ssb.wiki.gallery/images/4/4d/MarioDTiltSSBU.gif"
+  },
+  {
+    "id": "forward-smash",
+    "name": "Forward Smash (Fire Palm)",
+    "description": "Palm thrust producing a fire explosion. Deals 17.8% (sweetspot) / 14.7% (sourspot). Starts frame 15. Can be angled. KOs as early as 60% at ledge. Mario's strongest ground KO move.",
+    "category": "smash",
+    "combos": {
+      "handheld": [{ "buttons": ["left-stick", "a"], "direction": "right", "inputType": "Smash" }],
+      "single-joycon": [{ "buttons": ["stick", "a"], "direction": "right", "inputType": "Smash" }]
+    },
+    "mediaUrl": "https://ssb.wiki.gallery/images/c/ca/MarioFSmashSSBU.gif"
+  },
+  {
+    "id": "up-smash",
+    "name": "Up Smash (Lead Headbutt)",
+    "description": "Arcing headbutt upward dealing 14%. Starts frame 9. Head is intangible during active frames. Great anti-air and out-of-shield option (9 frames OOS). KOs around 100-120%.",
+    "category": "smash",
+    "combos": {
+      "handheld": [{ "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Smash" }],
+      "single-joycon": [{ "buttons": ["stick", "a"], "direction": "up", "inputType": "Smash" }]
+    },
+    "mediaUrl": "https://ssb.wiki.gallery/images/2/2a/MarioUSmashSSBU.gif"
+  },
+  {
+    "id": "down-smash",
+    "name": "Down Smash (Breakdance Sweep)",
+    "description": "Breakdance sweep hitting both sides. Front hit: 10% (frame 5), back hit: 12% (frame 14). Semi-spike angle useful at ledge. Front KOs ~153%, back KOs ~126%.",
+    "category": "smash",
+    "combos": {
+      "handheld": [{ "buttons": ["left-stick", "a"], "direction": "down", "inputType": "Smash" }],
+      "single-joycon": [{ "buttons": ["stick", "a"], "direction": "down", "inputType": "Smash" }]
+    },
+    "mediaUrl": "https://ssb.wiki.gallery/images/3/36/MarioDSmashSSBU.gif"
+  },
+  {
+    "id": "neutral-air",
+    "name": "Neutral Air (Sex Kick)",
+    "description": "Flying kick dealing 8% clean / 5% late. Starts frame 3. Autocancels in short hop. Late hit combos into grabs, tilts, and smash attacks. Versatile combo breaker and starter. 4 frames landing lag.",
+    "category": "aerial",
+    "combos": {
+      "handheld": [{ "buttons": ["a"], "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["a"], "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://ssb.wiki.gallery/images/4/40/MarioNAirSSBU.gif"
+  },
+  {
+    "id": "forward-air",
+    "name": "Forward Air (Meteor Smash)",
+    "description": "Overhead fist slam. Deals 12-14%. Starts frame 16. Sweetspot on frames 19-20 is a METEOR SMASH that KOs offstage below 45%. Slower startup but devastating when landed.",
+    "category": "aerial",
+    "combos": {
+      "handheld": [{ "buttons": ["left-stick", "a"], "direction": "right", "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["stick", "a"], "direction": "right", "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://ssb.wiki.gallery/images/1/1d/MarioFAirSSBU.gif"
+  },
+  {
+    "id": "back-air",
+    "name": "Back Air (Dropkick)",
+    "description": "Backward dropkick dealing 10.5% clean / 7% late. Starts frame 6. Fast, safe on shield, and autocancels easily. Excellent neutral and spacing tool. Good horizontal KO option.",
+    "category": "aerial",
+    "combos": {
+      "handheld": [{ "buttons": ["left-stick", "a"], "direction": "left", "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["stick", "a"], "direction": "left", "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://ssb.wiki.gallery/images/1/15/MarioBAirSSBU.gif"
+  },
+  {
+    "id": "up-air",
+    "name": "Up Air (Bicycle Kick)",
+    "description": "Upward flip kick dealing 7%. Starts frame 4. Arguably Mario's best move — chains into itself for ladder combos. No sourspot. Foundation of Mario's juggle game. KOs off top ~165%.",
+    "category": "aerial",
+    "combos": {
+      "handheld": [{ "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["stick", "a"], "direction": "up", "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://ssb.wiki.gallery/images/3/3a/MarioUAirSSBU.gif"
+  },
+  {
+    "id": "down-air",
+    "name": "Down Air (Mario Tornado)",
+    "description": "Spinning multi-hit attack dealing ~14.5% total (1.4% x5 + 5.5% final + 2% landing). Starts frame 5. Landing hitbox combos into up tilt, up smash, or grab.",
+    "category": "aerial",
+    "combos": {
+      "handheld": [{ "buttons": ["left-stick", "a"], "direction": "down", "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["stick", "a"], "direction": "down", "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://ssb.wiki.gallery/images/0/06/MarioDAirSSBU.gif"
+  },
+  {
     "id": "fireball",
     "name": "Fireball",
-    "description": "Mario shoots a bouncing fireball. A great tool for controlling space and approaching.",
+    "description": "Throws a bouncing fireball projectile dealing 5% early / 4% late. Starts frame 17. Bounces along the ground 3-4 times. Great for approach, zoning, and starting combos. Full aerial mobility retained.",
     "category": "special",
     "combos": {
       "handheld": [{ "buttons": ["b"], "inputType": "Tap" }],
@@ -11,47 +154,250 @@
     "mediaUrl": "https://ssb.wiki.gallery/images/a/a3/Mario_Neutral_B_SSBU.gif"
   },
   {
+    "id": "cape",
+    "name": "Cape",
+    "description": "Swings a cape dealing 7%. Starts frame 12. REFLECTS projectiles at 1.5x damage and REVERSES opponent facing direction. In air, briefly stalls momentum for recovery mixups. Devastating for gimping recoveries.",
+    "category": "special",
+    "combos": {
+      "handheld": [{ "buttons": ["left-stick", "b"], "direction": "right", "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["stick", "b"], "direction": "right", "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://ssb.wiki.gallery/images/1/1a/Mario_Side_B_SSBU.gif"
+  },
+  {
     "id": "super-jump-punch",
     "name": "Super Jump Punch",
-    "description": "Mario jumps upward with a fist raised, hitting a coin block. Good for recovery and out-of-shield punish.",
+    "description": "Rising multi-hit uppercut producing coins, dealing ~11% total. Starts frame 3 with intangibility frames 3-6. Mario's FASTEST out-of-shield option. Primary recovery move. Can be angled slightly.",
     "category": "special",
     "combos": {
       "handheld": [{ "buttons": ["left-stick", "b"], "direction": "up", "inputType": "Tap" }],
       "single-joycon": [{ "buttons": ["stick", "b"], "direction": "up", "inputType": "Tap" }]
     },
-    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-mario-upb"
-  },
-  {
-    "id": "cape",
-    "name": "Cape",
-    "description": "Mario swings his cape, reflecting projectiles and reversing opponent direction.",
-    "category": "special",
-    "combos": {
-      "handheld": [{ "buttons": ["left-stick", "b"], "direction": "left", "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["stick", "b"], "direction": "left", "inputType": "Tap" }]
-    },
-    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-mario-cape"
+    "mediaUrl": "https://ssb.wiki.gallery/images/1/13/Mario_Up_B_SSBU.gif"
   },
   {
     "id": "fludd",
     "name": "F.L.U.D.D.",
-    "description": "Mario charges and releases a water jet that pushes opponents. Hold B to charge, release to fire.",
+    "description": "Charges and fires a water stream. Deals 0% damage but pushes opponents with a windbox. Hold B to charge, release to fire. Charge is saved between stocks. Excellent for edgeguarding linear recoveries.",
     "category": "special",
     "combos": {
       "handheld": [{ "buttons": ["left-stick", "b"], "direction": "down", "inputType": "Hold" }],
       "single-joycon": [{ "buttons": ["stick", "b"], "direction": "down", "inputType": "Hold" }]
     },
-    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-mario-fludd"
+    "mediaUrl": "https://ssb.wiki.gallery/images/8/8a/Mario_Down_B_SSBU.gif"
   },
   {
-    "id": "forward-smash",
-    "name": "Forward Smash",
-    "description": "A powerful forward punch. One of Mario's best KO moves.",
-    "category": "smash",
+    "id": "grab",
+    "name": "Grab",
+    "description": "Mario reaches out to grab the opponent. Frame 6 startup — tied for fastest grab in the game. Essential for Mario's combo game. Use after shield or landing nair.",
+    "category": "grab",
     "combos": {
-      "handheld": [{ "buttons": ["left-stick", "a"], "direction": "right", "inputType": "Smash" }],
-      "single-joycon": [{ "buttons": ["stick", "a"], "direction": "right", "inputType": "Smash" }]
+      "handheld": [{ "buttons": ["zl"], "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["sl", "sr"], "inputType": "Tap" }]
     },
-    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-mario-fsmash"
+    "mediaUrl": "https://ssb.wiki.gallery/images/3/3d/MarioGrabSSBU.gif"
+  },
+  {
+    "id": "pummel",
+    "name": "Pummel",
+    "description": "Headbutts the grabbed opponent dealing 1.3% per hit. Fast enough for 2-3 pummels before throwing at most percents.",
+    "category": "grab",
+    "combos": {
+      "handheld": [{ "buttons": ["a"], "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["a"], "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://ssb.wiki.gallery/images/d/de/MarioPummelSSBU.gif"
+  },
+  {
+    "id": "forward-throw",
+    "name": "Forward Throw",
+    "description": "Spins opponent once and throws forward dealing 8%. Sets up tech chase situations. Not a primary KO throw but can KO near ledge at very high %.",
+    "category": "grab",
+    "combos": {
+      "handheld": [{ "buttons": ["left-stick"], "direction": "right", "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["stick"], "direction": "right", "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://ssb.wiki.gallery/images/6/69/MarioFThrowSSBU.gif"
+  },
+  {
+    "id": "back-throw",
+    "name": "Back Throw (Giant Swing)",
+    "description": "Grabs opponent by feet and swings them backward (like Bowser throw in SM64). Deals 11%. Mario's strongest throw — KOs ~120% at ledge, ~160% center stage. Also hits bystanders for 8%.",
+    "category": "grab",
+    "combos": {
+      "handheld": [{ "buttons": ["left-stick"], "direction": "left", "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["stick"], "direction": "left", "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://ssb.wiki.gallery/images/c/c8/MarioBThrowSSBU.gif"
+  },
+  {
+    "id": "up-throw",
+    "name": "Up Throw",
+    "description": "Heaves opponent straight up dealing 7%. KEY COMBO THROW — combos into up air at low-mid %. Starts ladder combos. Mario's primary throw for damage and combo extension.",
+    "category": "grab",
+    "combos": {
+      "handheld": [{ "buttons": ["left-stick"], "direction": "up", "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["stick"], "direction": "up", "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://ssb.wiki.gallery/images/b/b7/MarioUThrowSSBU.gif"
+  },
+  {
+    "id": "down-throw",
+    "name": "Down Throw (Body Slam)",
+    "description": "Slams opponent into ground dealing 5%. Combos into up tilt at very low %, up air at mid %. Alternative combo throw to up throw with different launch angle.",
+    "category": "grab",
+    "combos": {
+      "handheld": [{ "buttons": ["left-stick"], "direction": "down", "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["stick"], "direction": "down", "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://ssb.wiki.gallery/images/0/0c/MarioDThrowSSBU.gif"
+  },
+  {
+    "id": "ledge-attack",
+    "name": "Ledge Attack",
+    "description": "Dropkick while climbing up from ledge dealing 9%. Has standard invincibility frames during the animation. Use when opponent is not too close to ledge.",
+    "category": "other",
+    "combos": {
+      "handheld": [{ "buttons": ["a"], "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["a"], "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://ssb.wiki.gallery/images/1/1e/MarioLedgeAttackSSBU.gif"
+  },
+  {
+    "id": "floor-attack-face-up",
+    "name": "Floor Attack (Face Up)",
+    "description": "Punches behind then in front while getting up, dealing 7%. Standard getup attack when knocked down face up.",
+    "category": "other",
+    "combos": {
+      "handheld": [{ "buttons": ["a"], "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["a"], "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://ssb.wiki.gallery/images/1/1a/MarioGetupAttackFrontSSBU.gif"
+  },
+  {
+    "id": "floor-attack-face-down",
+    "name": "Floor Attack (Face Down)",
+    "description": "Sweep kick while getting up face down, dealing 7%. Hits both sides.",
+    "category": "other",
+    "combos": {
+      "handheld": [{ "buttons": ["a"], "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["a"], "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://ssb.wiki.gallery/images/5/52/MarioGetupAttackBackSSBU.gif"
+  },
+  {
+    "id": "floor-attack-trip",
+    "name": "Floor Attack (Trip)",
+    "description": "Side kick behind and in front while getting up from a trip, dealing 5%.",
+    "category": "other",
+    "combos": {
+      "handheld": [{ "buttons": ["a"], "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["a"], "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://ssb.wiki.gallery/images/4/48/MarioTripAttackSSBU.gif"
+  },
+  {
+    "id": "mario-finale",
+    "name": "Mario Finale (Final Smash)",
+    "description": "Two massive intertwining fireballs travel across the stage, trapping and repeatedly damaging opponents. Multi-hit for significant total damage. Best when opponents are grouped or near the edge. Requires Smash Ball or meter.",
+    "category": "other",
+    "combos": {
+      "handheld": [{ "buttons": ["b"], "inputType": "Tap" }],
+      "single-joycon": [{ "buttons": ["b"], "inputType": "Tap" }]
+    },
+    "mediaUrl": "https://ssb.wiki.gallery/images/2/2a/Mario_Final_Smash_SSBU.gif"
+  },
+  {
+    "id": "up-air-ladder-combo",
+    "name": "Up Air Ladder Combo",
+    "description": "Advanced combo: Up Air → Up Air → land on platform → Up Air → Up Air → double jump → Up Air → Up B. Carries opponent to top blast zone for early KO. Works at 40-80%. Requires platforms (Battlefield/Smashville). Mario's signature kill confirm.",
+    "category": "other",
+    "combos": {
+      "handheld": [
+        { "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Tap" },
+        { "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Tap" },
+        { "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Tap" },
+        { "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Tap" },
+        { "buttons": ["left-stick", "b"], "direction": "up", "inputType": "Tap" }
+      ],
+      "single-joycon": [
+        { "buttons": ["stick", "a"], "direction": "up", "inputType": "Tap" },
+        { "buttons": ["stick", "a"], "direction": "up", "inputType": "Tap" },
+        { "buttons": ["stick", "a"], "direction": "up", "inputType": "Tap" },
+        { "buttons": ["stick", "a"], "direction": "up", "inputType": "Tap" },
+        { "buttons": ["stick", "b"], "direction": "up", "inputType": "Tap" }
+      ]
+    },
+    "mediaUrl": "https://www.youtube.com/watch?v=HqEKhUjIdKo"
+  },
+  {
+    "id": "down-throw-up-air-combo",
+    "name": "Down Throw → Up Air Combo",
+    "description": "Bread-and-butter combo: Down Throw → Up Air → Up Air. Works 0-40%. Deals ~19%. DI dependent. Mario's most reliable damage combo from a grab at low-mid percent.",
+    "category": "other",
+    "combos": {
+      "handheld": [
+        { "buttons": ["left-stick"], "direction": "down", "inputType": "Tap" },
+        { "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Tap" },
+        { "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Tap" }
+      ],
+      "single-joycon": [
+        { "buttons": ["stick"], "direction": "down", "inputType": "Tap" },
+        { "buttons": ["stick", "a"], "direction": "up", "inputType": "Tap" },
+        { "buttons": ["stick", "a"], "direction": "up", "inputType": "Tap" }
+      ]
+    },
+    "mediaUrl": "https://www.youtube.com/watch?v=HqEKhUjIdKo"
+  },
+  {
+    "id": "nair-up-smash-kill-confirm",
+    "name": "Nair → Up Smash Kill Confirm",
+    "description": "Kill confirm: late Neutral Air → Up Smash. Works 10-50%. Deals ~19%. Land a late nair (5% hit) which combos into up smash for a reliable stock take.",
+    "category": "other",
+    "combos": {
+      "handheld": [
+        { "buttons": ["a"], "inputType": "Tap" },
+        { "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Smash" }
+      ],
+      "single-joycon": [
+        { "buttons": ["a"], "inputType": "Tap" },
+        { "buttons": ["stick", "a"], "direction": "up", "inputType": "Smash" }
+      ]
+    },
+    "mediaUrl": "https://www.youtube.com/watch?v=HqEKhUjIdKo"
+  },
+  {
+    "id": "cape-gimp",
+    "name": "Cape Gimp (Edgeguard Technique)",
+    "description": "Advanced edgeguard: jump offstage and use Cape to reverse a recovering opponent's direction, causing them to fly away from stage. Especially effective against linear recoveries. Can also reflect projectiles at 1.5x damage.",
+    "category": "other",
+    "combos": {
+      "handheld": [
+        { "buttons": ["x"], "inputType": "Tap" },
+        { "buttons": ["left-stick", "b"], "direction": "right", "inputType": "Tap" }
+      ],
+      "single-joycon": [
+        { "buttons": ["x"], "inputType": "Tap" },
+        { "buttons": ["stick", "b"], "direction": "right", "inputType": "Tap" }
+      ]
+    },
+    "mediaUrl": "https://www.youtube.com/watch?v=HqEKhUjIdKo"
+  },
+  {
+    "id": "fludd-edgeguard",
+    "name": "F.L.U.D.D. Edgeguard",
+    "description": "Advanced edgeguard: fully charge F.L.U.D.D. then use at ledge to push recovering opponents past the stage with the windbox. Combine with Cape for devastating edgeguard sequences. Most effective vs predictable recoveries.",
+    "category": "other",
+    "combos": {
+      "handheld": [
+        { "buttons": ["left-stick", "b"], "direction": "down", "inputType": "Hold", "duration": 3000 },
+        { "buttons": ["left-stick", "b"], "direction": "down", "inputType": "Tap" }
+      ],
+      "single-joycon": [
+        { "buttons": ["stick", "b"], "direction": "down", "inputType": "Hold", "duration": 3000 },
+        { "buttons": ["stick", "b"], "direction": "down", "inputType": "Tap" }
+      ]
+    },
+    "mediaUrl": "https://www.youtube.com/watch?v=HqEKhUjIdKo"
   }
 ]

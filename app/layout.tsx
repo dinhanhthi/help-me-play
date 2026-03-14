@@ -1,28 +1,11 @@
 import type { Metadata } from "next";
-import { Nunito, Fredoka } from "next/font/google";
-import { Geist_Mono } from "next/font/google";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import { I18nProvider } from "@/lib/i18n/context";
 import { TooltipProvider } from "@/components/ui/Tooltip";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import "./globals.css";
-
-const nunito = Nunito({
-  variable: "--font-nunito",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-});
-
-const fredoka = Fredoka({
-  variable: "--font-fredoka",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Help Me Play - Nintendo Switch Game Guides",
@@ -45,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${nunito.variable} ${fredoka.variable} ${geistMono.variable} antialiased flex min-h-screen flex-col bg-background text-foreground`}
+        className={`${GeistSans.variable} ${GeistMono.variable} antialiased flex min-h-screen flex-col bg-background text-foreground`}
       >
         <I18nProvider>
           <TooltipProvider delayDuration={200}>

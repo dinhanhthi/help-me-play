@@ -10,7 +10,7 @@
 - **Language**: TypeScript (strict mode)
 - **Styling**: Tailwind CSS v4 (inline `@theme` directive, custom CSS variables in `globals.css`)
 - **Icons**: lucide-react
-- **Fonts**: Nunito (body), Fredoka (display), Geist Mono (monospace)
+- **Fonts**: Geist Sans (body + display), Geist Mono (monospace) — via `geist` package v1.7+ (Vietnamese support)
 - **i18n**: Custom context-based (English + Vietnamese), localStorage persistence
 - **Deployment**: Vercel (static hosting)
 

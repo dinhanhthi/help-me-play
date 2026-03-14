@@ -70,36 +70,8 @@ function Btn({
       aria-label={`${label ?? id} button${active ? " (active)" : ""}`}
     >
       {label && (
-        <span className="select-none leading-none font-semibold text-[10px] text-white">
-          {label}
-        </span>
+        <span className="select-none leading-none font-semibold text-sm text-white">{label}</span>
       )}
-      {active && tooltip && <Tooltip text={tooltip} />}
-    </div>
-  );
-}
-
-/** A pill-shaped button (triggers/shoulders) */
-function PillBtn({
-  id,
-  active,
-  color,
-  tooltip,
-  className = "",
-}: {
-  id: string;
-  active: boolean;
-  color: string;
-  tooltip?: string;
-  className?: string;
-}) {
-  return (
-    <div
-      data-button-id={id}
-      className={`relative ${active && tooltip ? "group" : ""} rounded-full transition-colors duration-150 ${active ? "" : `pointer-events-none ${outline}`} ${className}`}
-      style={active ? { backgroundColor: color } : undefined}
-      aria-label={`${id} button${active ? " (active)" : ""}`}
-    >
       {active && tooltip && <Tooltip text={tooltip} />}
     </div>
   );
@@ -121,15 +93,46 @@ function ButtonDiamond({
 }) {
   const is = (id: string) => activeButtons.includes(id);
   return (
-    <div className="grid grid-cols-3 grid-rows-3 place-items-center" style={{ width: 22 * 3, height: 22 * 3 }}>
+    <div
+      className="grid grid-cols-3 grid-rows-3 place-items-center"
+      style={{ width: 22 * 3, height: 22 * 3 }}
+    >
       <div />
-      <Btn id={ids.top} active={is(ids.top)} label={labels?.[ids.top]} color={color} tooltip={tooltip} className="w-[22px] h-[22px]" />
+      <Btn
+        id={ids.top}
+        active={is(ids.top)}
+        label={labels?.[ids.top]}
+        color={color}
+        tooltip={tooltip}
+        className="w-6 h-6"
+      />
       <div />
-      <Btn id={ids.left} active={is(ids.left)} label={labels?.[ids.left]} color={color} tooltip={tooltip} className="w-[22px] h-[22px]" />
+      <Btn
+        id={ids.left}
+        active={is(ids.left)}
+        label={labels?.[ids.left]}
+        color={color}
+        tooltip={tooltip}
+        className="w-6 h-6"
+      />
       <div />
-      <Btn id={ids.right} active={is(ids.right)} label={labels?.[ids.right]} color={color} tooltip={tooltip} className="w-[22px] h-[22px]" />
+      <Btn
+        id={ids.right}
+        active={is(ids.right)}
+        label={labels?.[ids.right]}
+        color={color}
+        tooltip={tooltip}
+        className="w-6 h-6"
+      />
       <div />
-      <Btn id={ids.bottom} active={is(ids.bottom)} label={labels?.[ids.bottom]} color={color} tooltip={tooltip} className="w-[22px] h-[22px]" />
+      <Btn
+        id={ids.bottom}
+        active={is(ids.bottom)}
+        label={labels?.[ids.bottom]}
+        color={color}
+        tooltip={tooltip}
+        className="w-6 h-6"
+      />
       <div />
     </div>
   );
@@ -176,6 +179,33 @@ function Stick({
   );
 }
 
+/** Capsule-shaped shoulder/trigger button */
+function PillBtn({
+  id,
+  active,
+  color,
+  tooltip,
+  className = "",
+}: {
+  id: string;
+  active: boolean;
+  color: string;
+  tooltip?: string;
+  className?: string;
+}) {
+  const showTooltip = active && tooltip;
+  return (
+    <div
+      data-button-id={id}
+      className={`relative ${showTooltip ? "group" : ""} rounded-full transition-colors duration-150 ${active ? "" : outline} ${className}`}
+      style={active ? { backgroundColor: color } : { backgroundColor: "#2a3348" }}
+      aria-label={`${id} button${active ? " (active)" : ""}`}
+    >
+      {showTooltip && <Tooltip text={tooltip!} />}
+    </div>
+  );
+}
+
 function HandheldShell({
   activeButtons = [],
   direction,
@@ -188,35 +218,30 @@ function HandheldShell({
   tooltip?: string;
 }) {
   const is = (id: string) => activeButtons.includes(id);
-
   return (
     <div
-      className="mx-auto w-full max-w-[258px] select-none flex gap-3"
+      className="mx-auto select-none flex gap-3"
       role="img"
       aria-label="Nintendo Switch controller layout"
     >
       {/* Left Joy-Con */}
-      <div className="flex-1 flex flex-col items-center gap-2">
-        {/* ZL + L */}
-        <div className="w-full flex flex-col gap-1">
+      <div className="flex flex-col items-end gap-1">
+        <div className="flex items-center gap-1.5 w-full">
+          <span className="text-sm text-muted font-semibold">ZL</span>
           <PillBtn
             id="zl"
             active={is("zl")}
             color={color}
             tooltip={tooltip}
-            className="w-full h-5 rounded-full"
+            className="flex-1 h-4 rounded-t-4xl rounded-b-xl"
           />
-          <PillBtn
-            id="l"
-            active={is("l")}
-            color={color}
-            tooltip={tooltip}
-            className="w-full h-4 rounded-full"
-          />
+        </div>
+        <div className="flex items-center gap-1.5 w-full">
+          <span className="text-sm text-muted font-semibold">L</span>
+          <PillBtn id="l" active={is("l")} color={color} tooltip={tooltip} className="flex-1 h-3" />
         </div>
         {/* Joy-Con body */}
         <div className={`rounded-full ${filled} flex flex-col items-center gap-3 px-2 py-4`}>
-          {/* Left Stick */}
           <Stick
             id="left-stick"
             active={is("left-stick")}
@@ -224,7 +249,6 @@ function HandheldShell({
             color={color}
             tooltip={tooltip}
           />
-          {/* D-Pad */}
           <ButtonDiamond
             ids={{ top: "dpad-up", right: "dpad-right", bottom: "dpad-down", left: "dpad-left" }}
             activeButtons={activeButtons}
@@ -235,27 +259,23 @@ function HandheldShell({
       </div>
 
       {/* Right Joy-Con */}
-      <div className="flex-1 flex flex-col items-center gap-2">
-        {/* ZR + R */}
-        <div className="w-full flex flex-col gap-1">
+      <div className="flex flex-col items-start gap-1">
+        <div className="flex items-center gap-1.5 w-full">
           <PillBtn
             id="zr"
             active={is("zr")}
             color={color}
             tooltip={tooltip}
-            className="w-full h-5 rounded-full"
+            className="flex-1 h-4 rounded-t-4xl rounded-b-xl"
           />
-          <PillBtn
-            id="r"
-            active={is("r")}
-            color={color}
-            tooltip={tooltip}
-            className="w-full h-4 rounded-full"
-          />
+          <span className="text-sm text-muted font-semibold">ZR</span>
+        </div>
+        <div className="flex items-center gap-1.5 w-full">
+          <PillBtn id="r" active={is("r")} color={color} tooltip={tooltip} className="flex-1 h-3" />
+          <span className="text-sm text-muted font-semibold">R</span>
         </div>
         {/* Joy-Con body */}
         <div className={`rounded-[48px] ${filled} flex flex-col items-center gap-3 px-2 py-4`}>
-          {/* Face buttons */}
           <ButtonDiamond
             ids={{ top: "x", right: "a", bottom: "b", left: "y" }}
             activeButtons={activeButtons}
@@ -263,13 +283,7 @@ function HandheldShell({
             color={color}
             tooltip={tooltip}
           />
-          {/* Right Stick */}
-          <Stick
-            id="right-stick"
-            active={is("right-stick")}
-            color={color}
-            tooltip={tooltip}
-          />
+          <Stick id="right-stick" active={is("right-stick")} color={color} tooltip={tooltip} />
         </div>
       </div>
     </div>
@@ -291,30 +305,29 @@ function SingleJoyConShell({
 
   return (
     <div
-      className="mx-auto w-full max-w-[258px] select-none flex flex-col items-center gap-2"
+      className="mx-auto select-none flex flex-col items-center"
       role="img"
       aria-label="Single Joy-Con controller layout"
     >
       {/* SL + SR */}
-      <div className="w-full flex gap-2">
+      <div className="flex w-full gap-1">
         <PillBtn
           id="sl"
           active={is("sl")}
           color={color}
           tooltip={tooltip}
-          className="flex-1 h-5 rounded-full"
+          className="flex-1 h-3.5"
         />
         <PillBtn
           id="sr"
           active={is("sr")}
           color={color}
           tooltip={tooltip}
-          className="flex-1 h-5 rounded-full"
+          className="flex-1 h-3.5"
         />
       </div>
       {/* Body – horizontal: stick left, face buttons right */}
       <div className={`rounded-[48px] ${filled} flex items-center gap-3 px-2 py-4`}>
-        {/* Stick */}
         <Stick
           id="stick"
           active={is("stick")}
@@ -322,7 +335,6 @@ function SingleJoyConShell({
           color={color}
           tooltip={tooltip}
         />
-        {/* Face buttons – no labels */}
         <ButtonDiamond
           ids={{ top: "x", right: "a", bottom: "b", left: "y" }}
           activeButtons={activeButtons}

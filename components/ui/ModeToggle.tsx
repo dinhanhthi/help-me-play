@@ -22,7 +22,7 @@ export default function ModeToggle({ mode, onChange }: ModeToggleProps) {
 
   return (
     <div
-      className="relative inline-flex rounded-full bg-card p-1"
+      className="relative inline-flex rounded-full bg-card p-1 border border-border"
       role="radiogroup"
       aria-label={t.controls.controllerMode}
     >
@@ -30,8 +30,8 @@ export default function ModeToggle({ mode, onChange }: ModeToggleProps) {
       <div
         className="absolute top-1 bottom-1 rounded-full bg-accent transition-all duration-300 ease-in-out"
         style={{
-          width: `calc(${100 / modes.length}% - 4px)`,
-          left: `calc(${(activeIndex * 100) / modes.length}% + 2px)`,
+          width: `calc(${100 / modes.length}% - 12px)`,
+          left: `calc(${(activeIndex * 100) / modes.length}% + 6px)`,
         }}
       />
 

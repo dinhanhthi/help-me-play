@@ -28,23 +28,24 @@ function MediaCredit({ url, editUrl }: { url: string; editUrl?: string }) {
   const source = getSourceDomain(url);
 
   return (
-    <div className="mt-1.5 flex items-center justify-between text-[11px] text-muted">
+    <div className="mt-1.5 flex items-center gap-2 text-[11px] text-muted">
       {source && (
         <a
           href={url}
           target="_blank"
           rel="noopener noreferrer"
-          className="opacity-60 transition-opacity hover:opacity-100"
+          className="opacity-60 transition-opacity hover:opacity-100 hover:underline underline-offset-4"
         >
-          {t.media.source}: {source}
+          {t.media.source}
         </a>
       )}
+      {source && editUrl && <span className="opacity-40">·</span>}
       {editUrl && (
         <a
           href={editUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-md border border-border px-2 py-0.5 opacity-60 transition-opacity hover:opacity-100"
+          className="opacity-60 transition-opacity hover:opacity-100 hover:underline underline-offset-4"
         >
           {t.media.fixBroken}
         </a>

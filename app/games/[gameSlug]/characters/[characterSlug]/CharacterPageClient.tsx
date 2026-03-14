@@ -132,9 +132,9 @@ export default function CharacterPageClient({
       </nav>
 
       <div className="mb-6 flex items-center gap-4">
-        <div className="relative h-16 w-16 shrink-0 sm:h-20 sm:w-20">
+        <div className="relative shrink-0 w-16 sm:w-20">
           {!portraitLoaded && (
-            <div className="absolute inset-0 flex items-center justify-center rounded-xl bg-surface">
+            <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-surface sm:h-20 sm:w-20">
               <ChessKnight className="h-8 w-8 text-muted animate-pulse" />
             </div>
           )}
@@ -143,7 +143,7 @@ export default function CharacterPageClient({
               src={characterPortrait}
               alt={characterName}
               onLoad={() => setPortraitLoaded(true)}
-              className={`h-full w-full rounded-xl object-cover transition-opacity ${portraitLoaded ? "opacity-100" : "opacity-0"}`}
+              className={`w-full rounded-xl object-contain transition-opacity ${portraitLoaded ? "opacity-100" : "opacity-0"}`}
             />
           )}
         </div>

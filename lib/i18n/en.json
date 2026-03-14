@@ -6,7 +6,8 @@
   "header": {
     "brand": "Help Me Play",
     "games": "Games",
-    "addGames": "Add Games"
+    "addGames": "Add Games",
+    "home": "Home"
   },
   "footer": {
     "copyright": "Help Me Play. Visual combo guides for Nintendo Switch games."

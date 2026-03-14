@@ -1,4 +1,4 @@
-import { getAllGames, getCharacters, getCharacter, getMoves } from "@/lib/data";
+import { getAllGames, getCharacters, getCharacter, getGameMeta, getMoves } from "@/lib/data";
 import type { Move } from "@/lib/types";
 import CharacterPageClient from "./CharacterPageClient";
 import { notFound } from "next/navigation";
@@ -29,6 +29,8 @@ export default async function CharacterPage({ params }: CharacterPageProps) {
     notFound();
   }
 
+  const gameMeta = getGameMeta(gameSlug);
+
   let moves: Move[];
   try {
     moves = getMoves(gameSlug, characterSlug);
@@ -40,6 +42,7 @@ export default async function CharacterPage({ params }: CharacterPageProps) {
     <CharacterPageClient
       characterName={character.name}
       characterDescription={character.description}
+      gameTitle={gameMeta.title}
       moves={moves}
       gameSlug={gameSlug}
       characterSlug={characterSlug}

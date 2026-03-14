@@ -1,6 +1,8 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import Link from "next/link";
+import { ChevronRight } from "lucide-react";
 import type { ControllerMode, Move } from "@/lib/types";
 import { useI18n } from "@/lib/i18n/context";
 import { localize } from "@/lib/i18n";
@@ -13,6 +15,7 @@ import { Tooltip } from "@/components/ui/Tooltip";
 interface CharacterPageClientProps {
   characterName: string;
   characterDescription?: string;
+  gameTitle: string;
   moves: Move[];
   gameSlug: string;
   characterSlug: string;
@@ -35,6 +38,7 @@ const GITHUB_BASE = "https://github.com/dinhanhthi/help-me-play/edit/main";
 export default function CharacterPageClient({
   characterName,
   characterDescription,
+  gameTitle,
   moves,
   gameSlug,
   characterSlug,
@@ -112,6 +116,18 @@ export default function CharacterPageClient({
 
   return (
     <div className="mx-auto max-w-6xl px-5 py-12 sm:px-8">
+      <nav className="mb-4 flex items-center gap-1.5 text-sm text-muted">
+        <Link href="/" className="transition-colors hover:text-accent">
+          {t.header.home}
+        </Link>
+        <ChevronRight className="h-3.5 w-3.5" />
+        <Link href={`/games/${gameSlug}`} className="transition-colors hover:text-accent">
+          {gameTitle}
+        </Link>
+        <ChevronRight className="h-3.5 w-3.5" />
+        <span className="text-foreground font-medium">{characterName}</span>
+      </nav>
+
       <div className="mb-6">
         <h1 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
           {characterName}

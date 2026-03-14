@@ -8,35 +8,46 @@ interface ModeToggleProps {
   onChange: (mode: ControllerMode) => void;
 }
 
+const modes: ControllerMode[] = ["handheld", "single-joycon"];
+
 export default function ModeToggle({ mode, onChange }: ModeToggleProps) {
   const { t } = useI18n();
 
-  const modes: { value: ControllerMode; label: string }[] = [
-    { value: "handheld", label: t.controls.handheldMode },
-    { value: "single-joycon", label: t.controls.singleJoyCon },
-  ];
+  const labels: Record<ControllerMode, string> = {
+    handheld: t.controls.handheldMode,
+    "single-joycon": t.controls.singleJoyCon,
+  };
+
+  const activeIndex = modes.indexOf(mode);
 
   return (
     <div
-      className="inline-flex gap-1 rounded-xl bg-surface p-1"
+      className="relative inline-flex rounded-full bg-card p-1"
       role="radiogroup"
       aria-label={t.controls.controllerMode}
     >
+      {/* Sliding pill indicator */}
+      <div
+        className="absolute top-1 bottom-1 rounded-full bg-accent transition-all duration-300 ease-in-out"
+        style={{
+          width: `calc(${100 / modes.length}% - 4px)`,
+          left: `calc(${(activeIndex * 100) / modes.length}% + 2px)`,
+        }}
+      />
+
       {modes.map((m) => {
-        const isActive = mode === m.value;
+        const isActive = mode === m;
         return (
           <button
-            key={m.value}
+            key={m}
             role="radio"
             aria-checked={isActive}
-            onClick={() => onChange(m.value)}
-            className={`cursor-pointer rounded-lg px-4 py-2 text-sm font-semibold transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
-              isActive
-                ? "bg-accent text-background"
-                : "text-muted hover:text-foreground"
+            onClick={() => onChange(m)}
+            className={`relative z-10 cursor-pointer rounded-full px-5 py-2 text-sm font-semibold transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
+              isActive ? "text-white" : "text-muted hover:text-foreground"
             }`}
           >
-            {m.label}
+            {labels[m]}
           </button>
         );
       })}

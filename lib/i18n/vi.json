@@ -60,6 +60,7 @@
     "restartAnimation": "Chơi lại",
     "previousStep": "Bước trước",
     "nextStep": "Bước sau",
+    "method": "Cách",
     "inputTypeLegend": "Loại thao tác",
     "inputTypes": {
       "Tap": "Nhấn và thả nhanh",

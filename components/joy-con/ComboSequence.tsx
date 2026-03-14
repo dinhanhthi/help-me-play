@@ -17,20 +17,72 @@ const directionArrows: Record<string, string> = {
   down: "\u2193",
 };
 
+function MethodToggle({
+  active,
+  onChange,
+  label1,
+  label2,
+}: {
+  active: number;
+  onChange: (method: number) => void;
+  label1: string;
+  label2: string;
+}) {
+  const btn0Ref = useRef<HTMLButtonElement>(null);
+  const btn1Ref = useRef<HTMLButtonElement>(null);
+  const [pill, setPill] = useState({ width: 0, left: 0 });
+
+  const updatePill = useCallback(() => {
+    const el = active === 0 ? btn0Ref.current : btn1Ref.current;
+    if (el) setPill({ width: el.offsetWidth, left: el.offsetLeft });
+  }, [active]);
+
+  useEffect(() => {
+    updatePill();
+  }, [updatePill]);
+
+  return (
+    <div className="relative inline-flex rounded-full bg-card p-0.5 border border-border">
+      <div
+        className="absolute top-0.5 bottom-0.5 rounded-full bg-accent transition-all duration-300 ease-in-out"
+        style={{ width: pill.width, left: pill.left }}
+      />
+      {[0, 1].map((method) => (
+        <button
+          key={method}
+          ref={method === 0 ? btn0Ref : btn1Ref}
+          onClick={() => onChange(method)}
+          className={cn(
+            "relative z-10 cursor-pointer rounded-full px-2.5 py-0.5 text-[11px] font-semibold transition-colors duration-300",
+            active === method ? "text-white" : "text-muted hover:text-foreground",
+          )}
+        >
+          {method === 0 ? label1 : label2}
+        </button>
+      ))}
+    </div>
+  );
+}
+
 interface ComboSequenceProps {
   steps: ComboStep[];
+  altSteps?: ComboStep[];
   mode: ControllerMode;
 }
 
-export default function ComboSequence({ steps, mode }: ComboSequenceProps) {
+export default function ComboSequence({ steps, altSteps, mode }: ComboSequenceProps) {
   const { t } = useI18n();
   const [currentStep, setCurrentStep] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const [isGap, setIsGap] = useState(false);
+  const [activeMethod, setActiveMethod] = useState(0);
+
+  const activeSteps = activeMethod === 1 && altSteps ? altSteps : steps;
+  const hasAlt = altSteps && altSteps.length > 0;
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const stepCount = steps.length;
-  const step = steps[currentStep];
+  const stepCount = activeSteps.length;
+  const step = activeSteps[currentStep];
 
   const clearTimer = useCallback(() => {
     if (timerRef.current !== null) {
@@ -39,11 +91,21 @@ export default function ComboSequence({ steps, mode }: ComboSequenceProps) {
     }
   }, []);
 
+  const switchMethod = useCallback(
+    (method: number) => {
+      setActiveMethod(method);
+      setCurrentStep(0);
+      setIsGap(false);
+      clearTimer();
+    },
+    [clearTimer],
+  );
+
   // Check if two steps have identical buttons
   const stepsMatch = useCallback(
     (a: number, b: number) => {
-      const sa = steps[a];
-      const sb = steps[b];
+      const sa = activeSteps[a];
+      const sb = activeSteps[b];
       if (!sa || !sb) return false;
       return (
         sa.inputType === sb.inputType &&
@@ -52,7 +114,7 @@ export default function ComboSequence({ steps, mode }: ComboSequenceProps) {
         sa.buttons.every((btn, i) => btn === sb.buttons[i])
       );
     },
-    [steps],
+    [activeSteps],
   );
 
   const restart = useCallback(() => {
@@ -126,6 +188,14 @@ export default function ComboSequence({ steps, mode }: ComboSequenceProps) {
 
   return (
     <div className="flex flex-col items-center gap-4">
+      {hasAlt && (
+        <MethodToggle
+          active={activeMethod}
+          onChange={switchMethod}
+          label1={`${t.controls.method} 1`}
+          label2={`${t.controls.method} 2`}
+        />
+      )}
       <div className="w-full flex justify-center">
         {mode === "handheld" ? (
           <JoyConHandheld
@@ -146,50 +216,11 @@ export default function ComboSequence({ steps, mode }: ComboSequenceProps) {
 
       {/* Info tags */}
 
-      <div
-        className={cn("flex flex-wrap items-center gap-3 w-full h-6", {
-          "justify-start": stepCount > 1,
-          "justify-center": stepCount <= 1,
-        })}
-      >
-        {stepCount > 1 && (
-          <span className="font-mono text-xs text-muted">
-            {t.controls.step}{" "}
-            <span className="font-semibold text-foreground">{currentStep + 1}</span>/{stepCount}
-          </span>
-        )}
-        {!direction &&
-          activeButtons.map((btn) => {
-            const badge = (
-              <span
-                key={btn}
-                className="rounded-full h-6 w-6 flex items-center justify-center text-sm font-semibold text-white uppercase"
-                style={{ backgroundColor: inputTypeColors[inputType ?? ""] ?? "#38bdf8" }}
-              >
-                {btn}
-              </span>
-            );
-            return tooltip ? (
-              <Tooltip key={btn} text={tooltip}>
-                {badge}
-              </Tooltip>
-            ) : (
-              badge
-            );
-          })}
-        {direction &&
-          (() => {
-            const badge = (
-              <span
-                className="rounded-full h-6 w-6 flex items-center justify-center text-sm font-semibold text-white"
-                style={{ backgroundColor: inputTypeColors[inputType ?? ""] ?? "#38bdf8" }}
-              >
-                {directionArrows[direction] ?? direction}
-              </span>
-            );
-            const dirLabel = (t.directions as Record<string, string>)[direction] ?? direction;
-            return <Tooltip text={dirLabel}>{badge}</Tooltip>;
-          })()}
+      <div className={"flex flex-wrap items-center justify-center gap-3 w-full h-6"}>
+        <span className="font-mono text-xs text-muted">
+          {t.controls.step} <span className="font-semibold text-foreground">{currentStep + 1}</span>
+          /{stepCount}
+        </span>
       </div>
 
       {/* Controls */}

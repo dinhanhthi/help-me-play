@@ -212,6 +212,8 @@ function HandheldShell({
   tooltip?: string;
 }) {
   const is = (id: string) => activeButtons.includes(id);
+  const leftStickDir = is("left-stick") ? direction : undefined;
+  const rightStickDir = is("right-stick") ? direction : undefined;
   return (
     <div
       className="mx-auto select-none flex gap-3"
@@ -239,7 +241,7 @@ function HandheldShell({
           <Stick
             id="left-stick"
             active={is("left-stick")}
-            direction={direction}
+            direction={leftStickDir}
             color={color}
             tooltip={tooltip}
           />
@@ -277,7 +279,13 @@ function HandheldShell({
             color={color}
             tooltip={tooltip}
           />
-          <Stick id="right-stick" active={is("right-stick")} color={color} tooltip={tooltip} />
+          <Stick
+            id="right-stick"
+            active={is("right-stick")}
+            direction={rightStickDir}
+            color={color}
+            tooltip={tooltip}
+          />
         </div>
       </div>
     </div>

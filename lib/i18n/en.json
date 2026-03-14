@@ -60,6 +60,7 @@
     "restartAnimation": "Restart animation",
     "previousStep": "Previous step",
     "nextStep": "Next step",
+    "method": "Method",
     "inputTypeLegend": "Input Types",
     "inputTypes": {
       "Tap": "Press and release quickly",

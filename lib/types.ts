@@ -41,6 +41,8 @@ export interface Move {
   /** Category: e.g. "special", "smash", "tilt", "throw", "other" */
   category: string;
   combos: Record<ControllerMode, ComboStep[]>;
+  /** Alternative input method (e.g., right stick for smash attacks). Not all modes may have alternatives. */
+  altCombos?: Partial<Record<ControllerMode, ComboStep[]>>;
   /** URL to video (YouTube, Vimeo, etc.) or GIF (Giphy, Cloudinary, direct) */
   mediaUrl: string;
   /** Original source URL before Cloudinary migration (shown as "Source" credit) */

@@ -198,6 +198,15 @@
         }
       ]
     },
+    "altCombos": {
+      "handheld": [
+        {
+          "buttons": ["right-stick"],
+          "direction": "right",
+          "inputType": "Smash"
+        }
+      ]
+    },
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499986/help-me-play/smash-bros/mario/forward-smash.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/4/45/Mario_Forward_Smash_SSBU.gif"
   },
@@ -228,6 +237,15 @@
         }
       ]
     },
+    "altCombos": {
+      "handheld": [
+        {
+          "buttons": ["right-stick"],
+          "direction": "up",
+          "inputType": "Smash"
+        }
+      ]
+    },
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499987/help-me-play/smash-bros/mario/up-smash.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/f/f5/Mario_Up_Smash_SSBU.gif"
   },
@@ -253,6 +271,15 @@
       "single-joycon": [
         {
           "buttons": ["stick", "a"],
+          "direction": "down",
+          "inputType": "Smash"
+        }
+      ]
+    },
+    "altCombos": {
+      "handheld": [
+        {
+          "buttons": ["right-stick"],
           "direction": "down",
           "inputType": "Smash"
         }

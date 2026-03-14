@@ -42,6 +42,7 @@ export default async function CharacterPage({ params }: CharacterPageProps) {
     <CharacterPageClient
       characterName={character.name}
       characterDescription={character.description}
+      characterPortrait={character.portrait}
       gameTitle={gameMeta.title}
       moves={moves}
       gameSlug={gameSlug}

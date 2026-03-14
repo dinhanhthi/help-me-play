@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, ChessKnight } from "lucide-react";
 import type { ControllerMode, Move } from "@/lib/types";
 import { useI18n } from "@/lib/i18n/context";
 import { localize } from "@/lib/i18n";
@@ -15,6 +15,7 @@ import { Tooltip } from "@/components/ui/Tooltip";
 interface CharacterPageClientProps {
   characterName: string;
   characterDescription?: string;
+  characterPortrait?: string;
   gameTitle: string;
   moves: Move[];
   gameSlug: string;
@@ -38,6 +39,7 @@ const GITHUB_BASE = "https://github.com/dinhanhthi/help-me-play/edit/main";
 export default function CharacterPageClient({
   characterName,
   characterDescription,
+  characterPortrait,
   gameTitle,
   moves,
   gameSlug,
@@ -45,6 +47,7 @@ export default function CharacterPageClient({
 }: CharacterPageClientProps) {
   const { t, locale } = useI18n();
   const [mode, setMode] = useState<ControllerMode>("handheld");
+  const [portraitLoaded, setPortraitLoaded] = useState(false);
   const [activeCategories, setActiveCategories] = useState<Set<string>>(new Set());
   const [activeButtons, setActiveButtons] = useState<Set<string>>(new Set());
   const editUrl = `${GITHUB_BASE}/data/${gameSlug}/moves/${characterSlug}.json`;
@@ -128,13 +131,30 @@ export default function CharacterPageClient({
         <span className="text-foreground font-medium">{characterName}</span>
       </nav>
 
-      <div className="mb-6">
-        <h1 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
-          {characterName}
-        </h1>
-        {characterDescription && (
-          <p className="mt-2 text-sm text-muted leading-relaxed">{characterDescription}</p>
-        )}
+      <div className="mb-6 flex items-center gap-4">
+        <div className="relative h-16 w-16 shrink-0 sm:h-20 sm:w-20">
+          {!portraitLoaded && (
+            <div className="absolute inset-0 flex items-center justify-center rounded-xl bg-surface">
+              <ChessKnight className="h-8 w-8 text-muted animate-pulse" />
+            </div>
+          )}
+          {characterPortrait && (
+            <img
+              src={characterPortrait}
+              alt={characterName}
+              onLoad={() => setPortraitLoaded(true)}
+              className={`h-full w-full rounded-xl object-cover transition-opacity ${portraitLoaded ? "opacity-100" : "opacity-0"}`}
+            />
+          )}
+        </div>
+        <div>
+          <h1 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
+            {characterName}
+          </h1>
+          {characterDescription && (
+            <p className="mt-1 text-sm text-muted leading-relaxed">{characterDescription}</p>
+          )}
+        </div>
       </div>
 
       {/* Filters */}

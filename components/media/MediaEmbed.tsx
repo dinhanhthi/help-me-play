@@ -6,7 +6,7 @@ import { useI18n } from "@/lib/i18n/context";
 
 function MediaSkeleton() {
   return (
-    <div className="flex h-[250px] w-full items-center justify-center rounded-xl bg-surface">
+    <div className="flex h-[250px] shrink-0 w-full items-center justify-center rounded-xl bg-surface">
       <div className="flex flex-col items-center gap-2 text-muted">
         <svg
           className="h-8 w-8 animate-pulse"
@@ -54,7 +54,7 @@ function MediaCredit({ url, editUrl }: { url: string; editUrl?: string }) {
   const source = getSourceDomain(url);
 
   return (
-    <div className="mt-1.5 flex items-center gap-2 text-[11px] text-muted">
+    <div className="mt-1.5 flex items-center gap-2 text-xs text-muted">
       {source && (
         <a
           href={url}
@@ -125,9 +125,9 @@ function MediaContent({
     media.provider === "dailymotion"
   ) {
     return (
-      <div>
+      <div className="flex flex-col gap-0.5 items-center justify-center">
         <div
-          className="relative w-full max-h-[250px] overflow-hidden rounded-xl"
+          className="relative max-h-[250px] overflow-hidden rounded-xl w-full"
           style={{ aspectRatio: "16 / 9" }}
         >
           {!loaded && <MediaSkeleton />}
@@ -148,8 +148,8 @@ function MediaContent({
 
   if (media.type === "video") {
     return (
-      <div>
-        <div className="relative max-h-[250px] overflow-hidden rounded-xl">
+      <div className="flex flex-col gap-0.5 items-center justify-center">
+        <div className="relative max-h-[250px] overflow-hidden rounded-xl w-full">
           {!loaded && <MediaSkeleton />}
           <video
             src={media.embedUrl}
@@ -167,8 +167,8 @@ function MediaContent({
   }
 
   return (
-    <div>
-      <div className="relative max-h-[250px] overflow-hidden rounded-xl">
+    <div className="flex flex-col gap-0.5 items-center justify-center">
+      <div className="relative max-h-[250px] overflow-hidden rounded-xl w-full">
         {!loaded && <MediaSkeleton />}
         <img
           src={media.embedUrl}

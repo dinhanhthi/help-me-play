@@ -63,7 +63,7 @@ function Btn({
       aria-label={`${label ?? id} button${active ? " (active)" : ""}`}
     >
       {label && (
-        <span className="select-none leading-none font-semibold text-sm text-white">{label}</span>
+        <span className="select-none leading-none font-semibold text-xs text-white">{label}</span>
       )}
     </div>
   );
@@ -89,7 +89,7 @@ function ButtonDiamond({
   return (
     <div
       className="grid grid-cols-3 grid-rows-3 place-items-center"
-      style={{ width: 22 * 3, height: 22 * 3 }}
+      style={{ width: 18 * 3, height: 18 * 3 }}
     >
       <div />
       <Btn
@@ -98,7 +98,7 @@ function ButtonDiamond({
         label={labels?.[ids.top]}
         color={color}
         tooltip={tooltip}
-        className="w-6 h-6"
+        className="w-5 h-5"
       />
       <div />
       <Btn
@@ -107,7 +107,7 @@ function ButtonDiamond({
         label={labels?.[ids.left]}
         color={color}
         tooltip={tooltip}
-        className="w-6 h-6"
+        className="w-5 h-5"
       />
       <div />
       <Btn
@@ -116,7 +116,7 @@ function ButtonDiamond({
         label={labels?.[ids.right]}
         color={color}
         tooltip={tooltip}
-        className="w-6 h-6"
+        className="w-5 h-5"
       />
       <div />
       <Btn
@@ -125,7 +125,7 @@ function ButtonDiamond({
         label={labels?.[ids.bottom]}
         color={color}
         tooltip={tooltip}
-        className="w-6 h-6"
+        className="w-5 h-5"
       />
       <div />
     </div>
@@ -157,8 +157,8 @@ function Stick({
       data-button-id={id}
       className={`rounded-full ${btnBase} ${capStyle}`}
       style={{
-        width: 22,
-        height: 22,
+        width: 26,
+        height: 26,
         ...(bg ? { background: bg } : active ? { backgroundColor: color } : {}),
       }}
       aria-label={`${id}${active ? " (active)" : ""}`}
@@ -167,7 +167,7 @@ function Stick({
   return (
     <div
       className={`rounded-full ${outline} flex items-center justify-center`}
-      style={{ width: 50, height: 50 }}
+      style={{ width: 44, height: 44 }}
     >
       {showTooltip ? <Tooltip text={tooltip!}>{inner}</Tooltip> : inner}
     </div>
@@ -222,22 +222,31 @@ function HandheldShell({
     >
       {/* Left Joy-Con */}
       <div className="flex flex-col items-end gap-1">
-        <div className="flex items-center gap-1.5 w-full">
-          <span className="text-xs text-muted font-semibold">ZL</span>
-          <PillBtn
-            id="zl"
-            active={is("zl")}
-            color={color}
-            tooltip={tooltip}
-            className="flex-1 h-4 rounded-t-4xl rounded-b-xl"
-          />
-        </div>
-        <div className="flex items-center gap-1.5 w-full">
-          <span className="text-xs text-muted font-semibold">L</span>
-          <PillBtn id="l" active={is("l")} color={color} tooltip={tooltip} className="flex-1 h-3" />
+        {/* ZL + L */}
+        <div className="flex items-center flex-col gap-0.5 w-full">
+          <div className="flex items-center gap-1.5 w-full">
+            <span className="text-xs text-muted font-semibold">ZL</span>
+            <PillBtn
+              id="zl"
+              active={is("zl")}
+              color={color}
+              tooltip={tooltip}
+              className="flex-1 h-3.5 rounded-t-4xl rounded-b-xl"
+            />
+          </div>
+          <div className="flex items-center gap-1.5 w-full">
+            <span className="text-xs text-muted font-semibold">L</span>
+            <PillBtn
+              id="l"
+              active={is("l")}
+              color={color}
+              tooltip={tooltip}
+              className="flex-1 h-3"
+            />
+          </div>
         </div>
         {/* Joy-Con body */}
-        <div className={`rounded-full ${filled} flex flex-col items-center gap-3 px-2 py-4`}>
+        <div className={`rounded-full ${filled} flex flex-col items-center gap-3 px-1.5 py-3`}>
           <Stick
             id="left-stick"
             active={is("left-stick")}
@@ -256,22 +265,32 @@ function HandheldShell({
 
       {/* Right Joy-Con */}
       <div className="flex flex-col items-start gap-1">
-        <div className="flex items-center gap-1.5 w-full">
-          <PillBtn
-            id="zr"
-            active={is("zr")}
-            color={color}
-            tooltip={tooltip}
-            className="flex-1 h-4 rounded-t-4xl rounded-b-xl"
-          />
-          <span className="text-xs text-muted font-semibold">ZR</span>
+        {/* ZR + R */}
+        <div className="flex items-center flex-col gap-0.5 w-full">
+          <div className="flex items-center gap-1.5 w-full">
+            <PillBtn
+              id="zr"
+              active={is("zr")}
+              color={color}
+              tooltip={tooltip}
+              className="flex-1 h-3.5 rounded-t-4xl rounded-b-xl"
+            />
+            <span className="text-xs text-muted font-semibold">ZR</span>
+          </div>
+          <div className="flex items-center gap-1.5 w-full">
+            <PillBtn
+              id="r"
+              active={is("r")}
+              color={color}
+              tooltip={tooltip}
+              className="flex-1 h-3"
+            />
+            <span className="text-xs text-muted font-semibold">R</span>
+          </div>
         </div>
-        <div className="flex items-center gap-1.5 w-full">
-          <PillBtn id="r" active={is("r")} color={color} tooltip={tooltip} className="flex-1 h-3" />
-          <span className="text-xs text-muted font-semibold">R</span>
-        </div>
+
         {/* Joy-Con body */}
-        <div className={`rounded-[48px] ${filled} flex flex-col items-center gap-3 px-2 py-4`}>
+        <div className={`rounded-[48px] ${filled} flex flex-col items-center gap-3 px-2 py-3`}>
           <ButtonDiamond
             ids={{ top: "x", right: "a", bottom: "b", left: "y" }}
             activeButtons={activeButtons}

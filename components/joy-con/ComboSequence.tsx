@@ -187,7 +187,7 @@ export default function ComboSequence({ steps, altSteps, mode }: ComboSequencePr
     : undefined;
 
   return (
-    <div className="flex flex-col items-center gap-4">
+    <div className="flex flex-col items-center gap-1.5">
       {hasAlt && (
         <MethodToggle
           active={activeMethod}
@@ -229,15 +229,15 @@ export default function ComboSequence({ steps, altSteps, mode }: ComboSequencePr
           {!isPlaying && (
             <button
               onClick={goToPrevStep}
-              className="cursor-pointer inline-flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              className="cursor-pointer inline-flex h-7 w-7 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
               aria-label={t.controls.previousStep}
             >
-              <ChevronLeft className="h-4 w-4" />
+              <ChevronLeft className="h-3.5 w-3.5" />
             </button>
           )}
           <button
             onClick={togglePlayPause}
-            className="cursor-pointer inline-flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            className="cursor-pointer inline-flex h-7 w-7 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
             aria-label={isPlaying ? t.controls.pauseAnimation : t.controls.playAnimation}
           >
             {isPlaying ? <Pause className="h-3.5 w-3.5" /> : <Play className="h-3.5 w-3.5" />}
@@ -245,16 +245,16 @@ export default function ComboSequence({ steps, altSteps, mode }: ComboSequencePr
           {!isPlaying && (
             <button
               onClick={goToNextStep}
-              className="cursor-pointer inline-flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              className="cursor-pointer inline-flex h-7 w-7 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
               aria-label={t.controls.nextStep}
             >
-              <ChevronRight className="h-4 w-4" />
+              <ChevronRight className="h-3.5 w-3.5" />
             </button>
           )}
           {!isPlaying && (
             <button
               onClick={restart}
-              className="cursor-pointer inline-flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              className="cursor-pointer inline-flex h-6 w-6 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
               aria-label={t.controls.restartAnimation}
             >
               <RotateCcw className="h-3.5 w-3.5" />

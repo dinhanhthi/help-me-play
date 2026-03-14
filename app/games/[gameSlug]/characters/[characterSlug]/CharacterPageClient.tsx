@@ -259,7 +259,7 @@ export default function CharacterPageClient({
                     </div>
 
                     {/* Side-by-side */}
-                    <div className="grid grid-cols-1 gap-6 p-4 md:grid-cols-[auto_1fr] md:items-center">
+                    <div className="grid grid-cols-1 gap-4 p-4 md:grid-cols-[auto_1fr] md:items-center">
                       <div className="order-2 md:order-1">
                         <ComboSequence steps={comboSteps} altSteps={altComboSteps} mode={mode} />
                       </div>

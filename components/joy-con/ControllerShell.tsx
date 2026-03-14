@@ -220,7 +220,7 @@ function HandheldShell({
       {/* Left Joy-Con */}
       <div className="flex flex-col items-end gap-1">
         <div className="flex items-center gap-1.5 w-full">
-          <span className="text-sm text-muted font-semibold">ZL</span>
+          <span className="text-xs text-muted font-semibold">ZL</span>
           <PillBtn
             id="zl"
             active={is("zl")}
@@ -230,7 +230,7 @@ function HandheldShell({
           />
         </div>
         <div className="flex items-center gap-1.5 w-full">
-          <span className="text-sm text-muted font-semibold">L</span>
+          <span className="text-xs text-muted font-semibold">L</span>
           <PillBtn id="l" active={is("l")} color={color} tooltip={tooltip} className="flex-1 h-3" />
         </div>
         {/* Joy-Con body */}
@@ -261,11 +261,11 @@ function HandheldShell({
             tooltip={tooltip}
             className="flex-1 h-4 rounded-t-4xl rounded-b-xl"
           />
-          <span className="text-sm text-muted font-semibold">ZR</span>
+          <span className="text-xs text-muted font-semibold">ZR</span>
         </div>
         <div className="flex items-center gap-1.5 w-full">
           <PillBtn id="r" active={is("r")} color={color} tooltip={tooltip} className="flex-1 h-3" />
-          <span className="text-sm text-muted font-semibold">R</span>
+          <span className="text-xs text-muted font-semibold">R</span>
         </div>
         {/* Joy-Con body */}
         <div className={`rounded-[48px] ${filled} flex flex-col items-center gap-3 px-2 py-4`}>
@@ -298,12 +298,13 @@ function SingleJoyConShell({
 
   return (
     <div
-      className="mx-auto select-none flex flex-col items-center"
+      className="mx-auto select-none flex flex-col items-center gap-2"
       role="img"
       aria-label="Single Joy-Con controller layout"
     >
       {/* SL + SR */}
-      <div className="flex w-full gap-1">
+      <div className="flex w-full items-center gap-1">
+        <span className="text-xs text-muted font-semibold">SL</span>
         <PillBtn
           id="sl"
           active={is("sl")}
@@ -318,9 +319,10 @@ function SingleJoyConShell({
           tooltip={tooltip}
           className="flex-1 h-3.5"
         />
+        <span className="text-xs text-muted font-semibold">SR</span>
       </div>
       {/* Body – horizontal: stick left, face buttons right */}
-      <div className={`rounded-[48px] ${filled} flex items-center gap-3 px-2 py-4`}>
+      <div className={`rounded-full ${filled} flex items-center gap-3 px-4 py-2`}>
         <Stick
           id="stick"
           active={is("stick")}

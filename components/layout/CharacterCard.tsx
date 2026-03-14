@@ -1,4 +1,8 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
+import { ChessKnight } from "lucide-react";
 import type { Character } from "@/lib/types";
 
 interface CharacterCardProps {
@@ -7,21 +11,31 @@ interface CharacterCardProps {
 }
 
 export default function CharacterCard({ character, gameSlug }: CharacterCardProps) {
+  const [portraitLoaded, setPortraitLoaded] = useState(false);
+
   return (
     <Link
       href={`/games/${gameSlug}/characters/${character.slug}`}
       className="group block text-center transition-all duration-200"
     >
-      <div className="mx-auto mb-3">
+      <div className="relative mx-auto mb-3 h-[200px]">
         {character.portrait ? (
-          <img
-            src={character.portrait}
-            alt={character.name}
-            className="mx-auto h-[200px] w-auto object-contain transition-transform duration-200 group-hover:scale-105"
-          />
+          <>
+            {!portraitLoaded && (
+              <div className="absolute inset-0 flex items-center justify-center rounded-xl bg-surface animate-pulse">
+                <ChessKnight className="h-14 w-14 text-muted" />
+              </div>
+            )}
+            <img
+              src={character.portrait}
+              alt={character.name}
+              onLoad={() => setPortraitLoaded(true)}
+              className={`mx-auto h-[200px] w-auto object-contain transition-all duration-200 group-hover:scale-105 ${portraitLoaded ? "opacity-100" : "opacity-0"}`}
+            />
+          </>
         ) : (
-          <div className="flex h-[200px] w-full items-center justify-center">
-            <div className="h-16 w-16 rounded-full bg-accent-subtle" />
+          <div className="flex h-full w-full items-center justify-center">
+            <ChessKnight className="h-10 w-10 text-muted" />
           </div>
         )}
       </div>

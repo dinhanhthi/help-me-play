@@ -143,7 +143,7 @@ export default function CharacterPageClient({
               src={characterPortrait}
               alt={characterName}
               onLoad={() => setPortraitLoaded(true)}
-              className={`w-full rounded-xl object-contain transition-opacity ${portraitLoaded ? "opacity-100" : "opacity-0"}`}
+              className={`w-full rounded-xl object-contain transition-opacity ${portraitLoaded ? "opacity-100" : "absolute inset-0 opacity-0"}`}
             />
           )}
         </div>

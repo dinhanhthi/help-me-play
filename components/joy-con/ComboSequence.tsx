@@ -66,23 +66,28 @@ export default function ComboSequence({ steps, mode }: ComboSequenceProps) {
 
       {/* Info tags */}
       <div className="flex flex-wrap items-center justify-center gap-2">
-        <span className="rounded-lg bg-surface px-2.5 py-1 font-mono text-xs text-muted">
-          {t.controls.step} {currentStep + 1}/{stepCount}
-        </span>
+        {stepCount > 1 && (
+          <span className="rounded-lg bg-surface px-2.5 py-1 font-mono text-xs text-muted">
+            {t.controls.step} {currentStep + 1}/{stepCount}
+          </span>
+        )}
         {inputType && (
           <span className="rounded-lg bg-accent-subtle px-2.5 py-1 text-xs font-semibold text-accent">
             {inputType}
           </span>
         )}
+        {inputType && direction && (
+          <span className="text-xs text-muted font-bold">+</span>
+        )}
         {direction && (
           <span className="rounded-lg bg-accent-subtle px-2.5 py-1 text-xs font-semibold text-accent">
-            {direction}
+            {direction[0].toUpperCase() + direction.slice(1)}
           </span>
         )}
       </div>
 
       {/* Controls */}
-      <div className="flex items-center gap-2">
+      {stepCount > 1 && <div className="flex items-center gap-2">
         <button
           onClick={togglePlayPause}
           className="cursor-pointer inline-flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
@@ -109,7 +114,7 @@ export default function ComboSequence({ steps, mode }: ComboSequenceProps) {
             <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10" />
           </svg>
         </button>
-      </div>
+      </div>}
     </div>
   );
 }

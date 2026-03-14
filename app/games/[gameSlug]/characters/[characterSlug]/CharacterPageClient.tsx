@@ -70,15 +70,9 @@ export default function CharacterPageClient({
               {/* Side-by-side */}
               <div className="grid grid-cols-1 gap-5 p-5 md:grid-cols-2">
                 <div>
-                  <p className="mb-3 text-[11px] font-semibold uppercase tracking-wider text-accent">
-                    {t.character.controllerInput}
-                  </p>
                   <ComboSequence steps={comboSteps} mode={mode} />
                 </div>
                 <div>
-                  <p className="mb-3 text-[11px] font-semibold uppercase tracking-wider text-accent">
-                    {t.character.demonstration}
-                  </p>
                   <MediaEmbed url={move.mediaUrl} title={move.name} />
                 </div>
               </div>

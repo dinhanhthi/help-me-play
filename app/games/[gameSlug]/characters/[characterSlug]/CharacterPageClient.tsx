@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { ControllerMode, Move } from "@/lib/types";
 import { useI18n } from "@/lib/i18n/context";
+import { localize } from "@/lib/i18n";
 import ModeToggle from "@/components/ui/ModeToggle";
 import ComboSequence from "@/components/joy-con/ComboSequence";
 import MediaEmbed from "@/components/media/MediaEmbed";
@@ -33,7 +34,7 @@ export default function CharacterPageClient({
   gameSlug,
   characterSlug,
 }: CharacterPageClientProps) {
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
   const [mode, setMode] = useState<ControllerMode>("handheld");
   const editUrl = `${GITHUB_BASE}/data/${gameSlug}/moves/${characterSlug}.json`;
 
@@ -78,13 +79,13 @@ export default function CharacterPageClient({
               {/* Move header */}
               <div className="border-b border-border px-5 py-4">
                 <div className="flex flex-wrap items-center gap-2">
-                  <h2 className="font-display text-base font-semibold">{move.name}</h2>
+                  <h2 className="font-display text-base font-semibold">{localize(move.name, locale)}</h2>
                   <span className={`rounded-lg border px-2 py-0.5 text-[11px] font-semibold ${colorClass}`}>
                     {move.category}
                   </span>
                 </div>
-                {move.description && (
-                  <p className="mt-1.5 text-sm text-muted leading-relaxed">{move.description}</p>
+                {localize(move.description, locale) && (
+                  <p className="mt-1.5 text-sm text-muted leading-relaxed">{localize(move.description, locale)}</p>
                 )}
               </div>
 
@@ -94,7 +95,7 @@ export default function CharacterPageClient({
                   <ComboSequence steps={comboSteps} mode={mode} />
                 </div>
                 <div>
-                  <MediaEmbed url={move.mediaUrl} title={move.name} editUrl={editUrl} />
+                  <MediaEmbed url={move.mediaUrl} title={localize(move.name, locale) ?? move.id} editUrl={editUrl} />
                 </div>
               </div>
             </div>

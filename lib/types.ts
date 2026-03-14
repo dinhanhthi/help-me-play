@@ -31,10 +31,13 @@ export interface ComboStep {
   inputType?: string;
 }
 
+/** A string that can be either a plain string (legacy) or a per-locale object */
+export type LocalizedString = string | Record<string, string>;
+
 export interface Move {
   id: string;
-  name: string;
-  description?: string;
+  name: LocalizedString;
+  description?: LocalizedString;
   /** Category: e.g. "special", "smash", "tilt", "throw", "other" */
   category: string;
   combos: Record<ControllerMode, ComboStep[]>;

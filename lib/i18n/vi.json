@@ -44,6 +44,12 @@
       "Smash": "Đẩy mạnh cần + nhấn nút cùng lúc"
     }
   },
+  "directions": {
+    "left": "Trái",
+    "right": "Phải",
+    "up": "Lên",
+    "down": "Xuống"
+  },
   "media": {
     "invalidUrl": "URL không hợp lệ",
     "embeddedMedia": "Nội dung nhúng",

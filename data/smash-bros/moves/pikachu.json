@@ -1,8 +1,14 @@
 [
   {
     "id": "thunder-jolt",
-    "name": "Thunder Jolt",
-    "description": "Pikachu sends a ball of electricity that bounces along the ground. Great for edgeguarding.",
+    "name": {
+      "en": "Thunder Jolt",
+      "vi": "Sét Nảy (Thunder Jolt)"
+    },
+    "description": {
+      "en": "Pikachu sends a ball of electricity that bounces along the ground. Great for edgeguarding.",
+      "vi": "Pikachu bắn quả cầu điện nảy dọc theo mặt đất. Rất hiệu quả để chặn đối thủ ở mép sàn đấu."
+    },
     "category": "special",
     "combos": {
       "handheld": [{ "buttons": ["b"], "inputType": "Tap" }],
@@ -12,8 +18,14 @@
   },
   {
     "id": "skull-bash",
-    "name": "Skull Bash",
-    "description": "Pikachu charges and launches forward headfirst. Hold B to charge for more distance and damage.",
+    "name": {
+      "en": "Skull Bash",
+      "vi": "Húc Đầu (Skull Bash)"
+    },
+    "description": {
+      "en": "Pikachu charges and launches forward headfirst. Hold B to charge for more distance and damage.",
+      "vi": "Pikachu tích lực rồi lao đầu về phía trước. Giữ B để tích lực lâu hơn, tăng tầm bay và sát thương."
+    },
     "category": "special",
     "combos": {
       "handheld": [
@@ -32,8 +44,14 @@
   },
   {
     "id": "quick-attack",
-    "name": "Quick Attack",
-    "description": "Pikachu dashes in a direction. Can change direction mid-dash for a second burst. Excellent recovery.",
+    "name": {
+      "en": "Quick Attack",
+      "vi": "Tấn Công Nhanh (Quick Attack)"
+    },
+    "description": {
+      "en": "Pikachu dashes in a direction. Can change direction mid-dash for a second burst. Excellent recovery.",
+      "vi": "Pikachu lướt nhanh theo một hướng. Có thể đổi hướng giữa chừng để lướt thêm lần nữa. Chiêu hồi sàn cực tốt."
+    },
     "category": "special",
     "combos": {
       "handheld": [
@@ -49,8 +67,14 @@
   },
   {
     "id": "thunder",
-    "name": "Thunder",
-    "description": "A bolt of lightning strikes down on Pikachu. If it connects with Pikachu, creates a powerful shockwave.",
+    "name": {
+      "en": "Thunder",
+      "vi": "Sấm Sét (Thunder)"
+    },
+    "description": {
+      "en": "A bolt of lightning strikes down on Pikachu. If it connects with Pikachu, creates a powerful shockwave.",
+      "vi": "Một tia sét đánh xuống vị trí của Pikachu. Nếu trúng Pikachu, sẽ tạo ra sóng xung kích cực mạnh."
+    },
     "category": "special",
     "combos": {
       "handheld": [{ "buttons": ["left-stick", "b"], "direction": "down", "inputType": "Tap" }],
@@ -60,8 +84,14 @@
   },
   {
     "id": "down-smash",
-    "name": "Down Smash",
-    "description": "Pikachu discharges electricity on both sides. Great for punishing rolls.",
+    "name": {
+      "en": "Down Smash",
+      "vi": "Đập Xuống (Down Smash)"
+    },
+    "description": {
+      "en": "Pikachu discharges electricity on both sides. Great for punishing rolls.",
+      "vi": "Pikachu phóng điện sang hai bên. Rất hiệu quả để trừng phạt đối thủ lăn né."
+    },
     "category": "smash",
     "combos": {
       "handheld": [{ "buttons": ["left-stick", "a"], "direction": "down", "inputType": "Smash" }],

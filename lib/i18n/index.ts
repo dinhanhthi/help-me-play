@@ -19,3 +19,13 @@ export function getTranslations(locale: Locale): Translations {
 }
 
 export type { Translations };
+
+/** Resolve a LocalizedString to a plain string for the given locale (fallback: "en") */
+export function localize(
+  value: string | Record<string, string> | undefined,
+  locale: Locale,
+): string | undefined {
+  if (value == null) return undefined;
+  if (typeof value === "string") return value;
+  return value[locale] ?? value["en"];
+}

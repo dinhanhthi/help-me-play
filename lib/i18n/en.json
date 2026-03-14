@@ -44,6 +44,12 @@
       "Smash": "Flick stick + press button simultaneously"
     }
   },
+  "directions": {
+    "left": "Left",
+    "right": "Right",
+    "up": "Up",
+    "down": "Down"
+  },
   "media": {
     "invalidUrl": "Invalid media URL",
     "embeddedMedia": "Embedded media",

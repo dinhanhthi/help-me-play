@@ -1,8 +1,14 @@
 [
   {
     "id": "bow-and-arrows",
-    "name": "Bow and Arrows",
-    "description": "Link draws his bow and fires an arrow. Hold B to charge for more damage and distance.",
+    "name": {
+      "en": "Bow and Arrows",
+      "vi": "Cung và Tên"
+    },
+    "description": {
+      "en": "Link draws his bow and fires an arrow. Hold B to charge for more damage and distance.",
+      "vi": "Link rút cung và bắn tên. Giữ B để tích lực, gây thêm sát thương và bắn xa hơn."
+    },
     "category": "special",
     "combos": {
       "handheld": [{ "buttons": ["b"], "inputType": "Hold", "duration": 1500 }],
@@ -12,8 +18,14 @@
   },
   {
     "id": "boomerang",
-    "name": "Boomerang",
-    "description": "Link throws a boomerang forward. It returns on the way back, hitting opponents twice.",
+    "name": {
+      "en": "Boomerang",
+      "vi": "Boomerang"
+    },
+    "description": {
+      "en": "Link throws a boomerang forward. It returns on the way back, hitting opponents twice.",
+      "vi": "Link ném boomerang về phía trước. Nó quay lại trên đường về, đánh trúng đối thủ hai lần."
+    },
     "category": "special",
     "combos": {
       "handheld": [{ "buttons": ["left-stick", "b"], "direction": "left", "inputType": "Tap" }],
@@ -23,8 +35,14 @@
   },
   {
     "id": "spin-attack",
-    "name": "Spin Attack",
-    "description": "Link spins with his sword, hitting all around him. In the air, it provides recovery.",
+    "name": {
+      "en": "Spin Attack",
+      "vi": "Chém Xoay (Spin Attack)"
+    },
+    "description": {
+      "en": "Link spins with his sword, hitting all around him. In the air, it provides recovery.",
+      "vi": "Link xoay kiếm, chém tất cả xung quanh. Khi ở trên không, chiêu này giúp hồi phục vị trí."
+    },
     "category": "special",
     "combos": {
       "handheld": [{ "buttons": ["left-stick", "b"], "direction": "up", "inputType": "Tap" }],
@@ -34,8 +52,14 @@
   },
   {
     "id": "remote-bomb",
-    "name": "Remote Bomb",
-    "description": "Link places a remote bomb. Press Down-B again to detonate it.",
+    "name": {
+      "en": "Remote Bomb",
+      "vi": "Bom Điều Khiển (Remote Bomb)"
+    },
+    "description": {
+      "en": "Link places a remote bomb. Press Down-B again to detonate it.",
+      "vi": "Link đặt một quả bom điều khiển từ xa. Nhấn Xuống-B lần nữa để kích nổ."
+    },
     "category": "special",
     "combos": {
       "handheld": [
@@ -51,8 +75,14 @@
   },
   {
     "id": "forward-smash",
-    "name": "Forward Smash",
-    "description": "A two-hit sword slash. First hit can combo into the second for big damage.",
+    "name": {
+      "en": "Forward Smash",
+      "vi": "Đánh Mạnh Trước (Forward Smash)"
+    },
+    "description": {
+      "en": "A two-hit sword slash. First hit can combo into the second for big damage.",
+      "vi": "Chém kiếm hai nhát liên tiếp. Nhát đầu có thể combo sang nhát thứ hai để gây sát thương lớn."
+    },
     "category": "smash",
     "combos": {
       "handheld": [

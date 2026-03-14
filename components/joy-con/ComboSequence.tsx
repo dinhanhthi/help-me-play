@@ -84,7 +84,7 @@ export default function ComboSequence({ steps, mode }: ComboSequenceProps) {
         )}
         {direction && (
           <span className="rounded-lg bg-accent-subtle px-2.5 py-1 text-xs font-semibold text-accent">
-            {direction[0].toUpperCase() + direction.slice(1)}
+            {(t.directions as Record<string, string>)[direction] ?? direction[0].toUpperCase() + direction.slice(1)}
           </span>
         )}
       </div>

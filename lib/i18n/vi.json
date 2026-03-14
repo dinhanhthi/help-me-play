@@ -36,7 +36,13 @@
     "step": "Bước",
     "pauseAnimation": "Tạm dừng",
     "playAnimation": "Phát",
-    "restartAnimation": "Chơi lại"
+    "restartAnimation": "Chơi lại",
+    "inputTypeLegend": "Loại thao tác",
+    "inputTypes": {
+      "Tap": "Nhấn và thả nhanh",
+      "Hold": "Nhấn và giữ nút",
+      "Smash": "Đẩy mạnh cần + nhấn nút cùng lúc"
+    }
   },
   "media": {
     "invalidUrl": "URL không hợp lệ",

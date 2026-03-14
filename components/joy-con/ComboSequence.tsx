@@ -53,14 +53,17 @@ export default function ComboSequence({ steps, mode }: ComboSequenceProps) {
   const activeButtons = step?.buttons ?? [];
   const direction = step?.direction;
   const inputType = step?.inputType;
+  const tooltip = inputType
+    ? (t.controls.inputTypes as Record<string, string>)[inputType]
+    : undefined;
 
   return (
     <div className="flex flex-col items-center gap-4">
       <div className="w-full">
         {mode === "handheld" ? (
-          <JoyConHandheld activeButtons={activeButtons} direction={direction} />
+          <JoyConHandheld activeButtons={activeButtons} direction={direction} inputType={inputType} tooltip={tooltip} />
         ) : (
-          <JoyConSingle activeButtons={activeButtons} direction={direction} />
+          <JoyConSingle activeButtons={activeButtons} direction={direction} inputType={inputType} tooltip={tooltip} />
         )}
       </div>
 

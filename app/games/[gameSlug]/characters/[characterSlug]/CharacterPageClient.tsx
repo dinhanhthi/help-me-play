@@ -6,6 +6,7 @@ import { useI18n } from "@/lib/i18n/context";
 import ModeToggle from "@/components/ui/ModeToggle";
 import ComboSequence from "@/components/joy-con/ComboSequence";
 import MediaEmbed from "@/components/media/MediaEmbed";
+import { inputTypeColors } from "@/components/joy-con/ControllerShell";
 
 interface CharacterPageClientProps {
   characterName: string;
@@ -40,8 +41,21 @@ export default function CharacterPageClient({
         )}
       </div>
 
-      <div className="mb-8">
+      <div className="mb-8 flex flex-wrap items-center gap-6">
         <ModeToggle mode={mode} onChange={setMode} />
+        {/* Input type legend */}
+        <div className="flex flex-wrap items-center gap-3">
+          <span className="text-xs font-semibold text-muted">{t.controls.inputTypeLegend}:</span>
+          {Object.entries(inputTypeColors).map(([type, color]) => (
+            <div key={type} className="group relative flex items-center gap-1.5">
+              <div className="h-2.5 w-2.5 rounded-full" style={{ backgroundColor: color }} />
+              <span className="text-xs text-muted">{type}</span>
+              <div className="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden w-max max-w-[200px] rounded-lg bg-surface border border-border px-3 py-2 text-xs text-foreground shadow-lg group-hover:block">
+                {(t.controls.inputTypes as Record<string, string>)[type]}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="space-y-5">
@@ -68,7 +82,7 @@ export default function CharacterPageClient({
               </div>
 
               {/* Side-by-side */}
-              <div className="grid grid-cols-1 gap-5 p-5 md:grid-cols-2">
+              <div className="grid grid-cols-1 gap-5 p-5 md:grid-cols-2 md:items-center">
                 <div>
                   <ComboSequence steps={comboSteps} mode={mode} />
                 </div>

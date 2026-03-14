@@ -36,7 +36,13 @@
     "step": "Step",
     "pauseAnimation": "Pause animation",
     "playAnimation": "Play animation",
-    "restartAnimation": "Restart animation"
+    "restartAnimation": "Restart animation",
+    "inputTypeLegend": "Input Types",
+    "inputTypes": {
+      "Tap": "Press and release quickly",
+      "Hold": "Press and hold the button",
+      "Smash": "Flick stick + press button simultaneously"
+    }
   },
   "media": {
     "invalidUrl": "Invalid media URL",

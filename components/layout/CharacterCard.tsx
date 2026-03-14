@@ -25,11 +25,11 @@ export default function CharacterCard({ character, gameSlug }: CharacterCardProp
           </div>
         )}
       </div>
-      <h3 className="font-display text-sm font-semibold group-hover:text-accent transition-colors">
+      <h3 className="font-display text-base font-semibold group-hover:text-accent transition-colors">
         {character.name}
       </h3>
       {character.description && (
-        <p className="mt-1 text-xs text-muted leading-relaxed line-clamp-2">
+        <p className="mt-1 text-xs text-muted leading-relaxed">
           {character.description}
         </p>
       )}

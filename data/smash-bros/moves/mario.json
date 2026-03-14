@@ -15,9 +15,25 @@
         {
           "buttons": ["a"],
           "inputType": "Tap"
+        },
+        {
+          "buttons": ["a"],
+          "inputType": "Tap"
+        },
+        {
+          "buttons": ["a"],
+          "inputType": "Tap"
         }
       ],
       "single-joycon": [
+        {
+          "buttons": ["a"],
+          "inputType": "Tap"
+        },
+        {
+          "buttons": ["a"],
+          "inputType": "Tap"
+        },
         {
           "buttons": ["a"],
           "inputType": "Tap"
@@ -252,8 +268,8 @@
       "vi": "Đòn không trung trung tính (Sex Kick)"
     },
     "description": {
-      "en": "Flying kick dealing 8% clean / 5% late. Starts frame 3. Autocancels in short hop. Late hit combos into grabs, tilts, and smash attacks. Versatile combo breaker and starter. 4 frames landing lag.",
-      "vi": "Đá bay gây 8% trúng sớm / 5% trúng muộn. Ra đòn frame 3. Tự hủy hiệu ứng tiếp đất khi nhảy ngắn. Đòn trúng muộn combo vào tóm, tilt và smash. Đòn phá combo và mở combo đa năng. 4 frame lag khi tiếp đất."
+      "en": "Flying kick dealing 8% clean / 5% late. Starts frame 3. Autocancels in short hop. Late hit combos into grabs, tilts, and smash attacks. Versatile combo breaker and starter. 6 frames landing lag.",
+      "vi": "Đá bay gây 8% trúng sớm / 5% trúng muộn. Ra đòn frame 3. Tự hủy hiệu ứng tiếp đất khi nhảy ngắn. Đòn trúng muộn combo vào tóm, tilt và smash. Đòn phá combo và mở combo đa năng. 6 frame lag khi tiếp đất."
     },
     "category": "aerial",
     "combos": {
@@ -280,8 +296,8 @@
       "vi": "Đòn không trung trước (Meteor Smash)"
     },
     "description": {
-      "en": "Overhead fist slam. Deals 12-14%. Starts frame 16. Sweetspot on frames 19-20 is a METEOR SMASH that KOs offstage below 45%. Slower startup but devastating when landed.",
-      "vi": "Đấm nắm đập từ trên xuống. Gây 12-14% sát thương. Ra đòn frame 16. Điểm ngọt ở frame 19-20 là METEOR SMASH hạ gục ngoài sân dưới 45%. Khởi động chậm nhưng cực kỳ nguy hiểm khi trúng."
+      "en": "Overhead fist slam. Deals 12% early / 14% clean / 10% late. Starts frame 16. Sweetspot on frames 17-20 is a METEOR SMASH that KOs offstage below 45%. Slower startup but devastating when landed.",
+      "vi": "Đấm nắm đập từ trên xuống. Gây 12% sớm / 14% trúng đúng / 10% muộn. Ra đòn frame 16. Điểm ngọt ở frame 17-20 là METEOR SMASH hạ gục ngoài sân dưới 45%. Khởi động chậm nhưng cực kỳ nguy hiểm khi trúng."
     },
     "category": "aerial",
     "combos": {
@@ -400,8 +416,8 @@
       "vi": "Cầu lửa (Fireball)"
     },
     "description": {
-      "en": "Throws a bouncing fireball projectile dealing 5% early / 4% late. Starts frame 17. Bounces along the ground 3-4 times. Great for approach, zoning, and starting combos. Full aerial mobility retained.",
-      "vi": "Ném quả cầu lửa nảy gây 5% sớm / 4% muộn. Ra đòn frame 17. Nảy trên mặt đất 3-4 lần. Tuyệt vời để tiếp cận, kiểm soát vùng, và mở combo. Giữ nguyên khả năng di chuyển trên không."
+      "en": "Throws a bouncing fireball projectile dealing 5% early / 4% late. Starts frame 17. Bounces along the ground up to 7 times. Great for approach, zoning, and starting combos. Full aerial mobility retained.",
+      "vi": "Ném quả cầu lửa nảy gây 5% sớm / 4% muộn. Ra đòn frame 17. Nảy trên mặt đất tới 7 lần. Tuyệt vời để tiếp cận, kiểm soát vùng, và mở combo. Giữ nguyên khả năng di chuyển trên không."
     },
     "category": "special",
     "combos": {
@@ -428,8 +444,8 @@
       "vi": "Áo choàng (Cape)"
     },
     "description": {
-      "en": "Swings a cape dealing 7%. Starts frame 12. REFLECTS projectiles at 1.5x damage and REVERSES opponent facing direction. In air, briefly stalls momentum for recovery mixups. Devastating for gimping recoveries.",
-      "vi": "Vung áo choàng gây 7% sát thương. Ra đòn frame 12. PHẢN CHIẾU đạn với 1.5 lần sát thương và ĐẢO NGƯỢC hướng mặt đối thủ. Trên không, tạm dừng đà di chuyển để mixup hồi phục. Cực hiệu quả để gimp đối thủ đang hồi phục."
+      "en": "Swings a cape dealing 7%. Reflector active frame 9, damage hitbox frame 12. REFLECTS projectiles at 1.5x damage and REVERSES opponent facing direction. In air, briefly stalls momentum for recovery mixups. Devastating for gimping recoveries.",
+      "vi": "Vung áo choàng gây 7% sát thương. Phản chiếu hoạt động frame 9, hitbox sát thương frame 12. PHẢN CHIẾU đạn với 1.5 lần sát thương và ĐẢO NGƯỢC hướng mặt đối thủ. Trên không, tạm dừng đà di chuyển để mixup hồi phục. Cực hiệu quả để gimp đối thủ đang hồi phục."
     },
     "category": "special",
     "combos": {
@@ -604,8 +620,8 @@
       "vi": "Ném sau (Giant Swing)"
     },
     "description": {
-      "en": "Grabs opponent by feet and swings them backward (like Bowser throw in SM64). Deals 11%. Mario's strongest throw — KOs ~120% at ledge, ~160% center stage. Also hits bystanders for 8%.",
-      "vi": "Tóm chân đối thủ và quăng về sau (giống ném Bowser trong SM64). Gây 11% sát thương. Đòn ném mạnh nhất của Mario — hạ gục ~120% ở mép sân, ~160% giữa sân. Cũng đánh trúng người đứng gần gây 8%."
+      "en": "Grabs opponent by feet and swings them backward (like Bowser throw in SM64). Deals 11%. Mario's strongest throw — KOs ~130% at ledge, ~160% center stage. Also hits bystanders for 8%.",
+      "vi": "Tóm chân đối thủ và quăng về sau (giống ném Bowser trong SM64). Gây 11% sát thương. Đòn ném mạnh nhất của Mario — hạ gục ~130% ở mép sân, ~160% giữa sân. Cũng đánh trúng người đứng gần gây 8%."
     },
     "category": "grab",
     "combos": {

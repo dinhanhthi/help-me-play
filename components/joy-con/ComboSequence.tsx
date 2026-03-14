@@ -25,6 +25,7 @@ export default function ComboSequence({ steps, mode }: ComboSequenceProps) {
   const { t } = useI18n();
   const [currentStep, setCurrentStep] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
+  const [isGap, setIsGap] = useState(false);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const stepCount = steps.length;
@@ -37,8 +38,25 @@ export default function ComboSequence({ steps, mode }: ComboSequenceProps) {
     }
   }, []);
 
+  // Check if two steps have identical buttons
+  const stepsMatch = useCallback(
+    (a: number, b: number) => {
+      const sa = steps[a];
+      const sb = steps[b];
+      if (!sa || !sb) return false;
+      return (
+        sa.inputType === sb.inputType &&
+        sa.direction === sb.direction &&
+        sa.buttons.length === sb.buttons.length &&
+        sa.buttons.every((btn, i) => btn === sb.buttons[i])
+      );
+    },
+    [steps],
+  );
+
   const restart = useCallback(() => {
     clearTimer();
+    setIsGap(false);
     setCurrentStep(0);
   }, [clearTimer]);
 
@@ -47,31 +65,60 @@ export default function ComboSequence({ steps, mode }: ComboSequenceProps) {
   }, []);
 
   const goToPrevStep = useCallback(() => {
-    setCurrentStep((prev) => (prev - 1 + stepCount) % stepCount);
-  }, [stepCount]);
+    setCurrentStep((prev) => {
+      const next = (prev - 1 + stepCount) % stepCount;
+      if (stepsMatch(prev, next) && next !== prev) {
+        setIsGap(true);
+      }
+      return next;
+    });
+  }, [stepCount, stepsMatch]);
 
   const goToNextStep = useCallback(() => {
-    setCurrentStep((prev) => (prev + 1) % stepCount);
-  }, [stepCount]);
+    setCurrentStep((prev) => {
+      const next = (prev + 1) % stepCount;
+      if (stepsMatch(prev, next) && next !== prev) {
+        setIsGap(true);
+      }
+      return next;
+    });
+  }, [stepCount, stepsMatch]);
+
+  // Brief gap (150ms) between identical consecutive steps — works in both play and pause modes
+  useEffect(() => {
+    if (!isGap) return;
+    const gapTimer = setTimeout(() => {
+      setIsGap(false);
+    }, 150);
+    return () => clearTimeout(gapTimer);
+  }, [isGap]);
 
   useEffect(() => {
-    if (!isPlaying || stepCount === 0) return;
+    if (!isPlaying || stepCount === 0 || isGap) return;
+
     const duration = step?.duration ?? 1000;
     timerRef.current = setTimeout(() => {
-      setCurrentStep((prev) => (prev + 1) % stepCount);
+      const nextStep = (currentStep + 1) % stepCount;
+      if (stepsMatch(currentStep, nextStep) && nextStep !== currentStep) {
+        // Insert a visual gap before showing the next identical step
+        setIsGap(true);
+        setCurrentStep(nextStep);
+      } else {
+        setCurrentStep(nextStep);
+      }
     }, duration);
     return () => {
       clearTimer();
     };
-  }, [isPlaying, currentStep, stepCount, step?.duration, clearTimer]);
+  }, [isPlaying, currentStep, stepCount, step?.duration, clearTimer, isGap, stepsMatch]);
 
   if (stepCount === 0) {
     return <p className="text-sm text-muted">{t.controls.noComboSteps}</p>;
   }
 
-  const activeButtons = step?.buttons ?? [];
-  const direction = step?.direction;
-  const inputType = step?.inputType;
+  const activeButtons = isGap ? [] : (step?.buttons ?? []);
+  const direction = isGap ? undefined : step?.direction;
+  const inputType = isGap ? undefined : step?.inputType;
   const tooltip = inputType
     ? (t.controls.inputTypes as Record<string, string>)[inputType]
     : undefined;
@@ -97,7 +144,7 @@ export default function ComboSequence({ steps, mode }: ComboSequenceProps) {
       </div>
 
       {/* Info tags */}
-      <div className="flex flex-wrap items-center justify-center gap-2 w-full">
+      <div className="flex flex-wrap items-center justify-start gap-2 w-full">
         {stepCount > 1 && (
           <span className="rounded-lg bg-surface px-2.5 py-1 font-mono text-xs text-muted">
             {t.controls.step} {currentStep + 1}/{stepCount}

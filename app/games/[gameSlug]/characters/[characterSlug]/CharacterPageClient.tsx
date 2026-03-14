@@ -214,7 +214,7 @@ export default function CharacterPageClient({
         .filter((cat) => groupedMoves[cat])
         .map((cat) => (
           <section key={cat} className="mb-10">
-            <h2 className="font-display text-xl font-bold tracking-tight">
+            <h2 className="font-display text-2xl font-bold tracking-tight">
               {catLabels[cat] ?? cat}
             </h2>
             {catDescs[cat] && <p className="mt-1 mb-4 text-sm text-muted">{catDescs[cat]}</p>}

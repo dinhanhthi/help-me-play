@@ -5,6 +5,7 @@ import type { ComboStep, ControllerMode } from "@/lib/types";
 import { useI18n } from "@/lib/i18n/context";
 import { ChevronLeft, ChevronRight, Pause, Play, RotateCcw } from "lucide-react";
 import { inputTypeColors } from "./ControllerShell";
+import { Tooltip } from "@/components/ui/Tooltip";
 import JoyConHandheld from "./JoyConHandheld";
 import JoyConSingle from "./JoyConSingle";
 
@@ -103,31 +104,30 @@ export default function ComboSequence({ steps, mode }: ComboSequenceProps) {
           </span>
         )}
         {!direction &&
-          activeButtons.map((btn) => (
+          activeButtons.map((btn) => {
+            const badge = (
+              <span
+                key={btn}
+                className="rounded-full h-6 w-6 flex items-center justify-center text-sm font-semibold text-white uppercase"
+                style={{ backgroundColor: inputTypeColors[inputType ?? ""] ?? "#38bdf8" }}
+              >
+                {btn}
+              </span>
+            );
+            return tooltip ? <Tooltip key={btn} text={tooltip}>{badge}</Tooltip> : badge;
+          })}
+        {direction && (() => {
+          const badge = (
             <span
-              key={btn}
-              className="group relative rounded-full h-6 w-6 flex items-center justify-center text-sm font-semibold text-white uppercase"
+              className="rounded-full h-6 w-6 flex items-center justify-center text-sm font-semibold text-white"
               style={{ backgroundColor: inputTypeColors[inputType ?? ""] ?? "#38bdf8" }}
             >
-              {btn}
-              {tooltip && (
-                <span className="normal-case pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden w-max max-w-[200px] rounded-lg bg-surface border border-border px-3 py-2 text-xs text-foreground shadow-lg group-hover:block">
-                  {tooltip}
-                </span>
-              )}
+              {directionArrows[direction] ?? direction}
             </span>
-          ))}
-        {direction && (
-          <span
-            className="group relative rounded-full h-6 w-6 flex items-center justify-center text-sm font-semibold text-white"
-            style={{ backgroundColor: inputTypeColors[inputType ?? ""] ?? "#38bdf8" }}
-          >
-            {directionArrows[direction] ?? direction}
-            <span className="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden w-max max-w-[200px] rounded-lg bg-surface border border-border px-3 py-2 text-xs text-foreground shadow-lg group-hover:block">
-              {(t.directions as Record<string, string>)[direction] ?? direction}
-            </span>
-          </span>
-        )}
+          );
+          const dirLabel = (t.directions as Record<string, string>)[direction] ?? direction;
+          return <Tooltip text={dirLabel}>{badge}</Tooltip>;
+        })()}
       </div>
 
       {/* Controls */}

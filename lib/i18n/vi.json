@@ -26,7 +26,26 @@
   "character": {
     "controllerInput": "Nút bấm",
     "demonstration": "Minh họa",
-    "noMoves": "Chưa có chiêu thức nào cho nhân vật này."
+    "noMoves": "Chưa có chiêu thức nào cho nhân vật này.",
+    "allCategories": "Tất cả",
+    "categories": {
+      "ground": "Mặt đất",
+      "tilt": "Nghiêng",
+      "smash": "Smash",
+      "aerial": "Trên không",
+      "special": "Đặc biệt",
+      "grab": "Tóm",
+      "other": "Khác"
+    },
+    "categoryDescriptions": {
+      "ground": "Đòn cơ bản khi đứng hoặc chạy",
+      "tilt": "Đòn dùng nghiêng cần + nút A, sức mạnh trung bình",
+      "smash": "Đòn mạnh hạ gục dùng đẩy mạnh cần + nút A",
+      "aerial": "Đòn tấn công khi ở trên không",
+      "special": "Chiêu đặc biệt riêng của nhân vật dùng nút B",
+      "grab": "Tóm, đánh khi tóm, và ném",
+      "other": "Đòn từ mép sân, đòn đứng dậy, combo, và Smash tối thượng"
+    }
   },
   "controls": {
     "handheldMode": "Cầm tay",

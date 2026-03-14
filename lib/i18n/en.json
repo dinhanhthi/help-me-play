@@ -26,7 +26,26 @@
   "character": {
     "controllerInput": "Controller Input",
     "demonstration": "Demonstration",
-    "noMoves": "No moves available for this character yet."
+    "noMoves": "No moves available for this character yet.",
+    "allCategories": "All",
+    "categories": {
+      "ground": "Ground",
+      "tilt": "Tilt",
+      "smash": "Smash",
+      "aerial": "Aerial",
+      "special": "Special",
+      "grab": "Grab",
+      "other": "Other"
+    },
+    "categoryDescriptions": {
+      "ground": "Basic attacks performed while standing or running",
+      "tilt": "Attacks using stick tilt + A button, moderate strength",
+      "smash": "Powerful KO attacks using stick flick + A button",
+      "aerial": "Attacks performed while airborne",
+      "special": "Unique character moves using the B button",
+      "grab": "Grab, pummel, and throw attacks",
+      "other": "Ledge attacks, getup attacks, combos, and Final Smash"
+    }
   },
   "controls": {
     "handheldMode": "Handheld Mode",

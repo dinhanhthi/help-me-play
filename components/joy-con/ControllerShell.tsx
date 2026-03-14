@@ -1,4 +1,5 @@
 import type { ControllerMode } from "@/lib/types";
+import { Tooltip } from "@/components/ui/Tooltip";
 
 interface ControllerShellProps {
   mode: ControllerMode;
@@ -37,14 +38,6 @@ const directionAngles: Record<string, number> = {
   left: 270,
 };
 
-/** Tooltip bubble shown on hover */
-function Tooltip({ text }: { text: string }) {
-  return (
-    <div className="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden w-max max-w-[180px] rounded-lg bg-surface border border-border px-3 py-2 text-xs text-foreground shadow-lg group-hover:block z-20">
-      {text}
-    </div>
-  );
-}
 
 /** A circular button that shows active state */
 function Btn({
@@ -62,19 +55,20 @@ function Btn({
   tooltip?: string;
   className?: string;
 }) {
-  return (
+  const el = (
     <div
       data-button-id={id}
-      className={`relative ${active && tooltip ? "group" : ""} ${btnBase} ${active ? "" : `pointer-events-none ${capStyle}`} ${className}`}
+      className={`${btnBase} ${active ? "" : `pointer-events-none ${capStyle}`} ${className}`}
       style={active ? { backgroundColor: color } : undefined}
       aria-label={`${label ?? id} button${active ? " (active)" : ""}`}
     >
       {label && (
         <span className="select-none leading-none font-semibold text-sm text-white">{label}</span>
       )}
-      {active && tooltip && <Tooltip text={tooltip} />}
     </div>
   );
+  if (active && tooltip) return <Tooltip text={tooltip}>{el}</Tooltip>;
+  return el;
 }
 
 /** Diamond layout for 4 buttons (face buttons or d-pad) */
@@ -158,23 +152,24 @@ function Stick({
       ? `conic-gradient(from ${angle - 60}deg, ${color} 0deg, ${color} 120deg, transparent 120deg), #2a3348`
       : undefined;
   const showTooltip = (active || bg) && tooltip;
+  const inner = (
+    <div
+      data-button-id={id}
+      className={`rounded-full ${btnBase} ${capStyle}`}
+      style={{
+        width: 22,
+        height: 22,
+        ...(bg ? { background: bg } : active ? { backgroundColor: color } : {}),
+      }}
+      aria-label={`${id}${active ? " (active)" : ""}`}
+    />
+  );
   return (
     <div
       className={`rounded-full ${outline} flex items-center justify-center`}
       style={{ width: 50, height: 50 }}
     >
-      <div
-        data-button-id={id}
-        className={`relative ${showTooltip ? "group" : ""} rounded-full ${btnBase} ${capStyle}`}
-        style={{
-          width: 22,
-          height: 22,
-          ...(bg ? { background: bg } : active ? { backgroundColor: color } : {}),
-        }}
-        aria-label={`${id}${active ? " (active)" : ""}`}
-      >
-        {showTooltip && <Tooltip text={tooltip!} />}
-      </div>
+      {showTooltip ? <Tooltip text={tooltip!}>{inner}</Tooltip> : inner}
     </div>
   );
 }
@@ -193,17 +188,16 @@ function PillBtn({
   tooltip?: string;
   className?: string;
 }) {
-  const showTooltip = active && tooltip;
-  return (
+  const el = (
     <div
       data-button-id={id}
-      className={`relative ${showTooltip ? "group" : ""} rounded-full transition-colors duration-150 ${active ? "" : outline} ${className}`}
+      className={`rounded-full transition-colors duration-150 ${active ? "" : outline} ${className}`}
       style={active ? { backgroundColor: color } : { backgroundColor: "#2a3348" }}
       aria-label={`${id} button${active ? " (active)" : ""}`}
-    >
-      {showTooltip && <Tooltip text={tooltip!} />}
-    </div>
+    />
   );
+  if (active && tooltip) return <Tooltip text={tooltip}>{el}</Tooltip>;
+  return el;
 }
 
 function HandheldShell({

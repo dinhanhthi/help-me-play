@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Nunito, Fredoka } from "next/font/google";
 import { Geist_Mono } from "next/font/google";
 import { I18nProvider } from "@/lib/i18n/context";
+import { TooltipProvider } from "@/components/ui/Tooltip";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import "./globals.css";
@@ -47,9 +48,11 @@ export default function RootLayout({
         className={`${nunito.variable} ${fredoka.variable} ${geistMono.variable} antialiased flex min-h-screen flex-col bg-background text-foreground`}
       >
         <I18nProvider>
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
+          <TooltipProvider delayDuration={200}>
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </TooltipProvider>
         </I18nProvider>
       </body>
     </html>

@@ -1,8 +1,14 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import { Globe } from "lucide-react";
 import { useI18n } from "@/lib/i18n/context";
 import { locales, localeLabels, type Locale } from "@/lib/i18n";
+
+const localeShort: Record<Locale, string> = {
+  en: "EN",
+  vi: "VI",
+};
 
 export default function LocaleSwitcher() {
   const { locale, setLocale } = useI18n();
@@ -33,15 +39,13 @@ export default function LocaleSwitcher() {
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen((prev) => !prev)}
-        className="cursor-pointer flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 text-sm font-medium text-muted transition-colors hover:text-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+        className="cursor-pointer flex items-center gap-1.5 rounded-full border border-border px-3 py-1.5 text-sm font-medium text-muted transition-colors hover:text-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
         aria-haspopup="listbox"
         aria-expanded={open}
         aria-label="Select language"
       >
-        {localeLabels[locale]}
-        <svg className={`h-3.5 w-3.5 transition-transform duration-200 ${open ? "rotate-180" : ""}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <polyline points="6 9 12 15 18 9" />
-        </svg>
+        <Globe className="h-4 w-4" />
+        <span>{localeShort[locale]}</span>
       </button>
 
       {open && (
@@ -65,13 +69,8 @@ export default function LocaleSwitcher() {
                       : "text-muted hover:bg-surface hover:text-foreground"
                   }`}
                 >
-                  {isActive && (
-                    <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                  )}
-                  {!isActive && <span className="w-3.5" />}
-                  {localeLabels[loc]}
+                  <Globe className="h-3.5 w-3.5 shrink-0" />
+                  <span className="whitespace-nowrap">{localeLabels[loc]}</span>
                 </button>
               </li>
             );

@@ -1,5 +1,6 @@
 "use client";
 
+import { useCallback, useEffect, useRef, useState } from "react";
 import type { ControllerMode } from "@/lib/types";
 import { useI18n } from "@/lib/i18n/context";
 
@@ -12,13 +13,24 @@ const modes: ControllerMode[] = ["handheld", "single-joycon"];
 
 export default function ModeToggle({ mode, onChange }: ModeToggleProps) {
   const { t } = useI18n();
+  const buttonRefs = useRef<Map<ControllerMode, HTMLButtonElement>>(new Map());
+  const [pill, setPill] = useState({ width: 0, left: 0 });
 
   const labels: Record<ControllerMode, string> = {
     handheld: t.controls.handheldMode,
     "single-joycon": t.controls.singleJoyCon,
   };
 
-  const activeIndex = modes.indexOf(mode);
+  const updatePill = useCallback(() => {
+    const el = buttonRefs.current.get(mode);
+    if (el) {
+      setPill({ width: el.offsetWidth, left: el.offsetLeft });
+    }
+  }, [mode]);
+
+  useEffect(() => {
+    updatePill();
+  }, [updatePill]);
 
   return (
     <div
@@ -30,8 +42,8 @@ export default function ModeToggle({ mode, onChange }: ModeToggleProps) {
       <div
         className="absolute top-1 bottom-1 rounded-full bg-accent transition-all duration-300 ease-in-out"
         style={{
-          width: `calc(${100 / modes.length}% - 12px)`,
-          left: `calc(${(activeIndex * 100) / modes.length}% + 6px)`,
+          width: pill.width,
+          left: pill.left,
         }}
       />
 
@@ -40,6 +52,9 @@ export default function ModeToggle({ mode, onChange }: ModeToggleProps) {
         return (
           <button
             key={m}
+            ref={(el) => {
+              if (el) buttonRefs.current.set(m, el);
+            }}
             role="radio"
             aria-checked={isActive}
             onClick={() => onChange(m)}

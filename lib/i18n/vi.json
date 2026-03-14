@@ -73,6 +73,14 @@
     "up": "Lên",
     "down": "Xuống"
   },
+  "search": {
+    "placeholder": "Tìm trò chơi, nhân vật...",
+    "noResults": "Không tìm thấy kết quả.",
+    "openSearch": "Tìm kiếm",
+    "game": "Trò chơi",
+    "character": "Nhân vật",
+    "close": "Đóng"
+  },
   "media": {
     "invalidUrl": "URL không hợp lệ",
     "embeddedMedia": "Nội dung nhúng",

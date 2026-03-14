@@ -29,9 +29,7 @@ export default function CharacterCard({ character, gameSlug }: CharacterCardProp
         {character.name}
       </h3>
       {character.description && (
-        <p className="mt-1 text-xs text-muted leading-relaxed">
-          {character.description}
-        </p>
+        <p className="mt-1 text-xs text-muted leading-relaxed">{character.description}</p>
       )}
       {character.tags && character.tags.length > 0 && (
         <div className="mt-2 flex flex-wrap justify-center gap-1.5">

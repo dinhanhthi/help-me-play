@@ -13,17 +13,13 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "a"
-          ],
+          "buttons": ["a"],
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "a"
-          ],
+          "buttons": ["a"],
           "inputType": "Tap"
         }
       ]
@@ -45,31 +41,23 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "left-stick"
-          ],
+          "buttons": ["left-stick"],
           "direction": "right",
           "inputType": "Tap"
         },
         {
-          "buttons": [
-            "a"
-          ],
+          "buttons": ["a"],
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "stick"
-          ],
+          "buttons": ["stick"],
           "direction": "right",
           "inputType": "Tap"
         },
         {
-          "buttons": [
-            "a"
-          ],
+          "buttons": ["a"],
           "inputType": "Tap"
         }
       ]
@@ -91,20 +79,14 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "left-stick",
-            "a"
-          ],
+          "buttons": ["left-stick", "a"],
           "direction": "right",
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "stick",
-            "a"
-          ],
+          "buttons": ["stick", "a"],
           "direction": "right",
           "inputType": "Tap"
         }
@@ -127,20 +109,14 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "left-stick",
-            "a"
-          ],
+          "buttons": ["left-stick", "a"],
           "direction": "up",
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "stick",
-            "a"
-          ],
+          "buttons": ["stick", "a"],
           "direction": "up",
           "inputType": "Tap"
         }
@@ -163,20 +139,14 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "left-stick",
-            "a"
-          ],
+          "buttons": ["left-stick", "a"],
           "direction": "down",
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "stick",
-            "a"
-          ],
+          "buttons": ["stick", "a"],
           "direction": "down",
           "inputType": "Tap"
         }
@@ -199,20 +169,14 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "left-stick",
-            "a"
-          ],
+          "buttons": ["left-stick", "a"],
           "direction": "right",
           "inputType": "Smash"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "stick",
-            "a"
-          ],
+          "buttons": ["stick", "a"],
           "direction": "right",
           "inputType": "Smash"
         }
@@ -235,20 +199,14 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "left-stick",
-            "a"
-          ],
+          "buttons": ["left-stick", "a"],
           "direction": "up",
           "inputType": "Smash"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "stick",
-            "a"
-          ],
+          "buttons": ["stick", "a"],
           "direction": "up",
           "inputType": "Smash"
         }
@@ -271,20 +229,14 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "left-stick",
-            "a"
-          ],
+          "buttons": ["left-stick", "a"],
           "direction": "down",
           "inputType": "Smash"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "stick",
-            "a"
-          ],
+          "buttons": ["stick", "a"],
           "direction": "down",
           "inputType": "Smash"
         }
@@ -307,17 +259,13 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "a"
-          ],
+          "buttons": ["a"],
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "a"
-          ],
+          "buttons": ["a"],
           "inputType": "Tap"
         }
       ]
@@ -339,20 +287,14 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "left-stick",
-            "a"
-          ],
+          "buttons": ["left-stick", "a"],
           "direction": "right",
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "stick",
-            "a"
-          ],
+          "buttons": ["stick", "a"],
           "direction": "right",
           "inputType": "Tap"
         }
@@ -375,20 +317,14 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "left-stick",
-            "a"
-          ],
+          "buttons": ["left-stick", "a"],
           "direction": "left",
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "stick",
-            "a"
-          ],
+          "buttons": ["stick", "a"],
           "direction": "left",
           "inputType": "Tap"
         }
@@ -411,20 +347,14 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "left-stick",
-            "a"
-          ],
+          "buttons": ["left-stick", "a"],
           "direction": "up",
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "stick",
-            "a"
-          ],
+          "buttons": ["stick", "a"],
           "direction": "up",
           "inputType": "Tap"
         }
@@ -447,20 +377,14 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "left-stick",
-            "a"
-          ],
+          "buttons": ["left-stick", "a"],
           "direction": "down",
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "stick",
-            "a"
-          ],
+          "buttons": ["stick", "a"],
           "direction": "down",
           "inputType": "Tap"
         }
@@ -483,17 +407,13 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "b"
-          ],
+          "buttons": ["b"],
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "b"
-          ],
+          "buttons": ["b"],
           "inputType": "Tap"
         }
       ]
@@ -515,20 +435,14 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "left-stick",
-            "b"
-          ],
+          "buttons": ["left-stick", "b"],
           "direction": "right",
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "stick",
-            "b"
-          ],
+          "buttons": ["stick", "b"],
           "direction": "right",
           "inputType": "Tap"
         }
@@ -551,20 +465,14 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "left-stick",
-            "b"
-          ],
+          "buttons": ["left-stick", "b"],
           "direction": "up",
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "stick",
-            "b"
-          ],
+          "buttons": ["stick", "b"],
           "direction": "up",
           "inputType": "Tap"
         }
@@ -587,20 +495,14 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "left-stick",
-            "b"
-          ],
+          "buttons": ["left-stick", "b"],
           "direction": "down",
           "inputType": "Hold"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "stick",
-            "b"
-          ],
+          "buttons": ["stick", "b"],
           "direction": "down",
           "inputType": "Hold"
         }
@@ -623,18 +525,13 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "zl"
-          ],
+          "buttons": ["zl"],
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "sl",
-            "sr"
-          ],
+          "buttons": ["sl", "sr"],
           "inputType": "Tap"
         }
       ]
@@ -656,17 +553,13 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "a"
-          ],
+          "buttons": ["a"],
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "a"
-          ],
+          "buttons": ["a"],
           "inputType": "Tap"
         }
       ]
@@ -688,18 +581,14 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "left-stick"
-          ],
+          "buttons": ["left-stick"],
           "direction": "right",
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "stick"
-          ],
+          "buttons": ["stick"],
           "direction": "right",
           "inputType": "Tap"
         }
@@ -722,18 +611,14 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "left-stick"
-          ],
+          "buttons": ["left-stick"],
           "direction": "left",
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "stick"
-          ],
+          "buttons": ["stick"],
           "direction": "left",
           "inputType": "Tap"
         }
@@ -756,18 +641,14 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "left-stick"
-          ],
+          "buttons": ["left-stick"],
           "direction": "up",
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "stick"
-          ],
+          "buttons": ["stick"],
           "direction": "up",
           "inputType": "Tap"
         }
@@ -790,18 +671,14 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "left-stick"
-          ],
+          "buttons": ["left-stick"],
           "direction": "down",
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "stick"
-          ],
+          "buttons": ["stick"],
           "direction": "down",
           "inputType": "Tap"
         }
@@ -824,17 +701,13 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "a"
-          ],
+          "buttons": ["a"],
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "a"
-          ],
+          "buttons": ["a"],
           "inputType": "Tap"
         }
       ]
@@ -856,17 +729,13 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "a"
-          ],
+          "buttons": ["a"],
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "a"
-          ],
+          "buttons": ["a"],
           "inputType": "Tap"
         }
       ]
@@ -888,17 +757,13 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "a"
-          ],
+          "buttons": ["a"],
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "a"
-          ],
+          "buttons": ["a"],
           "inputType": "Tap"
         }
       ]
@@ -920,17 +785,13 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "a"
-          ],
+          "buttons": ["a"],
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "a"
-          ],
+          "buttons": ["a"],
           "inputType": "Tap"
         }
       ]
@@ -952,17 +813,13 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "b"
-          ],
+          "buttons": ["b"],
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "b"
-          ],
+          "buttons": ["b"],
           "inputType": "Tap"
         }
       ]
@@ -984,84 +841,54 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "left-stick",
-            "a"
-          ],
+          "buttons": ["left-stick", "a"],
           "direction": "up",
           "inputType": "Tap"
         },
         {
-          "buttons": [
-            "left-stick",
-            "a"
-          ],
+          "buttons": ["left-stick", "a"],
           "direction": "up",
           "inputType": "Tap"
         },
         {
-          "buttons": [
-            "left-stick",
-            "a"
-          ],
+          "buttons": ["left-stick", "a"],
           "direction": "up",
           "inputType": "Tap"
         },
         {
-          "buttons": [
-            "left-stick",
-            "a"
-          ],
+          "buttons": ["left-stick", "a"],
           "direction": "up",
           "inputType": "Tap"
         },
         {
-          "buttons": [
-            "left-stick",
-            "b"
-          ],
+          "buttons": ["left-stick", "b"],
           "direction": "up",
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "stick",
-            "a"
-          ],
+          "buttons": ["stick", "a"],
           "direction": "up",
           "inputType": "Tap"
         },
         {
-          "buttons": [
-            "stick",
-            "a"
-          ],
+          "buttons": ["stick", "a"],
           "direction": "up",
           "inputType": "Tap"
         },
         {
-          "buttons": [
-            "stick",
-            "a"
-          ],
+          "buttons": ["stick", "a"],
           "direction": "up",
           "inputType": "Tap"
         },
         {
-          "buttons": [
-            "stick",
-            "a"
-          ],
+          "buttons": ["stick", "a"],
           "direction": "up",
           "inputType": "Tap"
         },
         {
-          "buttons": [
-            "stick",
-            "b"
-          ],
+          "buttons": ["stick", "b"],
           "direction": "up",
           "inputType": "Tap"
         }
@@ -1083,50 +910,34 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "left-stick"
-          ],
+          "buttons": ["left-stick"],
           "direction": "down",
           "inputType": "Tap"
         },
         {
-          "buttons": [
-            "left-stick",
-            "a"
-          ],
+          "buttons": ["left-stick", "a"],
           "direction": "up",
           "inputType": "Tap"
         },
         {
-          "buttons": [
-            "left-stick",
-            "a"
-          ],
+          "buttons": ["left-stick", "a"],
           "direction": "up",
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "stick"
-          ],
+          "buttons": ["stick"],
           "direction": "down",
           "inputType": "Tap"
         },
         {
-          "buttons": [
-            "stick",
-            "a"
-          ],
+          "buttons": ["stick", "a"],
           "direction": "up",
           "inputType": "Tap"
         },
         {
-          "buttons": [
-            "stick",
-            "a"
-          ],
+          "buttons": ["stick", "a"],
           "direction": "up",
           "inputType": "Tap"
         }
@@ -1148,32 +959,22 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "a"
-          ],
+          "buttons": ["a"],
           "inputType": "Tap"
         },
         {
-          "buttons": [
-            "left-stick",
-            "a"
-          ],
+          "buttons": ["left-stick", "a"],
           "direction": "up",
           "inputType": "Smash"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "a"
-          ],
+          "buttons": ["a"],
           "inputType": "Tap"
         },
         {
-          "buttons": [
-            "stick",
-            "a"
-          ],
+          "buttons": ["stick", "a"],
           "direction": "up",
           "inputType": "Smash"
         }
@@ -1195,32 +996,22 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "x"
-          ],
+          "buttons": ["x"],
           "inputType": "Tap"
         },
         {
-          "buttons": [
-            "left-stick",
-            "b"
-          ],
+          "buttons": ["left-stick", "b"],
           "direction": "right",
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "x"
-          ],
+          "buttons": ["x"],
           "inputType": "Tap"
         },
         {
-          "buttons": [
-            "stick",
-            "b"
-          ],
+          "buttons": ["stick", "b"],
           "direction": "right",
           "inputType": "Tap"
         }
@@ -1242,38 +1033,26 @@
     "combos": {
       "handheld": [
         {
-          "buttons": [
-            "left-stick",
-            "b"
-          ],
+          "buttons": ["left-stick", "b"],
           "direction": "down",
           "inputType": "Hold",
           "duration": 3000
         },
         {
-          "buttons": [
-            "left-stick",
-            "b"
-          ],
+          "buttons": ["left-stick", "b"],
           "direction": "down",
           "inputType": "Tap"
         }
       ],
       "single-joycon": [
         {
-          "buttons": [
-            "stick",
-            "b"
-          ],
+          "buttons": ["stick", "b"],
           "direction": "down",
           "inputType": "Hold",
           "duration": 3000
         },
         {
-          "buttons": [
-            "stick",
-            "b"
-          ],
+          "buttons": ["stick", "b"],
           "direction": "down",
           "inputType": "Tap"
         }

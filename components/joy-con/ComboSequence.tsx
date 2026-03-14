@@ -114,20 +114,27 @@ export default function ComboSequence({ steps, mode }: ComboSequenceProps) {
                 {btn}
               </span>
             );
-            return tooltip ? <Tooltip key={btn} text={tooltip}>{badge}</Tooltip> : badge;
+            return tooltip ? (
+              <Tooltip key={btn} text={tooltip}>
+                {badge}
+              </Tooltip>
+            ) : (
+              badge
+            );
           })}
-        {direction && (() => {
-          const badge = (
-            <span
-              className="rounded-full h-6 w-6 flex items-center justify-center text-sm font-semibold text-white"
-              style={{ backgroundColor: inputTypeColors[inputType ?? ""] ?? "#38bdf8" }}
-            >
-              {directionArrows[direction] ?? direction}
-            </span>
-          );
-          const dirLabel = (t.directions as Record<string, string>)[direction] ?? direction;
-          return <Tooltip text={dirLabel}>{badge}</Tooltip>;
-        })()}
+        {direction &&
+          (() => {
+            const badge = (
+              <span
+                className="rounded-full h-6 w-6 flex items-center justify-center text-sm font-semibold text-white"
+                style={{ backgroundColor: inputTypeColors[inputType ?? ""] ?? "#38bdf8" }}
+              >
+                {directionArrows[direction] ?? direction}
+              </span>
+            );
+            const dirLabel = (t.directions as Record<string, string>)[direction] ?? direction;
+            return <Tooltip text={dirLabel}>{badge}</Tooltip>;
+          })()}
       </div>
 
       {/* Controls */}

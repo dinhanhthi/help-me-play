@@ -38,7 +38,8 @@ interface MediaEmbedProps {
 function getSourceDomain(url: string): string {
   try {
     const hostname = new URL(url).hostname.replace("www.", "");
-    if (hostname.includes("ssb.wiki.gallery") || hostname.includes("ssbwiki.com")) return "SmashWiki";
+    if (hostname.includes("ssb.wiki.gallery") || hostname.includes("ssbwiki.com"))
+      return "SmashWiki";
     if (hostname.includes("youtube.com") || hostname.includes("youtu.be")) return "YouTube";
     if (hostname.includes("vimeo.com")) return "Vimeo";
     if (hostname.includes("giphy.com")) return "Giphy";
@@ -92,7 +93,15 @@ export default function MediaEmbed({ url, sourceUrl, title, editUrl }: MediaEmbe
     );
   }
 
-  return <MediaContent media={media} accessibleTitle={accessibleTitle} url={url} sourceUrl={sourceUrl} editUrl={editUrl} />;
+  return (
+    <MediaContent
+      media={media}
+      accessibleTitle={accessibleTitle}
+      url={url}
+      sourceUrl={sourceUrl}
+      editUrl={editUrl}
+    />
+  );
 }
 
 function MediaContent({
@@ -117,7 +126,10 @@ function MediaContent({
   ) {
     return (
       <div>
-        <div className="relative w-full max-h-[250px] overflow-hidden rounded-xl" style={{ aspectRatio: "16 / 9" }}>
+        <div
+          className="relative w-full max-h-[250px] overflow-hidden rounded-xl"
+          style={{ aspectRatio: "16 / 9" }}
+        >
           {!loaded && <MediaSkeleton />}
           <iframe
             src={media.embedUrl}

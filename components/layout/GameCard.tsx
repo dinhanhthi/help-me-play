@@ -28,9 +28,7 @@ export default function GameCard({ game }: GameCardProps) {
         <h3 className="font-display text-base font-semibold group-hover:text-accent transition-colors">
           {game.title}
         </h3>
-        <p className="mt-1.5 text-sm text-muted leading-relaxed">
-          {game.description}
-        </p>
+        <p className="mt-1.5 text-sm text-muted leading-relaxed">{game.description}</p>
       </div>
     </Link>
   );

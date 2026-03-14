@@ -73,6 +73,14 @@
     "up": "Up",
     "down": "Down"
   },
+  "search": {
+    "placeholder": "Search games, characters...",
+    "noResults": "No results found.",
+    "openSearch": "Search",
+    "game": "Game",
+    "character": "Character",
+    "close": "Close"
+  },
   "media": {
     "invalidUrl": "Invalid media URL",
     "embeddedMedia": "Embedded media",

@@ -1,18 +1,7 @@
 "use client";
 
-import {
-  createContext,
-  useContext,
-  useState,
-  useEffect,
-  useCallback,
-  type ReactNode,
-} from "react";
-import {
-  type Locale,
-  type Translations,
-  getTranslations,
-} from "./index";
+import { createContext, useContext, useState, useEffect, useCallback, type ReactNode } from "react";
+import { type Locale, type Translations, getTranslations } from "./index";
 
 interface I18nContextValue {
   locale: Locale;
@@ -65,11 +54,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     );
   }
 
-  return (
-    <I18nContext.Provider value={{ locale, t, setLocale }}>
-      {children}
-    </I18nContext.Provider>
-  );
+  return <I18nContext.Provider value={{ locale, t, setLocale }}>{children}</I18nContext.Provider>;
 }
 
 export function useI18n(): I18nContextValue {

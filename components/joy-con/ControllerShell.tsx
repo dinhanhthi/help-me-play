@@ -38,7 +38,6 @@ const directionAngles: Record<string, number> = {
   left: 270,
 };
 
-
 /** A circular button that shows active state */
 function Btn({
   id,

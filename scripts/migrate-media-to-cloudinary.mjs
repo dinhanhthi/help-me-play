@@ -154,7 +154,9 @@ function resourceTypeForExt() {
 
 async function main() {
   if (!DRY_RUN && (!CLOUD_NAME || !API_KEY || !API_SECRET)) {
-    console.error("Error: CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET required");
+    console.error(
+      "Error: CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET required",
+    );
     process.exit(1);
   }
 
@@ -232,7 +234,9 @@ async function main() {
     }
   }
 
-  console.log(`\nDone! Migrated: ${totalMigrated}, Skipped: ${totalSkipped}, Failed: ${totalFailed}`);
+  console.log(
+    `\nDone! Migrated: ${totalMigrated}, Skipped: ${totalSkipped}, Failed: ${totalFailed}`,
+  );
   if (totalFailed > 0) process.exit(1);
 }
 

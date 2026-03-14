@@ -7,6 +7,19 @@ interface JoyConSingleProps {
   tooltip?: string;
 }
 
-export default function JoyConSingle({ activeButtons, direction, inputType, tooltip }: JoyConSingleProps) {
-  return <ControllerShell mode="single-joycon" activeButtons={activeButtons} direction={direction} inputType={inputType} tooltip={tooltip} />;
+export default function JoyConSingle({
+  activeButtons,
+  direction,
+  inputType,
+  tooltip,
+}: JoyConSingleProps) {
+  return (
+    <ControllerShell
+      mode="single-joycon"
+      activeButtons={activeButtons}
+      direction={direction}
+      inputType={inputType}
+      tooltip={tooltip}
+    />
+  );
 }

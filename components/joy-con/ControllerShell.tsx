@@ -120,7 +120,7 @@ function Stick({ id, active, direction, color, tooltip, size = "lg" }: {
       <div
         data-button-id={id}
         className={`relative ${showTooltip ? "group" : ""} w-1/2 aspect-square rounded-full ${btnBase} ${capStyle}`}
-        style={active ? { backgroundColor: color } : bg ? { background: bg } : undefined}
+        style={bg ? { background: bg } : active ? { backgroundColor: color } : undefined}
         aria-label={`${id}${active ? " (active)" : ""}`}
       >
         {showTooltip && <Tooltip text={tooltip!} />}

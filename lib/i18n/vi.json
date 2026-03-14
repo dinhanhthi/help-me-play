@@ -37,6 +37,8 @@
     "pauseAnimation": "Tạm dừng",
     "playAnimation": "Phát",
     "restartAnimation": "Chơi lại",
+    "previousStep": "Bước trước",
+    "nextStep": "Bước sau",
     "inputTypeLegend": "Loại thao tác",
     "inputTypes": {
       "Tap": "Nhấn và thả nhanh",

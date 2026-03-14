@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import type { ComboStep, ControllerMode } from "@/lib/types";
 import { useI18n } from "@/lib/i18n/context";
+import { ChevronLeft, ChevronRight, Pause, Play, RotateCcw } from "lucide-react";
 import JoyConHandheld from "./JoyConHandheld";
 import JoyConSingle from "./JoyConSingle";
 
@@ -36,6 +37,14 @@ export default function ComboSequence({ steps, mode }: ComboSequenceProps) {
   const togglePlayPause = useCallback(() => {
     setIsPlaying((prev) => !prev);
   }, []);
+
+  const goToPrevStep = useCallback(() => {
+    setCurrentStep((prev) => (prev - 1 + stepCount) % stepCount);
+  }, [stepCount]);
+
+  const goToNextStep = useCallback(() => {
+    setCurrentStep((prev) => (prev + 1) % stepCount);
+  }, [stepCount]);
 
   useEffect(() => {
     if (!isPlaying || stepCount === 0) return;
@@ -91,31 +100,37 @@ export default function ComboSequence({ steps, mode }: ComboSequenceProps) {
 
       {/* Controls */}
       {stepCount > 1 && <div className="flex items-center gap-2">
+        {!isPlaying && (
+          <button
+            onClick={goToPrevStep}
+            className="cursor-pointer inline-flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            aria-label={t.controls.previousStep}
+          >
+            <ChevronLeft className="h-4 w-4" />
+          </button>
+        )}
         <button
           onClick={togglePlayPause}
           className="cursor-pointer inline-flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           aria-label={isPlaying ? t.controls.pauseAnimation : t.controls.playAnimation}
         >
-          {isPlaying ? (
-            <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor">
-              <rect x="6" y="4" width="4" height="16" rx="1" />
-              <rect x="14" y="4" width="4" height="16" rx="1" />
-            </svg>
-          ) : (
-            <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor">
-              <polygon points="6,4 20,12 6,20" />
-            </svg>
-          )}
+          {isPlaying ? <Pause className="h-3.5 w-3.5" /> : <Play className="h-3.5 w-3.5" />}
         </button>
+        {!isPlaying && (
+          <button
+            onClick={goToNextStep}
+            className="cursor-pointer inline-flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            aria-label={t.controls.nextStep}
+          >
+            <ChevronRight className="h-4 w-4" />
+          </button>
+        )}
         <button
           onClick={restart}
           className="cursor-pointer inline-flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           aria-label={t.controls.restartAnimation}
         >
-          <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <polyline points="1 4 1 10 7 10" />
-            <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10" />
-          </svg>
+          <RotateCcw className="h-3.5 w-3.5" />
         </button>
       </div>}
     </div>

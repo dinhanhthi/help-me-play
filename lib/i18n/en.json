@@ -37,6 +37,8 @@
     "pauseAnimation": "Pause animation",
     "playAnimation": "Play animation",
     "restartAnimation": "Restart animation",
+    "previousStep": "Previous step",
+    "nextStep": "Next step",
     "inputTypeLegend": "Input Types",
     "inputTypes": {
       "Tap": "Press and release quickly",

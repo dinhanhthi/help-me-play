@@ -28,8 +28,14 @@
     },
     "category": "ground",
     "combos": {
-      "handheld": [{ "buttons": ["left-stick", "a"], "direction": "right", "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["stick", "a"], "direction": "right", "inputType": "Tap" }]
+      "handheld": [
+        { "buttons": ["left-stick"], "direction": "right", "inputType": "Tap" },
+        { "buttons": ["a"], "inputType": "Tap" }
+      ],
+      "single-joycon": [
+        { "buttons": ["stick"], "direction": "right", "inputType": "Tap" },
+        { "buttons": ["a"], "inputType": "Tap" }
+      ]
     },
     "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/b/ba/Mario_Dash_Attack_SSBU.gif"
   },

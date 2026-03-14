@@ -1,4 +1,18 @@
-# Help Me Play
+<p align="center">
+  <img src="assets/logo.svg" alt="Coding Friend Logo" width="100" />
+</p>
+
+<h1 align="center">Help Me Play</h1>
+
+<p align="center">
+  Visual guides for Nintendo Switch games. Learn character combos with interactive Joy-Con button visualizations alongside video/GIF demonstrations.
+</p>
+
+<p align="center">
+  <a href="https://hmplay.dinhanhthi.com">Website</a> ·
+  <a href="https://hmplay.dinhanhthi.com/changelog">Changelog</a> ·
+  <a href="https://github.com/dinhanhthi/help-me-play/issues">Report Bug</a>
+</p>
 
 Visual guides for Nintendo Switch games. Learn character combos with interactive Joy-Con button visualizations alongside video/GIF demonstrations.
 

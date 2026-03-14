@@ -75,6 +75,6 @@
     "invalidUrl": "Invalid media URL",
     "embeddedMedia": "Embedded media",
     "source": "Source",
-    "fixBroken": "Fix broken"
+    "fixBroken": "Report broken link"
   }
 }

@@ -9,8 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://hmplay.dinhanhthi.com">Website</a> ·
-  <a href="https://hmplay.dinhanhthi.com/changelog">Changelog</a> ·
+  <a href="https://hmp.dinhanhthi.com">Website</a> ·
   <a href="https://github.com/dinhanhthi/help-me-play/issues">Report Bug</a>
 </p>
 

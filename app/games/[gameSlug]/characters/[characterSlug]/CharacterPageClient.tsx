@@ -222,13 +222,14 @@ export default function CharacterPageClient({
                     </div>
 
                     {/* Side-by-side */}
-                    <div className="grid grid-cols-1 gap-4 p-4 md:grid-cols-2 md:items-center">
+                    <div className="grid grid-cols-1 gap-6 p-4 md:grid-cols-[auto_1fr] md:items-center">
                       <div className="order-2 md:order-1">
                         <ComboSequence steps={comboSteps} mode={mode} />
                       </div>
                       <div className="order-1 md:order-2">
                         <MediaEmbed
                           url={move.mediaUrl}
+                          sourceUrl={move.sourceUrl}
                           title={localize(move.name, locale) ?? move.id}
                           editUrl={editUrl}
                         />

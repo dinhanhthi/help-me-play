@@ -5,6 +5,8 @@ import { useI18n } from "@/lib/i18n/context";
 
 interface MediaEmbedProps {
   url: string;
+  /** Original source URL before Cloudinary migration (shown as "Source" credit) */
+  sourceUrl?: string;
   title?: string;
   /** GitHub edit URL for "Fix broken" link */
   editUrl?: string;
@@ -54,7 +56,7 @@ function MediaCredit({ url, editUrl }: { url: string; editUrl?: string }) {
   );
 }
 
-export default function MediaEmbed({ url, title, editUrl }: MediaEmbedProps) {
+export default function MediaEmbed({ url, sourceUrl, title, editUrl }: MediaEmbedProps) {
   const { t } = useI18n();
   const media = parseMediaUrl(url);
   const accessibleTitle = title ?? t.media.embeddedMedia;
@@ -84,7 +86,7 @@ export default function MediaEmbed({ url, title, editUrl }: MediaEmbedProps) {
             className="absolute inset-0 h-full w-full"
           />
         </div>
-        <MediaCredit url={url} editUrl={editUrl} />
+        <MediaCredit url={sourceUrl ?? url} editUrl={editUrl} />
       </div>
     );
   }
@@ -100,7 +102,7 @@ export default function MediaEmbed({ url, title, editUrl }: MediaEmbedProps) {
         >
           <track kind="captions" />
         </video>
-        <MediaCredit url={url} editUrl={editUrl} />
+        <MediaCredit url={sourceUrl ?? url} editUrl={editUrl} />
       </div>
     );
   }

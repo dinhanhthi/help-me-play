@@ -43,6 +43,8 @@ export interface Move {
   combos: Record<ControllerMode, ComboStep[]>;
   /** URL to video (YouTube, Vimeo, etc.) or GIF (Giphy, Cloudinary, direct) */
   mediaUrl: string;
+  /** Original source URL before Cloudinary migration (shown as "Source" credit) */
+  sourceUrl?: string;
   /** Auto-detected from URL, but can be overridden */
   mediaType?: "video" | "gif" | "image";
 }

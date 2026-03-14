@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { Github, Plus } from "lucide-react";
 import { useI18n } from "@/lib/i18n/context";
 import LocaleSwitcher from "@/components/ui/LocaleSwitcher";
 
@@ -26,6 +27,24 @@ export default function Header() {
           >
             {t.header.games}
           </Link>
+          <a
+            href="https://github.com/dinhanhthi/help-me-play/blob/main/CONTRIBUTING.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 rounded-full border border-accent/30 bg-accent-subtle px-3 py-1 text-sm font-medium text-accent transition-all hover:border-accent/60 hover:bg-accent-muted"
+          >
+            <Plus className="h-3.5 w-3.5" />
+            {t.header.addGames}
+          </a>
+          <a
+            href="https://github.com/dinhanhthi/help-me-play"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted transition-colors hover:text-accent"
+            aria-label="GitHub"
+          >
+            <Github className="h-5 w-5" />
+          </a>
           <LocaleSwitcher />
         </div>
       </nav>

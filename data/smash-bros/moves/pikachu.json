@@ -22,8 +22,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/4/48/PikachuJabSSBU.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/4/48/PikachuJabSSBU.gif"
+    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/4/46/Pikachu_Jab_SSBU.gif",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/4/46/Pikachu_Jab_SSBU.gif"
   },
   {
     "id": "dash-attack",
@@ -48,8 +48,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/5/5b/PikachuDashAttackSSBU.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/5/5b/PikachuDashAttackSSBU.gif"
+    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/7/77/Pikachu_Dash_Attack_SSBU.gif",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/7/77/Pikachu_Dash_Attack_SSBU.gif"
   },
   {
     "id": "forward-tilt",
@@ -72,8 +72,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/7/78/PikachuFTiltSSBU.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/7/78/PikachuFTiltSSBU.gif"
+    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/d/d4/Pikachu_Side_Tilt_SSBU.gif",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d4/Pikachu_Side_Tilt_SSBU.gif"
   },
   {
     "id": "up-tilt",
@@ -96,8 +96,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/a/a1/PikachuUTiltSSBU.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/a/a1/PikachuUTiltSSBU.gif"
+    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/6/6b/Pikachu_Up_Tilt_SSBU.gif",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/6/6b/Pikachu_Up_Tilt_SSBU.gif"
   },
   {
     "id": "down-tilt",
@@ -120,8 +120,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/0/03/PikachuDTiltSSBU.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/0/03/PikachuDTiltSSBU.gif"
+    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/3/3f/Pikachu_Down_Tilt_SSBU.gif",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/3/3f/Pikachu_Down_Tilt_SSBU.gif"
   },
   {
     "id": "forward-smash",
@@ -149,8 +149,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/1/17/PikachuFSmashSSBU.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/1/17/PikachuFSmashSSBU.gif"
+    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/9/92/Pikachu_Forward_Smash_SSBU.gif",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/9/92/Pikachu_Forward_Smash_SSBU.gif"
   },
   {
     "id": "up-smash",
@@ -178,8 +178,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/a/aa/PikachuUSmashSSBU.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/a/aa/PikachuUSmashSSBU.gif"
+    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/d/d1/Pikachu_Up_Smash_SSBU.gif",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d1/Pikachu_Up_Smash_SSBU.gif"
   },
   {
     "id": "down-smash",
@@ -207,8 +207,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/e/e9/PikachuDSmashSSBU.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/e/e9/PikachuDSmashSSBU.gif"
+    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/8/8f/Pikachu_Down_Smash_SSBU.gif",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/8/8f/Pikachu_Down_Smash_SSBU.gif"
   },
   {
     "id": "neutral-air",
@@ -245,8 +245,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/0/08/PikachuNAirSSBU.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/0/08/PikachuNAirSSBU.gif"
+    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/9/95/Pikachu_Neutral_Air_SSBU.gif",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/9/95/Pikachu_Neutral_Air_SSBU.gif"
   },
   {
     "id": "forward-air",
@@ -271,8 +271,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/b/b3/PikachuFAirSSBU.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/b/b3/PikachuFAirSSBU.gif"
+    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/0/01/Pikachu_Forward_Air_SSBU.gif",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/0/01/Pikachu_Forward_Air_SSBU.gif"
   },
   {
     "id": "back-air",
@@ -297,8 +297,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/b/be/PikachuBAirSSBU.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/b/be/PikachuBAirSSBU.gif"
+    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/8/84/Pikachu_Back_Air_SSBU.gif",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/8/84/Pikachu_Back_Air_SSBU.gif"
   },
   {
     "id": "up-air",
@@ -323,8 +323,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/9/96/PikachuUAirSSBU.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/9/96/PikachuUAirSSBU.gif"
+    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/2/21/Pikachu_Up_Air_SSBU.gif",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/2/21/Pikachu_Up_Air_SSBU.gif"
   },
   {
     "id": "down-air",
@@ -349,8 +349,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/4/46/PikachuDAirSSBU.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/4/46/PikachuDAirSSBU.gif"
+    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/4/47/Pikachu_Down_Air_SSBU.gif",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/4/47/Pikachu_Down_Air_SSBU.gif"
   },
   {
     "id": "thunder-jolt",
@@ -373,8 +373,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/b/b6/PikachuNSpecialAerialSSBU.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/b/b6/PikachuNSpecialAerialSSBU.gif"
+    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/c/c3/Pikachu_Neutral_B_SSBU.gif",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/c/c3/Pikachu_Neutral_B_SSBU.gif"
   },
   {
     "id": "skull-bash",
@@ -397,8 +397,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/8/82/PikachuSSpecialHitSSBU.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/8/82/PikachuSSpecialHitSSBU.gif"
+    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/d/de/Pikachu_Side_B_SSBU.gif",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/de/Pikachu_Side_B_SSBU.gif"
   },
   {
     "id": "quick-attack",
@@ -435,8 +435,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/f/f3/PikachuQuickAttackSSBU.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/f/f3/PikachuQuickAttackSSBU.gif"
+    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/6/65/Pikachu_Up_B_SSBU.gif",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/6/65/Pikachu_Up_B_SSBU.gif"
   },
   {
     "id": "thunder",
@@ -459,8 +459,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/d/d9/PikachuDSpecialHitSSBU.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/d/d9/PikachuDSpecialHitSSBU.gif"
+    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/7/70/Pikachu_Down_B_SSBU.gif",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/7/70/Pikachu_Down_B_SSBU.gif"
   },
   {
     "id": "pummel",
@@ -485,8 +485,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/1/1e/PikachuPummelSSBU.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/1/1e/PikachuPummelSSBU.gif"
+    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/2/26/Pikachu_Grab_%26_Pummel_SSBU.gif",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/2/26/Pikachu_Grab_%26_Pummel_SSBU.gif"
   },
   {
     "id": "forward-throw",
@@ -515,8 +515,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/4/41/PikachuFThrowSSBU.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/4/41/PikachuFThrowSSBU.gif"
+    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/0/0d/Pikachu_Forward_Throw_SSBU.gif",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/0/0d/Pikachu_Forward_Throw_SSBU.gif"
   },
   {
     "id": "back-throw",
@@ -545,8 +545,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/4/41/PikachuBThrowSSBU.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/4/41/PikachuBThrowSSBU.gif"
+    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/9/9a/Pikachu_Back_Throw_SSBU.gif",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/9/9a/Pikachu_Back_Throw_SSBU.gif"
   },
   {
     "id": "up-throw",
@@ -575,8 +575,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/2/21/PikachuUThrowSSBU.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/2/21/PikachuUThrowSSBU.gif"
+    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/1/1e/Pikachu_Up_Throw_SSBU.gif",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/1/1e/Pikachu_Up_Throw_SSBU.gif"
   },
   {
     "id": "down-throw",
@@ -605,8 +605,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/2/25/PikachuDThrowSSBU.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/2/25/PikachuDThrowSSBU.gif"
+    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/e/e0/Pikachu_Down_Throw_SSBU.gif",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/e/e0/Pikachu_Down_Throw_SSBU.gif"
   },
   {
     "id": "ledge-attack",
@@ -629,8 +629,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/4/4e/PikachuLedgeAttackSSBU.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/4/4e/PikachuLedgeAttackSSBU.gif"
+    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/b/b4/Pikachu_Edge_Attack_SSBU.gif",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/b/b4/Pikachu_Edge_Attack_SSBU.gif"
   },
   {
     "id": "floor-attack-face-up",
@@ -653,8 +653,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/4/44/PikachuGetupAttackFrontSSBU.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/4/44/PikachuGetupAttackFrontSSBU.gif"
+    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/3/37/Pikachu_Front_Floor_SSBU.gif",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/3/37/Pikachu_Front_Floor_SSBU.gif"
   },
   {
     "id": "floor-attack-face-down",
@@ -677,8 +677,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/b/b0/PikachuGetupAttackBackSSBU.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/b/b0/PikachuGetupAttackBackSSBU.gif"
+    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/2/2b/Pikachu_Back_Floor_SSBU.gif",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/2/2b/Pikachu_Back_Floor_SSBU.gif"
   },
   {
     "id": "floor-attack-trip",
@@ -701,8 +701,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/b/b6/PikachuTripAttackSSBU.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/b/b6/PikachuTripAttackSSBU.gif"
+    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/e/e4/Pikachu_Trip_Attack_SSBU.gif",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/e/e4/Pikachu_Trip_Attack_SSBU.gif"
   },
   {
     "id": "volt-tackle",
@@ -725,7 +725,7 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/5/5a/Pikachu_Final_Smash_SSBU.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/5/5a/Pikachu_Final_Smash_SSBU.gif"
+    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/5/5a/Pikachu_Final_Smash_SSBU.gif",
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/5/5a/Pikachu_Final_Smash_SSBU.gif"
   }
 ]

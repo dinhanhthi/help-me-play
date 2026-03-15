@@ -55,7 +55,7 @@
       }
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773584306/help-me-play/smash-bros/link/jab.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/0/07/LinkJab1SSBU.gif"
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/7/79/Link_Jab_SSBU.gif"
   },
   {
     "id": "dash-attack",
@@ -113,7 +113,7 @@
       }
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773584307/help-me-play/smash-bros/link/dash-attack.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/d/d0/LinkDashAttackSSBU.gif"
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/0/06/Link_Dash_Attack_SSBU.gif"
   },
   {
     "id": "forward-tilt",
@@ -151,7 +151,7 @@
       }
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773584308/help-me-play/smash-bros/link/forward-tilt.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/8/80/LinkFTiltSSBU.gif"
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/7/7d/Link_Side_Tilt_SSBU.gif"
   },
   {
     "id": "up-tilt",
@@ -189,7 +189,7 @@
       }
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773584309/help-me-play/smash-bros/link/up-tilt.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/a/ac/LinkUTiltSSBU.gif"
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/c/cc/Link_Up_Tilt_SSBU.gif"
   },
   {
     "id": "down-tilt",
@@ -227,7 +227,7 @@
       }
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773584310/help-me-play/smash-bros/link/down-tilt.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/f/fb/LinkDTiltSSBU.gif"
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/e/e0/Link_Down_Tilt_SSBU.gif"
   },
   {
     "id": "forward-smash",
@@ -294,7 +294,7 @@
       }
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773584311/help-me-play/smash-bros/link/forward-smash.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/6/6c/LinkFSmash1SSBU.gif"
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/6/60/Link_Forward_Smash_SSBU.gif"
   },
   {
     "id": "up-smash",
@@ -343,7 +343,7 @@
       }
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773584312/help-me-play/smash-bros/link/up-smash.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/9/97/LinkUSmashSSBU.gif"
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/1/18/Link_Up_Smash_SSBU.gif"
   },
   {
     "id": "down-smash",
@@ -392,7 +392,7 @@
       }
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773584313/help-me-play/smash-bros/link/down-smash.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/a/ac/LinkDSmashSSBU.gif"
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/4/43/Link_Down_Smash_SSBU.gif"
   },
   {
     "id": "neutral-air",
@@ -486,7 +486,7 @@
       }
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773584314/help-me-play/smash-bros/link/neutral-air.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/5/52/LinkNAirSSBU.gif"
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/8/8c/Link_Neutral_Air_SSBU.gif"
   },
   {
     "id": "forward-air",
@@ -552,7 +552,7 @@
       }
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773584315/help-me-play/smash-bros/link/forward-air.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/3/3a/LinkFAirSSBU.gif"
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/2/26/Link_Forward_Air_SSBU.gif"
   },
   {
     "id": "back-air",
@@ -606,7 +606,7 @@
       }
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773584317/help-me-play/smash-bros/link/back-air.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/8/83/LinkBAirSSBU.gif"
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/7/7e/Link_Back_Air_SSBU.gif"
   },
   {
     "id": "up-air",
@@ -656,7 +656,7 @@
       }
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773584318/help-me-play/smash-bros/link/up-air.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/b/b0/LinkUAirSSBU.gif"
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/f/f1/Link_Up_Air_SSBU.gif"
   },
   {
     "id": "down-air",
@@ -706,7 +706,7 @@
       }
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773584320/help-me-play/smash-bros/link/down-air.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/d/d6/LinkDAirSSBU.gif"
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/0/02/Link_Down_Air_SSBU.gif"
   },
   {
     "id": "bow-and-arrows",
@@ -740,7 +740,7 @@
       }
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773584321/help-me-play/smash-bros/link/bow-and-arrows.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/f/f7/Link_Neutral_B_SSBU.gif"
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/f/f7/Link_Neutral_B_SSBU.gif"
   },
   {
     "id": "boomerang",
@@ -778,7 +778,7 @@
       }
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773584322/help-me-play/smash-bros/link/boomerang.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/f/f0/Link_Side_B_SSBU.gif"
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/f/f0/Link_Side_B_SSBU.gif"
   },
   {
     "id": "spin-attack",
@@ -816,7 +816,7 @@
       }
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773584323/help-me-play/smash-bros/link/spin-attack.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/a/ab/Link_Up_B_SSBU.gif"
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/a/ab/Link_Up_B_SSBU.gif"
   },
   {
     "id": "remote-bomb",
@@ -884,7 +884,7 @@
       }
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773584325/help-me-play/smash-bros/link/remote-bomb.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/9/98/Link_Down_B_SSBU.gif"
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/9/98/Link_Down_B_SSBU.gif"
   },
   {
     "id": "pummel",
@@ -938,7 +938,7 @@
       }
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773584328/help-me-play/smash-bros/link/pummel.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/7/79/LinkPummelSSBU.gif"
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/0/07/Link_Grab_%26_Pummel_SSBU.gif"
   },
   {
     "id": "forward-throw",
@@ -990,7 +990,7 @@
       }
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773584330/help-me-play/smash-bros/link/forward-throw.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/6/66/LinkFThrowSSBU.gif"
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/b/bc/Link_Forward_Throw_SSBU.gif"
   },
   {
     "id": "back-throw",
@@ -1042,7 +1042,7 @@
       }
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773584332/help-me-play/smash-bros/link/back-throw.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/7/71/LinkBThrowSSBU.gif"
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/b/b4/Link_Back_Throw_SSBU.gif"
   },
   {
     "id": "up-throw",
@@ -1094,7 +1094,7 @@
       }
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773584333/help-me-play/smash-bros/link/up-throw.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/b/b0/LinkUThrowSSBU.gif"
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/4/45/Link_Up_Throw_SSBU.gif"
   },
   {
     "id": "down-throw",
@@ -1146,7 +1146,7 @@
       }
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773584334/help-me-play/smash-bros/link/down-throw.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/0/0a/LinkDThrowSSBU.gif"
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/8/80/Link_Down_Throw_SSBU.gif"
   },
   {
     "id": "ledge-attack",
@@ -1180,7 +1180,7 @@
       }
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773584336/help-me-play/smash-bros/link/ledge-attack.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/0/09/LinkLedgeAttackSSBU.gif"
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/9/99/Link_Edge_Attack_SSBU.gif"
   },
   {
     "id": "floor-attack-face-up",
@@ -1214,7 +1214,7 @@
       }
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773584337/help-me-play/smash-bros/link/floor-attack-face-up.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/4/4f/LinkGetupAttackFrontSSBU.gif"
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/a/ad/Link_Front_Floor_SSBU.gif"
   },
   {
     "id": "floor-attack-face-down",
@@ -1248,7 +1248,7 @@
       }
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773584338/help-me-play/smash-bros/link/floor-attack-face-down.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/2/2c/LinkGetupAttackBackSSBU.gif"
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/4/45/Link_Back_Floor_SSBU.gif"
   },
   {
     "id": "floor-attack-trip",
@@ -1282,7 +1282,7 @@
       }
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773584339/help-me-play/smash-bros/link/floor-attack-trip.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/f/f2/LinkTripAttackSSBU.gif"
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/3/39/Link_Trip_Attack_SSBU.gif"
   },
   {
     "id": "ancient-bow-and-arrow",
@@ -1316,6 +1316,6 @@
       }
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773584341/help-me-play/smash-bros/link/ancient-bow-and-arrow.gif",
-    "sourceUrl": "https://ssb.wiki.gallery/images/c/c4/Link_Final_Smash_SSBU.gif"
+    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/c/c4/Link_Final_Smash_SSBU.gif"
   }
 ]

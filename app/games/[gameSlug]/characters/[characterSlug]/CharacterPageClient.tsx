@@ -80,12 +80,16 @@ function MoveCard({
           <h3 className="font-display text-base font-semibold">{localize(move.name, locale)}</h3>
           {catDescs[move.category] ? (
             <Tooltip text={catDescs[move.category]}>
-              <span className={`rounded-lg border px-2 py-0.5 text-[11px] font-semibold ${colorClass}`}>
+              <span
+                className={`rounded-lg border px-2 py-0.5 text-[11px] font-semibold ${colorClass}`}
+              >
                 {catLabels[move.category] ?? move.category}
               </span>
             </Tooltip>
           ) : (
-            <span className={`rounded-lg border px-2 py-0.5 text-[11px] font-semibold ${colorClass}`}>
+            <span
+              className={`rounded-lg border px-2 py-0.5 text-[11px] font-semibold ${colorClass}`}
+            >
               {catLabels[move.category] ?? move.category}
             </span>
           )}
@@ -118,21 +122,14 @@ function MoveCard({
       </div>
 
       {/* Card footer: step counter + controls */}
-      <div className="border-t border-border px-4 py-2 flex flex-row gap-4 items-center justify-start h-11">
+      <div className="border-t border-border px-4 py-2 flex flex-row gap-4 items-center justify-between h-11">
         <div className="h-6 font-mono text-xs text-muted flex items-center gap-1">
-          {t.controls.step}{" "}
-          <span className="font-semibold text-foreground">{currentStep + 1}</span>/{stepCount}
+          {t.controls.step} <span className="font-semibold text-foreground">{currentStep + 1}</span>
+          /{stepCount}
         </div>
 
         {stepCount > 1 && (
-          <div className="flex items-center justify-start flex-1 min-w-0 gap-1.5">
-            <button
-              onClick={() => comboRef.current?.togglePlayPause()}
-              className={btnClass}
-              aria-label={isPlaying ? t.controls.pauseAnimation : t.controls.playAnimation}
-            >
-              {isPlaying ? <Pause className="h-3.5 w-3.5" /> : <Play className="h-3.5 w-3.5" />}
-            </button>
+          <div className="flex items-center justify-start gap-1.5">
             {!isPlaying && (
               <>
                 <button
@@ -158,6 +155,13 @@ function MoveCard({
                 </button>
               </>
             )}
+            <button
+              onClick={() => comboRef.current?.togglePlayPause()}
+              className={btnClass}
+              aria-label={isPlaying ? t.controls.pauseAnimation : t.controls.playAnimation}
+            >
+              {isPlaying ? <Pause className="h-3.5 w-3.5" /> : <Play className="h-3.5 w-3.5" />}
+            </button>
           </div>
         )}
       </div>

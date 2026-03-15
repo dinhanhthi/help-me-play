@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useEffect, useCallback, useRef } from "react";
-import type { ComboStep, ControllerMode } from "@/lib/types";
+import type { ComboMethod, ComboStep, ControllerMode } from "@/lib/types";
+import { localize } from "@/lib/i18n";
 import { useI18n } from "@/lib/i18n/context";
 import { ChevronLeft, ChevronRight, Pause, Play, RotateCcw } from "lucide-react";
 import { inputTypeColors } from "./ControllerShell";
@@ -20,20 +21,17 @@ const directionArrows: Record<string, string> = {
 function MethodToggle({
   active,
   onChange,
-  label1,
-  label2,
+  labels,
 }: {
   active: number;
   onChange: (method: number) => void;
-  label1: string;
-  label2: string;
+  labels: string[];
 }) {
-  const btn0Ref = useRef<HTMLButtonElement>(null);
-  const btn1Ref = useRef<HTMLButtonElement>(null);
+  const btnRefs = useRef<(HTMLButtonElement | null)[]>([]);
   const [pill, setPill] = useState({ width: 0, left: 0 });
 
   const updatePill = useCallback(() => {
-    const el = active === 0 ? btn0Ref.current : btn1Ref.current;
+    const el = btnRefs.current[active];
     if (el) setPill({ width: el.offsetWidth, left: el.offsetLeft });
   }, [active]);
 
@@ -47,17 +45,19 @@ function MethodToggle({
         className="absolute top-0.5 bottom-0.5 rounded-full bg-accent transition-all duration-300 ease-in-out"
         style={{ width: pill.width, left: pill.left }}
       />
-      {[0, 1].map((method) => (
+      {labels.map((label, method) => (
         <button
           key={method}
-          ref={method === 0 ? btn0Ref : btn1Ref}
+          ref={(el) => {
+            btnRefs.current[method] = el;
+          }}
           onClick={() => onChange(method)}
           className={cn(
             "relative z-10 cursor-pointer rounded-full px-2.5 py-0.5 text-[11px] font-semibold transition-colors duration-300",
             active === method ? "text-white" : "text-muted hover:text-foreground",
           )}
         >
-          {method === 0 ? label1 : label2}
+          {label}
         </button>
       ))}
     </div>
@@ -65,20 +65,18 @@ function MethodToggle({
 }
 
 interface ComboSequenceProps {
-  steps: ComboStep[];
-  altSteps?: ComboStep[];
+  methods: ComboMethod[];
   mode: ControllerMode;
 }
 
-export default function ComboSequence({ steps, altSteps, mode }: ComboSequenceProps) {
-  const { t } = useI18n();
+export default function ComboSequence({ methods, mode }: ComboSequenceProps) {
+  const { t, locale } = useI18n();
   const [currentStep, setCurrentStep] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const [isGap, setIsGap] = useState(false);
   const [activeMethod, setActiveMethod] = useState(0);
 
-  const activeSteps = activeMethod === 1 && altSteps ? altSteps : steps;
-  const hasAlt = altSteps && altSteps.length > 0;
+  const activeSteps: ComboStep[] = methods[activeMethod]?.[mode] ?? [];
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const stepCount = activeSteps.length;
@@ -187,16 +185,19 @@ export default function ComboSequence({ steps, altSteps, mode }: ComboSequencePr
     : undefined;
 
   return (
-    <div className="flex flex-col items-center gap-1.5">
-      {hasAlt && (
+    <div className="flex flex-col items-center gap-4 h-full">
+      {methods.length > 1 && (
         <MethodToggle
           active={activeMethod}
           onChange={switchMethod}
-          label1={`${t.controls.method} 1`}
-          label2={`${t.controls.method} 2`}
+          labels={methods.map((m, i) =>
+            m.label
+              ? (localize(m.label, locale) ?? `${t.controls.method} ${i + 1}`)
+              : `${t.controls.method} ${i + 1}`,
+          )}
         />
       )}
-      <div className="w-full flex justify-center">
+      <div className="w-full flex items-center justify-center flex-1 min-h-0 ">
         {mode === "handheld" ? (
           <JoyConHandheld
             activeButtons={activeButtons}
@@ -216,52 +217,50 @@ export default function ComboSequence({ steps, altSteps, mode }: ComboSequencePr
 
       {/* Info tags */}
 
-      <div className={"flex flex-wrap items-center justify-center gap-3 w-full h-6"}>
-        <span className="font-mono text-xs text-muted">
+      <div className="flex flex-row gap-4 items-center justify-start w-full h-7">
+        <div className="h-6 font-mono text-xs text-muted flex items-center gap-1">
           {t.controls.step} <span className="font-semibold text-foreground">{currentStep + 1}</span>
           /{stepCount}
-        </span>
-      </div>
-
-      {/* Controls */}
-      {stepCount > 1 && (
-        <div className="flex items-center gap-2">
-          {!isPlaying && (
-            <button
-              onClick={goToPrevStep}
-              className="cursor-pointer inline-flex h-7 w-7 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-              aria-label={t.controls.previousStep}
-            >
-              <ChevronLeft className="h-3.5 w-3.5" />
-            </button>
-          )}
-          <button
-            onClick={togglePlayPause}
-            className="cursor-pointer inline-flex h-7 w-7 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-            aria-label={isPlaying ? t.controls.pauseAnimation : t.controls.playAnimation}
-          >
-            {isPlaying ? <Pause className="h-3.5 w-3.5" /> : <Play className="h-3.5 w-3.5" />}
-          </button>
-          {!isPlaying && (
-            <button
-              onClick={goToNextStep}
-              className="cursor-pointer inline-flex h-7 w-7 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-              aria-label={t.controls.nextStep}
-            >
-              <ChevronRight className="h-3.5 w-3.5" />
-            </button>
-          )}
-          {!isPlaying && (
-            <button
-              onClick={restart}
-              className="cursor-pointer inline-flex h-6 w-6 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-              aria-label={t.controls.restartAnimation}
-            >
-              <RotateCcw className="h-3.5 w-3.5" />
-            </button>
-          )}
         </div>
-      )}
+
+        {/* Controls */}
+        {stepCount > 1 && (
+          <div className="flex items-center justify-start flex-1 min-w-0 gap-1.5">
+            <button
+              onClick={togglePlayPause}
+              className="cursor-pointer inline-flex h-7 w-7 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              aria-label={isPlaying ? t.controls.pauseAnimation : t.controls.playAnimation}
+            >
+              {isPlaying ? <Pause className="h-3.5 w-3.5" /> : <Play className="h-3.5 w-3.5" />}
+            </button>
+            {!isPlaying && (
+              <>
+                <button
+                  onClick={goToPrevStep}
+                  className="cursor-pointer inline-flex h-7 w-7 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                  aria-label={t.controls.previousStep}
+                >
+                  <ChevronLeft className="h-3.5 w-3.5" />
+                </button>
+                <button
+                  onClick={goToNextStep}
+                  className="cursor-pointer inline-flex h-7 w-7 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                  aria-label={t.controls.nextStep}
+                >
+                  <ChevronRight className="h-3.5 w-3.5" />
+                </button>
+                <button
+                  onClick={restart}
+                  className="cursor-pointer inline-flex h-7 w-7 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                  aria-label={t.controls.restartAnimation}
+                >
+                  <RotateCcw className="h-3.5 w-3.5" />
+                </button>
+              </>
+            )}
+          </div>
+        )}
+      </div>
     </div>
   );
 }

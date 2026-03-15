@@ -59,7 +59,7 @@ export default function CharacterPageClient({
     const btns = new Set<string>();
     for (const move of moves) {
       cats.add(move.category);
-      const steps = move.combos[mode] ?? [];
+      const steps = move.combos[0]?.[mode] ?? [];
       for (const step of steps) {
         for (const b of step.buttons) {
           // Only show face buttons, not sticks
@@ -96,7 +96,7 @@ export default function CharacterPageClient({
     return moves.filter((move) => {
       if (activeCategories.size > 0 && !activeCategories.has(move.category)) return false;
       if (activeButtons.size > 0) {
-        const steps = move.combos[mode] ?? [];
+        const steps = move.combos[0]?.[mode] ?? [];
         const moveButtons = new Set(steps.flatMap((s) => s.buttons));
         const hasMatch = [...activeButtons].some((b) => moveButtons.has(b));
         if (!hasMatch) return false;
@@ -222,8 +222,6 @@ export default function CharacterPageClient({
             {catDescs[cat] && <p className="mt-1 mb-4 text-sm text-muted">{catDescs[cat]}</p>}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
               {groupedMoves[cat].map((move) => {
-                const comboSteps = move.combos[mode] ?? [];
-                const altComboSteps = move.altCombos?.[mode];
                 const colorClass = categoryColors[move.category] ?? categoryColors["other"];
 
                 return (
@@ -262,10 +260,10 @@ export default function CharacterPageClient({
 
                     {/* Side-by-side */}
                     <div className="grid grid-cols-1 gap-5 p-4 md:grid-cols-[auto_1fr] md:items-center">
-                      <div className="order-2 md:order-1">
-                        <ComboSequence steps={comboSteps} altSteps={altComboSteps} mode={mode} />
+                      <div className="order-2 md:order-1 h-full">
+                        <ComboSequence methods={move.combos} mode={mode} />
                       </div>
-                      <div className="order-1 md:order-2">
+                      <div className="order-1 md:order-2 h-full">
                         <MediaEmbed
                           url={move.mediaUrl}
                           sourceUrl={move.sourceUrl}

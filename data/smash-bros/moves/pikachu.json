@@ -10,10 +10,12 @@
       "vi": "Pikachu bắn quả cầu điện nảy dọc theo mặt đất. Rất hiệu quả để chặn đối thủ ở mép sàn đấu."
     },
     "category": "special",
-    "combos": {
-      "handheld": [{ "buttons": ["b"], "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["b"], "inputType": "Tap" }]
-    },
+    "combos": [
+      {
+        "handheld": [{ "buttons": ["b"], "inputType": "Tap" }],
+        "single-joycon": [{ "buttons": ["b"], "inputType": "Tap" }]
+      }
+    ],
     "mediaUrl": "https://www.youtube.com/watch?v=placeholder-pikachu-thunderjolt"
   },
   {
@@ -27,19 +29,21 @@
       "vi": "Pikachu tích lực rồi lao đầu về phía trước. Giữ B để tích lực lâu hơn, tăng tầm bay và sát thương."
     },
     "category": "special",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["left-stick", "b"],
-          "direction": "left",
-          "inputType": "Hold",
-          "duration": 2000
-        }
-      ],
-      "single-joycon": [
-        { "buttons": ["stick", "b"], "direction": "left", "inputType": "Hold", "duration": 2000 }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["left-stick", "b"],
+            "direction": "left",
+            "inputType": "Hold",
+            "duration": 2000
+          }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick", "b"], "direction": "left", "inputType": "Hold", "duration": 2000 }
+        ]
+      }
+    ],
     "mediaUrl": "https://www.youtube.com/watch?v=placeholder-pikachu-skullbash"
   },
   {
@@ -53,16 +57,18 @@
       "vi": "Pikachu lướt nhanh theo một hướng. Có thể đổi hướng giữa chừng để lướt thêm lần nữa. Chiêu hồi sàn cực tốt."
     },
     "category": "special",
-    "combos": {
-      "handheld": [
-        { "buttons": ["left-stick", "b"], "direction": "up", "inputType": "Tap" },
-        { "buttons": ["left-stick"], "direction": "right", "inputType": "Tap" }
-      ],
-      "single-joycon": [
-        { "buttons": ["stick", "b"], "direction": "up", "inputType": "Tap" },
-        { "buttons": ["stick"], "direction": "right", "inputType": "Tap" }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["left-stick", "b"], "direction": "up", "inputType": "Tap" },
+          { "buttons": ["left-stick"], "direction": "right", "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick", "b"], "direction": "up", "inputType": "Tap" },
+          { "buttons": ["stick"], "direction": "right", "inputType": "Tap" }
+        ]
+      }
+    ],
     "mediaUrl": "https://www.youtube.com/watch?v=placeholder-pikachu-quickattack"
   },
   {
@@ -76,10 +82,12 @@
       "vi": "Một tia sét đánh xuống vị trí của Pikachu. Nếu trúng Pikachu, sẽ tạo ra sóng xung kích cực mạnh."
     },
     "category": "special",
-    "combos": {
-      "handheld": [{ "buttons": ["left-stick", "b"], "direction": "down", "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["stick", "b"], "direction": "down", "inputType": "Tap" }]
-    },
+    "combos": [
+      {
+        "handheld": [{ "buttons": ["left-stick", "b"], "direction": "down", "inputType": "Tap" }],
+        "single-joycon": [{ "buttons": ["stick", "b"], "direction": "down", "inputType": "Tap" }]
+      }
+    ],
     "mediaUrl": "https://www.youtube.com/watch?v=placeholder-pikachu-thunder"
   },
   {
@@ -93,10 +101,12 @@
       "vi": "Pikachu phóng điện sang hai bên. Rất hiệu quả để trừng phạt đối thủ lăn né."
     },
     "category": "smash",
-    "combos": {
-      "handheld": [{ "buttons": ["left-stick", "a"], "direction": "down", "inputType": "Smash" }],
-      "single-joycon": [{ "buttons": ["stick", "a"], "direction": "down", "inputType": "Smash" }]
-    },
+    "combos": [
+      {
+        "handheld": [{ "buttons": ["left-stick", "a"], "direction": "down", "inputType": "Smash" }],
+        "single-joycon": [{ "buttons": ["stick", "a"], "direction": "down", "inputType": "Smash" }]
+      }
+    ],
     "mediaUrl": "https://www.youtube.com/watch?v=placeholder-pikachu-dsmash"
   }
 ]

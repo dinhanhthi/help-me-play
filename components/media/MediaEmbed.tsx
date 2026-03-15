@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { parseMediaUrl } from "@/lib/embed";
 import { useI18n } from "@/lib/i18n/context";
 
@@ -118,6 +118,14 @@ function MediaContent({
   editUrl?: string;
 }) {
   const [loaded, setLoaded] = useState(false);
+  const imgRef = useRef<HTMLImageElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  // Check if img/video is already loaded from cache after mount
+  useEffect(() => {
+    if (imgRef.current?.complete) setLoaded(true);
+    if (videoRef.current && videoRef.current.readyState >= 2) setLoaded(true);
+  }, []);
 
   if (
     media.provider === "youtube" ||
@@ -152,6 +160,7 @@ function MediaContent({
         <div className="relative max-h-[250px] overflow-hidden rounded-xl w-full">
           {!loaded && <MediaSkeleton />}
           <video
+            ref={videoRef}
             src={media.embedUrl}
             controls
             className={`w-full max-h-[250px] object-contain transition-opacity duration-300 ${loaded ? "opacity-100" : "absolute inset-0 opacity-0"}`}
@@ -171,6 +180,7 @@ function MediaContent({
       <div className="relative max-h-[250px] overflow-hidden rounded-xl w-full">
         {!loaded && <MediaSkeleton />}
         <img
+          ref={imgRef}
           src={media.embedUrl}
           alt={accessibleTitle}
           className={`w-full max-h-[250px] object-contain transition-opacity duration-300 ${loaded ? "opacity-100" : "absolute inset-0 opacity-0"}`}

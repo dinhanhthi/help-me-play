@@ -10,36 +10,38 @@
       "vi": "Combo nhanh 3 đòn: đấm trái, đấm phải, đá trước. Gây tổng cộng 7.9% sát thương. Ra đòn frame 2, rất tốt để jab reset và gây áp lực cận chiến."
     },
     "category": "ground",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["a"],
-          "inputType": "Tap"
-        },
-        {
-          "buttons": ["a"],
-          "inputType": "Tap"
-        },
-        {
-          "buttons": ["a"],
-          "inputType": "Tap"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["a"],
-          "inputType": "Tap"
-        },
-        {
-          "buttons": ["a"],
-          "inputType": "Tap"
-        },
-        {
-          "buttons": ["a"],
-          "inputType": "Tap"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499978/help-me-play/smash-bros/mario/jab.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/2/2d/Mario_Jab_SSBU.gif"
   },
@@ -54,30 +56,32 @@
       "vi": "Đá trượt khi chạy lấy từ Super Mario 64. Gây 8% nếu trúng sớm / 6% nếu trúng muộn. Ra đòn frame 6. Tốt để trừng phạt khi đối thủ tiếp đất và punish 2 frame ở mép sân."
     },
     "category": "ground",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["left-stick"],
-          "direction": "right",
-          "inputType": "Tap"
-        },
-        {
-          "buttons": ["a"],
-          "inputType": "Tap"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["stick"],
-          "direction": "right",
-          "inputType": "Tap"
-        },
-        {
-          "buttons": ["a"],
-          "inputType": "Tap"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["left-stick"],
+            "direction": "right",
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick"],
+            "direction": "right",
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499979/help-me-play/smash-bros/mario/dash-attack.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/b/ba/Mario_Dash_Attack_SSBU.gif"
   },
@@ -92,22 +96,58 @@
       "vi": "Đá vòng cầu tầm trung gây 7% sát thương. Ra đòn frame 5. Có thể chỉnh hướng lên hoặc xuống. Tốt để giữ khoảng cách ở cự ly gần."
     },
     "category": "tilt",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["left-stick", "a"],
-          "direction": "right",
-          "inputType": "Tilt"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["stick", "a"],
-          "direction": "right",
-          "inputType": "Tilt"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "label": {
+          "en": "Stand → kick",
+          "vi": "Đứng → đá"
+        },
+        "handheld": [
+          {
+            "buttons": ["left-stick", "a"],
+            "direction": "right",
+            "inputType": "Tilt"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick", "a"],
+            "direction": "right",
+            "inputType": "Tilt"
+          }
+        ]
+      },
+      {
+        "label": {
+          "en": "Walk → kick",
+          "vi": "Đi chậm → đá"
+        },
+        "handheld": [
+          {
+            "buttons": ["left-stick"],
+            "direction": "right",
+            "inputType": "Tilt"
+          },
+          {
+            "buttons": ["left-stick", "a"],
+            "direction": "right",
+            "inputType": "Tilt"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick"],
+            "direction": "right",
+            "inputType": "Tilt"
+          },
+          {
+            "buttons": ["stick", "a"],
+            "direction": "right",
+            "inputType": "Tilt"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499981/help-me-play/smash-bros/mario/forward-tilt.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/dd/Mario_Side_Tilt_SSBU.gif"
   },
@@ -122,22 +162,24 @@
       "vi": "Uppercut xoay gây 5.5% sát thương. Ra đòn frame 5. Công cụ combo tuyệt vời — nối tiếp vào chính nó ở % thấp, nối vào đòn trên không ở % trung bình. Có thể hạ gục ở khoảng 160%."
     },
     "category": "tilt",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["left-stick", "a"],
-          "direction": "up",
-          "inputType": "Tilt"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["stick", "a"],
-          "direction": "up",
-          "inputType": "Tilt"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["left-stick", "a"],
+            "direction": "up",
+            "inputType": "Tilt"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick", "a"],
+            "direction": "up",
+            "inputType": "Tilt"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499982/help-me-play/smash-bros/mario/up-tilt.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/da/Mario_Up_Tilt_SSBU.gif"
   },
@@ -152,22 +194,24 @@
       "vi": "Quét chân khi ngồi gây 5% (bàn chân) / 7% (ống chân). Ra đòn frame 5. Một trong những đòn mở combo tốt nhất của Mario. Có thể đánh trúng đối thủ đang bám mép sân."
     },
     "category": "tilt",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["left-stick", "a"],
-          "direction": "down",
-          "inputType": "Tilt"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["stick", "a"],
-          "direction": "down",
-          "inputType": "Tilt"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["left-stick", "a"],
+            "direction": "down",
+            "inputType": "Tilt"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick", "a"],
+            "direction": "down",
+            "inputType": "Tilt"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499985/help-me-play/smash-bros/mario/down-tilt.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/7/75/Mario_Down_Tilt_SSBU.gif"
   },
@@ -182,31 +226,33 @@
       "vi": "Đẩy lòng bàn tay tạo vụ nổ lửa. Gây 17.8% (điểm ngọt) / 14.7% (điểm chua). Ra đòn frame 15. Có thể chỉnh hướng. Hạ gục sớm nhất ở 60% tại mép sân. Đòn hạ gục mặt đất mạnh nhất của Mario."
     },
     "category": "smash",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["left-stick", "a"],
-          "direction": "right",
-          "inputType": "Smash"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["stick", "a"],
-          "direction": "right",
-          "inputType": "Smash"
-        }
-      ]
-    },
-    "altCombos": {
-      "handheld": [
-        {
-          "buttons": ["right-stick"],
-          "direction": "right",
-          "inputType": "Smash"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["left-stick", "a"],
+            "direction": "right",
+            "inputType": "Smash"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick", "a"],
+            "direction": "right",
+            "inputType": "Smash"
+          }
+        ]
+      },
+      {
+        "handheld": [
+          {
+            "buttons": ["right-stick"],
+            "direction": "right",
+            "inputType": "Smash"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499986/help-me-play/smash-bros/mario/forward-smash.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/4/45/Mario_Forward_Smash_SSBU.gif"
   },
@@ -221,31 +267,33 @@
       "vi": "Húc đầu vòng cung lên trên gây 14% sát thương. Ra đòn frame 9. Đầu bất khả xâm phạm trong lúc đòn hoạt động. Chống không tuyệt vời và lựa chọn thoát khiên hàng đầu (9 frame OOS). Hạ gục ở khoảng 100-120%."
     },
     "category": "smash",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["left-stick", "a"],
-          "direction": "up",
-          "inputType": "Smash"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["stick", "a"],
-          "direction": "up",
-          "inputType": "Smash"
-        }
-      ]
-    },
-    "altCombos": {
-      "handheld": [
-        {
-          "buttons": ["right-stick"],
-          "direction": "up",
-          "inputType": "Smash"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["left-stick", "a"],
+            "direction": "up",
+            "inputType": "Smash"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick", "a"],
+            "direction": "up",
+            "inputType": "Smash"
+          }
+        ]
+      },
+      {
+        "handheld": [
+          {
+            "buttons": ["right-stick"],
+            "direction": "up",
+            "inputType": "Smash"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499987/help-me-play/smash-bros/mario/up-smash.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/f/f5/Mario_Up_Smash_SSBU.gif"
   },
@@ -260,31 +308,33 @@
       "vi": "Quét breakdance đánh cả hai bên. Đánh trước: 10% (frame 5), đánh sau: 12% (frame 14). Góc bắn semi-spike hữu ích ở mép sân. Trước hạ gục ~153%, sau hạ gục ~126%."
     },
     "category": "smash",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["left-stick", "a"],
-          "direction": "down",
-          "inputType": "Smash"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["stick", "a"],
-          "direction": "down",
-          "inputType": "Smash"
-        }
-      ]
-    },
-    "altCombos": {
-      "handheld": [
-        {
-          "buttons": ["right-stick"],
-          "direction": "down",
-          "inputType": "Smash"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["left-stick", "a"],
+            "direction": "down",
+            "inputType": "Smash"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick", "a"],
+            "direction": "down",
+            "inputType": "Smash"
+          }
+        ]
+      },
+      {
+        "handheld": [
+          {
+            "buttons": ["right-stick"],
+            "direction": "down",
+            "inputType": "Smash"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499989/help-me-play/smash-bros/mario/down-smash.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/db/Mario_Down_Smash_SSBU.gif"
   },
@@ -299,20 +349,62 @@
       "vi": "Đá bay gây 8% trúng sớm / 5% trúng muộn. Ra đòn frame 3. Tự hủy hiệu ứng tiếp đất khi nhảy ngắn. Đòn trúng muộn combo vào tóm, tilt và smash. Đòn phá combo và mở combo đa năng. 6 frame lag khi tiếp đất."
     },
     "category": "aerial",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["a"],
-          "inputType": "Tap"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["a"],
-          "inputType": "Tap"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "label": {
+          "en": "Stand",
+          "vi": "Đứng"
+        },
+        "handheld": [
+          {
+            "buttons": ["x"],
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["x"],
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ]
+      },
+      {
+        "label": {
+          "en": "Move",
+          "vi": "Chạy"
+        },
+        "handheld": [
+          {
+            "buttons": ["left-stick", "x"],
+            "direction": "right",
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick", "x"],
+            "direction": "right",
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499990/help-me-play/smash-bros/mario/neutral-air.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/a/aa/Mario_Neutral_Air_SSBU.gif"
   },
@@ -327,22 +419,24 @@
       "vi": "Đấm nắm đập từ trên xuống. Gây 12% sớm / 14% trúng đúng / 10% muộn. Ra đòn frame 16. Điểm ngọt ở frame 17-20 là METEOR SMASH hạ gục ngoài sân dưới 45%. Khởi động chậm nhưng cực kỳ nguy hiểm khi trúng."
     },
     "category": "aerial",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["left-stick", "a"],
-          "direction": "right",
-          "inputType": "Tap"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["stick", "a"],
-          "direction": "right",
-          "inputType": "Tap"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["left-stick", "a"],
+            "direction": "right",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick", "a"],
+            "direction": "right",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499994/help-me-play/smash-bros/mario/forward-air.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/0/0e/Mario_Forward_Air_SSBU.gif"
   },
@@ -357,22 +451,24 @@
       "vi": "Đá dropkick về sau gây 10.5% trúng sớm / 7% trúng muộn. Ra đòn frame 6. Nhanh, an toàn khi đối thủ giữ khiên, dễ autocancel. Công cụ tuyệt vời cho neutral và giữ khoảng cách. Lựa chọn hạ gục ngang tốt."
     },
     "category": "aerial",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["left-stick", "a"],
-          "direction": "left",
-          "inputType": "Tap"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["stick", "a"],
-          "direction": "left",
-          "inputType": "Tap"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["left-stick", "a"],
+            "direction": "left",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick", "a"],
+            "direction": "left",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499996/help-me-play/smash-bros/mario/back-air.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/6/6e/Mario_Back_Air_SSBU.gif"
   },
@@ -387,22 +483,24 @@
       "vi": "Đá lộn ngược lên trên gây 7% sát thương. Ra đòn frame 4. Có thể coi là đòn mạnh nhất của Mario — nối tiếp vào chính nó tạo combo thang. Không có điểm chua. Nền tảng của lối chơi tung hứng của Mario. Hạ gục ở đỉnh ~165%."
     },
     "category": "aerial",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["left-stick", "a"],
-          "direction": "up",
-          "inputType": "Tap"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["stick", "a"],
-          "direction": "up",
-          "inputType": "Tap"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["left-stick", "a"],
+            "direction": "up",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick", "a"],
+            "direction": "up",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499997/help-me-play/smash-bros/mario/up-air.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/9/93/Mario_Up_Air_SSBU.gif"
   },
@@ -417,22 +515,24 @@
       "vi": "Đòn xoay đánh nhiều lần gây tổng ~14.5% sát thương (1.4% x5 + 5.5% đòn cuối + 2% tiếp đất). Ra đòn frame 5. Hitbox tiếp đất combo vào đá nghiêng trên, smash trên, hoặc tóm."
     },
     "category": "aerial",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["left-stick", "a"],
-          "direction": "down",
-          "inputType": "Tap"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["stick", "a"],
-          "direction": "down",
-          "inputType": "Tap"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["left-stick", "a"],
+            "direction": "down",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick", "a"],
+            "direction": "down",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773499999/help-me-play/smash-bros/mario/down-air.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d6/Mario_Down_Air_SSBU.gif"
   },
@@ -447,20 +547,22 @@
       "vi": "Ném quả cầu lửa nảy gây 5% sớm / 4% muộn. Ra đòn frame 17. Nảy trên mặt đất tới 7 lần. Tuyệt vời để tiếp cận, kiểm soát vùng, và mở combo. Giữ nguyên khả năng di chuyển trên không."
     },
     "category": "special",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["b"],
-          "inputType": "Tap"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["b"],
-          "inputType": "Tap"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["b"],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["b"],
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500000/help-me-play/smash-bros/mario/fireball.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/a/a3/Mario_Neutral_B_SSBU.gif"
   },
@@ -475,22 +577,24 @@
       "vi": "Vung áo choàng gây 7% sát thương. Phản chiếu hoạt động frame 9, hitbox sát thương frame 12. PHẢN CHIẾU đạn với 1.5 lần sát thương và ĐẢO NGƯỢC hướng mặt đối thủ. Trên không, tạm dừng đà di chuyển để mixup hồi phục. Cực hiệu quả để gimp đối thủ đang hồi phục."
     },
     "category": "special",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["left-stick", "b"],
-          "direction": "right",
-          "inputType": "Tap"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["stick", "b"],
-          "direction": "right",
-          "inputType": "Tap"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["left-stick", "b"],
+            "direction": "right",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick", "b"],
+            "direction": "right",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500001/help-me-play/smash-bros/mario/cape.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/1/1a/Mario_Side_B_SSBU.gif"
   },
@@ -505,22 +609,24 @@
       "vi": "Uppercut bay lên đánh nhiều lần tạo đồng xu, gây tổng ~11% sát thương. Ra đòn frame 3 với bất khả xâm phạm frame 3-6. Lựa chọn thoát khiên NHANH NHẤT của Mario. Đòn hồi phục chính. Có thể chỉnh hướng nhẹ."
     },
     "category": "special",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["left-stick", "b"],
-          "direction": "up",
-          "inputType": "Tap"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["stick", "b"],
-          "direction": "up",
-          "inputType": "Tap"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["left-stick", "b"],
+            "direction": "up",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick", "b"],
+            "direction": "up",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500003/help-me-play/smash-bros/mario/super-jump-punch.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/1/13/Mario_Up_B_SSBU.gif"
   },
@@ -535,22 +641,24 @@
       "vi": "Tích và bắn luồng nước. Gây 0% sát thương nhưng đẩy đối thủ bằng windbox. Giữ B để tích, thả để bắn. Năng lượng tích được giữ lại giữa các mạng. Tuyệt vời để canh mép khi đối thủ hồi phục theo đường thẳng."
     },
     "category": "special",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["left-stick", "b"],
-          "direction": "down",
-          "inputType": "Hold"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["stick", "b"],
-          "direction": "down",
-          "inputType": "Hold"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["left-stick", "b"],
+            "direction": "down",
+            "inputType": "Hold"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick", "b"],
+            "direction": "down",
+            "inputType": "Hold"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500006/help-me-play/smash-bros/mario/fludd.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/8/8a/Mario_Down_B_SSBU.gif"
   },
@@ -565,20 +673,22 @@
       "vi": "Mario vươn tay tóm đối thủ. Khởi động frame 6 — ngang bằng tóm nhanh nhất trong game. Thiết yếu cho lối chơi combo của Mario. Dùng sau khi giữ khiên hoặc tiếp đất nair."
     },
     "category": "grab",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["zl"],
-          "inputType": "Tap"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["sl", "sr"],
-          "inputType": "Tap"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["zl"],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["sl", "sr"],
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500010/help-me-play/smash-bros/mario/grab.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/0/0d/Mario_Grab_%26_Pummel_SSBU.gif"
   },
@@ -593,20 +703,22 @@
       "vi": "Húc đầu đối thủ đang bị tóm gây 1.3% mỗi đòn. Đủ nhanh để đánh 2-3 lần trước khi ném ở hầu hết các mức %."
     },
     "category": "grab",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["a"],
-          "inputType": "Tap"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["a"],
-          "inputType": "Tap"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500011/help-me-play/smash-bros/mario/pummel.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/0/0d/Mario_Grab_%26_Pummel_SSBU.gif"
   },
@@ -621,22 +733,24 @@
       "vi": "Xoay đối thủ một vòng và ném về trước gây 8% sát thương. Tạo tình huống tech chase. Không phải đòn ném hạ gục chính nhưng có thể hạ gục gần mép sân ở % rất cao."
     },
     "category": "grab",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["left-stick"],
-          "direction": "right",
-          "inputType": "Tap"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["stick"],
-          "direction": "right",
-          "inputType": "Tap"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["left-stick"],
+            "direction": "right",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick"],
+            "direction": "right",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500012/help-me-play/smash-bros/mario/forward-throw.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/e/e8/Mario_Forward_Throw_SSBU.gif"
   },
@@ -651,22 +765,24 @@
       "vi": "Tóm chân đối thủ và quăng về sau (giống ném Bowser trong SM64). Gây 11% sát thương. Đòn ném mạnh nhất của Mario — hạ gục ~130% ở mép sân, ~160% giữa sân. Cũng đánh trúng người đứng gần gây 8%."
     },
     "category": "grab",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["left-stick"],
-          "direction": "left",
-          "inputType": "Tap"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["stick"],
-          "direction": "left",
-          "inputType": "Tap"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["left-stick"],
+            "direction": "left",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick"],
+            "direction": "left",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500016/help-me-play/smash-bros/mario/back-throw.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/1/10/Mario_Back_Throw_SSBU.gif"
   },
@@ -681,22 +797,24 @@
       "vi": "Tung đối thủ thẳng lên trên gây 7% sát thương. ĐÒN NÉM COMBO CHỦ LỰC — combo vào đòn không trung trên ở % thấp-trung bình. Khởi đầu combo thang. Đòn ném chính của Mario để gây sát thương và kéo dài combo."
     },
     "category": "grab",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["left-stick"],
-          "direction": "up",
-          "inputType": "Tap"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["stick"],
-          "direction": "up",
-          "inputType": "Tap"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["left-stick"],
+            "direction": "up",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick"],
+            "direction": "up",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500018/help-me-play/smash-bros/mario/up-throw.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/3/37/Mario_Up_Throw_SSBU.gif"
   },
@@ -711,22 +829,24 @@
       "vi": "Đập đối thủ xuống đất gây 5% sát thương. Combo vào đá nghiêng trên ở % rất thấp, đòn không trung trên ở % trung bình. Đòn ném combo thay thế cho ném lên với góc bắn khác."
     },
     "category": "grab",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["left-stick"],
-          "direction": "down",
-          "inputType": "Tap"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["stick"],
-          "direction": "down",
-          "inputType": "Tap"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["left-stick"],
+            "direction": "down",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick"],
+            "direction": "down",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500019/help-me-play/smash-bros/mario/down-throw.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/4/4c/Mario_Down_Throw_SSBU.gif"
   },
@@ -741,20 +861,22 @@
       "vi": "Đá dropkick khi leo lên từ mép sân gây 9% sát thương. Có frame bất tử tiêu chuẩn trong lúc thực hiện. Dùng khi đối thủ không đứng quá gần mép sân."
     },
     "category": "other",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["a"],
-          "inputType": "Tap"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["a"],
-          "inputType": "Tap"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500021/help-me-play/smash-bros/mario/ledge-attack.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/5/56/Mario_Edge_Attack_SSBU.gif"
   },
@@ -769,20 +891,22 @@
       "vi": "Đấm ra sau rồi đấm ra trước khi đứng dậy, gây 7% sát thương. Đòn đứng dậy tiêu chuẩn khi bị ngã ngửa."
     },
     "category": "other",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["a"],
-          "inputType": "Tap"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["a"],
-          "inputType": "Tap"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500022/help-me-play/smash-bros/mario/floor-attack-face-up.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/a/ac/Mario_Front_Floor_SSBU.gif"
   },
@@ -797,20 +921,22 @@
       "vi": "Đá quét khi đứng dậy từ tư thế úp mặt, gây 7% sát thương. Đánh cả hai bên."
     },
     "category": "other",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["a"],
-          "inputType": "Tap"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["a"],
-          "inputType": "Tap"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500023/help-me-play/smash-bros/mario/floor-attack-face-down.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/5/5b/Mario_Back_Floor_SSBU.gif"
   },
@@ -825,20 +951,22 @@
       "vi": "Đá ngang ra sau và ra trước khi đứng dậy sau khi vấp ngã, gây 5% sát thương."
     },
     "category": "other",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["a"],
-          "inputType": "Tap"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["a"],
-          "inputType": "Tap"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500025/help-me-play/smash-bros/mario/floor-attack-trip.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/5/54/Mario_Trip_Attack_SSBU.gif"
   },
@@ -853,20 +981,22 @@
       "vi": "Hai quả cầu lửa khổng lồ xoắn vào nhau bay ngang sân đấu, bẫy và liên tục gây sát thương cho đối thủ. Đánh nhiều lần gây tổng sát thương lớn. Hiệu quả nhất khi đối thủ tụ lại hoặc ở gần mép sân. Cần Smash Ball hoặc thanh năng lượng."
     },
     "category": "other",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["b"],
-          "inputType": "Tap"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["b"],
-          "inputType": "Tap"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["b"],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["b"],
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500026/help-me-play/smash-bros/mario/mario-finale.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/2/2a/Mario_Final_Smash_SSBU.gif"
   },
@@ -881,62 +1011,64 @@
       "vi": "Combo nâng cao: Không trung trên → Không trung trên → đáp bệ → Không trung trên → Không trung trên → nhảy đôi → Không trung trên → B trên. Đưa đối thủ lên vùng hạ gục trên đỉnh để KO sớm. Hoạt động ở 40-80%. Cần bệ đỡ (Battlefield/Smashville). Combo hạ gục đặc trưng của Mario."
     },
     "category": "other",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["left-stick", "a"],
-          "direction": "up",
-          "inputType": "Tap"
-        },
-        {
-          "buttons": ["left-stick", "a"],
-          "direction": "up",
-          "inputType": "Tap"
-        },
-        {
-          "buttons": ["left-stick", "a"],
-          "direction": "up",
-          "inputType": "Tap"
-        },
-        {
-          "buttons": ["left-stick", "a"],
-          "direction": "up",
-          "inputType": "Tap"
-        },
-        {
-          "buttons": ["left-stick", "b"],
-          "direction": "up",
-          "inputType": "Tap"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["stick", "a"],
-          "direction": "up",
-          "inputType": "Tap"
-        },
-        {
-          "buttons": ["stick", "a"],
-          "direction": "up",
-          "inputType": "Tap"
-        },
-        {
-          "buttons": ["stick", "a"],
-          "direction": "up",
-          "inputType": "Tap"
-        },
-        {
-          "buttons": ["stick", "a"],
-          "direction": "up",
-          "inputType": "Tap"
-        },
-        {
-          "buttons": ["stick", "b"],
-          "direction": "up",
-          "inputType": "Tap"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["left-stick", "a"],
+            "direction": "up",
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["left-stick", "a"],
+            "direction": "up",
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["left-stick", "a"],
+            "direction": "up",
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["left-stick", "a"],
+            "direction": "up",
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["left-stick", "b"],
+            "direction": "up",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick", "a"],
+            "direction": "up",
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["stick", "a"],
+            "direction": "up",
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["stick", "a"],
+            "direction": "up",
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["stick", "a"],
+            "direction": "up",
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["stick", "b"],
+            "direction": "up",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://www.youtube.com/watch?v=HqEKhUjIdKo"
   },
   {
@@ -950,42 +1082,44 @@
       "vi": "Combo cơ bản nhất: Ném xuống → Không trung trên → Không trung trên. Hoạt động 0-40%. Gây ~19% sát thương. Phụ thuộc vào DI. Combo gây sát thương đáng tin cậy nhất của Mario từ tóm ở % thấp-trung bình."
     },
     "category": "other",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["left-stick"],
-          "direction": "down",
-          "inputType": "Tap"
-        },
-        {
-          "buttons": ["left-stick", "a"],
-          "direction": "up",
-          "inputType": "Tap"
-        },
-        {
-          "buttons": ["left-stick", "a"],
-          "direction": "up",
-          "inputType": "Tap"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["stick"],
-          "direction": "down",
-          "inputType": "Tap"
-        },
-        {
-          "buttons": ["stick", "a"],
-          "direction": "up",
-          "inputType": "Tap"
-        },
-        {
-          "buttons": ["stick", "a"],
-          "direction": "up",
-          "inputType": "Tap"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["left-stick"],
+            "direction": "down",
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["left-stick", "a"],
+            "direction": "up",
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["left-stick", "a"],
+            "direction": "up",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick"],
+            "direction": "down",
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["stick", "a"],
+            "direction": "up",
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["stick", "a"],
+            "direction": "up",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://www.youtube.com/watch?v=HqEKhUjIdKo"
   },
   {
@@ -999,30 +1133,32 @@
       "vi": "Xác nhận hạ gục: Không trung trung tính trúng muộn → Smash trên. Hoạt động 10-50%. Gây ~19% sát thương. Đánh trúng nair muộn (5%) rồi combo vào smash trên để lấy mạng chắc chắn."
     },
     "category": "other",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["a"],
-          "inputType": "Tap"
-        },
-        {
-          "buttons": ["left-stick", "a"],
-          "direction": "up",
-          "inputType": "Smash"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["a"],
-          "inputType": "Tap"
-        },
-        {
-          "buttons": ["stick", "a"],
-          "direction": "up",
-          "inputType": "Smash"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["left-stick", "a"],
+            "direction": "up",
+            "inputType": "Smash"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["stick", "a"],
+            "direction": "up",
+            "inputType": "Smash"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://www.youtube.com/watch?v=HqEKhUjIdKo"
   },
   {
@@ -1036,30 +1172,32 @@
       "vi": "Kỹ thuật canh mép nâng cao: nhảy ra ngoài sân và dùng Áo choàng để đảo ngược hướng đối thủ đang hồi phục, khiến họ bay ra xa sân. Đặc biệt hiệu quả với đối thủ hồi phục theo đường thẳng. Cũng có thể phản chiếu đạn với 1.5 lần sát thương."
     },
     "category": "other",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["x"],
-          "inputType": "Tap"
-        },
-        {
-          "buttons": ["left-stick", "b"],
-          "direction": "right",
-          "inputType": "Tap"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["x"],
-          "inputType": "Tap"
-        },
-        {
-          "buttons": ["stick", "b"],
-          "direction": "right",
-          "inputType": "Tap"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["x"],
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["left-stick", "b"],
+            "direction": "right",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["x"],
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["stick", "b"],
+            "direction": "right",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://www.youtube.com/watch?v=HqEKhUjIdKo"
   },
   {
@@ -1073,34 +1211,36 @@
       "vi": "Kỹ thuật canh mép nâng cao: tích đầy F.L.U.D.D. rồi dùng ở mép sân để đẩy đối thủ đang hồi phục ra khỏi sân bằng windbox. Kết hợp với Áo choàng để tạo chuỗi canh mép hủy diệt. Hiệu quả nhất với đối thủ hồi phục dễ đoán."
     },
     "category": "other",
-    "combos": {
-      "handheld": [
-        {
-          "buttons": ["left-stick", "b"],
-          "direction": "down",
-          "inputType": "Hold",
-          "duration": 3000
-        },
-        {
-          "buttons": ["left-stick", "b"],
-          "direction": "down",
-          "inputType": "Tap"
-        }
-      ],
-      "single-joycon": [
-        {
-          "buttons": ["stick", "b"],
-          "direction": "down",
-          "inputType": "Hold",
-          "duration": 3000
-        },
-        {
-          "buttons": ["stick", "b"],
-          "direction": "down",
-          "inputType": "Tap"
-        }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["left-stick", "b"],
+            "direction": "down",
+            "inputType": "Hold",
+            "duration": 3000
+          },
+          {
+            "buttons": ["left-stick", "b"],
+            "direction": "down",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick", "b"],
+            "direction": "down",
+            "inputType": "Hold",
+            "duration": 3000
+          },
+          {
+            "buttons": ["stick", "b"],
+            "direction": "down",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
     "mediaUrl": "https://www.youtube.com/watch?v=HqEKhUjIdKo"
   }
 ]

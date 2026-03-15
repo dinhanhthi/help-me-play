@@ -10,10 +10,12 @@
       "vi": "Link rút cung và bắn tên. Giữ B để tích lực, gây thêm sát thương và bắn xa hơn."
     },
     "category": "special",
-    "combos": {
-      "handheld": [{ "buttons": ["b"], "inputType": "Hold", "duration": 1500 }],
-      "single-joycon": [{ "buttons": ["b"], "inputType": "Hold", "duration": 1500 }]
-    },
+    "combos": [
+      {
+        "handheld": [{ "buttons": ["b"], "inputType": "Hold", "duration": 1500 }],
+        "single-joycon": [{ "buttons": ["b"], "inputType": "Hold", "duration": 1500 }]
+      }
+    ],
     "mediaUrl": "https://www.youtube.com/watch?v=placeholder-link-bow"
   },
   {
@@ -27,10 +29,12 @@
       "vi": "Link ném boomerang về phía trước. Nó quay lại trên đường về, đánh trúng đối thủ hai lần."
     },
     "category": "special",
-    "combos": {
-      "handheld": [{ "buttons": ["left-stick", "b"], "direction": "left", "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["stick", "b"], "direction": "left", "inputType": "Tap" }]
-    },
+    "combos": [
+      {
+        "handheld": [{ "buttons": ["left-stick", "b"], "direction": "left", "inputType": "Tap" }],
+        "single-joycon": [{ "buttons": ["stick", "b"], "direction": "left", "inputType": "Tap" }]
+      }
+    ],
     "mediaUrl": "https://www.youtube.com/watch?v=placeholder-link-boomerang"
   },
   {
@@ -44,10 +48,12 @@
       "vi": "Link xoay kiếm, chém tất cả xung quanh. Khi ở trên không, chiêu này giúp hồi phục vị trí."
     },
     "category": "special",
-    "combos": {
-      "handheld": [{ "buttons": ["left-stick", "b"], "direction": "up", "inputType": "Tap" }],
-      "single-joycon": [{ "buttons": ["stick", "b"], "direction": "up", "inputType": "Tap" }]
-    },
+    "combos": [
+      {
+        "handheld": [{ "buttons": ["left-stick", "b"], "direction": "up", "inputType": "Tap" }],
+        "single-joycon": [{ "buttons": ["stick", "b"], "direction": "up", "inputType": "Tap" }]
+      }
+    ],
     "mediaUrl": "https://www.youtube.com/watch?v=placeholder-link-spinattack"
   },
   {
@@ -61,16 +67,18 @@
       "vi": "Link đặt một quả bom điều khiển từ xa. Nhấn Xuống-B lần nữa để kích nổ."
     },
     "category": "special",
-    "combos": {
-      "handheld": [
-        { "buttons": ["left-stick", "b"], "direction": "down", "inputType": "Tap" },
-        { "buttons": ["left-stick", "b"], "direction": "down", "inputType": "Tap" }
-      ],
-      "single-joycon": [
-        { "buttons": ["stick", "b"], "direction": "down", "inputType": "Tap" },
-        { "buttons": ["stick", "b"], "direction": "down", "inputType": "Tap" }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["left-stick", "b"], "direction": "down", "inputType": "Tap" },
+          { "buttons": ["left-stick", "b"], "direction": "down", "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick", "b"], "direction": "down", "inputType": "Tap" },
+          { "buttons": ["stick", "b"], "direction": "down", "inputType": "Tap" }
+        ]
+      }
+    ],
     "mediaUrl": "https://www.youtube.com/watch?v=placeholder-link-bomb"
   },
   {
@@ -84,16 +92,18 @@
       "vi": "Chém kiếm hai nhát liên tiếp. Nhát đầu có thể combo sang nhát thứ hai để gây sát thương lớn."
     },
     "category": "smash",
-    "combos": {
-      "handheld": [
-        { "buttons": ["left-stick", "a"], "direction": "right", "inputType": "Smash" },
-        { "buttons": ["a"], "inputType": "Tap" }
-      ],
-      "single-joycon": [
-        { "buttons": ["stick", "a"], "direction": "right", "inputType": "Smash" },
-        { "buttons": ["a"], "inputType": "Tap" }
-      ]
-    },
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["left-stick", "a"], "direction": "right", "inputType": "Smash" },
+          { "buttons": ["a"], "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick", "a"], "direction": "right", "inputType": "Smash" },
+          { "buttons": ["a"], "inputType": "Tap" }
+        ]
+      }
+    ],
     "mediaUrl": "https://www.youtube.com/watch?v=placeholder-link-fsmash"
   }
 ]

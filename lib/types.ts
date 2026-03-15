@@ -34,15 +34,19 @@ export interface ComboStep {
 /** A string that can be either a plain string (legacy) or a per-locale object */
 export type LocalizedString = string | Record<string, string>;
 
+/** One input method for a move — steps per controller mode, with an optional label */
+export type ComboMethod = Partial<Record<ControllerMode, ComboStep[]>> & {
+  label?: LocalizedString;
+};
+
 export interface Move {
   id: string;
   name: LocalizedString;
   description?: LocalizedString;
   /** Category: e.g. "special", "smash", "tilt", "throw", "other" */
   category: string;
-  combos: Record<ControllerMode, ComboStep[]>;
-  /** Alternative input method (e.g., right stick for smash attacks). Not all modes may have alternatives. */
-  altCombos?: Partial<Record<ControllerMode, ComboStep[]>>;
+  /** Array of input methods. First item is the primary method; additional items are alternatives. */
+  combos: ComboMethod[];
   /** URL to video (YouTube, Vimeo, etc.) or GIF (Giphy, Cloudinary, direct) */
   mediaUrl: string;
   /** Original source URL before Cloudinary migration (shown as "Source" credit) */

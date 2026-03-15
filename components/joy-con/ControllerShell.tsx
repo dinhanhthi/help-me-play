@@ -221,7 +221,7 @@ function HandheldShell({
       aria-label="Nintendo Switch controller layout"
     >
       {/* Left Joy-Con */}
-      <div className="flex flex-col items-end gap-1">
+      <div className="flex flex-col gap-1 items-center justify-center h-full">
         {/* ZL + L */}
         <div className="flex items-center flex-col gap-0.5 w-full">
           <div className="flex items-center gap-1.5 w-full">
@@ -264,7 +264,7 @@ function HandheldShell({
       </div>
 
       {/* Right Joy-Con */}
-      <div className="flex flex-col items-start gap-1">
+      <div className="flex flex-col gap-1 items-center justify-center h-full">
         {/* ZR + R */}
         <div className="flex items-center flex-col gap-0.5 w-full">
           <div className="flex items-center gap-1.5 w-full">

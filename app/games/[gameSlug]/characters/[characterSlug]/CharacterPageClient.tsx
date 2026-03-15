@@ -3,6 +3,7 @@
 import { useState, useMemo, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import {
   ChevronRight,
   ChevronUp,
@@ -239,11 +240,25 @@ export default function CharacterPageClient({
   characterSlug,
 }: CharacterPageClientProps) {
   const { t, locale } = useI18n();
-  const [mode, setMode] = useState<ControllerMode>("handheld");
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
   const [portraitLoaded, setPortraitLoaded] = useState(false);
-  const [activeCategories, setActiveCategories] = useState<Set<string>>(new Set());
-  const [activeButtons, setActiveButtons] = useState<Set<string>>(new Set());
+
+  const mode = (searchParams.get("mode") as ControllerMode) || "handheld";
+  const activeCategories = new Set(searchParams.get("cats")?.split(",").filter(Boolean) ?? []);
+  const activeButtons = new Set(searchParams.get("btns")?.split(",").filter(Boolean) ?? []);
+
   const editUrl = `${GITHUB_BASE}/data/${gameSlug}/moves/${characterSlug}.json`;
+
+  const updateFilters = (cats: Set<string>, btns: Set<string>, newMode: ControllerMode) => {
+    const params = new URLSearchParams();
+    if (newMode !== "handheld") params.set("mode", newMode);
+    if (cats.size > 0) params.set("cats", [...cats].join(","));
+    if (btns.size > 0) params.set("btns", [...btns].join(","));
+    const query = params.toString();
+    router.replace(query ? `${pathname}?${query}` : pathname, { scroll: false });
+  };
 
   // Collect unique categories and buttons from data
   const { categories, buttons } = useMemo(() => {
@@ -266,21 +281,21 @@ export default function CharacterPageClient({
   }, [moves, mode]);
 
   const toggleCategory = (cat: string) => {
-    setActiveCategories((prev) => {
-      const next = new Set(prev);
-      if (next.has(cat)) next.delete(cat);
-      else next.add(cat);
-      return next;
-    });
+    const next = new Set(activeCategories);
+    if (next.has(cat)) next.delete(cat);
+    else next.add(cat);
+    updateFilters(next, activeButtons, mode);
   };
 
   const toggleButton = (btn: string) => {
-    setActiveButtons((prev) => {
-      const next = new Set(prev);
-      if (next.has(btn)) next.delete(btn);
-      else next.add(btn);
-      return next;
-    });
+    const next = new Set(activeButtons);
+    if (next.has(btn)) next.delete(btn);
+    else next.add(btn);
+    updateFilters(activeCategories, next, mode);
+  };
+
+  const setMode = (newMode: ControllerMode) => {
+    updateFilters(activeCategories, activeButtons, newMode);
   };
 
   // Filter moves

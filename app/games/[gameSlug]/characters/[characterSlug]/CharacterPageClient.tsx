@@ -87,7 +87,7 @@ function MoveCard({
   const { currentStep, stepCount, isPlaying, activeButtons, direction, inputType } = comboState;
 
   return (
-    <div className="overflow-hidden rounded-2xl border border-border bg-card">
+    <div className="overflow-hidden rounded-2xl border border-border bg-card flex flex-col">
       {/* Move header */}
       <div className="border-b border-border px-5 py-4">
         <div className="flex flex-wrap items-center gap-2">
@@ -116,7 +116,7 @@ function MoveCard({
       </div>
 
       {/* Side-by-side */}
-      <div className="grid grid-cols-1 gap-5 p-4 md:grid-cols-[auto_1fr] md:items-center">
+      <div className="grid grid-cols-1 gap-5 p-4 md:grid-cols-[auto_1fr] md:items-center flex-1 min-h-0">
         <div className="order-2 md:order-1 h-full">
           <ComboSequence
             ref={comboRef}

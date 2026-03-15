@@ -1101,5 +1101,291 @@
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500026/help-me-play/smash-bros/mario/mario-finale.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/2/2a/Mario_Final_Smash_SSBU.gif"
+  },
+  {
+    "id": "shield",
+    "name": {
+      "en": "Shield",
+      "vi": "Khiên chắn (Shield)"
+    },
+    "description": {
+      "en": "Hold to activate a protective bubble shield. Blocks all attacks but shrinks with each hit. If it breaks, you're stunned. Release to drop shield. Can act out of shield with jump, up smash, up special, or grab.",
+      "vi": "Giữ để kích hoạt khiên bong bóng bảo vệ. Chặn mọi đòn tấn công nhưng thu nhỏ mỗi lần bị đánh. Nếu vỡ, bạn sẽ bị choáng. Thả để hạ khiên. Có thể hành động từ khiên bằng nhảy, smash trên, special trên, hoặc tóm."
+    },
+    "category": "other",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["zl"],
+            "inputType": "Hold"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["sr"],
+            "inputType": "Hold"
+          }
+        ]
+      },
+      {
+        "handheld": [
+          {
+            "buttons": ["zr"],
+            "inputType": "Hold"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": ""
+  },
+  {
+    "id": "grab",
+    "name": {
+      "en": "Grab",
+      "vi": "Tóm (Grab)"
+    },
+    "description": {
+      "en": "Reach out and grab the opponent. Cannot be shielded. Standing grab starts frame 6. Can also grab out of shield (shield grab) or while dashing (dash grab, frame 9). Follow up with pummel or any throw.",
+      "vi": "Vươn tay tóm đối thủ. Không thể bị chặn bằng khiên. Tóm đứng ra đòn frame 6. Có thể tóm từ khiên (shield grab) hoặc khi chạy (dash grab, frame 9). Tiếp nối bằng pummel hoặc bất kỳ đòn ném nào."
+    },
+    "category": "grab",
+    "combos": [
+      {
+        "label": {
+          "en": "Standing grab",
+          "vi": "Tóm đứng"
+        },
+        "handheld": [
+          {
+            "buttons": ["l"],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["sl"],
+            "inputType": "Tap"
+          }
+        ]
+      },
+      {
+        "label": {
+          "en": "Shield grab",
+          "vi": "Tóm từ khiên"
+        },
+        "handheld": [
+          {
+            "buttons": ["zl"],
+            "inputType": "Hold"
+          },
+          {
+            "buttons": ["zl", "a"],
+            "buttonInputTypes": { "zl": "Hold", "a": "Tap" }
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["sr"],
+            "inputType": "Hold"
+          },
+          {
+            "buttons": ["sr", "a"],
+            "buttonInputTypes": { "sr": "Hold", "a": "Tap" }
+          }
+        ]
+      },
+      {
+        "label": {
+          "en": "Dash grab",
+          "vi": "Tóm khi chạy"
+        },
+        "handheld": [
+          {
+            "buttons": ["left-stick"],
+            "direction": "right",
+            "inputType": "Hold"
+          },
+          {
+            "buttons": ["l"],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick"],
+            "direction": "right",
+            "inputType": "Hold"
+          },
+          {
+            "buttons": ["sl"],
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": ""
+  },
+  {
+    "id": "spot-dodge",
+    "name": {
+      "en": "Spot Dodge",
+      "vi": "Né tại chỗ (Spot Dodge)"
+    },
+    "description": {
+      "en": "Quick in-place dodge with intangibility frames 3-17. Total 26 frames. Use to avoid grabs and attacks while staying in position. Can be punished if read by the opponent.",
+      "vi": "Né nhanh tại chỗ với frame bất tử 3-17. Tổng 26 frame. Dùng để tránh tóm và đòn tấn công mà vẫn giữ vị trí. Có thể bị trừng phạt nếu đối thủ đọc được."
+    },
+    "category": "other",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["zl", "left-stick"],
+            "direction": "down",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["sr", "stick"],
+            "direction": "down",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": ""
+  },
+  {
+    "id": "forward-roll",
+    "name": {
+      "en": "Forward Roll",
+      "vi": "Lăn tới (Forward Roll)"
+    },
+    "description": {
+      "en": "Roll forward through the opponent with intangibility frames 4-15. Total 31 frames. Use to reposition or escape pressure. Becomes slower and less invincible with repeated use.",
+      "vi": "Lăn về phía trước xuyên qua đối thủ với frame bất tử 4-15. Tổng 31 frame. Dùng để đổi vị trí hoặc thoát áp lực. Chậm hơn và ít bất tử hơn khi dùng liên tục."
+    },
+    "category": "other",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["zl", "left-stick"],
+            "direction": "right",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["sr", "stick"],
+            "direction": "right",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": ""
+  },
+  {
+    "id": "back-roll",
+    "name": {
+      "en": "Back Roll",
+      "vi": "Lăn lùi (Back Roll)"
+    },
+    "description": {
+      "en": "Roll backward away from opponent with intangibility frames 4-15. Total 36 frames (5 frames slower than forward roll). Use to create distance safely.",
+      "vi": "Lăn ra sau xa đối thủ với frame bất tử 4-15. Tổng 36 frame (chậm hơn lăn tới 5 frame). Dùng để tạo khoảng cách an toàn."
+    },
+    "category": "other",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": ["zl", "left-stick"],
+            "direction": "left",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["sr", "stick"],
+            "direction": "left",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": ""
+  },
+  {
+    "id": "air-dodge",
+    "name": {
+      "en": "Air Dodge",
+      "vi": "Né trên không (Air Dodge)"
+    },
+    "description": {
+      "en": "Neutral air dodge has intangibility frames 3-29. Can also input a direction for directional air dodge (travels further but more vulnerable after). Directional air dodge toward stage is essential for recovery mixups. Only one air dodge per airborne state.",
+      "vi": "Né không trung trung tính có frame bất tử 3-29. Có thể nhập hướng để né có hướng (di chuyển xa hơn nhưng dễ bị tấn công sau đó). Né có hướng về phía sân rất quan trọng cho mixup hồi phục. Chỉ được né một lần mỗi lần trên không."
+    },
+    "category": "other",
+    "combos": [
+      {
+        "label": {
+          "en": "Neutral",
+          "vi": "Trung tính"
+        },
+        "handheld": [
+          {
+            "buttons": ["x"],
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["zl"],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["x"],
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["sr"],
+            "inputType": "Tap"
+          }
+        ]
+      },
+      {
+        "label": {
+          "en": "Directional",
+          "vi": "Có hướng"
+        },
+        "handheld": [
+          {
+            "buttons": ["x"],
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["zl", "left-stick"],
+            "direction": "right",
+            "buttonInputTypes": { "zl": "Tap", "left-stick": "Hold" }
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["x"],
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["sr", "stick"],
+            "direction": "right",
+            "buttonInputTypes": { "sr": "Tap", "stick": "Hold" }
+          }
+        ]
+      }
+    ],
+    "mediaUrl": ""
   }
 ]

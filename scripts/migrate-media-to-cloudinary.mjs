@@ -149,7 +149,8 @@ async function compressIfNeeded(filePath) {
   for (const scale of [null, 0.75, 0.6, 0.5, 0.4]) {
     try {
       let pipeline = sharp(filePath, { animated: true });
-      if (scale !== null) pipeline = pipeline.resize({ width: Math.round(1000 * scale), withoutEnlargement: true });
+      if (scale !== null)
+        pipeline = pipeline.resize({ width: Math.round(1000 * scale), withoutEnlargement: true });
       await pipeline.gif({ effort: 7, colours: 128 }).toFile(compressedPath);
 
       const newSize = fs.statSync(compressedPath).size;

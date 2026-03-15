@@ -74,7 +74,7 @@ export default function MediaEmbed({ url, sourceUrl, title, editUrl }: MediaEmbe
 
   if (media.provider === "invalid") {
     return (
-      <div className="flex h-32 items-center justify-center rounded-xl border border-border bg-surface text-sm text-muted">
+      <div className="flex h-full min-h-[210px] items-center justify-center rounded-xl border border-border bg-surface text-sm text-muted my-auto">
         {t.media.invalidUrl}
       </div>
     );

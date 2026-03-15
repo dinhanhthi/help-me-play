@@ -2,21 +2,21 @@
   {
     "slug": "mario",
     "name": "Mario",
-    "portrait": "/images/characters/smash-bros/mario.webp",
+    "portrait": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773563051/help-me-play/smash-bros/characters/mario_rijjkf.webp",
     "description": "The well-rounded plumber. Great for beginners with balanced speed, power, and recovery.",
     "tags": ["middleweight", "all-rounder", "beginner-friendly"]
   },
   {
     "slug": "link",
     "name": "Link",
-    "portrait": "/images/characters/smash-bros/link.webp",
+    "portrait": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773563051/help-me-play/smash-bros/characters/link_fhwvvr.webp",
     "description": "The Hero of Hyrule wields the Master Sword and a variety of projectiles.",
     "tags": ["middleweight", "swordfighter", "projectile"]
   },
   {
     "slug": "pikachu",
     "name": "Pikachu",
-    "portrait": "/images/characters/smash-bros/pikachu.webp",
+    "portrait": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773563050/help-me-play/smash-bros/characters/pikachu_hiw5pq.webp",
     "description": "A fast and agile electric Pokémon with excellent recovery and combo potential.",
     "tags": ["lightweight", "speedster", "combo-heavy"]
   }

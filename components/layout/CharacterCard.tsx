@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 import { ChessKnight } from "lucide-react";
@@ -26,11 +27,12 @@ export default function CharacterCard({ character, gameSlug }: CharacterCardProp
                 <ChessKnight className="h-14 w-14 text-muted" />
               </div>
             )}
-            <img
+            <Image
               src={character.portrait}
               alt={character.name}
+              fill
               onLoad={() => setPortraitLoaded(true)}
-              className={`mx-auto h-[200px] w-auto object-contain transition-all duration-200 group-hover:scale-105 ${portraitLoaded ? "opacity-100" : "opacity-0"}`}
+              className={`object-contain transition-all duration-200 group-hover:scale-105 ${portraitLoaded ? "opacity-100" : "opacity-0"}`}
             />
           </>
         ) : (

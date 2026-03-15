@@ -54,7 +54,7 @@ export interface Move {
 export interface Character {
   slug: string;
   name: string;
-  /** Path to portrait image relative to /public */
+  /** URL or path to portrait image */
   portrait?: string;
   /** Brief description */
   description?: string;

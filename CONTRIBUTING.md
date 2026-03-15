@@ -31,7 +31,7 @@ data/
 {
   "slug": "kirby",
   "name": "Kirby",
-  "portrait": "/images/characters/<game-slug>/kirby.png",
+  "portrait": "https://example.com/kirby.png",
   "description": "A lightweight puffball who can copy opponents' abilities.",
   "tags": ["lightweight", "beginner-friendly"]
 }
@@ -41,13 +41,13 @@ data/
 |-------|----------|-------------|
 | `slug` | Yes | Unique identifier (kebab-case) |
 | `name` | Yes | Display name |
-| `portrait` | No | Path to portrait image |
+| `portrait` | No | Any public image URL |
 | `description` | No | Short character description |
 | `tags` | No | Array of descriptive tags |
 
 2. Create `data/<game-slug>/moves/kirby.json` with the character's moves (see [Move JSON format](#move-json-format) below).
 
-3. (Optional) Add a portrait image at `public/images/characters/<game-slug>/kirby.png`.
+3. (Optional) Add a portrait by setting `portrait` to any public image URL. The maintainer will run the migration script to re-host it before merging.
 
 ## Add a new game
 
@@ -58,7 +58,7 @@ data/
   "slug": "mario-kart",
   "title": "Mario Kart 8 Deluxe",
   "description": "Race against friends with items and drifting techniques.",
-  "coverImage": "/images/games/mario-kart.jpg"
+  "coverImage": "https://example.com/mario-kart.jpg"
 }
 ```
 
@@ -71,7 +71,7 @@ data/
   "slug": "mario-kart",
   "title": "Mario Kart 8 Deluxe",
   "description": "Master drifting, items, and shortcuts.",
-  "coverImage": "/images/games/mario-kart.jpg",
+  "coverImage": "https://example.com/mario-kart.jpg",
   "tips": [
     "Hold the drift button (ZR) and steer to charge a mini-turbo.",
     "Press the item button right before getting hit to use a defensive item."

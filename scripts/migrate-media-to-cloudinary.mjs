@@ -1,9 +1,12 @@
 #!/usr/bin/env node
 
 /**
- * Scans all move JSON files in data/, downloads GIF/image media (not videos),
- * uploads them to Cloudinary, and replaces mediaUrl with the Cloudinary URL.
- * The original URL is preserved in a new "sourceUrl" field.
+ * Migrates media assets to Cloudinary:
+ *
+ *   1. coverImage in data/games.json         → help-me-play/games/<slug>
+ *   2. portrait  in data/<game>/characters.json → help-me-play/<game>/characters/<slug>
+ *   3. mediaUrl  in data/<game>/moves/*.json  → help-me-play/<game>/<char>/<moveId>
+ *      (original URL preserved in "sourceUrl" field)
  *
  * Skips: YouTube, Vimeo, Dailymotion, direct video files (.mp4, .webm),
  *        and URLs already on Cloudinary.
@@ -50,6 +53,22 @@ function shouldSkip(url) {
   } catch {
     return true;
   }
+}
+
+/**
+ * Find all characters.json files under data/, one per game directory.
+ * Returns [{ file, gameSlug }]
+ */
+function findCharacterFiles(dir) {
+  const results = [];
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    if (!entry.isDirectory()) continue;
+    const charFile = path.join(dir, entry.name, "characters.json");
+    if (fs.existsSync(charFile)) {
+      results.push({ file: charFile, gameSlug: entry.name });
+    }
+  }
+  return results;
 }
 
 /**
@@ -148,24 +167,85 @@ async function uploadToCloudinary(filePath, publicId, resourceType) {
   return data.secure_url;
 }
 
-function resourceTypeForExt() {
-  return "image"; // gif, png, jpg, webp are all "image" in Cloudinary
-}
-
-async function main() {
-  if (!DRY_RUN && (!CLOUD_NAME || !API_KEY || !API_SECRET)) {
-    console.error(
-      "Error: CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET required",
-    );
-    process.exit(1);
+async function migrateAsset(url, publicId, stats) {
+  if (!url || shouldSkip(url)) {
+    stats.skipped++;
+    return null;
   }
 
+  if (DRY_RUN) {
+    console.log(`  [DRY RUN] Would migrate: ${url}`);
+    console.log(`            Public ID: help-me-play/${publicId}`);
+    stats.migrated++;
+    return null;
+  }
+
+  let tempPath;
+  try {
+    console.log(`  Downloading: ${url}`);
+    ({ tempPath } = await downloadFile(url));
+    console.log(`  Uploading: help-me-play/${publicId}`);
+    const cloudinaryUrl = await uploadToCloudinary(tempPath, publicId, "image");
+    stats.migrated++;
+    console.log(`  ✓ ${publicId}: ${cloudinaryUrl}`);
+    return cloudinaryUrl;
+  } catch (err) {
+    console.error(`  ✗ Failed ${publicId}: ${err.message}`);
+    stats.failed++;
+    return null;
+  } finally {
+    if (tempPath && fs.existsSync(tempPath)) fs.unlinkSync(tempPath);
+  }
+}
+
+async function migrateGameCovers(stats) {
+  const gamesFile = path.join(DATA_DIR, "games.json");
+  const games = JSON.parse(fs.readFileSync(gamesFile, "utf-8"));
+  if (!Array.isArray(games)) return;
+
+  let modified = false;
+  for (const game of games) {
+    const newUrl = await migrateAsset(game.coverImage, `games/${game.slug}`, stats);
+    if (newUrl) {
+      game.coverImage = newUrl;
+      modified = true;
+    }
+  }
+
+  if (modified) {
+    fs.writeFileSync(gamesFile, JSON.stringify(games, null, 2) + "\n");
+    console.log(`  Updated data/games.json`);
+  }
+}
+
+async function migrateCharacterPortraits(stats) {
+  const charFiles = findCharacterFiles(DATA_DIR);
+  console.log(`Found ${charFiles.length} character file(s)`);
+
+  for (const { file, gameSlug } of charFiles) {
+    const characters = JSON.parse(fs.readFileSync(file, "utf-8"));
+    if (!Array.isArray(characters)) continue;
+
+    let modified = false;
+    for (const char of characters) {
+      const publicId = `${gameSlug}/characters/${char.slug}`;
+      const newUrl = await migrateAsset(char.portrait, publicId, stats);
+      if (newUrl) {
+        char.portrait = newUrl;
+        modified = true;
+      }
+    }
+
+    if (modified) {
+      fs.writeFileSync(file, JSON.stringify(characters, null, 2) + "\n");
+      console.log(`  Updated data/${gameSlug}/characters.json`);
+    }
+  }
+}
+
+async function migrateMoveMedia(stats) {
   const moveFiles = findMoveFiles(DATA_DIR);
   console.log(`Found ${moveFiles.length} move file(s)`);
-
-  let totalMigrated = 0;
-  let totalSkipped = 0;
-  let totalFailed = 0;
 
   for (const file of moveFiles) {
     const relPath = path.relative(ROOT, file);
@@ -180,51 +260,22 @@ async function main() {
 
     for (const move of content) {
       if (!move.mediaUrl) continue;
-      if (shouldSkip(move.mediaUrl)) {
-        totalSkipped++;
-        continue;
-      }
-      // Already migrated (has sourceUrl and mediaUrl points to cloudinary)
+      // Already migrated (has sourceUrl and mediaUrl points to Cloudinary)
       if (move.sourceUrl && move.mediaUrl.includes("res.cloudinary.com")) {
-        totalSkipped++;
+        stats.skipped++;
         continue;
       }
 
-      const originalUrl = move.mediaUrl;
-      // Build a clean public_id from file path + move id
       const gamePart = relPath.split("/")[1] || "unknown"; // e.g. "smash-bros"
       const charPart = path.basename(file, ".json"); // e.g. "mario"
       const publicId = `${gamePart}/${charPart}/${move.id}`;
+      const originalUrl = move.mediaUrl;
 
-      if (DRY_RUN) {
-        console.log(`  [DRY RUN] Would migrate: ${move.id} → ${originalUrl}`);
-        console.log(`            Public ID: help-me-play/${publicId}`);
-        totalMigrated++;
-        continue;
-      }
-
-      let tempPath;
-      try {
-        console.log(`  Downloading: ${originalUrl}`);
-        const downloaded = await downloadFile(originalUrl);
-        tempPath = downloaded.tempPath;
-
-        const resourceType = resourceTypeForExt();
-        console.log(`  Uploading to Cloudinary as ${resourceType}: ${publicId}`);
-        const cloudinaryUrl = await uploadToCloudinary(tempPath, publicId, resourceType);
-
+      const newUrl = await migrateAsset(originalUrl, publicId, stats);
+      if (newUrl) {
         move.sourceUrl = originalUrl;
-        move.mediaUrl = cloudinaryUrl;
+        move.mediaUrl = newUrl;
         modified = true;
-        totalMigrated++;
-        console.log(`  ✓ ${move.id}: ${cloudinaryUrl}`);
-      } catch (err) {
-        console.error(`  ✗ Failed ${move.id}: ${err.message}`);
-        totalFailed++;
-      } finally {
-        if (tempPath && fs.existsSync(tempPath)) {
-          fs.unlinkSync(tempPath);
-        }
       }
     }
 
@@ -233,11 +284,31 @@ async function main() {
       console.log(`  Updated ${relPath}`);
     }
   }
+}
+
+async function main() {
+  if (!DRY_RUN && (!CLOUD_NAME || !API_KEY || !API_SECRET)) {
+    console.error(
+      "Error: CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET required",
+    );
+    process.exit(1);
+  }
+
+  const stats = { migrated: 0, skipped: 0, failed: 0 };
+
+  console.log("\n── Game covers ──────────────────────────────");
+  await migrateGameCovers(stats);
+
+  console.log("\n── Character portraits ──────────────────────");
+  await migrateCharacterPortraits(stats);
+
+  console.log("\n── Move media ───────────────────────────────");
+  await migrateMoveMedia(stats);
 
   console.log(
-    `\nDone! Migrated: ${totalMigrated}, Skipped: ${totalSkipped}, Failed: ${totalFailed}`,
+    `\nDone! Migrated: ${stats.migrated}, Skipped: ${stats.skipped}, Failed: ${stats.failed}`,
   );
-  if (totalFailed > 0) process.exit(1);
+  if (stats.failed > 0) process.exit(1);
 }
 
 main();

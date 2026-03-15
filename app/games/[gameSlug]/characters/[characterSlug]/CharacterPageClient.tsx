@@ -1,14 +1,17 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronRight, ChessKnight } from "lucide-react";
+import { ChevronRight, ChessKnight, Pause, Play, ChevronLeft, RotateCcw } from "lucide-react";
 import type { ControllerMode, Move } from "@/lib/types";
 import { useI18n } from "@/lib/i18n/context";
-import { localize } from "@/lib/i18n";
+import { localize, type Locale } from "@/lib/i18n";
 import ModeToggle from "@/components/ui/ModeToggle";
-import ComboSequence from "@/components/joy-con/ComboSequence";
+import ComboSequence, {
+  type ComboSequenceHandle,
+  type ComboSequenceState,
+} from "@/components/joy-con/ComboSequence";
 import MediaEmbed from "@/components/media/MediaEmbed";
 import { inputTypeColors } from "@/components/joy-con/ControllerShell";
 import { Tooltip } from "@/components/ui/Tooltip";
@@ -36,6 +39,131 @@ const categoryColors: Record<string, string> = {
 const categoryOrder = ["ground", "tilt", "smash", "aerial", "special", "grab", "other"];
 
 const GITHUB_BASE = "https://github.com/dinhanhthi/help-me-play/edit/main";
+
+const btnClass =
+  "cursor-pointer inline-flex h-7 w-7 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent";
+
+function MoveCard({
+  move,
+  mode,
+  colorClass,
+  catLabels,
+  catDescs,
+  locale,
+  editUrl,
+  t,
+}: {
+  move: Move;
+  mode: ControllerMode;
+  colorClass: string;
+  catLabels: Record<string, string>;
+  catDescs: Record<string, string>;
+  locale: Locale;
+  editUrl: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  t: any;
+}) {
+  const comboRef = useRef<ComboSequenceHandle>(null);
+  const [comboState, setComboState] = useState<ComboSequenceState>({
+    currentStep: 0,
+    stepCount: 0,
+    isPlaying: true,
+  });
+
+  const { currentStep, stepCount, isPlaying } = comboState;
+
+  return (
+    <div className="overflow-hidden rounded-2xl border border-border bg-card">
+      {/* Move header */}
+      <div className="border-b border-border px-5 py-4">
+        <div className="flex flex-wrap items-center gap-2">
+          <h3 className="font-display text-base font-semibold">{localize(move.name, locale)}</h3>
+          {catDescs[move.category] ? (
+            <Tooltip text={catDescs[move.category]}>
+              <span className={`rounded-lg border px-2 py-0.5 text-[11px] font-semibold ${colorClass}`}>
+                {catLabels[move.category] ?? move.category}
+              </span>
+            </Tooltip>
+          ) : (
+            <span className={`rounded-lg border px-2 py-0.5 text-[11px] font-semibold ${colorClass}`}>
+              {catLabels[move.category] ?? move.category}
+            </span>
+          )}
+        </div>
+        {localize(move.description, locale) && (
+          <p className="mt-1.5 text-sm text-muted leading-relaxed">
+            {localize(move.description, locale)}
+          </p>
+        )}
+      </div>
+
+      {/* Side-by-side */}
+      <div className="grid grid-cols-1 gap-5 p-4 md:grid-cols-[auto_1fr] md:items-center">
+        <div className="order-2 md:order-1 h-full">
+          <ComboSequence
+            ref={comboRef}
+            methods={move.combos}
+            mode={mode}
+            onStateChange={setComboState}
+          />
+        </div>
+        <div className="order-1 md:order-2 h-full">
+          <MediaEmbed
+            url={move.mediaUrl}
+            sourceUrl={move.sourceUrl}
+            title={localize(move.name, locale) ?? move.id}
+            editUrl={editUrl}
+          />
+        </div>
+      </div>
+
+      {/* Card footer: step counter + controls */}
+      <div className="border-t border-border px-4 py-2 flex flex-row gap-4 items-center justify-start h-11">
+        <div className="h-6 font-mono text-xs text-muted flex items-center gap-1">
+          {t.controls.step}{" "}
+          <span className="font-semibold text-foreground">{currentStep + 1}</span>/{stepCount}
+        </div>
+
+        {stepCount > 1 && (
+          <div className="flex items-center justify-start flex-1 min-w-0 gap-1.5">
+            <button
+              onClick={() => comboRef.current?.togglePlayPause()}
+              className={btnClass}
+              aria-label={isPlaying ? t.controls.pauseAnimation : t.controls.playAnimation}
+            >
+              {isPlaying ? <Pause className="h-3.5 w-3.5" /> : <Play className="h-3.5 w-3.5" />}
+            </button>
+            {!isPlaying && (
+              <>
+                <button
+                  onClick={() => comboRef.current?.goToPrevStep()}
+                  className={btnClass}
+                  aria-label={t.controls.previousStep}
+                >
+                  <ChevronLeft className="h-3.5 w-3.5" />
+                </button>
+                <button
+                  onClick={() => comboRef.current?.goToNextStep()}
+                  className={btnClass}
+                  aria-label={t.controls.nextStep}
+                >
+                  <ChevronRight className="h-3.5 w-3.5" />
+                </button>
+                <button
+                  onClick={() => comboRef.current?.restart()}
+                  className={btnClass}
+                  aria-label={t.controls.restartAnimation}
+                >
+                  <RotateCcw className="h-3.5 w-3.5" />
+                </button>
+              </>
+            )}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
 
 export default function CharacterPageClient({
   characterName,
@@ -221,60 +349,19 @@ export default function CharacterPageClient({
             </h2>
             {catDescs[cat] && <p className="mt-1 mb-4 text-sm text-muted">{catDescs[cat]}</p>}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-              {groupedMoves[cat].map((move) => {
-                const colorClass = categoryColors[move.category] ?? categoryColors["other"];
-
-                return (
-                  <div
-                    key={move.id}
-                    className="overflow-hidden rounded-2xl border border-border bg-card"
-                  >
-                    {/* Move header */}
-                    <div className="border-b border-border px-5 py-4">
-                      <div className="flex flex-wrap items-center gap-2">
-                        <h3 className="font-display text-base font-semibold">
-                          {localize(move.name, locale)}
-                        </h3>
-                        {catDescs[move.category] ? (
-                          <Tooltip text={catDescs[move.category]}>
-                            <span
-                              className={`rounded-lg border px-2 py-0.5 text-[11px] font-semibold ${colorClass}`}
-                            >
-                              {catLabels[move.category] ?? move.category}
-                            </span>
-                          </Tooltip>
-                        ) : (
-                          <span
-                            className={`rounded-lg border px-2 py-0.5 text-[11px] font-semibold ${colorClass}`}
-                          >
-                            {catLabels[move.category] ?? move.category}
-                          </span>
-                        )}
-                      </div>
-                      {localize(move.description, locale) && (
-                        <p className="mt-1.5 text-sm text-muted leading-relaxed">
-                          {localize(move.description, locale)}
-                        </p>
-                      )}
-                    </div>
-
-                    {/* Side-by-side */}
-                    <div className="grid grid-cols-1 gap-5 p-4 md:grid-cols-[auto_1fr] md:items-center">
-                      <div className="order-2 md:order-1 h-full">
-                        <ComboSequence methods={move.combos} mode={mode} />
-                      </div>
-                      <div className="order-1 md:order-2 h-full">
-                        <MediaEmbed
-                          url={move.mediaUrl}
-                          sourceUrl={move.sourceUrl}
-                          title={localize(move.name, locale) ?? move.id}
-                          editUrl={editUrl}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
+              {groupedMoves[cat].map((move) => (
+                <MoveCard
+                  key={move.id}
+                  move={move}
+                  mode={mode}
+                  colorClass={categoryColors[move.category] ?? categoryColors["other"]}
+                  catLabels={catLabels}
+                  catDescs={catDescs}
+                  locale={locale}
+                  editUrl={editUrl}
+                  t={t}
+                />
+              ))}
             </div>
           </section>
         ))}

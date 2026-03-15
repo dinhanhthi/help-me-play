@@ -1,22 +1,12 @@
 "use client";
 
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useCallback, useRef, forwardRef, useImperativeHandle } from "react";
 import type { ComboMethod, ComboStep, ControllerMode } from "@/lib/types";
 import { localize } from "@/lib/i18n";
 import { useI18n } from "@/lib/i18n/context";
-import { ChevronLeft, ChevronRight, Pause, Play, RotateCcw } from "lucide-react";
-import { inputTypeColors } from "./ControllerShell";
-import { Tooltip } from "@/components/ui/Tooltip";
 import JoyConHandheld from "./JoyConHandheld";
 import JoyConSingle from "./JoyConSingle";
 import { cn } from "@/lib/cn";
-
-const directionArrows: Record<string, string> = {
-  left: "\u2190",
-  right: "\u2192",
-  up: "\u2191",
-  down: "\u2193",
-};
 
 function MethodToggle({
   active,
@@ -64,12 +54,29 @@ function MethodToggle({
   );
 }
 
+export interface ComboSequenceHandle {
+  togglePlayPause: () => void;
+  goToPrevStep: () => void;
+  goToNextStep: () => void;
+  restart: () => void;
+}
+
+export interface ComboSequenceState {
+  currentStep: number;
+  stepCount: number;
+  isPlaying: boolean;
+}
+
 interface ComboSequenceProps {
   methods: ComboMethod[];
   mode: ControllerMode;
+  onStateChange?: (state: ComboSequenceState) => void;
 }
 
-export default function ComboSequence({ methods, mode }: ComboSequenceProps) {
+const ComboSequence = forwardRef<ComboSequenceHandle, ComboSequenceProps>(function ComboSequence(
+  { methods, mode, onStateChange },
+  ref,
+) {
   const { t, locale } = useI18n();
   const [currentStep, setCurrentStep] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
@@ -145,6 +152,16 @@ export default function ComboSequence({ methods, mode }: ComboSequenceProps) {
     });
   }, [stepCount, stepsMatch]);
 
+  useImperativeHandle(
+    ref,
+    () => ({ togglePlayPause, goToPrevStep, goToNextStep, restart }),
+    [togglePlayPause, goToPrevStep, goToNextStep, restart],
+  );
+
+  useEffect(() => {
+    onStateChange?.({ currentStep, stepCount, isPlaying });
+  }, [currentStep, stepCount, isPlaying, onStateChange]);
+
   // Brief gap (150ms) between identical consecutive steps — works in both play and pause modes
   useEffect(() => {
     if (!isGap) return;
@@ -197,7 +214,7 @@ export default function ComboSequence({ methods, mode }: ComboSequenceProps) {
           )}
         />
       )}
-      <div className="w-full flex items-center justify-center flex-1 min-h-0 ">
+      <div className="w-full flex items-center justify-center flex-1 min-h-0">
         {mode === "handheld" ? (
           <JoyConHandheld
             activeButtons={activeButtons}
@@ -214,53 +231,8 @@ export default function ComboSequence({ methods, mode }: ComboSequenceProps) {
           />
         )}
       </div>
-
-      {/* Info tags */}
-
-      <div className="flex flex-row gap-4 items-center justify-start w-full h-7">
-        <div className="h-6 font-mono text-xs text-muted flex items-center gap-1">
-          {t.controls.step} <span className="font-semibold text-foreground">{currentStep + 1}</span>
-          /{stepCount}
-        </div>
-
-        {/* Controls */}
-        {stepCount > 1 && (
-          <div className="flex items-center justify-start flex-1 min-w-0 gap-1.5">
-            <button
-              onClick={togglePlayPause}
-              className="cursor-pointer inline-flex h-7 w-7 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-              aria-label={isPlaying ? t.controls.pauseAnimation : t.controls.playAnimation}
-            >
-              {isPlaying ? <Pause className="h-3.5 w-3.5" /> : <Play className="h-3.5 w-3.5" />}
-            </button>
-            {!isPlaying && (
-              <>
-                <button
-                  onClick={goToPrevStep}
-                  className="cursor-pointer inline-flex h-7 w-7 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-                  aria-label={t.controls.previousStep}
-                >
-                  <ChevronLeft className="h-3.5 w-3.5" />
-                </button>
-                <button
-                  onClick={goToNextStep}
-                  className="cursor-pointer inline-flex h-7 w-7 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-                  aria-label={t.controls.nextStep}
-                >
-                  <ChevronRight className="h-3.5 w-3.5" />
-                </button>
-                <button
-                  onClick={restart}
-                  className="cursor-pointer inline-flex h-7 w-7 items-center justify-center rounded-lg border border-border bg-surface text-muted transition-colors hover:text-foreground hover:border-border-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-                  aria-label={t.controls.restartAnimation}
-                >
-                  <RotateCcw className="h-3.5 w-3.5" />
-                </button>
-              </>
-            )}
-          </div>
-        )}
-      </div>
     </div>
   );
-}
+});
+
+export default ComboSequence;

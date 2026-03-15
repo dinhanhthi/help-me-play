@@ -6,8 +6,12 @@ interface ControllerShellProps {
   activeButtons?: string[];
   direction?: string;
   inputType?: string;
+  /** Per-button input type overrides — falls back to inputType */
+  buttonInputTypes?: Record<string, string>;
   /** Tooltip text shown on hover over active buttons */
   tooltip?: string;
+  /** Per-button tooltip overrides — falls back to tooltip */
+  buttonTooltips?: Record<string, string>;
 }
 
 /* ── Styles ── */
@@ -77,14 +81,14 @@ function ButtonDiamond({
   ids,
   activeButtons,
   labels,
-  color,
-  tooltip,
+  getColor,
+  getTooltip,
 }: {
   ids: { top: string; right: string; bottom: string; left: string };
   activeButtons: string[];
   labels?: Record<string, string>;
-  color: string;
-  tooltip?: string;
+  getColor: (id: string) => string;
+  getTooltip: (id: string) => string | undefined;
 }) {
   const is = (id: string) => activeButtons.includes(id);
   return (
@@ -97,8 +101,8 @@ function ButtonDiamond({
         id={ids.top}
         active={is(ids.top)}
         label={labels?.[ids.top]}
-        color={color}
-        tooltip={tooltip}
+        color={getColor(ids.top)}
+        tooltip={getTooltip(ids.top)}
         className="w-5 h-5"
       />
       <div />
@@ -106,8 +110,8 @@ function ButtonDiamond({
         id={ids.left}
         active={is(ids.left)}
         label={labels?.[ids.left]}
-        color={color}
-        tooltip={tooltip}
+        color={getColor(ids.left)}
+        tooltip={getTooltip(ids.left)}
         className="w-5 h-5"
       />
       <div />
@@ -115,8 +119,8 @@ function ButtonDiamond({
         id={ids.right}
         active={is(ids.right)}
         label={labels?.[ids.right]}
-        color={color}
-        tooltip={tooltip}
+        color={getColor(ids.right)}
+        tooltip={getTooltip(ids.right)}
         className="w-5 h-5"
       />
       <div />
@@ -124,8 +128,8 @@ function ButtonDiamond({
         id={ids.bottom}
         active={is(ids.bottom)}
         label={labels?.[ids.bottom]}
-        color={color}
-        tooltip={tooltip}
+        color={getColor(ids.bottom)}
+        tooltip={getTooltip(ids.bottom)}
         className="w-5 h-5"
       />
       <div />
@@ -204,13 +208,13 @@ function PillBtn({
 function HandheldShell({
   activeButtons = [],
   direction,
-  color,
-  tooltip,
+  getColor,
+  getTooltip,
 }: {
   activeButtons: string[];
   direction?: string;
-  color: string;
-  tooltip?: string;
+  getColor: (id: string) => string;
+  getTooltip: (id: string) => string | undefined;
 }) {
   const is = (id: string) => activeButtons.includes(id);
   const leftStickDir = is("left-stick") ? direction : undefined;
@@ -230,8 +234,8 @@ function HandheldShell({
             <PillBtn
               id="zl"
               active={is("zl")}
-              color={color}
-              tooltip={tooltip}
+              color={getColor("zl")}
+              tooltip={getTooltip("zl")}
               className="flex-1 h-3.5 rounded-t-4xl rounded-b-xl"
             />
           </div>
@@ -240,8 +244,8 @@ function HandheldShell({
             <PillBtn
               id="l"
               active={is("l")}
-              color={color}
-              tooltip={tooltip}
+              color={getColor("l")}
+              tooltip={getTooltip("l")}
               className="flex-1 h-3"
             />
           </div>
@@ -252,14 +256,14 @@ function HandheldShell({
             id="left-stick"
             active={is("left-stick")}
             direction={leftStickDir}
-            color={color}
-            tooltip={tooltip}
+            color={getColor("left-stick")}
+            tooltip={getTooltip("left-stick")}
           />
           <ButtonDiamond
             ids={{ top: "dpad-up", right: "dpad-right", bottom: "dpad-down", left: "dpad-left" }}
             activeButtons={activeButtons}
-            color={color}
-            tooltip={tooltip}
+            getColor={getColor}
+            getTooltip={getTooltip}
           />
         </div>
       </div>
@@ -272,8 +276,8 @@ function HandheldShell({
             <PillBtn
               id="zr"
               active={is("zr")}
-              color={color}
-              tooltip={tooltip}
+              color={getColor("zr")}
+              tooltip={getTooltip("zr")}
               className="flex-1 h-3.5 rounded-t-4xl rounded-b-xl"
             />
             <span className="text-xs text-muted font-semibold">ZR</span>
@@ -282,8 +286,8 @@ function HandheldShell({
             <PillBtn
               id="r"
               active={is("r")}
-              color={color}
-              tooltip={tooltip}
+              color={getColor("r")}
+              tooltip={getTooltip("r")}
               className="flex-1 h-3"
             />
             <span className="text-xs text-muted font-semibold">R</span>
@@ -296,15 +300,15 @@ function HandheldShell({
             ids={{ top: "x", right: "a", bottom: "b", left: "y" }}
             activeButtons={activeButtons}
             labels={faceLabels}
-            color={color}
-            tooltip={tooltip}
+            getColor={getColor}
+            getTooltip={getTooltip}
           />
           <Stick
             id="right-stick"
             active={is("right-stick")}
             direction={rightStickDir}
-            color={color}
-            tooltip={tooltip}
+            color={getColor("right-stick")}
+            tooltip={getTooltip("right-stick")}
           />
         </div>
       </div>
@@ -315,13 +319,13 @@ function HandheldShell({
 function SingleJoyConShell({
   activeButtons = [],
   direction,
-  color,
-  tooltip,
+  getColor,
+  getTooltip,
 }: {
   activeButtons: string[];
   direction?: string;
-  color: string;
-  tooltip?: string;
+  getColor: (id: string) => string;
+  getTooltip: (id: string) => string | undefined;
 }) {
   const is = (id: string) => activeButtons.includes(id);
 
@@ -337,15 +341,15 @@ function SingleJoyConShell({
         <PillBtn
           id="sl"
           active={is("sl")}
-          color={color}
-          tooltip={tooltip}
+          color={getColor("sl")}
+          tooltip={getTooltip("sl")}
           className="flex-1 h-3.5"
         />
         <PillBtn
           id="sr"
           active={is("sr")}
-          color={color}
-          tooltip={tooltip}
+          color={getColor("sr")}
+          tooltip={getTooltip("sr")}
           className="flex-1 h-3.5"
         />
         <span className="text-xs text-muted font-semibold">SR</span>
@@ -356,14 +360,14 @@ function SingleJoyConShell({
           id="stick"
           active={is("stick")}
           direction={direction}
-          color={color}
-          tooltip={tooltip}
+          color={getColor("stick")}
+          tooltip={getTooltip("stick")}
         />
         <ButtonDiamond
           ids={{ top: "x", right: "a", bottom: "b", left: "y" }}
           activeButtons={activeButtons}
-          color={color}
-          tooltip={tooltip}
+          getColor={getColor}
+          getTooltip={getTooltip}
         />
       </div>
     </div>
@@ -375,16 +379,24 @@ export default function ControllerShell({
   activeButtons = [],
   direction,
   inputType,
+  buttonInputTypes,
   tooltip,
+  buttonTooltips,
 }: ControllerShellProps) {
-  const color = getActiveColor(inputType);
+  const getColor = (id: string) => {
+    const perBtn = buttonInputTypes?.[id] ?? inputType;
+    return getActiveColor(perBtn);
+  };
+  const getTooltip = (id: string): string | undefined =>
+    buttonTooltips?.[id] ?? tooltip;
+
   if (mode === "single-joycon") {
     return (
       <SingleJoyConShell
         activeButtons={activeButtons}
         direction={direction}
-        color={color}
-        tooltip={tooltip}
+        getColor={getColor}
+        getTooltip={getTooltip}
       />
     );
   }
@@ -392,8 +404,8 @@ export default function ControllerShell({
     <HandheldShell
       activeButtons={activeButtons}
       direction={direction}
-      color={color}
-      tooltip={tooltip}
+      getColor={getColor}
+      getTooltip={getTooltip}
     />
   );
 }

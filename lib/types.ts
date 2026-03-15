@@ -27,8 +27,12 @@ export interface ComboStep {
   direction?: string;
   /** How long to hold this step in ms */
   duration?: number;
-  /** Label for this step (e.g., "Hold", "Tap", "Mash") */
+  /** Input type for all buttons in this step (e.g., "Hold", "Tap", "Mash") */
   inputType?: string;
+  /** Per-button input type overrides. Key is button ID, value is inputType.
+   *  Useful when buttons in the same step have different input types
+   *  (e.g., holding L while tapping A). Falls back to `inputType` if not set. */
+  buttonInputTypes?: Record<string, string>;
 }
 
 /** A string that can be either a plain string (legacy) or a per-locale object */

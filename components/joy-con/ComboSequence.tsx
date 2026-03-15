@@ -68,6 +68,7 @@ export interface ComboSequenceState {
   activeButtons: string[];
   direction?: string;
   inputType?: string;
+  buttonInputTypes?: Record<string, string>;
 }
 
 interface ComboSequenceProps {
@@ -166,6 +167,7 @@ const ComboSequence = forwardRef<ComboSequenceHandle, ComboSequenceProps>(functi
     const btns = isGap ? [] : (step?.buttons ?? []);
     const dir = isGap ? undefined : step?.direction;
     const iType = isGap ? undefined : step?.inputType;
+    const btnInputTypes = isGap ? undefined : step?.buttonInputTypes;
     onStateChange?.({
       currentStep,
       stepCount,
@@ -173,6 +175,7 @@ const ComboSequence = forwardRef<ComboSequenceHandle, ComboSequenceProps>(functi
       activeButtons: btns,
       direction: dir,
       inputType: iType,
+      buttonInputTypes: btnInputTypes,
     });
   }, [currentStep, stepCount, isPlaying, isGap, step, onStateChange]);
 
@@ -211,8 +214,13 @@ const ComboSequence = forwardRef<ComboSequenceHandle, ComboSequenceProps>(functi
   const activeButtons = isGap ? [] : (step?.buttons ?? []);
   const direction = isGap ? undefined : step?.direction;
   const inputType = isGap ? undefined : step?.inputType;
-  const tooltip = inputType
-    ? (t.controls.inputTypes as Record<string, string>)[inputType]
+  const buttonInputTypes = isGap ? undefined : step?.buttonInputTypes;
+  const inputTypeStrings = t.controls.inputTypes as Record<string, string>;
+  const tooltip = inputType ? inputTypeStrings[inputType] : undefined;
+  const buttonTooltips = buttonInputTypes
+    ? Object.fromEntries(
+        Object.entries(buttonInputTypes).map(([btn, it]) => [btn, inputTypeStrings[it] ?? it]),
+      )
     : undefined;
 
   return (
@@ -234,14 +242,18 @@ const ComboSequence = forwardRef<ComboSequenceHandle, ComboSequenceProps>(functi
             activeButtons={activeButtons}
             direction={direction}
             inputType={inputType}
+            buttonInputTypes={buttonInputTypes}
             tooltip={tooltip}
+            buttonTooltips={buttonTooltips}
           />
         ) : (
           <JoyConSingle
             activeButtons={activeButtons}
             direction={direction}
             inputType={inputType}
+            buttonInputTypes={buttonInputTypes}
             tooltip={tooltip}
+            buttonTooltips={buttonTooltips}
           />
         )}
       </div>

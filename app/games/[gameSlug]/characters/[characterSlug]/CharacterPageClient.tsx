@@ -82,9 +82,10 @@ function MoveCard({
     activeButtons: [],
     direction: undefined,
     inputType: undefined,
+    buttonInputTypes: undefined,
   });
 
-  const { currentStep, stepCount, isPlaying, activeButtons, direction, inputType } = comboState;
+  const { currentStep, stepCount, isPlaying, activeButtons, direction, inputType, buttonInputTypes } = comboState;
 
   return (
     <div className="overflow-hidden rounded-2xl border border-border bg-card flex flex-col">
@@ -149,67 +150,83 @@ function MoveCard({
           </div>
           {(activeButtons.length > 0 || direction) &&
             (() => {
-              const color = inputType ? (inputTypeColors[inputType] ?? "#38bdf8") : "#38bdf8";
-              const inputTooltip = inputType
-                ? ((t.controls.inputTypes as Record<string, string>)[inputType] ?? undefined)
-                : undefined;
-              const visibleButtons = activeButtons.filter(
-                (btn) => !(direction && btn.includes("stick")),
-              );
+              const inputTypeStrings = t.controls.inputTypes as Record<string, string>;
+              const getBtnColor = (id: string) => {
+                const it = buttonInputTypes?.[id] ?? inputType;
+                return it ? (inputTypeColors[it] ?? "#38bdf8") : "#38bdf8";
+              };
+              const getBtnTooltip = (id: string) => {
+                const it = buttonInputTypes?.[id] ?? inputType;
+                return it ? (inputTypeStrings[it] ?? undefined) : undefined;
+              };
+              // direction arrow uses the color of the stick button that drives it
+              const stickId = activeButtons.find((b) => b.includes("stick"));
+              const dirColor = stickId ? getBtnColor(stickId) : getBtnColor("direction");
+              const dirTooltip = stickId ? getBtnTooltip(stickId) : undefined;
+              // Preserve buttons order from JSON: replace stick with direction arrow in-place
+              const orderedItems = activeButtons.map((btn) => {
+                if (direction && btn.includes("stick")) {
+                  return { type: "dir" as const };
+                }
+                return { type: "btn" as const, id: btn };
+              });
               const items: React.ReactNode[] = [];
-              if (direction) {
-                const dirSpan = (
-                  <span
-                    key="dir"
-                    className="inline-flex h-5 w-5 items-center justify-center rounded-full font-mono text-sm font-bold text-white text-shadow-lg"
-                    style={{ backgroundColor: color }}
-                  >
-                    {direction === "up" ? (
-                      <ChevronUp className="h-4 w-4" />
-                    ) : direction === "down" ? (
-                      <ChevronDown className="h-4 w-4" />
-                    ) : direction === "left" ? (
-                      <ChevronLeft className="h-4 w-4" />
-                    ) : (
-                      <ChevronRight className="h-4 w-4" />
-                    )}
-                  </span>
-                );
-                items.push(
-                  inputTooltip ? (
-                    <Tooltip key="dir" text={inputTooltip}>
-                      {dirSpan}
-                    </Tooltip>
-                  ) : (
-                    dirSpan
-                  ),
-                );
-              }
-              visibleButtons.forEach((btn) => {
+              orderedItems.forEach((item) => {
                 if (items.length > 0)
                   items.push(
-                    <span key={`plus-${btn}`} className="text-sm text-muted">
+                    <span key={`plus-${item.type === "dir" ? "dir" : item.id}`} className="text-sm text-muted">
                       +
                     </span>,
                   );
-                const btnSpan = (
-                  <span
-                    key={btn}
-                    className="inline-flex h-5 min-w-5 px-1 items-center justify-center rounded-full font-mono text-sm font-bold text-white text-shadow-lg"
-                    style={{ backgroundColor: color }}
-                  >
-                    {getButtonLabel(btn)}
-                  </span>
-                );
-                items.push(
-                  inputTooltip ? (
-                    <Tooltip key={btn} text={inputTooltip}>
-                      {btnSpan}
-                    </Tooltip>
-                  ) : (
-                    btnSpan
-                  ),
-                );
+                if (item.type === "dir") {
+                  const dirSpan = (
+                    <span
+                      key="dir"
+                      className="inline-flex h-5 w-5 items-center justify-center rounded-full font-mono text-sm font-bold text-white text-shadow-lg"
+                      style={{ backgroundColor: dirColor }}
+                    >
+                      {direction === "up" ? (
+                        <ChevronUp className="h-4 w-4" />
+                      ) : direction === "down" ? (
+                        <ChevronDown className="h-4 w-4" />
+                      ) : direction === "left" ? (
+                        <ChevronLeft className="h-4 w-4" />
+                      ) : (
+                        <ChevronRight className="h-4 w-4" />
+                      )}
+                    </span>
+                  );
+                  items.push(
+                    dirTooltip ? (
+                      <Tooltip key="dir" text={dirTooltip}>
+                        {dirSpan}
+                      </Tooltip>
+                    ) : (
+                      dirSpan
+                    ),
+                  );
+                } else {
+                  const btnColor = getBtnColor(item.id);
+                  const btnTooltip = getBtnTooltip(item.id);
+                  const btnSpan = (
+                    <span
+                      key={item.id}
+                      className="inline-flex h-5 min-w-5 px-1 items-center justify-center rounded-full font-mono text-sm font-bold text-white text-shadow-lg"
+                      style={{ backgroundColor: btnColor }}
+                    >
+                      {getButtonLabel(item.id)}
+                    </span>
+                  );
+                  items.push(
+                    btnTooltip ? (
+                      <Tooltip key={item.id} text={btnTooltip}>
+                        {btnSpan}
+                      </Tooltip>
+                    ) : (
+                      btnSpan
+                    ),
+                  );
+                }
               });
               return <div className="flex items-center gap-1">{items}</div>;
             })()}

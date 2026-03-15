@@ -754,7 +754,7 @@
           },
           {
             "buttons": ["l", "a"],
-            "inputType": "Tap"
+            "buttonInputTypes": { "l": "Hold", "a": "Tap" }
           }
         ],
         "single-joycon": [
@@ -764,7 +764,7 @@
           },
           {
             "buttons": ["sl", "a"],
-            "inputType": "Tap"
+            "buttonInputTypes": { "sl": "Hold", "a": "Tap" }
           }
         ]
       }
@@ -787,16 +787,24 @@
       {
         "handheld": [
           {
-            "buttons": ["left-stick"],
+            "buttons": ["l"],
+            "inputType": "Hold"
+          },
+          {
+            "buttons": ["l", "left-stick"],
             "direction": "right",
-            "inputType": "Tap"
+            "buttonInputTypes": { "l": "Hold", "left-stick": "Tap" }
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["stick"],
+            "buttons": ["sl"],
+            "inputType": "Hold"
+          },
+          {
+            "buttons": ["sl", "left-stick"],
             "direction": "right",
-            "inputType": "Tap"
+            "buttonInputTypes": { "sl": "Hold", "left-stick": "Tap" }
           }
         ]
       }

@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-border bg-surface">
-      <div className="mx-auto max-w-6xl px-5 py-6 sm:px-8">
+      <div className="mx-auto max-w-6xl px-6 py-4 sm:px-8">
         <p className="text-center text-sm text-muted">
           &copy; {new Date().getFullYear()} {t.footer.copyright}
         </p>

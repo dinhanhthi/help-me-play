@@ -131,8 +131,23 @@ Each combo is an array of steps (buttons pressed in sequence):
 |-------|----------|-------------|
 | `buttons` | Yes | Array of button IDs pressed simultaneously |
 | `direction` | No | Stick direction: `up`, `down`, `left`, `right` |
-| `inputType` | No | How to press: `Tap`, `Hold`, `Smash`, `Mash` |
+| `inputType` | No | How to press all buttons in this step: `Tap`, `Hold`, `Smash`, `Tilt` |
+| `buttonInputTypes` | No | Per-button overrides when buttons in the same step have different input types (see below) |
 | `duration` | No | How long to hold (ms), default: 1000 |
+
+#### Per-button input types
+
+Use `buttonInputTypes` when buttons in the same step are pressed differently. It overrides `inputType` for specific buttons; any button not listed falls back to `inputType`.
+
+```json
+{ "buttons": ["l", "a"], "buttonInputTypes": { "l": "Hold", "a": "Tap" } }
+```
+
+| Scenario | How to write it |
+|----------|-----------------|
+| All buttons same | Use `inputType` only |
+| All buttons different | Use `buttonInputTypes` only |
+| One exception, rest the same | Use both: `inputType` as default, `buttonInputTypes` for the exception |
 
 ### Available button IDs
 

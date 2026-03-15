@@ -14,28 +14,36 @@
       {
         "handheld": [
           {
-            "buttons": ["a"],
+            "buttons": [
+              "a"
+            ],
             "inputType": "Tap"
           },
           {
-            "buttons": ["b"],
+            "buttons": [
+              "b"
+            ],
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["a"],
+            "buttons": [
+              "a"
+            ],
             "inputType": "Tap"
           },
           {
-            "buttons": ["b"],
+            "buttons": [
+              "b"
+            ],
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589303/help-me-play/smash-bros/min-min/jab.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d3/Min_Min_Neutral_A_SSBU.gif"
+    "mediaUrl": "https://www.ssbwiki.com/images/5/56/MinMinJab1SSBU.gif",
+    "sourceUrl": "https://www.ssbwiki.com/images/5/56/MinMinJab1SSBU.gif"
   },
   {
     "id": "dash-attack",
@@ -52,12 +60,17 @@
       {
         "handheld": [
           {
-            "buttons": ["left-stick"],
+            "buttons": [
+              "left-stick"
+            ],
             "direction": "right",
             "inputType": "Hold"
           },
           {
-            "buttons": ["left-stick", "a"],
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
             "direction": "right",
             "buttonInputTypes": {
               "left-stick": "Hold",
@@ -67,12 +80,17 @@
         ],
         "single-joycon": [
           {
-            "buttons": ["stick"],
+            "buttons": [
+              "stick"
+            ],
             "direction": "right",
             "inputType": "Hold"
           },
           {
-            "buttons": ["stick", "a"],
+            "buttons": [
+              "stick",
+              "a"
+            ],
             "direction": "right",
             "buttonInputTypes": {
               "stick": "Hold",
@@ -82,8 +100,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589304/help-me-play/smash-bros/min-min/dash-attack.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d3/Min_Min_Neutral_A_SSBU.gif"
+    "mediaUrl": "https://www.ssbwiki.com/images/7/72/MinMinDashAttackSSBU.gif",
+    "sourceUrl": "https://www.ssbwiki.com/images/7/72/MinMinDashAttackSSBU.gif"
   },
   {
     "id": "forward-tilt",
@@ -100,22 +118,28 @@
       {
         "handheld": [
           {
-            "buttons": ["left-stick", "a"],
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
             "direction": "right",
             "inputType": "Tilt"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["stick", "a"],
+            "buttons": [
+              "stick",
+              "a"
+            ],
             "direction": "right",
             "inputType": "Tilt"
           }
         ]
       }
     ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589306/help-me-play/smash-bros/min-min/forward-tilt.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d3/Min_Min_Neutral_A_SSBU.gif"
+    "mediaUrl": "https://www.ssbwiki.com/images/f/f4/MinMinJabFTiltDragonSSBU.gif",
+    "sourceUrl": "https://www.ssbwiki.com/images/f/f4/MinMinJabFTiltDragonSSBU.gif"
   },
   {
     "id": "up-tilt",
@@ -132,22 +156,28 @@
       {
         "handheld": [
           {
-            "buttons": ["left-stick", "a"],
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
             "direction": "up",
             "inputType": "Tilt"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["stick", "a"],
+            "buttons": [
+              "stick",
+              "a"
+            ],
             "direction": "up",
             "inputType": "Tilt"
           }
         ]
       }
     ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589307/help-me-play/smash-bros/min-min/up-tilt.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d3/Min_Min_Neutral_A_SSBU.gif"
+    "mediaUrl": "https://www.ssbwiki.com/images/5/5f/MinMinUTiltSSBU.gif",
+    "sourceUrl": "https://www.ssbwiki.com/images/5/5f/MinMinUTiltSSBU.gif"
   },
   {
     "id": "down-tilt",
@@ -164,22 +194,28 @@
       {
         "handheld": [
           {
-            "buttons": ["left-stick", "a"],
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
             "direction": "down",
             "inputType": "Tilt"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["stick", "a"],
+            "buttons": [
+              "stick",
+              "a"
+            ],
             "direction": "down",
             "inputType": "Tilt"
           }
         ]
       }
     ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589309/help-me-play/smash-bros/min-min/down-tilt.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d3/Min_Min_Neutral_A_SSBU.gif"
+    "mediaUrl": "https://www.ssbwiki.com/images/2/28/MinMinDTiltSSBU.gif",
+    "sourceUrl": "https://www.ssbwiki.com/images/2/28/MinMinDTiltSSBU.gif"
   },
   {
     "id": "forward-smash",
@@ -196,7 +232,10 @@
       {
         "handheld": [
           {
-            "buttons": ["left-stick", "a"],
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
             "direction": "right",
             "buttonInputTypes": {
               "left-stick": "Smash",
@@ -206,7 +245,10 @@
         ],
         "single-joycon": [
           {
-            "buttons": ["stick", "a"],
+            "buttons": [
+              "stick",
+              "a"
+            ],
             "direction": "right",
             "buttonInputTypes": {
               "stick": "Smash",
@@ -218,15 +260,17 @@
       {
         "handheld": [
           {
-            "buttons": ["right-stick"],
+            "buttons": [
+              "right-stick"
+            ],
             "direction": "right",
             "inputType": "Smash"
           }
         ]
       }
     ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589310/help-me-play/smash-bros/min-min/forward-smash.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d3/Min_Min_Neutral_A_SSBU.gif"
+    "mediaUrl": "https://www.ssbwiki.com/images/6/66/MinMinFSmashDragonSSBU.gif",
+    "sourceUrl": "https://www.ssbwiki.com/images/6/66/MinMinFSmashDragonSSBU.gif"
   },
   {
     "id": "up-smash",
@@ -243,7 +287,10 @@
       {
         "handheld": [
           {
-            "buttons": ["left-stick", "a"],
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
             "direction": "up",
             "buttonInputTypes": {
               "left-stick": "Smash",
@@ -253,7 +300,10 @@
         ],
         "single-joycon": [
           {
-            "buttons": ["stick", "a"],
+            "buttons": [
+              "stick",
+              "a"
+            ],
             "direction": "up",
             "buttonInputTypes": {
               "stick": "Smash",
@@ -265,15 +315,17 @@
       {
         "handheld": [
           {
-            "buttons": ["right-stick"],
+            "buttons": [
+              "right-stick"
+            ],
             "direction": "up",
             "inputType": "Smash"
           }
         ]
       }
     ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589312/help-me-play/smash-bros/min-min/up-smash.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d3/Min_Min_Neutral_A_SSBU.gif"
+    "mediaUrl": "https://www.ssbwiki.com/images/0/01/MinMinUSmashSSBU.gif",
+    "sourceUrl": "https://www.ssbwiki.com/images/0/01/MinMinUSmashSSBU.gif"
   },
   {
     "id": "down-smash",
@@ -290,7 +342,10 @@
       {
         "handheld": [
           {
-            "buttons": ["left-stick", "a"],
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
             "direction": "down",
             "buttonInputTypes": {
               "left-stick": "Smash",
@@ -300,7 +355,10 @@
         ],
         "single-joycon": [
           {
-            "buttons": ["stick", "a"],
+            "buttons": [
+              "stick",
+              "a"
+            ],
             "direction": "down",
             "buttonInputTypes": {
               "stick": "Smash",
@@ -312,15 +370,17 @@
       {
         "handheld": [
           {
-            "buttons": ["right-stick"],
+            "buttons": [
+              "right-stick"
+            ],
             "direction": "down",
             "inputType": "Smash"
           }
         ]
       }
     ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589313/help-me-play/smash-bros/min-min/down-smash.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d3/Min_Min_Neutral_A_SSBU.gif"
+    "mediaUrl": "https://www.ssbwiki.com/images/d/df/MinMinDSmashSSBU.gif",
+    "sourceUrl": "https://www.ssbwiki.com/images/d/df/MinMinDSmashSSBU.gif"
   },
   {
     "id": "neutral-air",
@@ -337,28 +397,36 @@
       {
         "handheld": [
           {
-            "buttons": ["x"],
+            "buttons": [
+              "x"
+            ],
             "inputType": "Tap"
           },
           {
-            "buttons": ["a"],
+            "buttons": [
+              "a"
+            ],
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["x"],
+            "buttons": [
+              "x"
+            ],
             "inputType": "Tap"
           },
           {
-            "buttons": ["a"],
+            "buttons": [
+              "a"
+            ],
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589315/help-me-play/smash-bros/min-min/neutral-air.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d3/Min_Min_Neutral_A_SSBU.gif"
+    "mediaUrl": "https://www.ssbwiki.com/images/f/f3/MinMinNAirDragonSSBU.gif",
+    "sourceUrl": "https://www.ssbwiki.com/images/f/f3/MinMinNAirDragonSSBU.gif"
   },
   {
     "id": "forward-air",
@@ -375,7 +443,10 @@
       {
         "handheld": [
           {
-            "buttons": ["left-stick", "x"],
+            "buttons": [
+              "left-stick",
+              "x"
+            ],
             "direction": "right",
             "buttonInputTypes": {
               "left-stick": "Hold",
@@ -383,7 +454,10 @@
             }
           },
           {
-            "buttons": ["left-stick", "a"],
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
             "direction": "right",
             "buttonInputTypes": {
               "left-stick": "Hold",
@@ -393,7 +467,10 @@
         ],
         "single-joycon": [
           {
-            "buttons": ["stick", "x"],
+            "buttons": [
+              "stick",
+              "x"
+            ],
             "direction": "right",
             "buttonInputTypes": {
               "stick": "Hold",
@@ -401,7 +478,10 @@
             }
           },
           {
-            "buttons": ["stick", "a"],
+            "buttons": [
+              "stick",
+              "a"
+            ],
             "direction": "right",
             "buttonInputTypes": {
               "stick": "Hold",
@@ -411,8 +491,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589317/help-me-play/smash-bros/min-min/forward-air.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d3/Min_Min_Neutral_A_SSBU.gif"
+    "mediaUrl": "https://www.ssbwiki.com/images/e/e8/MinMinFAirBAirDragonSSBU.gif",
+    "sourceUrl": "https://www.ssbwiki.com/images/e/e8/MinMinFAirBAirDragonSSBU.gif"
   },
   {
     "id": "back-air",
@@ -429,32 +509,44 @@
       {
         "handheld": [
           {
-            "buttons": ["left-stick", "x"],
+            "buttons": [
+              "left-stick",
+              "x"
+            ],
             "direction": "right",
             "inputType": "Tap"
           },
           {
-            "buttons": ["left-stick", "a"],
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
             "direction": "left",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["stick", "x"],
+            "buttons": [
+              "stick",
+              "x"
+            ],
             "direction": "right",
             "inputType": "Tap"
           },
           {
-            "buttons": ["stick", "a"],
+            "buttons": [
+              "stick",
+              "a"
+            ],
             "direction": "left",
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589318/help-me-play/smash-bros/min-min/back-air.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d3/Min_Min_Neutral_A_SSBU.gif"
+    "mediaUrl": "https://www.ssbwiki.com/images/e/e8/MinMinFAirBAirDragonSSBU.gif",
+    "sourceUrl": "https://www.ssbwiki.com/images/e/e8/MinMinFAirBAirDragonSSBU.gif"
   },
   {
     "id": "up-air",
@@ -471,30 +563,40 @@
       {
         "handheld": [
           {
-            "buttons": ["x"],
+            "buttons": [
+              "x"
+            ],
             "inputType": "Tap"
           },
           {
-            "buttons": ["left-stick", "a"],
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
             "direction": "up",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["x"],
+            "buttons": [
+              "x"
+            ],
             "inputType": "Tap"
           },
           {
-            "buttons": ["stick", "a"],
+            "buttons": [
+              "stick",
+              "a"
+            ],
             "direction": "up",
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589319/help-me-play/smash-bros/min-min/up-air.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d3/Min_Min_Neutral_A_SSBU.gif"
+    "mediaUrl": "https://www.ssbwiki.com/images/2/2e/MinMinUAirSSBU.gif",
+    "sourceUrl": "https://www.ssbwiki.com/images/2/2e/MinMinUAirSSBU.gif"
   },
   {
     "id": "down-air",
@@ -511,30 +613,40 @@
       {
         "handheld": [
           {
-            "buttons": ["x"],
+            "buttons": [
+              "x"
+            ],
             "inputType": "Tap"
           },
           {
-            "buttons": ["left-stick", "a"],
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
             "direction": "down",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["x"],
+            "buttons": [
+              "x"
+            ],
             "inputType": "Tap"
           },
           {
-            "buttons": ["stick", "a"],
+            "buttons": [
+              "stick",
+              "a"
+            ],
             "direction": "down",
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589322/help-me-play/smash-bros/min-min/down-air.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d3/Min_Min_Neutral_A_SSBU.gif"
+    "mediaUrl": "https://www.ssbwiki.com/images/f/fe/MinMinDAirSSBU.gif",
+    "sourceUrl": "https://www.ssbwiki.com/images/f/fe/MinMinDAirSSBU.gif"
   },
   {
     "id": "grab",
@@ -551,20 +663,24 @@
       {
         "handheld": [
           {
-            "buttons": ["zl"],
+            "buttons": [
+              "zl"
+            ],
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["zl"],
+            "buttons": [
+              "zl"
+            ],
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589323/help-me-play/smash-bros/min-min/grab.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d3/Min_Min_Neutral_A_SSBU.gif"
+    "mediaUrl": "https://www.ssbwiki.com/images/0/04/MinMinGrabSSBU.gif",
+    "sourceUrl": "https://www.ssbwiki.com/images/0/04/MinMinGrabSSBU.gif"
   },
   {
     "id": "pummel",
@@ -581,11 +697,16 @@
       {
         "handheld": [
           {
-            "buttons": ["zl"],
+            "buttons": [
+              "zl"
+            ],
             "inputType": "Hold"
           },
           {
-            "buttons": ["zl", "a"],
+            "buttons": [
+              "zl",
+              "a"
+            ],
             "buttonInputTypes": {
               "zl": "Hold",
               "a": "Tap"
@@ -594,11 +715,16 @@
         ],
         "single-joycon": [
           {
-            "buttons": ["zl"],
+            "buttons": [
+              "zl"
+            ],
             "inputType": "Hold"
           },
           {
-            "buttons": ["zl", "a"],
+            "buttons": [
+              "zl",
+              "a"
+            ],
             "buttonInputTypes": {
               "zl": "Hold",
               "a": "Tap"
@@ -607,8 +733,8 @@
         ]
       }
     ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589324/help-me-play/smash-bros/min-min/pummel.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d3/Min_Min_Neutral_A_SSBU.gif"
+    "mediaUrl": "https://www.ssbwiki.com/images/8/80/MinMinPummelSSBU.gif",
+    "sourceUrl": "https://www.ssbwiki.com/images/8/80/MinMinPummelSSBU.gif"
   },
   {
     "id": "forward-throw",
@@ -625,30 +751,38 @@
       {
         "handheld": [
           {
-            "buttons": ["zl"],
+            "buttons": [
+              "zl"
+            ],
             "inputType": "Hold"
           },
           {
-            "buttons": ["left-stick"],
+            "buttons": [
+              "left-stick"
+            ],
             "direction": "right",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["zl"],
+            "buttons": [
+              "zl"
+            ],
             "inputType": "Hold"
           },
           {
-            "buttons": ["stick"],
+            "buttons": [
+              "stick"
+            ],
             "direction": "right",
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589325/help-me-play/smash-bros/min-min/forward-throw.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d3/Min_Min_Neutral_A_SSBU.gif"
+    "mediaUrl": "https://www.ssbwiki.com/images/6/64/MinMinFThrowSSBU.gif",
+    "sourceUrl": "https://www.ssbwiki.com/images/6/64/MinMinFThrowSSBU.gif"
   },
   {
     "id": "back-throw",
@@ -665,30 +799,38 @@
       {
         "handheld": [
           {
-            "buttons": ["zl"],
+            "buttons": [
+              "zl"
+            ],
             "inputType": "Hold"
           },
           {
-            "buttons": ["left-stick"],
+            "buttons": [
+              "left-stick"
+            ],
             "direction": "left",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["zl"],
+            "buttons": [
+              "zl"
+            ],
             "inputType": "Hold"
           },
           {
-            "buttons": ["stick"],
+            "buttons": [
+              "stick"
+            ],
             "direction": "left",
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589326/help-me-play/smash-bros/min-min/back-throw.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d3/Min_Min_Neutral_A_SSBU.gif"
+    "mediaUrl": "https://www.ssbwiki.com/images/a/a2/MinMinBThrowSSBU.gif",
+    "sourceUrl": "https://www.ssbwiki.com/images/a/a2/MinMinBThrowSSBU.gif"
   },
   {
     "id": "up-throw",
@@ -705,30 +847,38 @@
       {
         "handheld": [
           {
-            "buttons": ["zl"],
+            "buttons": [
+              "zl"
+            ],
             "inputType": "Hold"
           },
           {
-            "buttons": ["left-stick"],
+            "buttons": [
+              "left-stick"
+            ],
             "direction": "up",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["zl"],
+            "buttons": [
+              "zl"
+            ],
             "inputType": "Hold"
           },
           {
-            "buttons": ["stick"],
+            "buttons": [
+              "stick"
+            ],
             "direction": "up",
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589327/help-me-play/smash-bros/min-min/up-throw.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d3/Min_Min_Neutral_A_SSBU.gif"
+    "mediaUrl": "https://www.ssbwiki.com/images/2/25/MinMinUThrowSSBU.gif",
+    "sourceUrl": "https://www.ssbwiki.com/images/2/25/MinMinUThrowSSBU.gif"
   },
   {
     "id": "down-throw",
@@ -745,30 +895,38 @@
       {
         "handheld": [
           {
-            "buttons": ["zl"],
+            "buttons": [
+              "zl"
+            ],
             "inputType": "Hold"
           },
           {
-            "buttons": ["left-stick"],
+            "buttons": [
+              "left-stick"
+            ],
             "direction": "down",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["zl"],
+            "buttons": [
+              "zl"
+            ],
             "inputType": "Hold"
           },
           {
-            "buttons": ["stick"],
+            "buttons": [
+              "stick"
+            ],
             "direction": "down",
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589328/help-me-play/smash-bros/min-min/down-throw.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d3/Min_Min_Neutral_A_SSBU.gif"
+    "mediaUrl": "https://www.ssbwiki.com/images/e/ed/MinMinDThrowSSBU.gif",
+    "sourceUrl": "https://www.ssbwiki.com/images/e/ed/MinMinDThrowSSBU.gif"
   },
   {
     "id": "neutral-special",
@@ -785,20 +943,24 @@
       {
         "handheld": [
           {
-            "buttons": ["b"],
+            "buttons": [
+              "b"
+            ],
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["b"],
+            "buttons": [
+              "b"
+            ],
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589330/help-me-play/smash-bros/min-min/neutral-special.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/c/c7/Min_Min_Neutral_B_SSBU.gif"
+    "mediaUrl": "https://www.ssbwiki.com/images/9/9f/MinMinNSpecialSSpecialRamramSSBU.gif",
+    "sourceUrl": "https://www.ssbwiki.com/images/9/9f/MinMinNSpecialSSpecialRamramSSBU.gif"
   },
   {
     "id": "side-special",
@@ -815,22 +977,28 @@
       {
         "handheld": [
           {
-            "buttons": ["left-stick", "b"],
+            "buttons": [
+              "left-stick",
+              "b"
+            ],
             "direction": "right",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["stick", "b"],
+            "buttons": [
+              "stick",
+              "b"
+            ],
             "direction": "right",
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589332/help-me-play/smash-bros/min-min/side-special.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/c/c7/Min_Min_Neutral_B_SSBU.gif"
+    "mediaUrl": "https://www.ssbwiki.com/images/9/9f/MinMinNSpecialSSpecialRamramSSBU.gif",
+    "sourceUrl": "https://www.ssbwiki.com/images/9/9f/MinMinNSpecialSSpecialRamramSSBU.gif"
   },
   {
     "id": "up-special",
@@ -847,22 +1015,28 @@
       {
         "handheld": [
           {
-            "buttons": ["left-stick", "b"],
+            "buttons": [
+              "left-stick",
+              "b"
+            ],
             "direction": "up",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["stick", "b"],
+            "buttons": [
+              "stick",
+              "b"
+            ],
             "direction": "up",
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589333/help-me-play/smash-bros/min-min/up-special.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/de/Min_Min_Up_B_SSBU.gif"
+    "mediaUrl": "https://www.ssbwiki.com/images/f/fe/MinMinUSpecialGroundedDragonSSBU.gif",
+    "sourceUrl": "https://www.ssbwiki.com/images/f/fe/MinMinUSpecialGroundedDragonSSBU.gif"
   },
   {
     "id": "down-special",
@@ -879,22 +1053,28 @@
       {
         "handheld": [
           {
-            "buttons": ["left-stick", "b"],
+            "buttons": [
+              "left-stick",
+              "b"
+            ],
             "direction": "down",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["stick", "b"],
+            "buttons": [
+              "stick",
+              "b"
+            ],
             "direction": "down",
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589334/help-me-play/smash-bros/min-min/down-special.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/2/20/Min_Min_Down_B_SSBU.gif"
+    "mediaUrl": "https://www.ssbwiki.com/images/9/9f/MinMinNSpecialSSpecialRamramSSBU.gif",
+    "sourceUrl": "https://www.ssbwiki.com/images/9/9f/MinMinNSpecialSSpecialRamramSSBU.gif"
   },
   {
     "id": "final-smash",
@@ -911,20 +1091,24 @@
       {
         "handheld": [
           {
-            "buttons": ["b"],
+            "buttons": [
+              "b"
+            ],
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["b"],
+            "buttons": [
+              "b"
+            ],
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589336/help-me-play/smash-bros/min-min/final-smash.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/c/c7/Min_Min_Neutral_B_SSBU.gif"
+    "mediaUrl": "https://www.ssbwiki.com/images/9/95/Min_Min_Final_Smash_SSBU.gif",
+    "sourceUrl": "https://www.ssbwiki.com/images/9/95/Min_Min_Final_Smash_SSBU.gif"
   },
   {
     "id": "floor-attack",
@@ -941,20 +1125,24 @@
       {
         "handheld": [
           {
-            "buttons": ["a"],
+            "buttons": [
+              "a"
+            ],
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["a"],
+            "buttons": [
+              "a"
+            ],
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589338/help-me-play/smash-bros/min-min/floor-attack.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d3/Min_Min_Neutral_A_SSBU.gif"
+    "mediaUrl": "https://www.ssbwiki.com/images/4/42/MinMinGetupAttackFrontSSBU.gif",
+    "sourceUrl": "https://www.ssbwiki.com/images/4/42/MinMinGetupAttackFrontSSBU.gif"
   },
   {
     "id": "ledge-attack",
@@ -971,20 +1159,24 @@
       {
         "handheld": [
           {
-            "buttons": ["a"],
+            "buttons": [
+              "a"
+            ],
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["a"],
+            "buttons": [
+              "a"
+            ],
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589339/help-me-play/smash-bros/min-min/ledge-attack.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d3/Min_Min_Neutral_A_SSBU.gif"
+    "mediaUrl": "https://www.ssbwiki.com/images/b/b1/MinMinLedgeAttackSSBU.gif",
+    "sourceUrl": "https://www.ssbwiki.com/images/b/b1/MinMinLedgeAttackSSBU.gif"
   },
   {
     "id": "left-arm-attack",
@@ -1005,13 +1197,17 @@
         },
         "handheld": [
           {
-            "buttons": ["a"],
+            "buttons": [
+              "a"
+            ],
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["a"],
+            "buttons": [
+              "a"
+            ],
             "inputType": "Tap"
           }
         ]
@@ -1023,14 +1219,20 @@
         },
         "handheld": [
           {
-            "buttons": ["left-stick", "a"],
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
             "direction": "up",
             "inputType": "Tilt"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["stick", "a"],
+            "buttons": [
+              "stick",
+              "a"
+            ],
             "direction": "up",
             "inputType": "Tilt"
           }
@@ -1043,21 +1245,27 @@
         },
         "handheld": [
           {
-            "buttons": ["left-stick", "a"],
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
             "direction": "down",
             "inputType": "Tilt"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["stick", "a"],
+            "buttons": [
+              "stick",
+              "a"
+            ],
             "direction": "down",
             "inputType": "Tilt"
           }
         ]
       }
     ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589341/help-me-play/smash-bros/min-min/left-arm-attack.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d3/Min_Min_Neutral_A_SSBU.gif"
+    "mediaUrl": "https://www.ssbwiki.com/images/f/f4/MinMinJabFTiltDragonSSBU.gif",
+    "sourceUrl": "https://www.ssbwiki.com/images/f/f4/MinMinJabFTiltDragonSSBU.gif"
   }
 ]

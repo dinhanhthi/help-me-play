@@ -1,7 +1,10 @@
 [
   {
     "id": "jab",
-    "name": { "en": "Neutral Attack (Jab)", "vi": "Đấm liên hoàn (Jab)" },
+    "name": {
+      "en": "Neutral Attack (Jab)",
+      "vi": "Đấm liên hoàn (Jab)"
+    },
     "description": {
       "en": "A fast double-slap attack. Despite his size, DK's jab comes out at frame 6 with solid range. Good for close-range pressure and interrupting approaches. Deals 5% per hit.",
       "vi": "Đòn tát đôi nhanh. Dù to lớn, jab của DK ra đòn frame 6 với tầm đánh tốt. Hiệu quả để gây áp lực cận chiến và chặn đòn tấn công. Gây 5% mỗi đòn."
@@ -9,16 +12,29 @@
     "category": "ground",
     "combos": [
       {
-        "handheld": [{ "buttons": ["a"], "inputType": "Tap" }],
-        "single-joycon": [{ "buttons": ["a"], "inputType": "Tap" }]
+        "handheld": [
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/c/cd/DK_Jab_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589202/help-me-play/smash-bros/donkey-kong/jab.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/c/cd/DK_Jab_SSBU.gif"
   },
   {
     "id": "dash-attack",
-    "name": { "en": "Dash Attack (Flying Headbutt)", "vi": "Đòn chạy (Flying Headbutt)" },
+    "name": {
+      "en": "Dash Attack (Flying Headbutt)",
+      "vi": "Đòn chạy (Flying Headbutt)"
+    },
     "description": {
       "en": "DK lunges forward with a flying headbutt. Deals 12% clean / 8% late. Starts frame 10. Good range and can combo into aerials at low %. Useful for punishing landings.",
       "vi": "DK lao về phía trước với đòn húc đầu. Gây 12% nếu trúng sớm / 8% nếu trúng muộn. Ra đòn frame 10. Tầm đánh tốt và có thể nối combo vào đòn trên không ở % thấp. Hữu ích để phản đòn khi đối thủ tiếp đất."
@@ -27,29 +43,46 @@
     "combos": [
       {
         "handheld": [
-          { "buttons": ["left-stick"], "direction": "right", "inputType": "Hold" },
+          {
+            "buttons": ["left-stick"],
+            "direction": "right",
+            "inputType": "Hold"
+          },
           {
             "buttons": ["left-stick", "a"],
             "direction": "right",
-            "buttonInputTypes": { "left-stick": "Hold", "a": "Tap" }
+            "buttonInputTypes": {
+              "left-stick": "Hold",
+              "a": "Tap"
+            }
           }
         ],
         "single-joycon": [
-          { "buttons": ["stick"], "direction": "right", "inputType": "Hold" },
+          {
+            "buttons": ["stick"],
+            "direction": "right",
+            "inputType": "Hold"
+          },
           {
             "buttons": ["stick", "a"],
             "direction": "right",
-            "buttonInputTypes": { "stick": "Hold", "a": "Tap" }
+            "buttonInputTypes": {
+              "stick": "Hold",
+              "a": "Tap"
+            }
           }
         ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/b/bc/DK_Dash_Attack_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589204/help-me-play/smash-bros/donkey-kong/dash-attack.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/b/bc/DK_Dash_Attack_SSBU.gif"
   },
   {
     "id": "forward-tilt",
-    "name": { "en": "Forward Tilt (Swipe)", "vi": "Đòn nghiêng trước (Swipe)" },
+    "name": {
+      "en": "Forward Tilt (Swipe)",
+      "vi": "Đòn nghiêng trước (Swipe)"
+    },
     "description": {
       "en": "A wide arm swipe with excellent range. Deals 12% (clean) / 10% (late). Starts frame 8. One of DK's best pokes — great for spacing and whiff punishing. Can be angled up or down.",
       "vi": "Đòn quét tay rộng với tầm đánh xuất sắc. Gây 12% (sớm) / 10% (muộn). Ra đòn frame 8. Một trong những đòn poke tốt nhất của DK — rất hiệu quả để kiểm soát khoảng cách và phạt hụt. Có thể chỉnh hướng lên hoặc xuống."
@@ -57,16 +90,31 @@
     "category": "ground",
     "combos": [
       {
-        "handheld": [{ "buttons": ["left-stick", "a"], "direction": "right", "inputType": "Tilt" }],
-        "single-joycon": [{ "buttons": ["stick", "a"], "direction": "right", "inputType": "Tilt" }]
+        "handheld": [
+          {
+            "buttons": ["left-stick", "a"],
+            "direction": "right",
+            "inputType": "Tilt"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick", "a"],
+            "direction": "right",
+            "inputType": "Tilt"
+          }
+        ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/a/a7/DK_Side_Tilt_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589207/help-me-play/smash-bros/donkey-kong/forward-tilt.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/a/a7/DK_Side_Tilt_SSBU.gif"
   },
   {
     "id": "up-tilt",
-    "name": { "en": "Up Tilt (Overhead Clap)", "vi": "Đòn nghiêng trên (Overhead Clap)" },
+    "name": {
+      "en": "Up Tilt (Overhead Clap)",
+      "vi": "Đòn nghiêng trên (Overhead Clap)"
+    },
     "description": {
       "en": "DK claps both hands overhead. Deals 8%. Starts frame 7. Hits on both sides and above. Excellent juggling tool and anti-air. Leads to up-airs at low % for devastating combos.",
       "vi": "DK vỗ hai tay lên trên đầu. Gây 8%. Ra đòn frame 7. Đánh trúng cả hai bên và phía trên. Công cụ tung hứng và chống không xuất sắc. Dẫn đến up-air ở % thấp tạo combo nguy hiểm."
@@ -74,16 +122,31 @@
     "category": "ground",
     "combos": [
       {
-        "handheld": [{ "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Tilt" }],
-        "single-joycon": [{ "buttons": ["stick", "a"], "direction": "up", "inputType": "Tilt" }]
+        "handheld": [
+          {
+            "buttons": ["left-stick", "a"],
+            "direction": "up",
+            "inputType": "Tilt"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick", "a"],
+            "direction": "up",
+            "inputType": "Tilt"
+          }
+        ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/3/3b/DK_Up_Tilt_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589208/help-me-play/smash-bros/donkey-kong/up-tilt.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/3/3b/DK_Up_Tilt_SSBU.gif"
   },
   {
     "id": "down-tilt",
-    "name": { "en": "Down Tilt (Ground Slap)", "vi": "Đòn nghiêng dưới (Ground Slap)" },
+    "name": {
+      "en": "Down Tilt (Ground Slap)",
+      "vi": "Đòn nghiêng dưới (Ground Slap)"
+    },
     "description": {
       "en": "DK slaps the ground in front of him. Deals 9%. Starts frame 7. Low profile hitbox, good range. Can trip opponents, setting up follow-ups. Works as a quick ground poke.",
       "vi": "DK đập tay xuống đất phía trước. Gây 9%. Ra đòn frame 7. Hộp va chạm thấp, tầm đánh tốt. Có thể làm đối thủ vấp ngã, tạo cơ hội tiếp nối. Hoạt động như đòn poke mặt đất nhanh."
@@ -91,16 +154,31 @@
     "category": "ground",
     "combos": [
       {
-        "handheld": [{ "buttons": ["left-stick", "a"], "direction": "down", "inputType": "Tilt" }],
-        "single-joycon": [{ "buttons": ["stick", "a"], "direction": "down", "inputType": "Tilt" }]
+        "handheld": [
+          {
+            "buttons": ["left-stick", "a"],
+            "direction": "down",
+            "inputType": "Tilt"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick", "a"],
+            "direction": "down",
+            "inputType": "Tilt"
+          }
+        ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/5/55/DK_Down_Tilt_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589210/help-me-play/smash-bros/donkey-kong/down-tilt.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/5/55/DK_Down_Tilt_SSBU.gif"
   },
   {
     "id": "forward-smash",
-    "name": { "en": "Forward Smash (Giant Slap)", "vi": "Smash trước (Giant Slap)" },
+    "name": {
+      "en": "Forward Smash (Giant Slap)",
+      "vi": "Smash trước (Giant Slap)"
+    },
     "description": {
       "en": "A massive two-handed overhead slam. Deals up to 27% fully charged. Starts frame 16. Enormous range and devastating power. One of the strongest forward smashes in the game. KOs at very low % near the ledge.",
       "vi": "Đòn đập hai tay vĩ đại từ trên xuống. Gây đến 27% khi nạp đầy. Ra đòn frame 16. Tầm đánh cực rộng và sức mạnh ghê gớm. Một trong những forward smash mạnh nhất trong game. Hạ gục ở % rất thấp gần mép sân."
@@ -109,20 +187,39 @@
     "combos": [
       {
         "handheld": [
-          { "buttons": ["left-stick", "a"], "direction": "right", "inputType": "Smash" }
+          {
+            "buttons": ["left-stick", "a"],
+            "direction": "right",
+            "inputType": "Smash"
+          }
         ],
-        "single-joycon": [{ "buttons": ["stick", "a"], "direction": "right", "inputType": "Smash" }]
+        "single-joycon": [
+          {
+            "buttons": ["stick", "a"],
+            "direction": "right",
+            "inputType": "Smash"
+          }
+        ]
       },
       {
-        "handheld": [{ "buttons": ["right-stick"], "direction": "right", "inputType": "Smash" }]
+        "handheld": [
+          {
+            "buttons": ["right-stick"],
+            "direction": "right",
+            "inputType": "Smash"
+          }
+        ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/a/a5/DK_Forward_Smash_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589212/help-me-play/smash-bros/donkey-kong/forward-smash.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/a/a5/DK_Forward_Smash_SSBU.gif"
   },
   {
     "id": "up-smash",
-    "name": { "en": "Up Smash (Handstand Kick)", "vi": "Smash trên (Handstand Kick)" },
+    "name": {
+      "en": "Up Smash (Handstand Kick)",
+      "vi": "Smash trên (Handstand Kick)"
+    },
     "description": {
       "en": "DK does a handstand and kicks upward with both feet. Deals up to 20% fully charged. Starts frame 15. Multi-hit move with a powerful final hit. Great anti-air and juggle punisher. KOs around 90-100%.",
       "vi": "DK trụ tay và đá lên bằng cả hai chân. Gây đến 20% khi nạp đầy. Ra đòn frame 15. Đòn đánh nhiều lần với cú đánh cuối mạnh. Chống không và phạt tung hứng tuyệt vời. Hạ gục ở khoảng 90-100%."
@@ -130,19 +227,40 @@
     "category": "ground",
     "combos": [
       {
-        "handheld": [{ "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Smash" }],
-        "single-joycon": [{ "buttons": ["stick", "a"], "direction": "up", "inputType": "Smash" }]
+        "handheld": [
+          {
+            "buttons": ["left-stick", "a"],
+            "direction": "up",
+            "inputType": "Smash"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick", "a"],
+            "direction": "up",
+            "inputType": "Smash"
+          }
+        ]
       },
       {
-        "handheld": [{ "buttons": ["right-stick"], "direction": "up", "inputType": "Smash" }]
+        "handheld": [
+          {
+            "buttons": ["right-stick"],
+            "direction": "up",
+            "inputType": "Smash"
+          }
+        ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/f/fa/DK_Up_Smash_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589213/help-me-play/smash-bros/donkey-kong/up-smash.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/f/fa/DK_Up_Smash_SSBU.gif"
   },
   {
     "id": "down-smash",
-    "name": { "en": "Down Smash (Ground Pound)", "vi": "Smash dưới (Ground Pound)" },
+    "name": {
+      "en": "Down Smash (Ground Pound)",
+      "vi": "Smash dưới (Ground Pound)"
+    },
     "description": {
       "en": "DK swings both fists into the ground on each side. Deals up to 18% fully charged. Starts frame 14. Hits both in front and behind simultaneously. Good edge guarding tool and punishes rolls.",
       "vi": "DK đập cả hai nắm đấm xuống đất ở mỗi bên. Gây đến 18% khi nạp đầy. Ra đòn frame 14. Đánh trúng cả phía trước lẫn phía sau cùng lúc. Công cụ phòng thủ mép sân tốt và phạt lăn né."
@@ -150,19 +268,40 @@
     "category": "ground",
     "combos": [
       {
-        "handheld": [{ "buttons": ["left-stick", "a"], "direction": "down", "inputType": "Smash" }],
-        "single-joycon": [{ "buttons": ["stick", "a"], "direction": "down", "inputType": "Smash" }]
+        "handheld": [
+          {
+            "buttons": ["left-stick", "a"],
+            "direction": "down",
+            "inputType": "Smash"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick", "a"],
+            "direction": "down",
+            "inputType": "Smash"
+          }
+        ]
       },
       {
-        "handheld": [{ "buttons": ["right-stick"], "direction": "down", "inputType": "Smash" }]
+        "handheld": [
+          {
+            "buttons": ["right-stick"],
+            "direction": "down",
+            "inputType": "Smash"
+          }
+        ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/f/fe/DK_Down_Smash_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589215/help-me-play/smash-bros/donkey-kong/down-smash.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/f/fe/DK_Down_Smash_SSBU.gif"
   },
   {
     "id": "neutral-air",
-    "name": { "en": "Neutral Air (Body Spin)", "vi": "Đòn không trung thẳng (Body Spin)" },
+    "name": {
+      "en": "Neutral Air (Body Spin)",
+      "vi": "Đòn không trung thẳng (Body Spin)"
+    },
     "description": {
       "en": "DK extends both arms and spins. Deals 13% (clean) / 7% (late). Starts frame 7. Large disjointed hitbox that covers all directions. Great out-of-shield option and combo extender.",
       "vi": "DK giang hai tay và xoay người. Gây 13% (sớm) / 7% (muộn). Ra đòn frame 7. Hộp va chạm lớn, tách rời, bao phủ mọi hướng. Tùy chọn thoát khiên tuyệt vời và kéo dài combo."
@@ -170,16 +309,29 @@
     "category": "aerial",
     "combos": [
       {
-        "handheld": [{ "buttons": ["a"], "inputType": "Tap" }],
-        "single-joycon": [{ "buttons": ["a"], "inputType": "Tap" }]
+        "handheld": [
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/7/73/DK_Neutral_Air_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589217/help-me-play/smash-bros/donkey-kong/neutral-air.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/7/73/DK_Neutral_Air_SSBU.gif"
   },
   {
     "id": "forward-air",
-    "name": { "en": "Forward Air (Double Slap)", "vi": "Đòn không trung trước (Double Slap)" },
+    "name": {
+      "en": "Forward Air (Double Slap)",
+      "vi": "Đòn không trung trước (Double Slap)"
+    },
     "description": {
       "en": "A two-hit aerial slap combo. Deals 7% + 8% = 15% total. Starts frame 10. Both hits must land for full damage. Solid damage and can KO near the ledge at high %.",
       "vi": "Combo tát đôi trên không. Gây 7% + 8% = 15% tổng cộng. Ra đòn frame 10. Cả hai cú phải trúng để gây sát thương tối đa. Sát thương ổn định và có thể hạ gục gần mép sân ở % cao."
@@ -191,24 +343,33 @@
           {
             "buttons": ["left-stick", "a"],
             "direction": "right",
-            "buttonInputTypes": { "left-stick": "Hold", "a": "Tap" }
+            "buttonInputTypes": {
+              "left-stick": "Hold",
+              "a": "Tap"
+            }
           }
         ],
         "single-joycon": [
           {
             "buttons": ["stick", "a"],
             "direction": "right",
-            "buttonInputTypes": { "stick": "Hold", "a": "Tap" }
+            "buttonInputTypes": {
+              "stick": "Hold",
+              "a": "Tap"
+            }
           }
         ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/d/d7/DK_Forward_Air_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589219/help-me-play/smash-bros/donkey-kong/forward-air.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d7/DK_Forward_Air_SSBU.gif"
   },
   {
     "id": "back-air",
-    "name": { "en": "Back Air (Donkey Kick)", "vi": "Đòn không trung sau (Donkey Kick)" },
+    "name": {
+      "en": "Back Air (Donkey Kick)",
+      "vi": "Đòn không trung sau (Donkey Kick)"
+    },
     "description": {
       "en": "A powerful backwards kick. Deals 15% (sweetspot near foot) / 12% (sourspot). Starts frame 8. One of DK's best KO moves. Excellent for edge guarding and can kill very early off the side. Use with reverse momentum for maximum range.",
       "vi": "Đòn đá về phía sau mạnh mẽ. Gây 15% (điểm ngọt gần bàn chân) / 12% (điểm chua). Ra đòn frame 8. Một trong những đòn hạ gục tốt nhất của DK. Xuất sắc để phòng thủ mép sân và có thể giết rất sớm về phía bên. Dùng với đà ngược để có tầm tối đa."
@@ -220,24 +381,33 @@
           {
             "buttons": ["left-stick", "a"],
             "direction": "left",
-            "buttonInputTypes": { "left-stick": "Hold", "a": "Tap" }
+            "buttonInputTypes": {
+              "left-stick": "Hold",
+              "a": "Tap"
+            }
           }
         ],
         "single-joycon": [
           {
             "buttons": ["stick", "a"],
             "direction": "left",
-            "buttonInputTypes": { "stick": "Hold", "a": "Tap" }
+            "buttonInputTypes": {
+              "stick": "Hold",
+              "a": "Tap"
+            }
           }
         ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/0/0b/DK_Back_Air_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589221/help-me-play/smash-bros/donkey-kong/back-air.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/0/0b/DK_Back_Air_SSBU.gif"
   },
   {
     "id": "up-air",
-    "name": { "en": "Up Air (Headbutt)", "vi": "Đòn không trung trên (Headbutt)" },
+    "name": {
+      "en": "Up Air (Headbutt)",
+      "vi": "Đòn không trung trên (Headbutt)"
+    },
     "description": {
       "en": "DK headbutts straight upward. Deals 13%. Starts frame 7. Great juggling move with good vertical range. Combos well out of up-tilt and throw follow-ups. Can KO at high % near the top blast zone.",
       "vi": "DK húc đầu thẳng lên trên. Gây 13%. Ra đòn frame 7. Đòn tung hứng tuyệt vời với tầm đánh dọc tốt. Kết hợp tốt với up-tilt và theo sau các ném. Có thể hạ gục ở % cao gần vùng nổ phía trên."
@@ -249,24 +419,33 @@
           {
             "buttons": ["left-stick", "a"],
             "direction": "up",
-            "buttonInputTypes": { "left-stick": "Hold", "a": "Tap" }
+            "buttonInputTypes": {
+              "left-stick": "Hold",
+              "a": "Tap"
+            }
           }
         ],
         "single-joycon": [
           {
             "buttons": ["stick", "a"],
             "direction": "up",
-            "buttonInputTypes": { "stick": "Hold", "a": "Tap" }
+            "buttonInputTypes": {
+              "stick": "Hold",
+              "a": "Tap"
+            }
           }
         ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/6/63/DK_Up_Air_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589222/help-me-play/smash-bros/donkey-kong/up-air.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/6/63/DK_Up_Air_SSBU.gif"
   },
   {
     "id": "down-air",
-    "name": { "en": "Down Air (Stomp)", "vi": "Đòn không trung dưới (Stomp)" },
+    "name": {
+      "en": "Down Air (Stomp)",
+      "vi": "Đòn không trung dưới (Stomp)"
+    },
     "description": {
       "en": "DK stomps downward with both feet. Deals 15% (sweetspot) / 12% (sourspot). Starts frame 12. Strong spike/meteor hitbox on the first frame. Can meteor smash off stage. High landing lag — use carefully.",
       "vi": "DK dậm chân xuống bằng cả hai chân. Gây 15% (điểm ngọt) / 12% (điểm chua). Ra đòn frame 12. Hộp va chạm spike/meteor mạnh ở frame đầu. Có thể meteor smash khi ra ngoài sân. Độ trễ tiếp đất cao — dùng cẩn thận."
@@ -278,24 +457,33 @@
           {
             "buttons": ["left-stick", "a"],
             "direction": "down",
-            "buttonInputTypes": { "left-stick": "Hold", "a": "Tap" }
+            "buttonInputTypes": {
+              "left-stick": "Hold",
+              "a": "Tap"
+            }
           }
         ],
         "single-joycon": [
           {
             "buttons": ["stick", "a"],
             "direction": "down",
-            "buttonInputTypes": { "stick": "Hold", "a": "Tap" }
+            "buttonInputTypes": {
+              "stick": "Hold",
+              "a": "Tap"
+            }
           }
         ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/b/b4/DK_Down_Air_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589224/help-me-play/smash-bros/donkey-kong/down-air.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/b/b4/DK_Down_Air_SSBU.gif"
   },
   {
     "id": "grab",
-    "name": { "en": "Grab", "vi": "Nắm" },
+    "name": {
+      "en": "Grab",
+      "vi": "Nắm"
+    },
     "description": {
       "en": "DK reaches out with one arm to grab. Standing grab starts frame 6, dash grab frame 9. Excellent range for a super heavyweight. Leads into powerful throws or the unique Cargo Throw carry mechanic.",
       "vi": "DK vươn tay ra để nắm. Grab đứng ra đòn frame 6, dash grab frame 9. Tầm đánh xuất sắc với siêu hạng nặng. Dẫn đến các ném mạnh hoặc cơ chế mang vác Cargo Throw độc đáo."
@@ -303,27 +491,57 @@
     "category": "grab",
     "combos": [
       {
-        "handheld": [{ "buttons": ["zl"], "inputType": "Tap" }],
-        "single-joycon": [{ "buttons": ["zl"], "inputType": "Tap" }]
-      },
-      {
-        "label": { "en": "Dash Grab", "vi": "Dash Grab" },
         "handheld": [
-          { "buttons": ["left-stick"], "direction": "right", "inputType": "Hold" },
-          { "buttons": ["zl"], "inputType": "Tap" }
+          {
+            "buttons": ["zl"],
+            "inputType": "Tap"
+          }
         ],
         "single-joycon": [
-          { "buttons": ["stick"], "direction": "right", "inputType": "Hold" },
-          { "buttons": ["zl"], "inputType": "Tap" }
+          {
+            "buttons": ["zl"],
+            "inputType": "Tap"
+          }
+        ]
+      },
+      {
+        "label": {
+          "en": "Dash Grab",
+          "vi": "Dash Grab"
+        },
+        "handheld": [
+          {
+            "buttons": ["left-stick"],
+            "direction": "right",
+            "inputType": "Hold"
+          },
+          {
+            "buttons": ["zl"],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick"],
+            "direction": "right",
+            "inputType": "Hold"
+          },
+          {
+            "buttons": ["zl"],
+            "inputType": "Tap"
+          }
         ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/6/60/DK_Grab_%26_Pummel_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589227/help-me-play/smash-bros/donkey-kong/grab.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/6/60/DK_Grab_%26_Pummel_SSBU.gif"
   },
   {
     "id": "pummel",
-    "name": { "en": "Pummel", "vi": "Đấm khi giữ" },
+    "name": {
+      "en": "Pummel",
+      "vi": "Đấm khi giữ"
+    },
     "description": {
       "en": "DK headbutts the grabbed opponent. Deals 2.5% per hit. Starts frame 1. One of the faster pummels for a heavyweight. Land 1-2 hits before throwing for efficiency.",
       "vi": "DK húc đầu vào đối thủ đang bị giữ. Gây 2.5% mỗi đòn. Ra đòn frame 1. Một trong những đòn pummel nhanh hơn với hạng nặng. Thực hiện 1-2 cú trước khi ném để hiệu quả nhất."
@@ -331,16 +549,29 @@
     "category": "grab",
     "combos": [
       {
-        "handheld": [{ "buttons": ["a"], "inputType": "Tap" }],
-        "single-joycon": [{ "buttons": ["a"], "inputType": "Tap" }]
+        "handheld": [
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/6/60/DK_Grab_%26_Pummel_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589229/help-me-play/smash-bros/donkey-kong/pummel.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/6/60/DK_Grab_%26_Pummel_SSBU.gif"
   },
   {
     "id": "forward-throw",
-    "name": { "en": "Forward Throw", "vi": "Ném trước" },
+    "name": {
+      "en": "Forward Throw",
+      "vi": "Ném trước"
+    },
     "description": {
       "en": "DK swings the opponent forward and releases. Deals 11%. Not a KO throw at reasonable %, but good for stage control — puts opponents near the ledge. Can lead to edge guard situations.",
       "vi": "DK vung đối thủ về phía trước và thả. Gây 11%. Không phải đòn ném hạ gục ở % hợp lý, nhưng tốt để kiểm soát sân — đưa đối thủ gần mép sân. Có thể dẫn đến tình huống phòng thủ mép sân."
@@ -352,24 +583,33 @@
           {
             "buttons": ["left-stick", "zl"],
             "direction": "right",
-            "buttonInputTypes": { "left-stick": "Tap", "zl": "Hold" }
+            "buttonInputTypes": {
+              "left-stick": "Tap",
+              "zl": "Hold"
+            }
           }
         ],
         "single-joycon": [
           {
             "buttons": ["stick", "zl"],
             "direction": "right",
-            "buttonInputTypes": { "stick": "Tap", "zl": "Hold" }
+            "buttonInputTypes": {
+              "stick": "Tap",
+              "zl": "Hold"
+            }
           }
         ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/2/2e/DK_Kong_Karry_Forward_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589231/help-me-play/smash-bros/donkey-kong/forward-throw.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/2/2e/DK_Kong_Karry_Forward_SSBU.gif"
   },
   {
     "id": "back-throw",
-    "name": { "en": "Back Throw", "vi": "Ném sau" },
+    "name": {
+      "en": "Back Throw",
+      "vi": "Ném sau"
+    },
     "description": {
       "en": "DK spins and hurls the opponent backward. Deals 12%. One of DK's best KO throws — can kill off the side at around 110-130% at the ledge. Use after conditioning opponents to expect forward throw.",
       "vi": "DK xoay và ném đối thủ về phía sau. Gây 12%. Một trong những đòn ném hạ gục tốt nhất của DK — có thể giết về phía bên ở khoảng 110-130% tại mép sân. Dùng sau khi đối thủ quen với forward throw."
@@ -381,24 +621,33 @@
           {
             "buttons": ["left-stick", "zl"],
             "direction": "left",
-            "buttonInputTypes": { "left-stick": "Tap", "zl": "Hold" }
+            "buttonInputTypes": {
+              "left-stick": "Tap",
+              "zl": "Hold"
+            }
           }
         ],
         "single-joycon": [
           {
             "buttons": ["stick", "zl"],
             "direction": "left",
-            "buttonInputTypes": { "stick": "Tap", "zl": "Hold" }
+            "buttonInputTypes": {
+              "stick": "Tap",
+              "zl": "Hold"
+            }
           }
         ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/f/fe/DK_Back_Throw_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589232/help-me-play/smash-bros/donkey-kong/back-throw.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/f/fe/DK_Back_Throw_SSBU.gif"
   },
   {
     "id": "up-throw",
-    "name": { "en": "Up Throw", "vi": "Ném trên" },
+    "name": {
+      "en": "Up Throw",
+      "vi": "Ném trên"
+    },
     "description": {
       "en": "DK slams the opponent overhead and launches them upward. Deals 11%. Good combo throw at low % — leads into up-air, up-tilt, or back-air depending on DI. At high %, can KO near the top blast zone.",
       "vi": "DK đập đối thủ lên trên đầu và phóng lên trên. Gây 11%. Đòn ném mở combo tốt ở % thấp — dẫn vào up-air, up-tilt hoặc back-air tùy thuộc vào DI. Ở % cao, có thể hạ gục gần vùng nổ phía trên."
@@ -410,24 +659,33 @@
           {
             "buttons": ["left-stick", "zl"],
             "direction": "up",
-            "buttonInputTypes": { "left-stick": "Tap", "zl": "Hold" }
+            "buttonInputTypes": {
+              "left-stick": "Tap",
+              "zl": "Hold"
+            }
           }
         ],
         "single-joycon": [
           {
             "buttons": ["stick", "zl"],
             "direction": "up",
-            "buttonInputTypes": { "stick": "Tap", "zl": "Hold" }
+            "buttonInputTypes": {
+              "stick": "Tap",
+              "zl": "Hold"
+            }
           }
         ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/d/df/DK_Up_Throw_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589234/help-me-play/smash-bros/donkey-kong/up-throw.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/df/DK_Up_Throw_SSBU.gif"
   },
   {
     "id": "down-throw",
-    "name": { "en": "Down Throw", "vi": "Ném xuống" },
+    "name": {
+      "en": "Down Throw",
+      "vi": "Ném xuống"
+    },
     "description": {
       "en": "DK slams the opponent into the ground. Deals 11%. DK's primary combo throw — leads into dash attack, up-tilt, or up-air at low %. The main setup for extending combos and building damage.",
       "vi": "DK đập đối thủ xuống mặt đất. Gây 11%. Đòn ném combo chính của DK — dẫn vào dash attack, up-tilt hoặc up-air ở % thấp. Thiết lập chính để kéo dài combo và tích lũy sát thương."
@@ -439,24 +697,33 @@
           {
             "buttons": ["left-stick", "zl"],
             "direction": "down",
-            "buttonInputTypes": { "left-stick": "Tap", "zl": "Hold" }
+            "buttonInputTypes": {
+              "left-stick": "Tap",
+              "zl": "Hold"
+            }
           }
         ],
         "single-joycon": [
           {
             "buttons": ["stick", "zl"],
             "direction": "down",
-            "buttonInputTypes": { "stick": "Tap", "zl": "Hold" }
+            "buttonInputTypes": {
+              "stick": "Tap",
+              "zl": "Hold"
+            }
           }
         ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/0/01/DK_Down_Throw_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589235/help-me-play/smash-bros/donkey-kong/down-throw.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/0/01/DK_Down_Throw_SSBU.gif"
   },
   {
     "id": "neutral-special",
-    "name": { "en": "Giant Punch", "vi": "Giant Punch" },
+    "name": {
+      "en": "Giant Punch",
+      "vi": "Giant Punch"
+    },
     "description": {
       "en": "DK winds up and delivers a massive charged punch. Fully charged deals ~37% — one of the highest raw damage moves in the game. Starts frame 22 uncharged / frame 13 fully charged with super armor. Hold B to charge; release to fire. The charge can be stored and cancelled.",
       "vi": "DK ra đòn đấm khổng lồ đã tích điện. Nạp đầy gây ~37% — một trong những đòn sát thương thô cao nhất trong game. Ra đòn frame 22 chưa nạp / frame 13 nạp đầy với super armor. Giữ B để nạp; thả để tung ra. Có thể giữ lại và hủy bỏ điện tích."
@@ -464,9 +731,22 @@
     "category": "special",
     "combos": [
       {
-        "label": { "en": "Uncharged", "vi": "Chưa nạp" },
-        "handheld": [{ "buttons": ["b"], "inputType": "Tap" }],
-        "single-joycon": [{ "buttons": ["b"], "inputType": "Tap" }]
+        "label": {
+          "en": "Uncharged",
+          "vi": "Chưa nạp"
+        },
+        "handheld": [
+          {
+            "buttons": ["b"],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["b"],
+            "inputType": "Tap"
+          }
+        ]
       },
       {
         "label": {
@@ -474,21 +754,36 @@
           "vi": "Nạp điện (giữ để nạp, thả để bắn)"
         },
         "handheld": [
-          { "buttons": ["b"], "inputType": "Hold" },
-          { "buttons": ["b"], "inputType": "Tap" }
+          {
+            "buttons": ["b"],
+            "inputType": "Hold"
+          },
+          {
+            "buttons": ["b"],
+            "inputType": "Tap"
+          }
         ],
         "single-joycon": [
-          { "buttons": ["b"], "inputType": "Hold" },
-          { "buttons": ["b"], "inputType": "Tap" }
+          {
+            "buttons": ["b"],
+            "inputType": "Hold"
+          },
+          {
+            "buttons": ["b"],
+            "inputType": "Tap"
+          }
         ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/8/8b/Donkey_Kong_Neutral_B_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589238/help-me-play/smash-bros/donkey-kong/neutral-special.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/8/8b/Donkey_Kong_Neutral_B_SSBU.gif"
   },
   {
     "id": "side-special",
-    "name": { "en": "Headbutt", "vi": "Headbutt" },
+    "name": {
+      "en": "Headbutt",
+      "vi": "Headbutt"
+    },
     "description": {
       "en": "DK slams his head into the ground, burying grounded opponents. Deals 15%. Starts frame 16. Buried opponents cannot move and are left open for follow-ups like forward smash or Giant Punch. Spikes aerial opponents downward.",
       "vi": "DK đập đầu vào đất, chôn vùi đối thủ đứng yên. Gây 15%. Ra đòn frame 16. Đối thủ bị chôn vùi không thể di chuyển và bị hở để tiếp theo như forward smash hoặc Giant Punch. Spike đối thủ trên không xuống dưới."
@@ -500,24 +795,33 @@
           {
             "buttons": ["left-stick", "b"],
             "direction": "right",
-            "buttonInputTypes": { "left-stick": "Hold", "b": "Tap" }
+            "buttonInputTypes": {
+              "left-stick": "Hold",
+              "b": "Tap"
+            }
           }
         ],
         "single-joycon": [
           {
             "buttons": ["stick", "b"],
             "direction": "right",
-            "buttonInputTypes": { "stick": "Hold", "b": "Tap" }
+            "buttonInputTypes": {
+              "stick": "Hold",
+              "b": "Tap"
+            }
           }
         ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/1/17/Donkey_Kong_Side_B_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589241/help-me-play/smash-bros/donkey-kong/side-special.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/1/17/Donkey_Kong_Side_B_SSBU.gif"
   },
   {
     "id": "up-special",
-    "name": { "en": "Spinning Kong", "vi": "Spinning Kong" },
+    "name": {
+      "en": "Spinning Kong",
+      "vi": "Spinning Kong"
+    },
     "description": {
       "en": "DK spins rapidly with arms outstretched, traveling upward. Deals 3-4% per hit, up to ~17% total. Starts frame 5 with super armor on startup. Main recovery move. Hits on both sides but has significant landing lag. Vulnerable at end of move.",
       "vi": "DK xoay nhanh với hai tay dang rộng, bay lên trên. Gây 3-4% mỗi đòn, tổng cộng ~17%. Ra đòn frame 5 với super armor khi bắt đầu. Đòn hồi phục chính. Đánh trúng cả hai bên nhưng có độ trễ tiếp đất đáng kể. Dễ bị tổn thương ở cuối đòn."
@@ -529,24 +833,33 @@
           {
             "buttons": ["left-stick", "b"],
             "direction": "up",
-            "buttonInputTypes": { "left-stick": "Hold", "b": "Tap" }
+            "buttonInputTypes": {
+              "left-stick": "Hold",
+              "b": "Tap"
+            }
           }
         ],
         "single-joycon": [
           {
             "buttons": ["stick", "b"],
             "direction": "up",
-            "buttonInputTypes": { "stick": "Hold", "b": "Tap" }
+            "buttonInputTypes": {
+              "stick": "Hold",
+              "b": "Tap"
+            }
           }
         ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/4/40/Donkey_Kong_Up_B_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589242/help-me-play/smash-bros/donkey-kong/up-special.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/4/40/Donkey_Kong_Up_B_SSBU.gif"
   },
   {
     "id": "down-special",
-    "name": { "en": "Hand Slap", "vi": "Hand Slap" },
+    "name": {
+      "en": "Hand Slap",
+      "vi": "Hand Slap"
+    },
     "description": {
       "en": "DK slaps the ground repeatedly with both hands, creating shockwaves that hit on both sides. Deals 10% per slap. Can bury opponents. Hits below the stage, disrupting ledge hangers. Hold button to keep slapping.",
       "vi": "DK liên tục vỗ đất bằng cả hai tay, tạo sóng chấn động đánh trúng cả hai bên. Gây 10% mỗi lần vỗ. Có thể chôn vùi đối thủ. Đánh trúng phía dưới sân, làm phiền đối thủ đang bám mép sân. Giữ nút để tiếp tục vỗ."
@@ -558,24 +871,33 @@
           {
             "buttons": ["left-stick", "b"],
             "direction": "down",
-            "buttonInputTypes": { "left-stick": "Hold", "b": "Tap" }
+            "buttonInputTypes": {
+              "left-stick": "Hold",
+              "b": "Tap"
+            }
           }
         ],
         "single-joycon": [
           {
             "buttons": ["stick", "b"],
             "direction": "down",
-            "buttonInputTypes": { "stick": "Hold", "b": "Tap" }
+            "buttonInputTypes": {
+              "stick": "Hold",
+              "b": "Tap"
+            }
           }
         ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/4/4b/Donkey_Kong_Down_B_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589244/help-me-play/smash-bros/donkey-kong/down-special.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/4/4b/Donkey_Kong_Down_B_SSBU.gif"
   },
   {
     "id": "final-smash",
-    "name": { "en": "Jungle Rush", "vi": "Jungle Rush" },
+    "name": {
+      "en": "Jungle Rush",
+      "vi": "Jungle Rush"
+    },
     "description": {
       "en": "DK delivers a rapid barrage of punches inspired by the Donkey Kong Country Returns boxing match. Catches nearby opponents and unleashes a flurry of blows ending in a devastating uppercut. Deals massive damage and KOs reliably. Activate with Smash Ball.",
       "vi": "DK tung ra loạt đấm liên hoàn lấy cảm hứng từ trận đấu boxing trong Donkey Kong Country Returns. Bắt đối thủ gần và tung đòn liên tục kết thúc bằng một cú uppercut tàn khốc. Gây sát thương lớn và hạ gục đáng tin cậy. Kích hoạt bằng Smash Ball."
@@ -583,16 +905,29 @@
     "category": "special",
     "combos": [
       {
-        "handheld": [{ "buttons": ["b"], "inputType": "Tap" }],
-        "single-joycon": [{ "buttons": ["b"], "inputType": "Tap" }]
+        "handheld": [
+          {
+            "buttons": ["b"],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["b"],
+            "inputType": "Tap"
+          }
+        ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/8/8b/Donkey_Kong_Neutral_B_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589246/help-me-play/smash-bros/donkey-kong/final-smash.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/8/8b/Donkey_Kong_Neutral_B_SSBU.gif"
   },
   {
     "id": "floor-attack",
-    "name": { "en": "Floor Attack", "vi": "Đòn dậy từ sàn" },
+    "name": {
+      "en": "Floor Attack",
+      "vi": "Đòn dậy từ sàn"
+    },
     "description": {
       "en": "DK claps outward on both sides while rising from the ground. Deals 7%. Standard get-up attack. Hits both in front and behind. Use to cover your rising animation when knocked down.",
       "vi": "DK vỗ ra hai bên khi đứng dậy từ mặt đất. Gây 7%. Đòn dậy tiêu chuẩn. Đánh trúng cả phía trước lẫn phía sau. Dùng để bảo vệ hoạt ảnh đứng dậy khi bị ngã."
@@ -600,22 +935,51 @@
     "category": "misc",
     "combos": [
       {
-        "label": { "en": "Front floor attack", "vi": "Đòn dậy phía trước" },
-        "handheld": [{ "buttons": ["a"], "inputType": "Tap" }],
-        "single-joycon": [{ "buttons": ["a"], "inputType": "Tap" }]
+        "label": {
+          "en": "Front floor attack",
+          "vi": "Đòn dậy phía trước"
+        },
+        "handheld": [
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ]
       },
       {
-        "label": { "en": "Back floor attack", "vi": "Đòn dậy phía sau" },
-        "handheld": [{ "buttons": ["a"], "inputType": "Tap" }],
-        "single-joycon": [{ "buttons": ["a"], "inputType": "Tap" }]
+        "label": {
+          "en": "Back floor attack",
+          "vi": "Đòn dậy phía sau"
+        },
+        "handheld": [
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/6/6f/DK_Front_Floor_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589248/help-me-play/smash-bros/donkey-kong/floor-attack.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/6/6f/DK_Front_Floor_SSBU.gif"
   },
   {
     "id": "ledge-attack",
-    "name": { "en": "Ledge Attack", "vi": "Đòn leo mép sân" },
+    "name": {
+      "en": "Ledge Attack",
+      "vi": "Đòn leo mép sân"
+    },
     "description": {
       "en": "DK pulls himself up and slams both fists down. Deals 10%. Starts frame 23. Reasonable power for a ledge attack. Good hitbox coverage. Use to threaten opponents guarding the ledge.",
       "vi": "DK kéo người lên và đập cả hai nắm đấm xuống. Gây 10%. Ra đòn frame 23. Sức mạnh hợp lý cho đòn leo mép sân. Vùng đánh trúng tốt. Dùng để đe dọa đối thủ đang bảo vệ mép sân."
@@ -623,16 +987,29 @@
     "category": "misc",
     "combos": [
       {
-        "handheld": [{ "buttons": ["a"], "inputType": "Tap" }],
-        "single-joycon": [{ "buttons": ["a"], "inputType": "Tap" }]
+        "handheld": [
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["a"],
+            "inputType": "Tap"
+          }
+        ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/7/77/DK_Edge_Attack_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589251/help-me-play/smash-bros/donkey-kong/ledge-attack.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/7/77/DK_Edge_Attack_SSBU.gif"
   },
   {
     "id": "cargo-throw",
-    "name": { "en": "Cargo Throw (Kong Karry)", "vi": "Cargo Throw (Kong Karry)" },
+    "name": {
+      "en": "Cargo Throw (Kong Karry)",
+      "vi": "Cargo Throw (Kong Karry)"
+    },
     "description": {
       "en": "DK's unique mechanic — after grabbing, hold the grab button to hoist the opponent onto his shoulders and carry them. While carrying, press a direction + attack to throw: Forward (11%), Back (13%), Up (11%), Down (11%). Can walk off the stage for a sacrificial KO with back throw.",
       "vi": "Cơ chế độc đáo của DK — sau khi nắm, giữ nút grab để nhấc đối thủ lên vai và mang đi. Khi đang mang, nhấn hướng + đòn để ném: Trước (11%), Sau (13%), Trên (11%), Dưới (11%). Có thể đi ra khỏi sân để hạ gục cùng nhau bằng back throw."
@@ -640,83 +1017,143 @@
     "category": "grab",
     "combos": [
       {
-        "label": { "en": "Forward", "vi": "Trước" },
+        "label": {
+          "en": "Forward",
+          "vi": "Trước"
+        },
         "handheld": [
-          { "buttons": ["zl"], "inputType": "Hold" },
+          {
+            "buttons": ["zl"],
+            "inputType": "Hold"
+          },
           {
             "buttons": ["left-stick", "a"],
             "direction": "right",
-            "buttonInputTypes": { "left-stick": "Tap", "a": "Tap" }
+            "buttonInputTypes": {
+              "left-stick": "Tap",
+              "a": "Tap"
+            }
           }
         ],
         "single-joycon": [
-          { "buttons": ["zl"], "inputType": "Hold" },
+          {
+            "buttons": ["zl"],
+            "inputType": "Hold"
+          },
           {
             "buttons": ["stick", "a"],
             "direction": "right",
-            "buttonInputTypes": { "stick": "Tap", "a": "Tap" }
+            "buttonInputTypes": {
+              "stick": "Tap",
+              "a": "Tap"
+            }
           }
         ]
       },
       {
-        "label": { "en": "Back", "vi": "Sau" },
+        "label": {
+          "en": "Back",
+          "vi": "Sau"
+        },
         "handheld": [
-          { "buttons": ["zl"], "inputType": "Hold" },
+          {
+            "buttons": ["zl"],
+            "inputType": "Hold"
+          },
           {
             "buttons": ["left-stick", "a"],
             "direction": "left",
-            "buttonInputTypes": { "left-stick": "Tap", "a": "Tap" }
+            "buttonInputTypes": {
+              "left-stick": "Tap",
+              "a": "Tap"
+            }
           }
         ],
         "single-joycon": [
-          { "buttons": ["zl"], "inputType": "Hold" },
+          {
+            "buttons": ["zl"],
+            "inputType": "Hold"
+          },
           {
             "buttons": ["stick", "a"],
             "direction": "left",
-            "buttonInputTypes": { "stick": "Tap", "a": "Tap" }
+            "buttonInputTypes": {
+              "stick": "Tap",
+              "a": "Tap"
+            }
           }
         ]
       },
       {
-        "label": { "en": "Up", "vi": "Trên" },
+        "label": {
+          "en": "Up",
+          "vi": "Trên"
+        },
         "handheld": [
-          { "buttons": ["zl"], "inputType": "Hold" },
+          {
+            "buttons": ["zl"],
+            "inputType": "Hold"
+          },
           {
             "buttons": ["left-stick", "a"],
             "direction": "up",
-            "buttonInputTypes": { "left-stick": "Tap", "a": "Tap" }
+            "buttonInputTypes": {
+              "left-stick": "Tap",
+              "a": "Tap"
+            }
           }
         ],
         "single-joycon": [
-          { "buttons": ["zl"], "inputType": "Hold" },
+          {
+            "buttons": ["zl"],
+            "inputType": "Hold"
+          },
           {
             "buttons": ["stick", "a"],
             "direction": "up",
-            "buttonInputTypes": { "stick": "Tap", "a": "Tap" }
+            "buttonInputTypes": {
+              "stick": "Tap",
+              "a": "Tap"
+            }
           }
         ]
       },
       {
-        "label": { "en": "Down", "vi": "Dưới" },
+        "label": {
+          "en": "Down",
+          "vi": "Dưới"
+        },
         "handheld": [
-          { "buttons": ["zl"], "inputType": "Hold" },
+          {
+            "buttons": ["zl"],
+            "inputType": "Hold"
+          },
           {
             "buttons": ["left-stick", "a"],
             "direction": "down",
-            "buttonInputTypes": { "left-stick": "Tap", "a": "Tap" }
+            "buttonInputTypes": {
+              "left-stick": "Tap",
+              "a": "Tap"
+            }
           }
         ],
         "single-joycon": [
-          { "buttons": ["zl"], "inputType": "Hold" },
+          {
+            "buttons": ["zl"],
+            "inputType": "Hold"
+          },
           {
             "buttons": ["stick", "a"],
             "direction": "down",
-            "buttonInputTypes": { "stick": "Tap", "a": "Tap" }
+            "buttonInputTypes": {
+              "stick": "Tap",
+              "a": "Tap"
+            }
           }
         ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/2/2e/DK_Kong_Karry_Forward_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589253/help-me-play/smash-bros/donkey-kong/cargo-throw.webp",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/2/2e/DK_Kong_Karry_Forward_SSBU.gif"
   }
 ]

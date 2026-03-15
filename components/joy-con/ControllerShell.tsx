@@ -387,8 +387,7 @@ export default function ControllerShell({
     const perBtn = buttonInputTypes?.[id] ?? inputType;
     return getActiveColor(perBtn);
   };
-  const getTooltip = (id: string): string | undefined =>
-    buttonTooltips?.[id] ?? tooltip;
+  const getTooltip = (id: string): string | undefined => buttonTooltips?.[id] ?? tooltip;
 
   if (mode === "single-joycon") {
     return (

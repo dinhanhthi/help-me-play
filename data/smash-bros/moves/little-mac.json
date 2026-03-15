@@ -14,35 +14,27 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "a"
-            ],
+            "buttons": ["a"],
             "inputType": "Tap"
           },
           {
-            "buttons": [
-              "a"
-            ],
+            "buttons": ["a"],
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "a"
-            ],
+            "buttons": ["a"],
             "inputType": "Tap"
           },
           {
-            "buttons": [
-              "a"
-            ],
+            "buttons": ["a"],
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/4/47/LittleMacJab1SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589254/help-me-play/smash-bros/little-mac/jab.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/4/47/LittleMacJab1SSBU.gif"
   },
   {
@@ -60,17 +52,12 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "left-stick"
-            ],
+            "buttons": ["left-stick"],
             "direction": "right",
             "inputType": "Hold"
           },
           {
-            "buttons": [
-              "left-stick",
-              "a"
-            ],
+            "buttons": ["left-stick", "a"],
             "direction": "right",
             "buttonInputTypes": {
               "left-stick": "Hold",
@@ -80,17 +67,12 @@
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "stick"
-            ],
+            "buttons": ["stick"],
             "direction": "right",
             "inputType": "Hold"
           },
           {
-            "buttons": [
-              "stick",
-              "a"
-            ],
+            "buttons": ["stick", "a"],
             "direction": "right",
             "buttonInputTypes": {
               "stick": "Hold",
@@ -100,7 +82,7 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/7/79/LittleMacDashAttackSSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589256/help-me-play/smash-bros/little-mac/dash-attack.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/7/79/LittleMacDashAttackSSBU.gif"
   },
   {
@@ -118,27 +100,21 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "left-stick",
-              "a"
-            ],
+            "buttons": ["left-stick", "a"],
             "direction": "right",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "stick",
-              "a"
-            ],
+            "buttons": ["stick", "a"],
             "direction": "right",
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/0/04/LittleMacFTiltSSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589257/help-me-play/smash-bros/little-mac/forward-tilt.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/0/04/LittleMacFTiltSSBU.gif"
   },
   {
@@ -156,27 +132,21 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "left-stick",
-              "a"
-            ],
+            "buttons": ["left-stick", "a"],
             "direction": "up",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "stick",
-              "a"
-            ],
+            "buttons": ["stick", "a"],
             "direction": "up",
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/d/db/LittleMacUTiltSSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589259/help-me-play/smash-bros/little-mac/up-tilt.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/d/db/LittleMacUTiltSSBU.gif"
   },
   {
@@ -194,27 +164,21 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "left-stick",
-              "a"
-            ],
+            "buttons": ["left-stick", "a"],
             "direction": "down",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "stick",
-              "a"
-            ],
+            "buttons": ["stick", "a"],
             "direction": "down",
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/2/2b/LittleMacDTiltSSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589260/help-me-play/smash-bros/little-mac/down-tilt.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/2/2b/LittleMacDTiltSSBU.gif"
   },
   {
@@ -232,20 +196,14 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "left-stick",
-              "a"
-            ],
+            "buttons": ["left-stick", "a"],
             "direction": "right",
             "inputType": "Smash"
           }
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "stick",
-              "a"
-            ],
+            "buttons": ["stick", "a"],
             "direction": "right",
             "inputType": "Smash"
           }
@@ -254,16 +212,14 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "right-stick"
-            ],
+            "buttons": ["right-stick"],
             "direction": "right",
             "inputType": "Smash"
           }
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/6/6b/LittleMacFSmashSSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589262/help-me-play/smash-bros/little-mac/forward-smash.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/6/6b/LittleMacFSmashSSBU.gif"
   },
   {
@@ -281,20 +237,14 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "left-stick",
-              "a"
-            ],
+            "buttons": ["left-stick", "a"],
             "direction": "up",
             "inputType": "Smash"
           }
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "stick",
-              "a"
-            ],
+            "buttons": ["stick", "a"],
             "direction": "up",
             "inputType": "Smash"
           }
@@ -303,16 +253,14 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "right-stick"
-            ],
+            "buttons": ["right-stick"],
             "direction": "up",
             "inputType": "Smash"
           }
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/5/54/LittleMacUSmashSSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589264/help-me-play/smash-bros/little-mac/up-smash.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/5/54/LittleMacUSmashSSBU.gif"
   },
   {
@@ -330,20 +278,14 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "left-stick",
-              "a"
-            ],
+            "buttons": ["left-stick", "a"],
             "direction": "down",
             "inputType": "Smash"
           }
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "stick",
-              "a"
-            ],
+            "buttons": ["stick", "a"],
             "direction": "down",
             "inputType": "Smash"
           }
@@ -352,16 +294,14 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "right-stick"
-            ],
+            "buttons": ["right-stick"],
             "direction": "down",
             "inputType": "Smash"
           }
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/c/c3/LittleMacDSmashSSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589266/help-me-play/smash-bros/little-mac/down-smash.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/c/c3/LittleMacDSmashSSBU.gif"
   },
   {
@@ -383,29 +323,21 @@
         },
         "handheld": [
           {
-            "buttons": [
-              "x"
-            ],
+            "buttons": ["x"],
             "inputType": "Tap"
           },
           {
-            "buttons": [
-              "a"
-            ],
+            "buttons": ["a"],
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "x"
-            ],
+            "buttons": ["x"],
             "inputType": "Tap"
           },
           {
-            "buttons": [
-              "a"
-            ],
+            "buttons": ["a"],
             "inputType": "Tap"
           }
         ]
@@ -417,10 +349,7 @@
         },
         "handheld": [
           {
-            "buttons": [
-              "left-stick",
-              "x"
-            ],
+            "buttons": ["left-stick", "x"],
             "direction": "right",
             "buttonInputTypes": {
               "left-stick": "Hold",
@@ -428,18 +357,13 @@
             }
           },
           {
-            "buttons": [
-              "a"
-            ],
+            "buttons": ["a"],
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "stick",
-              "x"
-            ],
+            "buttons": ["stick", "x"],
             "direction": "right",
             "buttonInputTypes": {
               "stick": "Hold",
@@ -447,15 +371,13 @@
             }
           },
           {
-            "buttons": [
-              "a"
-            ],
+            "buttons": ["a"],
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/0/06/LittleMacNAirSSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589268/help-me-play/smash-bros/little-mac/neutral-air.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/0/06/LittleMacNAirSSBU.gif"
   },
   {
@@ -473,10 +395,7 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "left-stick",
-              "x"
-            ],
+            "buttons": ["left-stick", "x"],
             "direction": "right",
             "buttonInputTypes": {
               "left-stick": "Hold",
@@ -484,10 +403,7 @@
             }
           },
           {
-            "buttons": [
-              "left-stick",
-              "a"
-            ],
+            "buttons": ["left-stick", "a"],
             "direction": "right",
             "buttonInputTypes": {
               "left-stick": "Hold",
@@ -497,10 +413,7 @@
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "stick",
-              "x"
-            ],
+            "buttons": ["stick", "x"],
             "direction": "right",
             "buttonInputTypes": {
               "stick": "Hold",
@@ -508,10 +421,7 @@
             }
           },
           {
-            "buttons": [
-              "stick",
-              "a"
-            ],
+            "buttons": ["stick", "a"],
             "direction": "right",
             "buttonInputTypes": {
               "stick": "Hold",
@@ -521,7 +431,7 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/9/99/LittleMacFAirSSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589270/help-me-play/smash-bros/little-mac/forward-air.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/9/99/LittleMacFAirSSBU.gif"
   },
   {
@@ -539,43 +449,31 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "left-stick",
-              "x"
-            ],
+            "buttons": ["left-stick", "x"],
             "direction": "right",
             "inputType": "Tap"
           },
           {
-            "buttons": [
-              "left-stick",
-              "a"
-            ],
+            "buttons": ["left-stick", "a"],
             "direction": "left",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "stick",
-              "x"
-            ],
+            "buttons": ["stick", "x"],
             "direction": "right",
             "inputType": "Tap"
           },
           {
-            "buttons": [
-              "stick",
-              "a"
-            ],
+            "buttons": ["stick", "a"],
             "direction": "left",
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/5/56/LittleMacBAirSSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589272/help-me-play/smash-bros/little-mac/back-air.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/5/56/LittleMacBAirSSBU.gif"
   },
   {
@@ -593,39 +491,29 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "x"
-            ],
+            "buttons": ["x"],
             "inputType": "Tap"
           },
           {
-            "buttons": [
-              "left-stick",
-              "a"
-            ],
+            "buttons": ["left-stick", "a"],
             "direction": "up",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "x"
-            ],
+            "buttons": ["x"],
             "inputType": "Tap"
           },
           {
-            "buttons": [
-              "stick",
-              "a"
-            ],
+            "buttons": ["stick", "a"],
             "direction": "up",
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/2/2e/LittleMacUAirSSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589274/help-me-play/smash-bros/little-mac/up-air.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/2/2e/LittleMacUAirSSBU.gif"
   },
   {
@@ -643,39 +531,29 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "x"
-            ],
+            "buttons": ["x"],
             "inputType": "Tap"
           },
           {
-            "buttons": [
-              "left-stick",
-              "a"
-            ],
+            "buttons": ["left-stick", "a"],
             "direction": "down",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "x"
-            ],
+            "buttons": ["x"],
             "inputType": "Tap"
           },
           {
-            "buttons": [
-              "stick",
-              "a"
-            ],
+            "buttons": ["stick", "a"],
             "direction": "down",
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/a/aa/LittleMacDAirSSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589275/help-me-play/smash-bros/little-mac/down-air.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/a/aa/LittleMacDAirSSBU.gif"
   },
   {
@@ -693,17 +571,13 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "l"
-            ],
+            "buttons": ["l"],
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "sl"
-            ],
+            "buttons": ["sl"],
             "inputType": "Tap"
           }
         ]
@@ -715,23 +589,19 @@
         },
         "handheld": [
           {
-            "buttons": [
-              "zl"
-            ],
+            "buttons": ["zl"],
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "zl"
-            ],
+            "buttons": ["zl"],
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/3/30/LittleMacGrabSSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589278/help-me-play/smash-bros/little-mac/grab.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/3/30/LittleMacGrabSSBU.gif"
   },
   {
@@ -749,16 +619,11 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "l"
-            ],
+            "buttons": ["l"],
             "inputType": "Hold"
           },
           {
-            "buttons": [
-              "l",
-              "a"
-            ],
+            "buttons": ["l", "a"],
             "buttonInputTypes": {
               "l": "Hold",
               "a": "Tap"
@@ -767,16 +632,11 @@
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "sl"
-            ],
+            "buttons": ["sl"],
             "inputType": "Hold"
           },
           {
-            "buttons": [
-              "sl",
-              "a"
-            ],
+            "buttons": ["sl", "a"],
             "buttonInputTypes": {
               "sl": "Hold",
               "a": "Tap"
@@ -785,7 +645,7 @@
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/0/00/LittleMacPummelSSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589279/help-me-play/smash-bros/little-mac/pummel.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/0/00/LittleMacPummelSSBU.gif"
   },
   {
@@ -807,37 +667,29 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "l"
-            ],
+            "buttons": ["l"],
             "inputType": "Hold"
           },
           {
-            "buttons": [
-              "left-stick"
-            ],
+            "buttons": ["left-stick"],
             "direction": "right",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "sl"
-            ],
+            "buttons": ["sl"],
             "inputType": "Hold"
           },
           {
-            "buttons": [
-              "stick"
-            ],
+            "buttons": ["stick"],
             "direction": "right",
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/f/f7/LittleMacFThrowSSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589281/help-me-play/smash-bros/little-mac/forward-throw.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/f/f7/LittleMacFThrowSSBU.gif"
   },
   {
@@ -859,37 +711,29 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "l"
-            ],
+            "buttons": ["l"],
             "inputType": "Hold"
           },
           {
-            "buttons": [
-              "left-stick"
-            ],
+            "buttons": ["left-stick"],
             "direction": "left",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "sl"
-            ],
+            "buttons": ["sl"],
             "inputType": "Hold"
           },
           {
-            "buttons": [
-              "stick"
-            ],
+            "buttons": ["stick"],
             "direction": "left",
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/2/2f/LittleMacBThrowSSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589283/help-me-play/smash-bros/little-mac/back-throw.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/2/2f/LittleMacBThrowSSBU.gif"
   },
   {
@@ -911,37 +755,29 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "l"
-            ],
+            "buttons": ["l"],
             "inputType": "Hold"
           },
           {
-            "buttons": [
-              "left-stick"
-            ],
+            "buttons": ["left-stick"],
             "direction": "up",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "sl"
-            ],
+            "buttons": ["sl"],
             "inputType": "Hold"
           },
           {
-            "buttons": [
-              "stick"
-            ],
+            "buttons": ["stick"],
             "direction": "up",
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/6/6d/LittleMacUThrowSSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589285/help-me-play/smash-bros/little-mac/up-throw.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/6/6d/LittleMacUThrowSSBU.gif"
   },
   {
@@ -963,37 +799,29 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "l"
-            ],
+            "buttons": ["l"],
             "inputType": "Hold"
           },
           {
-            "buttons": [
-              "left-stick"
-            ],
+            "buttons": ["left-stick"],
             "direction": "down",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "sl"
-            ],
+            "buttons": ["sl"],
             "inputType": "Hold"
           },
           {
-            "buttons": [
-              "stick"
-            ],
+            "buttons": ["stick"],
             "direction": "down",
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/0/08/LittleMacDThrowSSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589287/help-me-play/smash-bros/little-mac/down-throw.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/0/08/LittleMacDThrowSSBU.gif"
   },
   {
@@ -1015,17 +843,13 @@
         },
         "handheld": [
           {
-            "buttons": [
-              "b"
-            ],
+            "buttons": ["b"],
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "b"
-            ],
+            "buttons": ["b"],
             "inputType": "Tap"
           }
         ]
@@ -1037,23 +861,19 @@
         },
         "handheld": [
           {
-            "buttons": [
-              "b"
-            ],
+            "buttons": ["b"],
             "inputType": "Hold"
           }
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "b"
-            ],
+            "buttons": ["b"],
             "inputType": "Hold"
           }
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/8/8e/LittleMacNSpecialGroundedSSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589290/help-me-play/smash-bros/little-mac/neutral-special.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/8/8e/LittleMacNSpecialGroundedSSBU.gif"
   },
   {
@@ -1071,23 +891,19 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "b"
-            ],
+            "buttons": ["b"],
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "b"
-            ],
+            "buttons": ["b"],
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/3/3f/LittleMacNSpecialKOPunchGroundedSSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589291/help-me-play/smash-bros/little-mac/ko-punch.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/3/3f/LittleMacNSpecialKOPunchGroundedSSBU.gif"
   },
   {
@@ -1105,27 +921,21 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "left-stick",
-              "b"
-            ],
+            "buttons": ["left-stick", "b"],
             "direction": "right",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "stick",
-              "b"
-            ],
+            "buttons": ["stick", "b"],
             "direction": "right",
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/5/56/LittleMacSSpecialGroundedSSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589294/help-me-play/smash-bros/little-mac/side-special.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/5/56/LittleMacSSpecialGroundedSSBU.gif"
   },
   {
@@ -1143,27 +953,21 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "left-stick",
-              "b"
-            ],
+            "buttons": ["left-stick", "b"],
             "direction": "up",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "stick",
-              "b"
-            ],
+            "buttons": ["stick", "b"],
             "direction": "up",
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/e/ee/LittleMacUSpecialSSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773587199/help-me-play/smash-bros/little-mac/up-special.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/e/ee/LittleMacUSpecialSSBU.gif"
   },
   {
@@ -1181,27 +985,21 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "left-stick",
-              "b"
-            ],
+            "buttons": ["left-stick", "b"],
             "direction": "down",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "stick",
-              "b"
-            ],
+            "buttons": ["stick", "b"],
             "direction": "down",
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/5/54/LittleMacDSpecialSSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589297/help-me-play/smash-bros/little-mac/down-special.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/5/54/LittleMacDSpecialSSBU.gif"
   },
   {
@@ -1219,23 +1017,19 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "b"
-            ],
+            "buttons": ["b"],
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "b"
-            ],
+            "buttons": ["b"],
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/e/ee/LittleMacUSpecialSSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589298/help-me-play/smash-bros/little-mac/final-smash.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/e/ee/LittleMacUSpecialSSBU.gif"
   },
   {
@@ -1253,23 +1047,19 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "a"
-            ],
+            "buttons": ["a"],
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "a"
-            ],
+            "buttons": ["a"],
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/4/46/LittleMacGetupAttackFrontSSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773587208/help-me-play/smash-bros/little-mac/floor-attack.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/4/46/LittleMacGetupAttackFrontSSBU.gif"
   },
   {
@@ -1287,23 +1077,19 @@
       {
         "handheld": [
           {
-            "buttons": [
-              "a"
-            ],
+            "buttons": ["a"],
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": [
-              "a"
-            ],
+            "buttons": ["a"],
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://ssb.wiki.gallery/images/e/eb/LittleMacLedgeAttackSSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773589302/help-me-play/smash-bros/little-mac/ledge-attack.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/e/eb/LittleMacLedgeAttackSSBU.gif"
   }
 ]

@@ -14,27 +14,35 @@
       {
         "handheld": [
           {
-            "buttons": ["a"],
+            "buttons": [
+              "a"
+            ],
             "inputType": "Tap"
           },
           {
-            "buttons": ["a"],
+            "buttons": [
+              "a"
+            ],
             "inputType": "Hold"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["a"],
+            "buttons": [
+              "a"
+            ],
             "inputType": "Tap"
           },
           {
-            "buttons": ["a"],
+            "buttons": [
+              "a"
+            ],
             "inputType": "Hold"
           }
         ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/4/46/Pikachu_Jab_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773592750/help-me-play/smash-bros/pikachu/jab.gif",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/4/46/Pikachu_Jab_SSBU.gif"
   },
   {
@@ -52,12 +60,17 @@
       {
         "handheld": [
           {
-            "buttons": ["left-stick"],
+            "buttons": [
+              "left-stick"
+            ],
             "direction": "right",
             "inputType": "Hold"
           },
           {
-            "buttons": ["left-stick", "a"],
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
             "direction": "right",
             "buttonInputTypes": {
               "left-stick": "Hold",
@@ -67,12 +80,17 @@
         ],
         "single-joycon": [
           {
-            "buttons": ["stick"],
+            "buttons": [
+              "stick"
+            ],
             "direction": "right",
             "inputType": "Hold"
           },
           {
-            "buttons": ["stick", "a"],
+            "buttons": [
+              "stick",
+              "a"
+            ],
             "direction": "right",
             "buttonInputTypes": {
               "stick": "Hold",
@@ -100,21 +118,27 @@
       {
         "handheld": [
           {
-            "buttons": ["left-stick", "a"],
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
             "direction": "right",
             "inputType": "Tilt"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["stick", "a"],
+            "buttons": [
+              "stick",
+              "a"
+            ],
             "direction": "right",
             "inputType": "Tilt"
           }
         ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/d/d4/Pikachu_Side_Tilt_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773592762/help-me-play/smash-bros/pikachu/forward-tilt.gif",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d4/Pikachu_Side_Tilt_SSBU.gif"
   },
   {
@@ -132,21 +156,27 @@
       {
         "handheld": [
           {
-            "buttons": ["left-stick", "a"],
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
             "direction": "up",
             "inputType": "Tilt"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["stick", "a"],
+            "buttons": [
+              "stick",
+              "a"
+            ],
             "direction": "up",
             "inputType": "Tilt"
           }
         ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/6/6b/Pikachu_Up_Tilt_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773592772/help-me-play/smash-bros/pikachu/up-tilt.gif",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/6/6b/Pikachu_Up_Tilt_SSBU.gif"
   },
   {
@@ -164,21 +194,27 @@
       {
         "handheld": [
           {
-            "buttons": ["left-stick", "a"],
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
             "direction": "down",
             "inputType": "Tilt"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["stick", "a"],
+            "buttons": [
+              "stick",
+              "a"
+            ],
             "direction": "down",
             "inputType": "Tilt"
           }
         ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/3/3f/Pikachu_Down_Tilt_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773592785/help-me-play/smash-bros/pikachu/down-tilt.gif",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/3/3f/Pikachu_Down_Tilt_SSBU.gif"
   },
   {
@@ -196,14 +232,20 @@
       {
         "handheld": [
           {
-            "buttons": ["left-stick", "a"],
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
             "direction": "right",
             "inputType": "Smash"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["stick", "a"],
+            "buttons": [
+              "stick",
+              "a"
+            ],
             "direction": "right",
             "inputType": "Smash"
           }
@@ -212,14 +254,16 @@
       {
         "handheld": [
           {
-            "buttons": ["right-stick"],
+            "buttons": [
+              "right-stick"
+            ],
             "direction": "right",
             "inputType": "Smash"
           }
         ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/9/92/Pikachu_Forward_Smash_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773592793/help-me-play/smash-bros/pikachu/forward-smash.gif",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/9/92/Pikachu_Forward_Smash_SSBU.gif"
   },
   {
@@ -237,14 +281,20 @@
       {
         "handheld": [
           {
-            "buttons": ["left-stick", "a"],
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
             "direction": "up",
             "inputType": "Smash"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["stick", "a"],
+            "buttons": [
+              "stick",
+              "a"
+            ],
             "direction": "up",
             "inputType": "Smash"
           }
@@ -253,14 +303,16 @@
       {
         "handheld": [
           {
-            "buttons": ["right-stick"],
+            "buttons": [
+              "right-stick"
+            ],
             "direction": "up",
             "inputType": "Smash"
           }
         ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/d/d1/Pikachu_Up_Smash_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773592802/help-me-play/smash-bros/pikachu/up-smash.gif",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/d/d1/Pikachu_Up_Smash_SSBU.gif"
   },
   {
@@ -278,14 +330,20 @@
       {
         "handheld": [
           {
-            "buttons": ["left-stick", "a"],
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
             "direction": "down",
             "inputType": "Smash"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["stick", "a"],
+            "buttons": [
+              "stick",
+              "a"
+            ],
             "direction": "down",
             "inputType": "Smash"
           }
@@ -294,7 +352,9 @@
       {
         "handheld": [
           {
-            "buttons": ["right-stick"],
+            "buttons": [
+              "right-stick"
+            ],
             "direction": "down",
             "inputType": "Smash"
           }
@@ -323,21 +383,29 @@
         },
         "handheld": [
           {
-            "buttons": ["x"],
+            "buttons": [
+              "x"
+            ],
             "inputType": "Tap"
           },
           {
-            "buttons": ["a"],
+            "buttons": [
+              "a"
+            ],
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["x"],
+            "buttons": [
+              "x"
+            ],
             "inputType": "Tap"
           },
           {
-            "buttons": ["a"],
+            "buttons": [
+              "a"
+            ],
             "inputType": "Tap"
           }
         ]
@@ -349,7 +417,10 @@
         },
         "handheld": [
           {
-            "buttons": ["left-stick", "x"],
+            "buttons": [
+              "left-stick",
+              "x"
+            ],
             "direction": "right",
             "buttonInputTypes": {
               "left-stick": "Hold",
@@ -357,13 +428,18 @@
             }
           },
           {
-            "buttons": ["a"],
+            "buttons": [
+              "a"
+            ],
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["stick", "x"],
+            "buttons": [
+              "stick",
+              "x"
+            ],
             "direction": "right",
             "buttonInputTypes": {
               "stick": "Hold",
@@ -371,13 +447,15 @@
             }
           },
           {
-            "buttons": ["a"],
+            "buttons": [
+              "a"
+            ],
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/9/95/Pikachu_Neutral_Air_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773592815/help-me-play/smash-bros/pikachu/neutral-air.gif",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/9/95/Pikachu_Neutral_Air_SSBU.gif"
   },
   {
@@ -395,7 +473,10 @@
       {
         "handheld": [
           {
-            "buttons": ["left-stick", "x"],
+            "buttons": [
+              "left-stick",
+              "x"
+            ],
             "direction": "right",
             "buttonInputTypes": {
               "left-stick": "Hold",
@@ -403,7 +484,10 @@
             }
           },
           {
-            "buttons": ["left-stick", "a"],
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
             "direction": "right",
             "buttonInputTypes": {
               "left-stick": "Hold",
@@ -413,7 +497,10 @@
         ],
         "single-joycon": [
           {
-            "buttons": ["stick", "x"],
+            "buttons": [
+              "stick",
+              "x"
+            ],
             "direction": "right",
             "buttonInputTypes": {
               "stick": "Hold",
@@ -421,7 +508,10 @@
             }
           },
           {
-            "buttons": ["stick", "a"],
+            "buttons": [
+              "stick",
+              "a"
+            ],
             "direction": "right",
             "buttonInputTypes": {
               "stick": "Hold",
@@ -431,7 +521,7 @@
         ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/0/01/Pikachu_Forward_Air_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773592822/help-me-play/smash-bros/pikachu/forward-air.gif",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/0/01/Pikachu_Forward_Air_SSBU.gif"
   },
   {
@@ -449,31 +539,43 @@
       {
         "handheld": [
           {
-            "buttons": ["left-stick", "x"],
+            "buttons": [
+              "left-stick",
+              "x"
+            ],
             "direction": "right",
             "inputType": "Tap"
           },
           {
-            "buttons": ["left-stick", "a"],
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
             "direction": "left",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["stick", "x"],
+            "buttons": [
+              "stick",
+              "x"
+            ],
             "direction": "right",
             "inputType": "Tap"
           },
           {
-            "buttons": ["stick", "a"],
+            "buttons": [
+              "stick",
+              "a"
+            ],
             "direction": "left",
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/8/84/Pikachu_Back_Air_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773592837/help-me-play/smash-bros/pikachu/back-air.gif",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/8/84/Pikachu_Back_Air_SSBU.gif"
   },
   {
@@ -491,22 +593,32 @@
       {
         "handheld": [
           {
-            "buttons": ["x"],
+            "buttons": [
+              "x"
+            ],
             "inputType": "Tap"
           },
           {
-            "buttons": ["left-stick", "a"],
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
             "direction": "up",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["x"],
+            "buttons": [
+              "x"
+            ],
             "inputType": "Tap"
           },
           {
-            "buttons": ["stick", "a"],
+            "buttons": [
+              "stick",
+              "a"
+            ],
             "direction": "up",
             "inputType": "Tap"
           }
@@ -531,29 +643,39 @@
       {
         "handheld": [
           {
-            "buttons": ["x"],
+            "buttons": [
+              "x"
+            ],
             "inputType": "Tap"
           },
           {
-            "buttons": ["left-stick", "a"],
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
             "direction": "down",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["x"],
+            "buttons": [
+              "x"
+            ],
             "inputType": "Tap"
           },
           {
-            "buttons": ["stick", "a"],
+            "buttons": [
+              "stick",
+              "a"
+            ],
             "direction": "down",
             "inputType": "Tap"
           }
         ]
       }
     ],
-    "mediaUrl": "https://static.wikia.nocookie.net/ssb/images/4/47/Pikachu_Down_Air_SSBU.gif",
+    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773592854/help-me-play/smash-bros/pikachu/down-air.gif",
     "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/4/47/Pikachu_Down_Air_SSBU.gif"
   },
   {
@@ -571,13 +693,17 @@
       {
         "handheld": [
           {
-            "buttons": ["b"],
+            "buttons": [
+              "b"
+            ],
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["b"],
+            "buttons": [
+              "b"
+            ],
             "inputType": "Tap"
           }
         ]
@@ -601,14 +727,20 @@
       {
         "handheld": [
           {
-            "buttons": ["left-stick", "b"],
+            "buttons": [
+              "left-stick",
+              "b"
+            ],
             "direction": "right",
             "inputType": "Hold"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["stick", "b"],
+            "buttons": [
+              "stick",
+              "b"
+            ],
             "direction": "right",
             "inputType": "Hold"
           }
@@ -637,24 +769,34 @@
         },
         "handheld": [
           {
-            "buttons": ["left-stick", "b"],
+            "buttons": [
+              "left-stick",
+              "b"
+            ],
             "direction": "up",
             "inputType": "Tap"
           },
           {
-            "buttons": ["left-stick"],
+            "buttons": [
+              "left-stick"
+            ],
             "direction": "right",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["stick", "b"],
+            "buttons": [
+              "stick",
+              "b"
+            ],
             "direction": "up",
             "inputType": "Tap"
           },
           {
-            "buttons": ["stick"],
+            "buttons": [
+              "stick"
+            ],
             "direction": "right",
             "inputType": "Tap"
           }
@@ -667,24 +809,34 @@
         },
         "handheld": [
           {
-            "buttons": ["left-stick", "b"],
+            "buttons": [
+              "left-stick",
+              "b"
+            ],
             "direction": "up",
             "inputType": "Tap"
           },
           {
-            "buttons": ["left-stick"],
+            "buttons": [
+              "left-stick"
+            ],
             "direction": "up",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["stick", "b"],
+            "buttons": [
+              "stick",
+              "b"
+            ],
             "direction": "up",
             "inputType": "Tap"
           },
           {
-            "buttons": ["stick"],
+            "buttons": [
+              "stick"
+            ],
             "direction": "up",
             "inputType": "Tap"
           }
@@ -709,14 +861,20 @@
       {
         "handheld": [
           {
-            "buttons": ["left-stick", "b"],
+            "buttons": [
+              "left-stick",
+              "b"
+            ],
             "direction": "down",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["stick", "b"],
+            "buttons": [
+              "stick",
+              "b"
+            ],
             "direction": "down",
             "inputType": "Tap"
           }
@@ -741,11 +899,16 @@
       {
         "handheld": [
           {
-            "buttons": ["l"],
+            "buttons": [
+              "l"
+            ],
             "inputType": "Hold"
           },
           {
-            "buttons": ["l", "a"],
+            "buttons": [
+              "l",
+              "a"
+            ],
             "buttonInputTypes": {
               "l": "Hold",
               "a": "Tap"
@@ -754,11 +917,16 @@
         ],
         "single-joycon": [
           {
-            "buttons": ["sl"],
+            "buttons": [
+              "sl"
+            ],
             "inputType": "Hold"
           },
           {
-            "buttons": ["sl", "a"],
+            "buttons": [
+              "sl",
+              "a"
+            ],
             "buttonInputTypes": {
               "sl": "Hold",
               "a": "Tap"
@@ -789,22 +957,30 @@
       {
         "handheld": [
           {
-            "buttons": ["l"],
+            "buttons": [
+              "l"
+            ],
             "inputType": "Hold"
           },
           {
-            "buttons": ["left-stick"],
+            "buttons": [
+              "left-stick"
+            ],
             "direction": "right",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["sl"],
+            "buttons": [
+              "sl"
+            ],
             "inputType": "Hold"
           },
           {
-            "buttons": ["stick"],
+            "buttons": [
+              "stick"
+            ],
             "direction": "right",
             "inputType": "Tap"
           }
@@ -833,22 +1009,30 @@
       {
         "handheld": [
           {
-            "buttons": ["l"],
+            "buttons": [
+              "l"
+            ],
             "inputType": "Hold"
           },
           {
-            "buttons": ["left-stick"],
+            "buttons": [
+              "left-stick"
+            ],
             "direction": "left",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["sl"],
+            "buttons": [
+              "sl"
+            ],
             "inputType": "Hold"
           },
           {
-            "buttons": ["stick"],
+            "buttons": [
+              "stick"
+            ],
             "direction": "left",
             "inputType": "Tap"
           }
@@ -877,22 +1061,30 @@
       {
         "handheld": [
           {
-            "buttons": ["l"],
+            "buttons": [
+              "l"
+            ],
             "inputType": "Hold"
           },
           {
-            "buttons": ["left-stick"],
+            "buttons": [
+              "left-stick"
+            ],
             "direction": "up",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["sl"],
+            "buttons": [
+              "sl"
+            ],
             "inputType": "Hold"
           },
           {
-            "buttons": ["stick"],
+            "buttons": [
+              "stick"
+            ],
             "direction": "up",
             "inputType": "Tap"
           }
@@ -921,22 +1113,30 @@
       {
         "handheld": [
           {
-            "buttons": ["l"],
+            "buttons": [
+              "l"
+            ],
             "inputType": "Hold"
           },
           {
-            "buttons": ["left-stick"],
+            "buttons": [
+              "left-stick"
+            ],
             "direction": "down",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["sl"],
+            "buttons": [
+              "sl"
+            ],
             "inputType": "Hold"
           },
           {
-            "buttons": ["stick"],
+            "buttons": [
+              "stick"
+            ],
             "direction": "down",
             "inputType": "Tap"
           }
@@ -961,13 +1161,17 @@
       {
         "handheld": [
           {
-            "buttons": ["a"],
+            "buttons": [
+              "a"
+            ],
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["a"],
+            "buttons": [
+              "a"
+            ],
             "inputType": "Tap"
           }
         ]
@@ -991,13 +1195,17 @@
       {
         "handheld": [
           {
-            "buttons": ["a"],
+            "buttons": [
+              "a"
+            ],
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["a"],
+            "buttons": [
+              "a"
+            ],
             "inputType": "Tap"
           }
         ]
@@ -1021,13 +1229,17 @@
       {
         "handheld": [
           {
-            "buttons": ["a"],
+            "buttons": [
+              "a"
+            ],
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["a"],
+            "buttons": [
+              "a"
+            ],
             "inputType": "Tap"
           }
         ]
@@ -1051,13 +1263,17 @@
       {
         "handheld": [
           {
-            "buttons": ["a"],
+            "buttons": [
+              "a"
+            ],
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["a"],
+            "buttons": [
+              "a"
+            ],
             "inputType": "Tap"
           }
         ]
@@ -1081,13 +1297,17 @@
       {
         "handheld": [
           {
-            "buttons": ["b"],
+            "buttons": [
+              "b"
+            ],
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["b"],
+            "buttons": [
+              "b"
+            ],
             "inputType": "Tap"
           }
         ]

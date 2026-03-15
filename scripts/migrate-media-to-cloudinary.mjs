@@ -23,7 +23,8 @@ import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
 import { fileURLToPath } from "node:url";
-import { spawnSync } from "node:child_process";
+import { createRequire } from "node:module";
+const require = createRequire(import.meta.url);
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -126,41 +127,44 @@ function guessExtension(url, contentType) {
 const MAX_CLOUDINARY_BYTES = 10 * 1024 * 1024; // 10MB
 
 /**
- * Compress a GIF file using gifsicle if it exceeds Cloudinary's size limit.
- * Tries progressively more aggressive lossy compression until it fits.
- * Returns the path to the (possibly compressed) file.
+ * Compress an animated image (GIF or WebP) using sharp if it exceeds Cloudinary's size limit.
+ * Tries progressively smaller scales until file fits under 10MB.
+ * Returns the path to the (possibly compressed) GIF file.
  */
-function compressGifIfNeeded(filePath) {
-  const ext = path.extname(filePath).toLowerCase();
-  if (ext !== ".gif") return filePath;
-
+async function compressIfNeeded(filePath) {
   const size = fs.statSync(filePath).size;
   if (size <= MAX_CLOUDINARY_BYTES) return filePath;
 
-  // Check gifsicle is available
-  const check = spawnSync("gifsicle", ["--version"], { stdio: "ignore" });
-  if (check.error) {
-    console.warn("  ⚠ gifsicle not found — skipping compression");
+  let sharp;
+  try {
+    sharp = require("sharp");
+  } catch {
+    console.warn("  ⚠ sharp not found — skipping compression");
     return filePath;
   }
 
-  const compressedPath = filePath.replace(/\.gif$/, "-compressed.gif");
+  const compressedPath = filePath.replace(/\.[^.]+$/, "-compressed.gif");
 
-  for (const lossy of [30, 60, 100, 150, 200]) {
-    spawnSync(
-      "gifsicle",
-      ["-O3", `--lossy=${lossy}`, "--colors", "128", filePath, "-o", compressedPath],
-      { stdio: "ignore" },
-    );
-    const newSize = fs.statSync(compressedPath).size;
-    console.log(
-      `  ↓ Compressed (lossy=${lossy}): ${(size / 1024 / 1024).toFixed(1)}MB → ${(newSize / 1024 / 1024).toFixed(1)}MB`,
-    );
-    if (newSize <= MAX_CLOUDINARY_BYTES) return compressedPath;
+  // Try full-size first (sharp's GIF optimizer alone often cuts 30-50%)
+  for (const scale of [null, 0.75, 0.6, 0.5, 0.4]) {
+    try {
+      let pipeline = sharp(filePath, { animated: true });
+      if (scale !== null) pipeline = pipeline.resize({ width: Math.round(1000 * scale), withoutEnlargement: true });
+      await pipeline.gif({ effort: 7, colours: 128 }).toFile(compressedPath);
+
+      const newSize = fs.statSync(compressedPath).size;
+      const label = scale === null ? "optimized" : `scale=${scale}`;
+      console.log(
+        `  ↓ Compressed (${label}): ${(size / 1024 / 1024).toFixed(1)}MB → ${(newSize / 1024 / 1024).toFixed(1)}MB`,
+      );
+      if (newSize <= MAX_CLOUDINARY_BYTES) return compressedPath;
+    } catch (err) {
+      console.warn(`  ⚠ sharp failed (scale=${scale}): ${err.message}`);
+    }
   }
 
-  console.warn("  ⚠ Could not compress GIF below 10MB — upload may fail");
-  return compressedPath;
+  console.warn("  ⚠ Could not compress below 10MB — uploading original (may fail)");
+  return filePath;
 }
 
 /**
@@ -225,7 +229,7 @@ async function migrateAsset(url, publicId, stats) {
   try {
     console.log(`  Downloading: ${url}`);
     ({ tempPath } = await downloadFile(url));
-    const uploadPath = compressGifIfNeeded(tempPath);
+    const uploadPath = await compressIfNeeded(tempPath);
     console.log(`  Uploading: help-me-play/${publicId}`);
     const cloudinaryUrl = await uploadToCloudinary(uploadPath, publicId, "image");
     stats.migrated++;
@@ -237,7 +241,7 @@ async function migrateAsset(url, publicId, stats) {
     return null;
   } finally {
     if (tempPath && fs.existsSync(tempPath)) fs.unlinkSync(tempPath);
-    const compressedPath = tempPath?.replace(/\.gif$/, "-compressed.gif");
+    const compressedPath = tempPath?.replace(/\.(gif|webp)$/i, "-compressed.gif");
     if (compressedPath && compressedPath !== tempPath && fs.existsSync(compressedPath)) {
       fs.unlinkSync(compressedPath);
     }

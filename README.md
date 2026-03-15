@@ -1,17 +1,10 @@
-<p align="center">
-  <img src="public/logo.svg" alt="Coding Friend Logo" width="100" />
-</p>
 
-<h1 align="center">Help Me Play</h1>
 
-<p align="center">
-  Visual guides for Nintendo Switch games. Learn character combos with interactive Joy-Con button visualizations alongside video/GIF demonstrations.
-</p>
+# Help Me Play
 
-<p align="center">
-  <a href="https://hmp.dinhanhthi.com">Website</a> ·
-  <a href="https://github.com/dinhanhthi/help-me-play/issues">Report Bug</a>
-</p>
+Visual guides for Nintendo Switch games. Learn character combos with interactive Joy-Con button visualizations alongside video/GIF demonstrations.
+
+[Website](https://hmp.dinhanhthi.com) · [Report Bug](https://github.com/dinhanhthi/help-me-play/issues)
 
 ## Features
 
@@ -82,6 +75,9 @@ npm run migrate:dry
 
 # Run migration (requires Cloudinary credentials)
 CLOUDINARY_CLOUD_NAME=xxx CLOUDINARY_API_KEY=xxx CLOUDINARY_API_SECRET=xxx npm run migrate
+
+# Or
+npx dotenv-cli -e .env.local -- npm run migrate
 ```
 
 The script skips URLs already on Cloudinary and preserves the original URL in a `sourceUrl` field for move media.

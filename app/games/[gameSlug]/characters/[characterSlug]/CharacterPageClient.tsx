@@ -13,6 +13,8 @@ import {
   Play,
   ChevronLeft,
   RotateCcw,
+  Gamepad2,
+  Gamepad,
 } from "lucide-react";
 import type { ControllerMode, Move } from "@/lib/types";
 import { useI18n } from "@/lib/i18n/context";
@@ -85,7 +87,15 @@ function MoveCard({
     buttonInputTypes: undefined,
   });
 
-  const { currentStep, stepCount, isPlaying, activeButtons, direction, inputType, buttonInputTypes } = comboState;
+  const {
+    currentStep,
+    stepCount,
+    isPlaying,
+    activeButtons,
+    direction,
+    inputType,
+    buttonInputTypes,
+  } = comboState;
 
   return (
     <div className="overflow-hidden rounded-2xl border border-border bg-card flex flex-col">
@@ -174,7 +184,10 @@ function MoveCard({
               orderedItems.forEach((item) => {
                 if (items.length > 0)
                   items.push(
-                    <span key={`plus-${item.type === "dir" ? "dir" : item.id}`} className="text-sm text-muted">
+                    <span
+                      key={`plus-${item.type === "dir" ? "dir" : item.id}`}
+                      className="text-sm text-muted"
+                    >
                       +
                     </span>,
                   );
@@ -211,7 +224,7 @@ function MoveCard({
                   const btnSpan = (
                     <span
                       key={item.id}
-                      className="inline-flex h-5 min-w-5 px-1 items-center justify-center rounded-full font-mono text-sm font-bold text-white text-shadow-lg"
+                      className="inline-flex h-5 min-w-5 px-1 items-center justify-center rounded-full font-mono text-xs font-bold text-white text-shadow-lg"
                       style={{ backgroundColor: btnColor }}
                     >
                       {getButtonLabel(item.id)}
@@ -493,6 +506,31 @@ export default function CharacterPageClient({
           <p className="text-sm text-muted">{t.character.noMoves}</p>
         </div>
       )}
+
+      {/* Floating mode switcher */}
+      <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-1.5 opacity-30 transition-opacity duration-200 hover:opacity-100">
+        {(["single-joycon", "handheld"] as ControllerMode[]).map((m) => {
+          const isActive = mode === m;
+          return (
+            <button
+              key={m}
+              onClick={() => setMode(m)}
+              aria-label={m === "handheld" ? t.controls.handheldMode : t.controls.singleJoyCon}
+              className={`cursor-pointer flex h-10 w-10 items-center justify-center rounded-xl border transition-all ${
+                isActive
+                  ? "border-accent bg-accent text-white shadow-lg"
+                  : "border-border bg-surface text-muted hover:text-foreground hover:border-border-hover"
+              }`}
+            >
+              {m === "handheld" ? (
+                <Gamepad2 className="h-5 w-5" />
+              ) : (
+                <Gamepad className="h-5 w-5" />
+              )}
+            </button>
+          );
+        })}
+      </div>
     </div>
   );
 }

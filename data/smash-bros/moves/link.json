@@ -1,95 +1,139 @@
 [
   {
-    "id": "bow-and-arrows",
+    "id": "jab",
     "name": {
-      "en": "Bow and Arrows",
-      "vi": "Cung và Tên"
+      "en": "Neutral Attack (Jab)",
+      "vi": "Đấm liên hoàn (Jab)"
     },
     "description": {
-      "en": "Link draws his bow and fires an arrow. Hold B to charge for more damage and distance.",
-      "vi": "Link rút cung và bắn tên. Giữ B để tích lực, gây thêm sát thương và bắn xa hơn."
+      "en": "A three-hit combo: two sword slashes followed by a forward thrust. Hit 1: 3%, Hit 2: 3%, Hit 3: 4%. Startup frame 7. The final hit semi-spikes, making it useful near ledges.",
+      "vi": "Combo 3 đòn: hai nhát chém kiếm rồi đâm thẳng. Đòn 1: 3%, Đòn 2: 3%, Đòn 3: 4%. Ra đòn frame 7. Đòn cuối semi-spike, hữu ích gần mép sân."
     },
-    "category": "special",
-    "combos": [
-      {
-        "handheld": [{ "buttons": ["b"], "inputType": "Hold", "duration": 1500 }],
-        "single-joycon": [{ "buttons": ["b"], "inputType": "Hold", "duration": 1500 }]
-      }
-    ],
-    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-link-bow"
-  },
-  {
-    "id": "boomerang",
-    "name": {
-      "en": "Boomerang",
-      "vi": "Boomerang"
-    },
-    "description": {
-      "en": "Link throws a boomerang forward. It returns on the way back, hitting opponents twice.",
-      "vi": "Link ném boomerang về phía trước. Nó quay lại trên đường về, đánh trúng đối thủ hai lần."
-    },
-    "category": "special",
-    "combos": [
-      {
-        "handheld": [{ "buttons": ["left-stick", "b"], "direction": "left", "inputType": "Tap" }],
-        "single-joycon": [{ "buttons": ["stick", "b"], "direction": "left", "inputType": "Tap" }]
-      }
-    ],
-    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-link-boomerang"
-  },
-  {
-    "id": "spin-attack",
-    "name": {
-      "en": "Spin Attack",
-      "vi": "Chém Xoay (Spin Attack)"
-    },
-    "description": {
-      "en": "Link spins with his sword, hitting all around him. In the air, it provides recovery.",
-      "vi": "Link xoay kiếm, chém tất cả xung quanh. Khi ở trên không, chiêu này giúp hồi phục vị trí."
-    },
-    "category": "special",
-    "combos": [
-      {
-        "handheld": [{ "buttons": ["left-stick", "b"], "direction": "up", "inputType": "Tap" }],
-        "single-joycon": [{ "buttons": ["stick", "b"], "direction": "up", "inputType": "Tap" }]
-      }
-    ],
-    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-link-spinattack"
-  },
-  {
-    "id": "remote-bomb",
-    "name": {
-      "en": "Remote Bomb",
-      "vi": "Bom Điều Khiển (Remote Bomb)"
-    },
-    "description": {
-      "en": "Link places a remote bomb. Press Down-B again to detonate it.",
-      "vi": "Link đặt một quả bom điều khiển từ xa. Nhấn Xuống-B lần nữa để kích nổ."
-    },
-    "category": "special",
+    "category": "ground",
     "combos": [
       {
         "handheld": [
-          { "buttons": ["left-stick", "b"], "direction": "down", "inputType": "Tap" },
-          { "buttons": ["left-stick", "b"], "direction": "down", "inputType": "Tap" }
+          { "buttons": ["a"], "inputType": "Tap" },
+          { "buttons": ["a"], "inputType": "Tap" },
+          { "buttons": ["a"], "inputType": "Tap" }
         ],
         "single-joycon": [
-          { "buttons": ["stick", "b"], "direction": "down", "inputType": "Tap" },
-          { "buttons": ["stick", "b"], "direction": "down", "inputType": "Tap" }
+          { "buttons": ["a"], "inputType": "Tap" },
+          { "buttons": ["a"], "inputType": "Tap" },
+          { "buttons": ["a"], "inputType": "Tap" }
         ]
       }
     ],
-    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-link-bomb"
+    "mediaUrl": "https://ssb.wiki.gallery/images/0/07/LinkJab1SSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/0/07/LinkJab1SSBU.gif"
+  },
+  {
+    "id": "dash-attack",
+    "name": {
+      "en": "Dash Attack",
+      "vi": "Đòn tấn công khi chạy (Dash Attack)"
+    },
+    "description": {
+      "en": "Link leaps forward with a downward slash. 14% (tip) / 13% (blade) / 12% (body). Startup frame 20. One of the strongest dash attacks in the game, KOs around 110%.",
+      "vi": "Link nhảy lên và chém xuống khi đang chạy. 14% (đầu kiếm) / 13% (thân kiếm) / 12% (tay). Ra đòn frame 20. Một trong những đòn dash mạnh nhất trong game, hạ gục ở khoảng 110%."
+    },
+    "category": "ground",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["left-stick"], "direction": "right", "inputType": "Hold" },
+          { "buttons": ["left-stick", "a"], "direction": "right", "buttonInputTypes": { "left-stick": "Hold", "a": "Tap" } }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick"], "direction": "right", "inputType": "Hold" },
+          { "buttons": ["stick", "a"], "direction": "right", "buttonInputTypes": { "stick": "Hold", "a": "Tap" } }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/d/d0/LinkDashAttackSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/d/d0/LinkDashAttackSSBU.gif"
+  },
+  {
+    "id": "forward-tilt",
+    "name": {
+      "en": "Forward Tilt",
+      "vi": "Đá nghiêng trước (Forward Tilt)"
+    },
+    "description": {
+      "en": "A lunging downward diagonal slash with long reach. 13% damage. Startup frame 15. Excellent range but slow for a tilt. Good for spacing and catching approaches.",
+      "vi": "Chém chéo xuống với tầm với dài. 13% sát thương. Ra đòn frame 15. Tầm với xuất sắc nhưng chậm so với tilt. Tốt để kiểm soát khoảng cách và chặn đầu đối thủ tiếp cận."
+    },
+    "category": "tilt",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["left-stick", "a"], "direction": "right", "inputType": "Tilt" }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick", "a"], "direction": "right", "inputType": "Tilt" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/8/80/LinkFTiltSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/8/80/LinkFTiltSSBU.gif"
+  },
+  {
+    "id": "up-tilt",
+    "name": {
+      "en": "Up Tilt",
+      "vi": "Đá nghiêng trên (Up Tilt)"
+    },
+    "description": {
+      "en": "An overhead arcing sword swing. 11% damage. Startup frame 8. Strong juggling tool with good vertical range. Combos into aerials at low to mid percent.",
+      "vi": "Chém kiếm vòng cung lên trên. 11% sát thương. Ra đòn frame 8. Công cụ tung hứng tốt với tầm dọc cao. Combo vào đòn không trung ở % thấp đến trung bình."
+    },
+    "category": "tilt",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Tilt" }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick", "a"], "direction": "up", "inputType": "Tilt" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/a/ac/LinkUTiltSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/a/ac/LinkUTiltSSBU.gif"
+  },
+  {
+    "id": "down-tilt",
+    "name": {
+      "en": "Down Tilt",
+      "vi": "Đá nghiêng dưới (Down Tilt)"
+    },
+    "description": {
+      "en": "A kneeling inward sword slash. 9% damage. Startup frame 10. Low profile, combos into aerials at low percents. Useful for poking at opponents' feet.",
+      "vi": "Chém kiếm vào trong khi quỳ. 9% sát thương. Ra đòn frame 10. Thấp người, combo vào đòn không trung ở % thấp. Hữu ích để chọc vào chân đối thủ."
+    },
+    "category": "tilt",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["left-stick", "a"], "direction": "down", "inputType": "Tilt" }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick", "a"], "direction": "down", "inputType": "Tilt" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/f/fb/LinkDTiltSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/f/fb/LinkDTiltSSBU.gif"
   },
   {
     "id": "forward-smash",
     "name": {
       "en": "Forward Smash",
-      "vi": "Đánh Mạnh Trước (Forward Smash)"
+      "vi": "Smash trước (Forward Smash)"
     },
     "description": {
-      "en": "A two-hit sword slash. First hit can combo into the second for big damage.",
-      "vi": "Chém kiếm hai nhát liên tiếp. Nhát đầu có thể combo sang nhát thứ hai để gây sát thương lớn."
+      "en": "A two-hit forward slash: 7%–14% (hit 1, body to tip) + up to 13% (hit 2). Startup frame 17. At low damage, emits a Sword Beam projectile. Strong KO move, especially at ledge.",
+      "vi": "Chém hai nhát về phía trước: 7%–14% (nhát 1, tay đến đầu kiếm) + tối đa 13% (nhát 2). Ra đòn frame 17. Ở % thấp, bắn ra tia kiếm projectile. Đòn hạ gục mạnh, đặc biệt ở mép sân."
     },
     "category": "smash",
     "combos": [
@@ -102,8 +146,587 @@
           { "buttons": ["stick", "a"], "direction": "right", "inputType": "Smash" },
           { "buttons": ["a"], "inputType": "Tap" }
         ]
+      },
+      {
+        "handheld": [
+          { "buttons": ["right-stick"], "direction": "right", "inputType": "Smash" },
+          { "buttons": ["a"], "inputType": "Tap" }
+        ]
       }
     ],
-    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-link-fsmash"
+    "mediaUrl": "https://ssb.wiki.gallery/images/6/6c/LinkFSmash1SSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/6/6c/LinkFSmash1SSBU.gif"
+  },
+  {
+    "id": "up-smash",
+    "name": {
+      "en": "Up Smash",
+      "vi": "Smash trên (Up Smash)"
+    },
+    "description": {
+      "en": "Three rapid overhead sword slashes. 4% + 3% + 9%–11% (tip). Startup frame 9. KOs under 100% near the top blast zone. Great anti-air and out-of-shield option.",
+      "vi": "Ba nhát chém kiếm nhanh lên trên đầu. 4% + 3% + 9%–11% (đầu kiếm). Ra đòn frame 9. Hạ gục dưới 100% gần vùng nổ trên. Chống không tuyệt vời và thoát khiên hiệu quả."
+    },
+    "category": "smash",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Smash" }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick", "a"], "direction": "up", "inputType": "Smash" }
+        ]
+      },
+      {
+        "handheld": [
+          { "buttons": ["right-stick"], "direction": "up", "inputType": "Smash" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/9/97/LinkUSmashSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/9/97/LinkUSmashSSBU.gif"
+  },
+  {
+    "id": "down-smash",
+    "name": {
+      "en": "Down Smash",
+      "vi": "Smash dưới (Down Smash)"
+    },
+    "description": {
+      "en": "A wide sword sweep hitting front then back. 17%–14% (front) / 12%–10% (back). Startup frame 12. Back hit semi-spikes, extremely effective near ledges for edgeguarding.",
+      "vi": "Chém kiếm quét rộng ra trước rồi ra sau. 17%–14% (trước) / 12%–10% (sau). Ra đòn frame 12. Đòn sau semi-spike, cực kỳ hiệu quả gần mép sân để canh edgeguard."
+    },
+    "category": "smash",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["left-stick", "a"], "direction": "down", "inputType": "Smash" }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick", "a"], "direction": "down", "inputType": "Smash" }
+        ]
+      },
+      {
+        "handheld": [
+          { "buttons": ["right-stick"], "direction": "down", "inputType": "Smash" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/a/ac/LinkDSmashSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/a/ac/LinkDSmashSSBU.gif"
+  },
+  {
+    "id": "neutral-air",
+    "name": {
+      "en": "Neutral Air (Sex Kick)",
+      "vi": "Đòn không trung trung tính (Sex Kick)"
+    },
+    "description": {
+      "en": "An extended kick hitbox. 11% (clean foot) / 9% (clean leg) / 6% (late). Startup frame 7. Great spacing tool in the air, safe landing option, autocancels in short hop.",
+      "vi": "Đá kéo dài hitbox. 11% (bàn chân sớm) / 9% (ống chân sớm) / 6% (muộn). Ra đòn frame 7. Công cụ giữ khoảng cách tốt trên không, an toàn khi tiếp đất, tự hủy lag khi nhảy ngắn."
+    },
+    "category": "aerial",
+    "combos": [
+      {
+        "label": { "en": "Stand", "vi": "Đứng" },
+        "handheld": [
+          { "buttons": ["x"], "inputType": "Tap" },
+          { "buttons": ["a"], "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["x"], "inputType": "Tap" },
+          { "buttons": ["a"], "inputType": "Tap" }
+        ]
+      },
+      {
+        "label": { "en": "Move", "vi": "Chạy" },
+        "handheld": [
+          { "buttons": ["left-stick", "x"], "direction": "right", "buttonInputTypes": { "left-stick": "Hold", "x": "Tap" } },
+          { "buttons": ["a"], "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick", "x"], "direction": "right", "buttonInputTypes": { "stick": "Hold", "x": "Tap" } },
+          { "buttons": ["a"], "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/5/52/LinkNAirSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/5/52/LinkNAirSSBU.gif"
+  },
+  {
+    "id": "forward-air",
+    "name": {
+      "en": "Forward Air",
+      "vi": "Đòn không trung trước (Forward Air)"
+    },
+    "description": {
+      "en": "Two-hit spinning sword slash. 8% (hit 1) + 10% (hit 2). Startup frame 16. Reliable combo finisher and KO option off-stage. Both hits must connect for maximum damage.",
+      "vi": "Chém kiếm xoay hai nhát. 8% (nhát 1) + 10% (nhát 2). Ra đòn frame 16. Kết thúc combo và hạ gục ngoài sân đáng tin cậy. Phải trúng cả hai nhát để gây sát thương tối đa."
+    },
+    "category": "aerial",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["left-stick", "x"], "direction": "right", "buttonInputTypes": { "left-stick": "Hold", "x": "Tap" } },
+          { "buttons": ["left-stick", "a"], "direction": "right", "buttonInputTypes": { "left-stick": "Hold", "a": "Tap" } }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick", "x"], "direction": "right", "buttonInputTypes": { "stick": "Hold", "x": "Tap" } },
+          { "buttons": ["stick", "a"], "direction": "right", "buttonInputTypes": { "stick": "Hold", "a": "Tap" } }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/3/3a/LinkFAirSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/3/3a/LinkFAirSSBU.gif"
+  },
+  {
+    "id": "back-air",
+    "name": {
+      "en": "Back Air",
+      "vi": "Đòn không trung sau (Back Air)"
+    },
+    "description": {
+      "en": "A two-hit backwards kick. 5% (hit 1) + 7% (hit 2). Startup frame 6. Link's fastest aerial. Can combo into itself at low percents, excellent for edgeguarding.",
+      "vi": "Đá về sau hai lần. 5% (lần 1) + 7% (lần 2). Ra đòn frame 6. Đòn trên không nhanh nhất của Link. Có thể combo vào chính nó ở % thấp, xuất sắc để canh edgeguard."
+    },
+    "category": "aerial",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["left-stick", "x"], "direction": "right", "inputType": "Tap" },
+          { "buttons": ["left-stick", "a"], "direction": "left", "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick", "x"], "direction": "right", "inputType": "Tap" },
+          { "buttons": ["stick", "a"], "direction": "left", "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/8/83/LinkBAirSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/8/83/LinkBAirSSBU.gif"
+  },
+  {
+    "id": "up-air",
+    "name": {
+      "en": "Up Air",
+      "vi": "Đòn không trung trên (Up Air)"
+    },
+    "description": {
+      "en": "An upward sword thrust. 15% (clean) / 13% (late). Startup frame 11. Long-lasting hitbox excellent for juggling and KOs at high percent off the top blast zone.",
+      "vi": "Đâm kiếm thẳng lên trên. 15% (sớm) / 13% (muộn). Ra đòn frame 11. Hitbox kéo dài lâu, xuất sắc để tung hứng và hạ gục ở % cao từ vùng nổ trên."
+    },
+    "category": "aerial",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["x"], "inputType": "Tap" },
+          { "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["x"], "inputType": "Tap" },
+          { "buttons": ["stick", "a"], "direction": "up", "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/b/b0/LinkUAirSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/b/b0/LinkUAirSSBU.gif"
+  },
+  {
+    "id": "down-air",
+    "name": {
+      "en": "Down Air (Meteor Smash)",
+      "vi": "Đòn không trung dưới (Meteor Smash)"
+    },
+    "description": {
+      "en": "A powerful downward sword stab. 18% (clean) / 15% (late) / 11% (bounce). Startup frame 11. METEOR SMASH on aerial targets. KOs grounded opponents around 125%.",
+      "vi": "Đâm kiếm mạnh thẳng xuống. 18% (sớm) / 15% (muộn) / 11% (nảy). Ra đòn frame 11. METEOR SMASH khi trúng đối thủ trên không. Hạ gục đối thủ đứng đất ở khoảng 125%."
+    },
+    "category": "aerial",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["x"], "inputType": "Tap" },
+          { "buttons": ["left-stick", "a"], "direction": "down", "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["x"], "inputType": "Tap" },
+          { "buttons": ["stick", "a"], "direction": "down", "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/d/d6/LinkDAirSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/d/d6/LinkDAirSSBU.gif"
+  },
+  {
+    "id": "bow-and-arrows",
+    "name": {
+      "en": "Bow and Arrows",
+      "vi": "Cung và Tên (Bow and Arrows)"
+    },
+    "description": {
+      "en": "Link fires an arrow. Hold B to charge — uncharged: 4%, fully charged: 12%. Two arrows fired at once when fully charged for up to 18% total. Arrows can be picked up and thrown for 2–4%. Startup frame 17.",
+      "vi": "Link bắn tên. Giữ B để tích lực — không tích: 4%, tích tối đa: 12%. Khi tích đầy bắn hai tên cùng lúc gây tối đa 18% tổng. Tên có thể nhặt lên và ném gây 2–4%. Ra đòn frame 17."
+    },
+    "category": "special",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["b"], "inputType": "Hold" }
+        ],
+        "single-joycon": [
+          { "buttons": ["b"], "inputType": "Hold" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/f/f7/Link_Neutral_B_SSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/f/f7/Link_Neutral_B_SSBU.gif"
+  },
+  {
+    "id": "boomerang",
+    "name": {
+      "en": "Boomerang",
+      "vi": "Boomerang"
+    },
+    "description": {
+      "en": "Link throws a boomerang that arcs and returns. 8% (close) / 6% (far) going out; 3% on return. Smash-thrown version deals up to 9.6%. Can be angled. Returns hits opponents twice.",
+      "vi": "Link ném boomerang cong vòng rồi quay lại. 8% (gần) / 6% (xa) khi ném ra; 3% khi quay về. Phiên bản smash-thrown gây tối đa 9.6%. Có thể chỉnh hướng. Đánh trúng đối thủ hai lần."
+    },
+    "category": "special",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["left-stick", "b"], "direction": "right", "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick", "b"], "direction": "right", "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/f/f0/Link_Side_B_SSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/f/f0/Link_Side_B_SSBU.gif"
+  },
+  {
+    "id": "spin-attack",
+    "name": {
+      "en": "Spin Attack",
+      "vi": "Chém Xoay (Spin Attack)"
+    },
+    "description": {
+      "en": "Link spins with his sword hitting all around. Grounded: 14%–7% (multi-hit), fast out-of-shield option, KOs ~120%. Aerial: 5-hit recovery move (4% + 2%×3 + 4%), provides vertical recovery.",
+      "vi": "Link xoay kiếm chém khắp xung quanh. Dưới đất: 14%–7% (đánh nhiều lần), thoát khiên nhanh, hạ gục ~120%. Trên không: đòn hồi phục 5 nhát (4% + 2%×3 + 4%), giúp lên cao."
+    },
+    "category": "special",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["left-stick", "b"], "direction": "up", "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick", "b"], "direction": "up", "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/a/ab/Link_Up_B_SSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/a/ab/Link_Up_B_SSBU.gif"
+  },
+  {
+    "id": "remote-bomb",
+    "name": {
+      "en": "Remote Bomb",
+      "vi": "Bom Điều Khiển (Remote Bomb)"
+    },
+    "description": {
+      "en": "Link places a Remote Bomb (1% on throw impact). Press Down Special again to detonate for 7% damage. Bomb persists ~30 seconds. Excellent for stage control and edgeguarding. KOs around 180% when detonated.",
+      "vi": "Link đặt bom điều khiển từ xa (1% khi ném va chạm). Nhấn Xuống Special lần nữa để kích nổ gây 7%. Bom tồn tại ~30 giây. Xuất sắc để kiểm soát sân và canh mép. Hạ gục ở khoảng 180% khi nổ."
+    },
+    "category": "special",
+    "combos": [
+      {
+        "label": { "en": "Place bomb", "vi": "Đặt bom" },
+        "handheld": [
+          { "buttons": ["left-stick", "b"], "direction": "down", "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick", "b"], "direction": "down", "inputType": "Tap" }
+        ]
+      },
+      {
+        "label": { "en": "Detonate", "vi": "Kích nổ" },
+        "handheld": [
+          { "buttons": ["left-stick", "b"], "direction": "down", "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick", "b"], "direction": "down", "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/9/98/Link_Down_B_SSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/9/98/Link_Down_B_SSBU.gif"
+  },
+  {
+    "id": "pummel",
+    "name": {
+      "en": "Pummel",
+      "vi": "Đánh khi tóm (Pummel)"
+    },
+    "description": {
+      "en": "Link headbutts the grabbed opponent dealing 1.3% per hit. Fast enough for 2–3 pummels before throwing at most percents.",
+      "vi": "Link húc đầu vào đối thủ đang bị tóm gây 1.3% mỗi đòn. Đủ nhanh để đánh 2–3 lần trước khi ném ở hầu hết các mức %."
+    },
+    "category": "grab",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["l"], "inputType": "Hold" },
+          { "buttons": ["l", "a"], "buttonInputTypes": { "l": "Hold", "a": "Tap" } }
+        ],
+        "single-joycon": [
+          { "buttons": ["sl"], "inputType": "Hold" },
+          { "buttons": ["sl", "a"], "buttonInputTypes": { "sl": "Hold", "a": "Tap" } }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/7/79/LinkPummelSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/7/79/LinkPummelSSBU.gif"
+  },
+  {
+    "id": "forward-throw",
+    "name": {
+      "en": "Forward Throw",
+      "vi": "Ném trước (Forward Throw)"
+    },
+    "description": {
+      "en": "Link kicks the opponent forward. 3% (hit) + 2.5% (throw) = ~5.5% total. Launches at a low angle, useful for edgeguard setups and forcing opponent offstage.",
+      "vi": "Link đá đối thủ về phía trước. 3% (đá) + 2.5% (ném) = ~5.5% tổng. Bắn ở góc thấp, hữu ích để setup edgeguard và buộc đối thủ ra ngoài sân."
+    },
+    "tip": {
+      "en": "You can hold L/SL while pressing Right Stick to throw",
+      "vi": "Bạn có thể giữ L/SL trong khi nhấn Right Stick để ném"
+    },
+    "category": "grab",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["l"], "inputType": "Hold" },
+          { "buttons": ["left-stick"], "direction": "right", "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["sl"], "inputType": "Hold" },
+          { "buttons": ["stick"], "direction": "right", "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/6/66/LinkFThrowSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/6/66/LinkFThrowSSBU.gif"
+  },
+  {
+    "id": "back-throw",
+    "name": {
+      "en": "Back Throw",
+      "vi": "Ném sau (Back Throw)"
+    },
+    "description": {
+      "en": "Link kicks the opponent behind him. 3% (hit) + 2.5% (throw) = ~5.5% total. Slightly higher launch angle than forward throw. Good for putting opponents offstage.",
+      "vi": "Link đá đối thủ ra phía sau. 3% (đá) + 2.5% (ném) = ~5.5% tổng. Góc bắn cao hơn một chút so với ném trước. Tốt để đưa đối thủ ra ngoài sân."
+    },
+    "tip": {
+      "en": "You can hold L/SL while pressing Left Stick to throw",
+      "vi": "Bạn có thể giữ L/SL trong khi nhấn Left Stick để ném"
+    },
+    "category": "grab",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["l"], "inputType": "Hold" },
+          { "buttons": ["left-stick"], "direction": "left", "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["sl"], "inputType": "Hold" },
+          { "buttons": ["stick"], "direction": "left", "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/7/71/LinkBThrowSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/7/71/LinkBThrowSSBU.gif"
+  },
+  {
+    "id": "up-throw",
+    "name": {
+      "en": "Up Throw",
+      "vi": "Ném lên (Up Throw)"
+    },
+    "description": {
+      "en": "Link slashes upward to launch the opponent. 5% (blade) or 4% (tip) + 2% (throw) = ~7% total. KOs around 170%. Combo starter into up air at low to mid percents.",
+      "vi": "Link chém lên để tung đối thủ. 5% (thân kiếm) hoặc 4% (đầu kiếm) + 2% (ném) = ~7% tổng. Hạ gục ở khoảng 170%. Mở combo vào đòn không trung trên ở % thấp đến trung bình."
+    },
+    "tip": {
+      "en": "You can hold L/SL while pressing Right Stick to throw",
+      "vi": "Bạn có thể giữ L/SL trong khi nhấn Right Stick để ném"
+    },
+    "category": "grab",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["l"], "inputType": "Hold" },
+          { "buttons": ["left-stick"], "direction": "up", "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["sl"], "inputType": "Hold" },
+          { "buttons": ["stick"], "direction": "up", "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/b/b0/LinkUThrowSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/b/b0/LinkUThrowSSBU.gif"
+  },
+  {
+    "id": "down-throw",
+    "name": {
+      "en": "Down Throw",
+      "vi": "Ném xuống (Down Throw)"
+    },
+    "description": {
+      "en": "Link slams the opponent into the ground with his elbow. 3% (hit) + 3% (throw) = 6% total. Reliable combo starter into up tilt, up smash, or aerials at low to mid percents.",
+      "vi": "Link đập đối thủ xuống đất bằng cùi chỏ. 3% (đánh) + 3% (ném) = 6% tổng. Mở combo đáng tin cậy vào đá nghiêng trên, smash trên, hoặc đòn không trung ở % thấp đến trung bình."
+    },
+    "tip": {
+      "en": "You can hold L/SL while pressing Left Stick to throw",
+      "vi": "Bạn có thể giữ L/SL trong khi nhấn Left Stick để ném"
+    },
+    "category": "grab",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["l"], "inputType": "Hold" },
+          { "buttons": ["left-stick"], "direction": "down", "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["sl"], "inputType": "Hold" },
+          { "buttons": ["stick"], "direction": "down", "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/0/0a/LinkDThrowSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/0/0a/LinkDThrowSSBU.gif"
+  },
+  {
+    "id": "ledge-attack",
+    "name": {
+      "en": "Ledge Attack",
+      "vi": "Đòn tấn công từ mép sân (Ledge Attack)"
+    },
+    "description": {
+      "en": "Link stabs outward with his sword while climbing the ledge. 9% damage. Standard invincibility frames during animation. Good range for a ledge attack.",
+      "vi": "Link đâm kiếm ra ngoài khi leo lên từ mép sân. 9% sát thương. Frame bất tử tiêu chuẩn trong lúc thực hiện. Tầm với tốt cho một đòn ledge attack."
+    },
+    "category": "other",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["a"], "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["a"], "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/0/09/LinkLedgeAttackSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/0/09/LinkLedgeAttackSSBU.gif"
+  },
+  {
+    "id": "floor-attack-face-up",
+    "name": {
+      "en": "Floor Attack (Face Up)",
+      "vi": "Đòn đứng dậy (Ngửa mặt)"
+    },
+    "description": {
+      "en": "Link swings his sword while getting up face-up from the ground. 7% damage. Hits both in front and behind.",
+      "vi": "Link vung kiếm khi đứng dậy từ tư thế ngửa mặt. 7% sát thương. Đánh cả phía trước và phía sau."
+    },
+    "category": "other",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["a"], "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["a"], "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/4/4f/LinkGetupAttackFrontSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/4/4f/LinkGetupAttackFrontSSBU.gif"
+  },
+  {
+    "id": "floor-attack-face-down",
+    "name": {
+      "en": "Floor Attack (Face Down)",
+      "vi": "Đòn đứng dậy (Úp mặt)"
+    },
+    "description": {
+      "en": "Link swings his sword while getting up face-down from the ground. 7% damage. Hits both in front and behind.",
+      "vi": "Link vung kiếm khi đứng dậy từ tư thế úp mặt. 7% sát thương. Đánh cả phía trước và phía sau."
+    },
+    "category": "other",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["a"], "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["a"], "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/2/2c/LinkGetupAttackBackSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/2/2c/LinkGetupAttackBackSSBU.gif"
+  },
+  {
+    "id": "floor-attack-trip",
+    "name": {
+      "en": "Floor Attack (Trip)",
+      "vi": "Đòn đứng dậy (Vấp ngã)"
+    },
+    "description": {
+      "en": "Link swings his sword while getting up from a trip. 5% damage. Hits on both sides.",
+      "vi": "Link vung kiếm khi đứng dậy sau khi vấp ngã. 5% sát thương. Đánh cả hai bên."
+    },
+    "category": "other",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["a"], "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["a"], "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/f/f2/LinkTripAttackSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/f/f2/LinkTripAttackSSBU.gif"
+  },
+  {
+    "id": "ancient-bow-and-arrow",
+    "name": {
+      "en": "Ancient Bow and Arrow (Final Smash)",
+      "vi": "Cung Tên Cổ Đại (Final Smash)"
+    },
+    "description": {
+      "en": "Link fires a massive Ancient Arrow that travels the full stage width. 35% damage on direct hit. Detonates on impact, KOing opponents at any percent if caught directly. Requires Smash Ball or meter.",
+      "vi": "Link bắn một mũi tên cổ đại khổng lồ bay ngang toàn bộ sân đấu. 35% khi trúng trực tiếp. Nổ tung khi va chạm, hạ gục đối thủ ở bất kỳ % nào nếu bị dính trực tiếp. Cần Smash Ball hoặc thanh năng lượng."
+    },
+    "category": "other",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["b"], "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["b"], "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/c/c4/Link_Final_Smash_SSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/c/c4/Link_Final_Smash_SSBU.gif"
   }
 ]

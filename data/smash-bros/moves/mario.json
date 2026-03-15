@@ -62,22 +62,24 @@
           {
             "buttons": ["left-stick"],
             "direction": "right",
-            "inputType": "Tap"
+            "inputType": "Hold"
           },
           {
-            "buttons": ["a"],
-            "inputType": "Tap"
+            "buttons": ["left-stick", "a"],
+            "direction": "right",
+            "buttonInputTypes": { "left-stick": "Hold", "a": "Tap" }
           }
         ],
         "single-joycon": [
           {
             "buttons": ["stick"],
             "direction": "right",
-            "inputType": "Tap"
+            "inputType": "Hold"
           },
           {
-            "buttons": ["a"],
-            "inputType": "Tap"
+            "buttons": ["stick", "a"],
+            "direction": "right",
+            "buttonInputTypes": { "stick": "Hold", "a": "Tap" }
           }
         ]
       }
@@ -385,7 +387,7 @@
           {
             "buttons": ["left-stick", "x"],
             "direction": "right",
-            "inputType": "Tap"
+            "buttonInputTypes": { "left-stick": "Hold", "x": "Tap" }
           },
           {
             "buttons": ["a"],
@@ -396,7 +398,7 @@
           {
             "buttons": ["stick", "x"],
             "direction": "right",
-            "inputType": "Tap"
+            "buttonInputTypes": { "stick": "Hold", "x": "Tap" }
           },
           {
             "buttons": ["a"],
@@ -423,24 +425,26 @@
       {
         "handheld": [
           {
-            "buttons": ["x"],
-            "inputType": "Tap"
+            "buttons": ["left-stick", "x"],
+            "direction": "right",
+            "buttonInputTypes": { "left-stick": "Hold", "x": "Tap" }
           },
           {
             "buttons": ["left-stick", "a"],
             "direction": "right",
-            "inputType": "Tap"
+            "buttonInputTypes": { "left-stick": "Hold", "x": "Tap" }
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["x"],
-            "inputType": "Tap"
+            "buttons": ["stick", "x"],
+            "direction": "right",
+            "buttonInputTypes": { "stick": "Hold", "x": "Tap" }
           },
           {
             "buttons": ["stick", "a"],
             "direction": "right",
-            "inputType": "Tap"
+            "buttonInputTypes": { "stick": "Hold", "a": "Tap" }
           }
         ]
       }
@@ -645,24 +649,24 @@
           {
             "buttons": ["left-stick"],
             "direction": "right",
-            "inputType": "Tap"
+            "inputType": "Hold"
           },
           {
             "buttons": ["left-stick", "b"],
             "direction": "right",
-            "inputType": "Tap"
+            "buttonInputTypes": { "left-stick": "Hold", "b": "Tap" }
           }
         ],
         "single-joycon": [
           {
             "buttons": ["stick"],
             "direction": "right",
-            "inputType": "Tap"
+            "buttonInputTypes": { "stick": "Hold", "b": "Tap" }
           },
           {
             "buttons": ["stick", "b"],
             "direction": "right",
-            "inputType": "Tap"
+            "buttonInputTypes": { "stick": "Hold", "b": "Tap" }
           }
         ]
       }
@@ -782,6 +786,10 @@
       "en": "Spins opponent once and throws forward dealing 8%. Sets up tech chase situations. Not a primary KO throw but can KO near ledge at very high %.",
       "vi": "Xoay đối thủ một vòng và ném về trước gây 8% sát thương. Tạo tình huống tech chase. Không phải đòn ném hạ gục chính nhưng có thể hạ gục gần mép sân ở % rất cao."
     },
+    "tip": {
+      "en": "You can hold L/SL while pressing Right Stick to throw",
+      "vi": "Bạn có thể giữ L/SL trong khi nhấn Right Stick để ném"
+    },
     "category": "grab",
     "combos": [
       {
@@ -791,9 +799,9 @@
             "inputType": "Hold"
           },
           {
-            "buttons": ["l", "left-stick"],
+            "buttons": ["left-stick"],
             "direction": "right",
-            "buttonInputTypes": { "l": "Hold", "left-stick": "Tap" }
+            "inputType": "Tap"
           }
         ],
         "single-joycon": [
@@ -802,9 +810,9 @@
             "inputType": "Hold"
           },
           {
-            "buttons": ["sl", "left-stick"],
+            "buttons": ["stick"],
             "direction": "right",
-            "buttonInputTypes": { "sl": "Hold", "left-stick": "Tap" }
+            "inputType": "Tap"
           }
         ]
       }
@@ -822,10 +830,18 @@
       "en": "Grabs opponent by feet and swings them backward (like Bowser throw in SM64). Deals 11%. Mario's strongest throw — KOs ~130% at ledge, ~160% center stage. Also hits bystanders for 8%.",
       "vi": "Tóm chân đối thủ và quăng về sau (giống ném Bowser trong SM64). Gây 11% sát thương. Đòn ném mạnh nhất của Mario — hạ gục ~130% ở mép sân, ~160% giữa sân. Cũng đánh trúng người đứng gần gây 8%."
     },
+    "tip": {
+      "en": "You can hold L/SL while pressing Left Stick to throw",
+      "vi": "Bạn có thể giữ L/SL trong khi nhấn Left Stick để ném"
+    },
     "category": "grab",
     "combos": [
       {
         "handheld": [
+          {
+            "buttons": ["l"],
+            "inputType": "Hold"
+          },
           {
             "buttons": ["left-stick"],
             "direction": "left",
@@ -833,6 +849,10 @@
           }
         ],
         "single-joycon": [
+          {
+            "buttons": ["sl"],
+            "inputType": "Hold"
+          },
           {
             "buttons": ["stick"],
             "direction": "left",
@@ -855,9 +875,17 @@
       "vi": "Tung đối thủ thẳng lên trên gây 7% sát thương. ĐÒN NÉM COMBO CHỦ LỰC — combo vào đòn không trung trên ở % thấp-trung bình. Khởi đầu combo thang. Đòn ném chính của Mario để gây sát thương và kéo dài combo."
     },
     "category": "grab",
+    "tip": {
+      "en": "You can hold L/SL while pressing Right Stick to throw",
+      "vi": "Bạn có thể giữ L/SL trong khi nhấn Right Stick để ném"
+    },
     "combos": [
       {
         "handheld": [
+          {
+            "buttons": ["l"],
+            "inputType": "Hold"
+          },
           {
             "buttons": ["left-stick"],
             "direction": "up",
@@ -865,6 +893,10 @@
           }
         ],
         "single-joycon": [
+          {
+            "buttons": ["sl"],
+            "inputType": "Hold"
+          },
           {
             "buttons": ["stick"],
             "direction": "up",
@@ -887,9 +919,17 @@
       "vi": "Đập đối thủ xuống đất gây 5% sát thương. Combo vào đá nghiêng trên ở % rất thấp, đòn không trung trên ở % trung bình. Đòn ném combo thay thế cho ném lên với góc bắn khác."
     },
     "category": "grab",
+    "tip": {
+      "en": "You can hold L/SL while pressing Left Stick to throw",
+      "vi": "Bạn có thể giữ L/SL trong khi nhấn Left Stick để ném"
+    },
     "combos": [
       {
         "handheld": [
+          {
+            "buttons": ["l"],
+            "inputType": "Hold"
+          },
           {
             "buttons": ["left-stick"],
             "direction": "down",
@@ -897,6 +937,10 @@
           }
         ],
         "single-joycon": [
+          {
+            "buttons": ["sl"],
+            "inputType": "Hold"
+          },
           {
             "buttons": ["stick"],
             "direction": "down",
@@ -1057,248 +1101,5 @@
     ],
     "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500026/help-me-play/smash-bros/mario/mario-finale.gif",
     "sourceUrl": "https://ssb.wiki.gallery/images/2/2a/Mario_Final_Smash_SSBU.gif"
-  },
-  {
-    "id": "up-air-ladder-combo",
-    "name": {
-      "en": "Up Air Ladder Combo",
-      "vi": "Combo thang không trung trên (Up Air Ladder)"
-    },
-    "description": {
-      "en": "Advanced combo: Up Air → Up Air → land on platform → Up Air → Up Air → double jump → Up Air → Up B. Carries opponent to top blast zone for early KO. Works at 40-80%. Requires platforms (Battlefield/Smashville). Mario's signature kill confirm.",
-      "vi": "Combo nâng cao: Không trung trên → Không trung trên → đáp bệ → Không trung trên → Không trung trên → nhảy đôi → Không trung trên → B trên. Đưa đối thủ lên vùng hạ gục trên đỉnh để KO sớm. Hoạt động ở 40-80%. Cần bệ đỡ (Battlefield/Smashville). Combo hạ gục đặc trưng của Mario."
-    },
-    "category": "other",
-    "combos": [
-      {
-        "handheld": [
-          {
-            "buttons": ["left-stick", "a"],
-            "direction": "up",
-            "inputType": "Tap"
-          },
-          {
-            "buttons": ["left-stick", "a"],
-            "direction": "up",
-            "inputType": "Tap"
-          },
-          {
-            "buttons": ["left-stick", "a"],
-            "direction": "up",
-            "inputType": "Tap"
-          },
-          {
-            "buttons": ["left-stick", "a"],
-            "direction": "up",
-            "inputType": "Tap"
-          },
-          {
-            "buttons": ["left-stick", "b"],
-            "direction": "up",
-            "inputType": "Tap"
-          }
-        ],
-        "single-joycon": [
-          {
-            "buttons": ["stick", "a"],
-            "direction": "up",
-            "inputType": "Tap"
-          },
-          {
-            "buttons": ["stick", "a"],
-            "direction": "up",
-            "inputType": "Tap"
-          },
-          {
-            "buttons": ["stick", "a"],
-            "direction": "up",
-            "inputType": "Tap"
-          },
-          {
-            "buttons": ["stick", "a"],
-            "direction": "up",
-            "inputType": "Tap"
-          },
-          {
-            "buttons": ["stick", "b"],
-            "direction": "up",
-            "inputType": "Tap"
-          }
-        ]
-      }
-    ],
-    "mediaUrl": "https://www.youtube.com/watch?v=HqEKhUjIdKo"
-  },
-  {
-    "id": "down-throw-up-air-combo",
-    "name": {
-      "en": "Down Throw → Up Air Combo",
-      "vi": "Combo Ném xuống → Không trung trên"
-    },
-    "description": {
-      "en": "Bread-and-butter combo: Down Throw → Up Air → Up Air. Works 0-40%. Deals ~19%. DI dependent. Mario's most reliable damage combo from a grab at low-mid percent.",
-      "vi": "Combo cơ bản nhất: Ném xuống → Không trung trên → Không trung trên. Hoạt động 0-40%. Gây ~19% sát thương. Phụ thuộc vào DI. Combo gây sát thương đáng tin cậy nhất của Mario từ tóm ở % thấp-trung bình."
-    },
-    "category": "other",
-    "combos": [
-      {
-        "handheld": [
-          {
-            "buttons": ["left-stick"],
-            "direction": "down",
-            "inputType": "Tap"
-          },
-          {
-            "buttons": ["left-stick", "a"],
-            "direction": "up",
-            "inputType": "Tap"
-          },
-          {
-            "buttons": ["left-stick", "a"],
-            "direction": "up",
-            "inputType": "Tap"
-          }
-        ],
-        "single-joycon": [
-          {
-            "buttons": ["stick"],
-            "direction": "down",
-            "inputType": "Tap"
-          },
-          {
-            "buttons": ["stick", "a"],
-            "direction": "up",
-            "inputType": "Tap"
-          },
-          {
-            "buttons": ["stick", "a"],
-            "direction": "up",
-            "inputType": "Tap"
-          }
-        ]
-      }
-    ],
-    "mediaUrl": "https://www.youtube.com/watch?v=HqEKhUjIdKo"
-  },
-  {
-    "id": "nair-up-smash-kill-confirm",
-    "name": {
-      "en": "Nair → Up Smash Kill Confirm",
-      "vi": "Combo xác nhận hạ gục Nair → Smash trên"
-    },
-    "description": {
-      "en": "Kill confirm: late Neutral Air → Up Smash. Works 10-50%. Deals ~19%. Land a late nair (5% hit) which combos into up smash for a reliable stock take.",
-      "vi": "Xác nhận hạ gục: Không trung trung tính trúng muộn → Smash trên. Hoạt động 10-50%. Gây ~19% sát thương. Đánh trúng nair muộn (5%) rồi combo vào smash trên để lấy mạng chắc chắn."
-    },
-    "category": "other",
-    "combos": [
-      {
-        "handheld": [
-          {
-            "buttons": ["a"],
-            "inputType": "Tap"
-          },
-          {
-            "buttons": ["left-stick", "a"],
-            "direction": "up",
-            "inputType": "Smash"
-          }
-        ],
-        "single-joycon": [
-          {
-            "buttons": ["a"],
-            "inputType": "Tap"
-          },
-          {
-            "buttons": ["stick", "a"],
-            "direction": "up",
-            "inputType": "Smash"
-          }
-        ]
-      }
-    ],
-    "mediaUrl": "https://www.youtube.com/watch?v=HqEKhUjIdKo"
-  },
-  {
-    "id": "cape-gimp",
-    "name": {
-      "en": "Cape Gimp (Edgeguard Technique)",
-      "vi": "Gimp bằng Áo choàng (Kỹ thuật canh mép)"
-    },
-    "description": {
-      "en": "Advanced edgeguard: jump offstage and use Cape to reverse a recovering opponent's direction, causing them to fly away from stage. Especially effective against linear recoveries. Can also reflect projectiles at 1.5x damage.",
-      "vi": "Kỹ thuật canh mép nâng cao: nhảy ra ngoài sân và dùng Áo choàng để đảo ngược hướng đối thủ đang hồi phục, khiến họ bay ra xa sân. Đặc biệt hiệu quả với đối thủ hồi phục theo đường thẳng. Cũng có thể phản chiếu đạn với 1.5 lần sát thương."
-    },
-    "category": "other",
-    "combos": [
-      {
-        "handheld": [
-          {
-            "buttons": ["x"],
-            "inputType": "Tap"
-          },
-          {
-            "buttons": ["left-stick", "b"],
-            "direction": "right",
-            "inputType": "Tap"
-          }
-        ],
-        "single-joycon": [
-          {
-            "buttons": ["x"],
-            "inputType": "Tap"
-          },
-          {
-            "buttons": ["stick", "b"],
-            "direction": "right",
-            "inputType": "Tap"
-          }
-        ]
-      }
-    ],
-    "mediaUrl": "https://www.youtube.com/watch?v=HqEKhUjIdKo"
-  },
-  {
-    "id": "fludd-edgeguard",
-    "name": {
-      "en": "F.L.U.D.D. Edgeguard",
-      "vi": "Canh mép bằng F.L.U.D.D."
-    },
-    "description": {
-      "en": "Advanced edgeguard: fully charge F.L.U.D.D. then use at ledge to push recovering opponents past the stage with the windbox. Combine with Cape for devastating edgeguard sequences. Most effective vs predictable recoveries.",
-      "vi": "Kỹ thuật canh mép nâng cao: tích đầy F.L.U.D.D. rồi dùng ở mép sân để đẩy đối thủ đang hồi phục ra khỏi sân bằng windbox. Kết hợp với Áo choàng để tạo chuỗi canh mép hủy diệt. Hiệu quả nhất với đối thủ hồi phục dễ đoán."
-    },
-    "category": "other",
-    "combos": [
-      {
-        "handheld": [
-          {
-            "buttons": ["left-stick", "b"],
-            "direction": "down",
-            "inputType": "Hold",
-            "duration": 3000
-          },
-          {
-            "buttons": ["left-stick", "b"],
-            "direction": "down",
-            "inputType": "Tap"
-          }
-        ],
-        "single-joycon": [
-          {
-            "buttons": ["stick", "b"],
-            "direction": "down",
-            "inputType": "Hold",
-            "duration": 3000
-          },
-          {
-            "buttons": ["stick", "b"],
-            "direction": "down",
-            "inputType": "Tap"
-          }
-        ]
-      }
-    ],
-    "mediaUrl": "https://www.youtube.com/watch?v=HqEKhUjIdKo"
   }
 ]

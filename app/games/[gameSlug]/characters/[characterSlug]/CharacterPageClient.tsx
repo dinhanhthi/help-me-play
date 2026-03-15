@@ -39,11 +39,11 @@ interface CharacterPageClientProps {
 
 const categoryColors: Record<string, string> = {
   ground: "bg-blue-500/10 text-blue-400 border-blue-500/20",
-  tilt: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+  tilt: "bg-violet-500/10 text-violet-400 border-violet-500/20",
   smash: "bg-red-500/10 text-red-400 border-red-500/20",
   aerial: "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
   special: "bg-amber-500/10 text-amber-400 border-amber-500/20",
-  grab: "bg-purple-500/10 text-purple-400 border-purple-500/20",
+  grab: "bg-pink-500/10 text-pink-400 border-pink-500/20",
   other: "bg-slate-500/10 text-slate-400 border-slate-500/20",
 };
 

@@ -30,6 +30,9 @@ jobs:
         with:
           node-version: 20
 
+      - name: Install gifsicle
+        run: sudo apt-get install -y gifsicle
+
       - name: Run migration script
         env:
           CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}

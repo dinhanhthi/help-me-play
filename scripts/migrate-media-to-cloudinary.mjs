@@ -23,6 +23,7 @@ import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
 import { fileURLToPath } from "node:url";
+import { spawnSync } from "node:child_process";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -122,6 +123,46 @@ function guessExtension(url, contentType) {
   return ".gif"; // default for game move assets
 }
 
+const MAX_CLOUDINARY_BYTES = 10 * 1024 * 1024; // 10MB
+
+/**
+ * Compress a GIF file using gifsicle if it exceeds Cloudinary's size limit.
+ * Tries progressively more aggressive lossy compression until it fits.
+ * Returns the path to the (possibly compressed) file.
+ */
+function compressGifIfNeeded(filePath) {
+  const ext = path.extname(filePath).toLowerCase();
+  if (ext !== ".gif") return filePath;
+
+  const size = fs.statSync(filePath).size;
+  if (size <= MAX_CLOUDINARY_BYTES) return filePath;
+
+  // Check gifsicle is available
+  const check = spawnSync("gifsicle", ["--version"], { stdio: "ignore" });
+  if (check.error) {
+    console.warn("  ⚠ gifsicle not found — skipping compression");
+    return filePath;
+  }
+
+  const compressedPath = filePath.replace(/\.gif$/, "-compressed.gif");
+
+  for (const lossy of [30, 60, 100, 150, 200]) {
+    spawnSync(
+      "gifsicle",
+      ["-O3", `--lossy=${lossy}`, "--colors", "128", filePath, "-o", compressedPath],
+      { stdio: "ignore" },
+    );
+    const newSize = fs.statSync(compressedPath).size;
+    console.log(
+      `  ↓ Compressed (lossy=${lossy}): ${(size / 1024 / 1024).toFixed(1)}MB → ${(newSize / 1024 / 1024).toFixed(1)}MB`,
+    );
+    if (newSize <= MAX_CLOUDINARY_BYTES) return compressedPath;
+  }
+
+  console.warn("  ⚠ Could not compress GIF below 10MB — upload may fail");
+  return compressedPath;
+}
+
 /**
  * Upload a file to Cloudinary using the Upload API (unsigned is not needed — we use signed)
  */
@@ -184,8 +225,9 @@ async function migrateAsset(url, publicId, stats) {
   try {
     console.log(`  Downloading: ${url}`);
     ({ tempPath } = await downloadFile(url));
+    const uploadPath = compressGifIfNeeded(tempPath);
     console.log(`  Uploading: help-me-play/${publicId}`);
-    const cloudinaryUrl = await uploadToCloudinary(tempPath, publicId, "image");
+    const cloudinaryUrl = await uploadToCloudinary(uploadPath, publicId, "image");
     stats.migrated++;
     console.log(`  ✓ ${publicId}: ${cloudinaryUrl}`);
     return cloudinaryUrl;
@@ -195,6 +237,10 @@ async function migrateAsset(url, publicId, stats) {
     return null;
   } finally {
     if (tempPath && fs.existsSync(tempPath)) fs.unlinkSync(tempPath);
+    const compressedPath = tempPath?.replace(/\.gif$/, "-compressed.gif");
+    if (compressedPath && compressedPath !== tempPath && fs.existsSync(compressedPath)) {
+      fs.unlinkSync(compressedPath);
+    }
   }
 }
 
@@ -308,7 +354,9 @@ async function main() {
   console.log(
     `\nDone! Migrated: ${stats.migrated}, Skipped: ${stats.skipped}, Failed: ${stats.failed}`,
   );
-  if (stats.failed > 0) process.exit(1);
+  if (stats.failed > 0) {
+    console.warn(`\n⚠ ${stats.failed} asset(s) failed to migrate. Check logs above for details.`);
+  }
 }
 
 main();

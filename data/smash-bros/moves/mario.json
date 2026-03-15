@@ -423,12 +423,20 @@
       {
         "handheld": [
           {
+            "buttons": ["x"],
+            "inputType": "Tap"
+          },
+          {
             "buttons": ["left-stick", "a"],
             "direction": "right",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
+          {
+            "buttons": ["x"],
+            "inputType": "Tap"
+          },
           {
             "buttons": ["stick", "a"],
             "direction": "right",
@@ -455,6 +463,11 @@
       {
         "handheld": [
           {
+            "buttons": ["left-stick", "x"],
+            "direction": "right",
+            "inputType": "Tap"
+          },
+          {
             "buttons": ["left-stick", "a"],
             "direction": "left",
             "inputType": "Tap"
@@ -462,7 +475,12 @@
         ],
         "single-joycon": [
           {
-            "buttons": ["stick", "a"],
+            "buttons": ["left-stick", "x"],
+            "direction": "right",
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["left-stick", "a"],
             "direction": "left",
             "inputType": "Tap"
           }
@@ -487,12 +505,20 @@
       {
         "handheld": [
           {
+            "buttons": ["x"],
+            "inputType": "Tap"
+          },
+          {
             "buttons": ["left-stick", "a"],
             "direction": "up",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
+          {
+            "buttons": ["x"],
+            "inputType": "Tap"
+          },
           {
             "buttons": ["stick", "a"],
             "direction": "up",
@@ -519,12 +545,20 @@
       {
         "handheld": [
           {
+            "buttons": ["x"],
+            "inputType": "Tap"
+          },
+          {
             "buttons": ["left-stick", "a"],
             "direction": "down",
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
+          {
+            "buttons": ["x"],
+            "inputType": "Tap"
+          },
           {
             "buttons": ["stick", "a"],
             "direction": "down",

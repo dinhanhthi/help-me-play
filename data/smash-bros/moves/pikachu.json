@@ -1,22 +1,380 @@
 [
   {
+    "id": "jab",
+    "name": {
+      "en": "Jab (Rapid Jab)",
+      "vi": "Đấm liên hoàn (Rapid Jab)"
+    },
+    "description": {
+      "en": "A quick electric headbutt followed by rapid jabs. 1.4% on hit 1, then 1% per rapid jab hit. Startup frame 2. One of the fastest jabs in the game, excellent out-of-shield option.",
+      "vi": "Húc đầu điện nhanh rồi đấm liên hoàn. 1.4% ở đòn đầu, sau đó 1% mỗi đòn liên hoàn. Ra đòn frame 2. Một trong những jab nhanh nhất, xuất sắc để thoát khiên."
+    },
+    "category": "ground",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["a"], "inputType": "Tap" },
+          { "buttons": ["a"], "inputType": "Hold" }
+        ],
+        "single-joycon": [
+          { "buttons": ["a"], "inputType": "Tap" },
+          { "buttons": ["a"], "inputType": "Hold" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/4/48/PikachuJabSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/4/48/PikachuJabSSBU.gif"
+  },
+  {
+    "id": "dash-attack",
+    "name": {
+      "en": "Dash Attack",
+      "vi": "Đòn tấn công khi chạy (Dash Attack)"
+    },
+    "description": {
+      "en": "A running headbutt that travels forward. 11% (clean) / 6% (late). Startup frame 6. Good burst option for closing distance quickly.",
+      "vi": "Húc đầu trong khi lao tới. 11% (sớm) / 6% (muộn). Ra đòn frame 6. Lựa chọn tốt để rút ngắn khoảng cách nhanh chóng."
+    },
+    "category": "ground",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["left-stick"], "direction": "right", "inputType": "Hold" },
+          { "buttons": ["left-stick", "a"], "direction": "right", "buttonInputTypes": { "left-stick": "Hold", "a": "Tap" } }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick"], "direction": "right", "inputType": "Hold" },
+          { "buttons": ["stick", "a"], "direction": "right", "buttonInputTypes": { "stick": "Hold", "a": "Tap" } }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/5/5b/PikachuDashAttackSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/5/5b/PikachuDashAttackSSBU.gif"
+  },
+  {
+    "id": "forward-tilt",
+    "name": {
+      "en": "Forward Tilt",
+      "vi": "Đá nghiêng trước (Forward Tilt)"
+    },
+    "description": {
+      "en": "An electrified double kick aimed forward. 10% (mid) / 9% (up angle) / 8% (down angle). Can be angled up or down. Solid mid-range poke with good coverage.",
+      "vi": "Đá đôi điện hướng về phía trước. 10% (giữa) / 9% (góc trên) / 8% (góc dưới). Có thể chỉnh hướng lên hoặc xuống. Đòn chọc tầm trung tốt."
+    },
+    "category": "tilt",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["left-stick", "a"], "direction": "right", "inputType": "Tilt" }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick", "a"], "direction": "right", "inputType": "Tilt" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/7/78/PikachuFTiltSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/7/78/PikachuFTiltSSBU.gif"
+  },
+  {
+    "id": "up-tilt",
+    "name": {
+      "en": "Up Tilt",
+      "vi": "Đá nghiêng trên (Up Tilt)"
+    },
+    "description": {
+      "en": "Pikachu swipes its tail overhead in an arc. 5% damage. Excellent juggling tool with great follow-up potential at low and mid percents. Combos into up air.",
+      "vi": "Pikachu quét đuôi theo vòng cung phía trên đầu. 5% sát thương. Công cụ tung hứng xuất sắc ở % thấp đến trung bình. Combo vào đòn không trung trên."
+    },
+    "category": "tilt",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Tilt" }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick", "a"], "direction": "up", "inputType": "Tilt" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/a/a1/PikachuUTiltSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/a/a1/PikachuUTiltSSBU.gif"
+  },
+  {
+    "id": "down-tilt",
+    "name": {
+      "en": "Down Tilt",
+      "vi": "Đá nghiêng dưới (Down Tilt)"
+    },
+    "description": {
+      "en": "A low sweeping tail attack. 6% damage. Can trip opponents at low percents. Great low poke that combos into itself or sets up other attacks.",
+      "vi": "Đòn quét đuôi thấp. 6% sát thương. Có thể làm đối thủ vấp ngã ở % thấp. Đòn chọc thấp tốt, combo vào chính nó hoặc mở các đòn khác."
+    },
+    "category": "tilt",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["left-stick", "a"], "direction": "down", "inputType": "Tilt" }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick", "a"], "direction": "down", "inputType": "Tilt" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/0/03/PikachuDTiltSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/0/03/PikachuDTiltSSBU.gif"
+  },
+  {
+    "id": "forward-smash",
+    "name": {
+      "en": "Forward Smash (Thundershock)",
+      "vi": "Smash trước (Thundershock)"
+    },
+    "description": {
+      "en": "Pikachu fires a Thundershock orb forward. 15% (uncharged) up to 18% (fully charged), weaker late hit at 12%. Startup frame 15–20. Long range for a smash attack.",
+      "vi": "Pikachu bắn quả cầu sét về phía trước. 15% (không nạp) đến 18% (nạp đầy), đòn muộn yếu hơn ở 12%. Ra đòn frame 15–20. Tầm dài cho một đòn smash."
+    },
+    "category": "smash",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["left-stick", "a"], "direction": "right", "inputType": "Smash" }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick", "a"], "direction": "right", "inputType": "Smash" }
+        ]
+      },
+      {
+        "handheld": [
+          { "buttons": ["right-stick"], "direction": "right", "inputType": "Smash" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/1/17/PikachuFSmashSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/1/17/PikachuFSmashSSBU.gif"
+  },
+  {
+    "id": "up-smash",
+    "name": {
+      "en": "Up Smash",
+      "vi": "Smash trên (Up Smash)"
+    },
+    "description": {
+      "en": "Pikachu does an electric tail somersault upward. Multi-hit: 14% (clean) down to 7% (later hits). Startup frame 10. Solid anti-air and juggle finisher, KOs around 110%.",
+      "vi": "Pikachu nhào lộn đuôi điện lên trên. Nhiều đòn: 14% (sớm) xuống 7% (muộn). Ra đòn frame 10. Chống không tốt và kết thúc tung hứng, hạ gục ở khoảng 110%."
+    },
+    "category": "smash",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Smash" }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick", "a"], "direction": "up", "inputType": "Smash" }
+        ]
+      },
+      {
+        "handheld": [
+          { "buttons": ["right-stick"], "direction": "up", "inputType": "Smash" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/a/aa/PikachuUSmashSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/a/aa/PikachuUSmashSSBU.gif"
+  },
+  {
+    "id": "down-smash",
+    "name": {
+      "en": "Down Smash",
+      "vi": "Smash dưới (Down Smash)"
+    },
+    "description": {
+      "en": "Pikachu spins and releases an electric burst around itself. Multi-hit dealing 2–3% per hit. Startup frame 8. Hits on both sides simultaneously, great for punishing rolls.",
+      "vi": "Pikachu quay tròn tạo tia điện quanh mình. Nhiều đòn 2–3% mỗi đòn. Ra đòn frame 8. Đánh cả hai bên cùng lúc, tuyệt vời để trừng phạt khi đối thủ lăn né."
+    },
+    "category": "smash",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["left-stick", "a"], "direction": "down", "inputType": "Smash" }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick", "a"], "direction": "down", "inputType": "Smash" }
+        ]
+      },
+      {
+        "handheld": [
+          { "buttons": ["right-stick"], "direction": "down", "inputType": "Smash" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/e/e9/PikachuDSmashSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/e/e9/PikachuDSmashSSBU.gif"
+  },
+  {
+    "id": "neutral-air",
+    "name": {
+      "en": "Neutral Air",
+      "vi": "Đòn không trung trung tính (Neutral Air)"
+    },
+    "description": {
+      "en": "Pikachu discharges electricity around its body. Multi-hit: 1.8% per early hit, 3.5% on final hit. Startup frame 3. One of the fastest and best neutral aerials in the game.",
+      "vi": "Pikachu phóng điện quanh thân. Nhiều đòn: 1.8% mỗi đòn sớm, 3.5% đòn cuối. Ra đòn frame 3. Một trong những đòn không trung trung tính tốt nhất."
+    },
+    "category": "aerial",
+    "combos": [
+      {
+        "label": { "en": "Stand", "vi": "Đứng" },
+        "handheld": [
+          { "buttons": ["x"], "inputType": "Tap" },
+          { "buttons": ["a"], "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["x"], "inputType": "Tap" },
+          { "buttons": ["a"], "inputType": "Tap" }
+        ]
+      },
+      {
+        "label": { "en": "Move", "vi": "Chạy" },
+        "handheld": [
+          { "buttons": ["left-stick", "x"], "direction": "right", "buttonInputTypes": { "left-stick": "Hold", "x": "Tap" } },
+          { "buttons": ["a"], "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick", "x"], "direction": "right", "buttonInputTypes": { "stick": "Hold", "x": "Tap" } },
+          { "buttons": ["a"], "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/0/08/PikachuNAirSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/0/08/PikachuNAirSSBU.gif"
+  },
+  {
+    "id": "forward-air",
+    "name": {
+      "en": "Forward Air (Electric Drill)",
+      "vi": "Đòn không trung trước (Electric Drill)"
+    },
+    "description": {
+      "en": "An electric drill kick forward with 6 hits. 1.4% per early hit (×5) + 4.8% on final hit (~11.8% total). Startup frame 11. Potent edgeguarding tool.",
+      "vi": "Đá khoan điện về phía trước 6 đòn. 1.4% mỗi đòn sớm (×5) + 4.8% đòn cuối (~11.8% tổng). Ra đòn frame 11. Công cụ canh mép xuất sắc."
+    },
+    "category": "aerial",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["left-stick", "x"], "direction": "right", "buttonInputTypes": { "left-stick": "Hold", "x": "Tap" } },
+          { "buttons": ["left-stick", "a"], "direction": "right", "buttonInputTypes": { "left-stick": "Hold", "a": "Tap" } }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick", "x"], "direction": "right", "buttonInputTypes": { "stick": "Hold", "x": "Tap" } },
+          { "buttons": ["stick", "a"], "direction": "right", "buttonInputTypes": { "stick": "Hold", "a": "Tap" } }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/b/b3/PikachuFAirSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/b/b3/PikachuFAirSSBU.gif"
+  },
+  {
+    "id": "back-air",
+    "name": {
+      "en": "Back Air",
+      "vi": "Đòn không trung sau (Back Air)"
+    },
+    "description": {
+      "en": "Pikachu extends into a glider position behind itself. Multi-hit: 1% per early hit (×5) + 3.6% on final hit + 4% landing hit. Startup frame 4. Extremely fast, great for spacing.",
+      "vi": "Pikachu vươn người ra sau. Nhiều đòn: 1% mỗi đòn sớm (×5) + 3.6% đòn cuối + 4% khi đáp đất. Ra đòn frame 4. Cực nhanh, tuyệt vời để giữ khoảng cách."
+    },
+    "category": "aerial",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["left-stick", "x"], "direction": "right", "inputType": "Tap" },
+          { "buttons": ["left-stick", "a"], "direction": "left", "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick", "x"], "direction": "right", "inputType": "Tap" },
+          { "buttons": ["stick", "a"], "direction": "left", "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/b/be/PikachuBAirSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/b/be/PikachuBAirSSBU.gif"
+  },
+  {
+    "id": "up-air",
+    "name": {
+      "en": "Up Air",
+      "vi": "Đòn không trung trên (Up Air)"
+    },
+    "description": {
+      "en": "Pikachu swipes its tail upward overhead. 6% (clean tail) / 5% (tip) / 4% (late). Startup frame 4. Core juggling move, links naturally from up tilt.",
+      "vi": "Pikachu quét đuôi lên trên đầu. 6% (sớm) / 5% (đầu đuôi) / 4% (muộn). Ra đòn frame 4. Đòn tung hứng chủ lực, kết nối tự nhiên từ up tilt."
+    },
+    "category": "aerial",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["x"], "inputType": "Tap" },
+          { "buttons": ["left-stick", "a"], "direction": "up", "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["x"], "inputType": "Tap" },
+          { "buttons": ["stick", "a"], "direction": "up", "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/9/96/PikachuUAirSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/9/96/PikachuUAirSSBU.gif"
+  },
+  {
+    "id": "down-air",
+    "name": {
+      "en": "Down Air (Meteor Smash)",
+      "vi": "Đòn không trung dưới (Meteor Smash)"
+    },
+    "description": {
+      "en": "Pikachu spins downward with a meteor smash hitbox. 13% (clean) / 12% (late) + 4% landing hit. METEOR SMASH that can spike offstage opponents to their doom.",
+      "vi": "Pikachu quay xuống với hitbox meteor. 13% (sớm) / 12% (muộn) + 4% khi đáp đất. METEOR SMASH có thể spike đối thủ ngoài sân."
+    },
+    "category": "aerial",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["x"], "inputType": "Tap" },
+          { "buttons": ["left-stick", "a"], "direction": "down", "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["x"], "inputType": "Tap" },
+          { "buttons": ["stick", "a"], "direction": "down", "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/4/46/PikachuDAirSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/4/46/PikachuDAirSSBU.gif"
+  },
+  {
     "id": "thunder-jolt",
     "name": {
       "en": "Thunder Jolt",
       "vi": "Sét Nảy (Thunder Jolt)"
     },
     "description": {
-      "en": "Pikachu sends a ball of electricity that bounces along the ground. Great for edgeguarding.",
-      "vi": "Pikachu bắn quả cầu điện nảy dọc theo mặt đất. Rất hiệu quả để chặn đối thủ ở mép sàn đấu."
+      "en": "Pikachu fires a ball of electricity that travels along the ground and up walls. 6% (aerial contact) / 4.8% (grounded). Fast projectile that sticks to stage geometry, great for pressure and edge control.",
+      "vi": "Pikachu bắn quả cầu điện lăn dọc mặt đất và leo tường. 6% (trên không) / 4.8% (trên đất). Projectile nhanh bám theo địa hình sân, tuyệt vời để gây áp lực và kiểm soát mép sân."
     },
     "category": "special",
     "combos": [
       {
-        "handheld": [{ "buttons": ["b"], "inputType": "Tap" }],
-        "single-joycon": [{ "buttons": ["b"], "inputType": "Tap" }]
+        "handheld": [
+          { "buttons": ["b"], "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["b"], "inputType": "Tap" }
+        ]
       }
     ],
-    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-pikachu-thunderjolt"
+    "mediaUrl": "https://ssb.wiki.gallery/images/b/b6/PikachuNSpecialAerialSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/b/b6/PikachuNSpecialAerialSSBU.gif"
   },
   {
     "id": "skull-bash",
@@ -25,26 +383,22 @@
       "vi": "Húc Đầu (Skull Bash)"
     },
     "description": {
-      "en": "Pikachu charges and launches forward headfirst. Hold B to charge for more distance and damage.",
-      "vi": "Pikachu tích lực rồi lao đầu về phía trước. Giữ B để tích lực lâu hơn, tăng tầm bay và sát thương."
+      "en": "A chargeable horizontal body slam. 6.2% (uncharged) up to 21.4% (fully charged). Short charge works as a combo finisher; full charge is a powerful KO option and horizontal recovery.",
+      "vi": "Đòn lao người ngang có thể nạp. 6.2% (không nạp) đến 21.4% (nạp đầy). Nạp ngắn dùng kết thúc combo; nạp đầy để KO mạnh và hồi phục ngang."
     },
     "category": "special",
     "combos": [
       {
         "handheld": [
-          {
-            "buttons": ["left-stick", "b"],
-            "direction": "left",
-            "inputType": "Hold",
-            "duration": 2000
-          }
+          { "buttons": ["left-stick", "b"], "direction": "right", "inputType": "Hold" }
         ],
         "single-joycon": [
-          { "buttons": ["stick", "b"], "direction": "left", "inputType": "Hold", "duration": 2000 }
+          { "buttons": ["stick", "b"], "direction": "right", "inputType": "Hold" }
         ]
       }
     ],
-    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-pikachu-skullbash"
+    "mediaUrl": "https://ssb.wiki.gallery/images/8/82/PikachuSSpecialHitSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/8/82/PikachuSSpecialHitSSBU.gif"
   },
   {
     "id": "quick-attack",
@@ -53,12 +407,13 @@
       "vi": "Tấn Công Nhanh (Quick Attack)"
     },
     "description": {
-      "en": "Pikachu dashes in a direction. Can change direction mid-dash for a second burst. Excellent recovery.",
-      "vi": "Pikachu lướt nhanh theo một hướng. Có thể đổi hướng giữa chừng để lướt thêm lần nữa. Chiêu hồi sàn cực tốt."
+      "en": "Pikachu dashes instantly in up to two directions. 2–3% per hit. Primary recovery move. Can be directed into the ground to set up combo situations. Extremely versatile and fast.",
+      "vi": "Pikachu lao tức thì theo một hoặc hai hướng tự chọn. 2–3% mỗi đòn. Đòn hồi phục chính. Có thể hướng vào đất để setup combo. Cực linh hoạt và nhanh."
     },
     "category": "special",
     "combos": [
       {
+        "label": { "en": "Up → Right", "vi": "Lên → Phải" },
         "handheld": [
           { "buttons": ["left-stick", "b"], "direction": "up", "inputType": "Tap" },
           { "buttons": ["left-stick"], "direction": "right", "inputType": "Tap" }
@@ -67,9 +422,21 @@
           { "buttons": ["stick", "b"], "direction": "up", "inputType": "Tap" },
           { "buttons": ["stick"], "direction": "right", "inputType": "Tap" }
         ]
+      },
+      {
+        "label": { "en": "Up → Up", "vi": "Lên → Lên" },
+        "handheld": [
+          { "buttons": ["left-stick", "b"], "direction": "up", "inputType": "Tap" },
+          { "buttons": ["left-stick"], "direction": "up", "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick", "b"], "direction": "up", "inputType": "Tap" },
+          { "buttons": ["stick"], "direction": "up", "inputType": "Tap" }
+        ]
       }
     ],
-    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-pikachu-quickattack"
+    "mediaUrl": "https://ssb.wiki.gallery/images/f/f3/PikachuQuickAttackSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/f/f3/PikachuQuickAttackSSBU.gif"
   },
   {
     "id": "thunder",
@@ -78,35 +445,287 @@
       "vi": "Sấm Sét (Thunder)"
     },
     "description": {
-      "en": "A bolt of lightning strikes down on Pikachu. If it connects with Pikachu, creates a powerful shockwave.",
-      "vi": "Một tia sét đánh xuống vị trí của Pikachu. Nếu trúng Pikachu, sẽ tạo ra sóng xung kích cực mạnh."
+      "en": "Pikachu summons a thundercloud that drops a lightning bolt on itself. Cloud hit: 15% (meteor smash), bolt hit: 8%, Pikachu contact: 6%. Startup frame 13 for cloud. Powerful aerial punish and meteor spike tool.",
+      "vi": "Pikachu triệu hồi đám mây sét đánh xuống chính mình. Mây: 15% (meteor), tia sét: 8%, tiếp xúc Pikachu: 6%. Ra đòn frame 13. Đòn phạt trên không mạnh và công cụ meteor spike."
     },
     "category": "special",
     "combos": [
       {
-        "handheld": [{ "buttons": ["left-stick", "b"], "direction": "down", "inputType": "Tap" }],
-        "single-joycon": [{ "buttons": ["stick", "b"], "direction": "down", "inputType": "Tap" }]
+        "handheld": [
+          { "buttons": ["left-stick", "b"], "direction": "down", "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["stick", "b"], "direction": "down", "inputType": "Tap" }
+        ]
       }
     ],
-    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-pikachu-thunder"
+    "mediaUrl": "https://ssb.wiki.gallery/images/d/d9/PikachuDSpecialHitSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/d/d9/PikachuDSpecialHitSSBU.gif"
   },
   {
-    "id": "down-smash",
+    "id": "pummel",
     "name": {
-      "en": "Down Smash",
-      "vi": "Đập Xuống (Down Smash)"
+      "en": "Pummel",
+      "vi": "Đánh khi tóm (Pummel)"
     },
     "description": {
-      "en": "Pikachu discharges electricity on both sides. Great for punishing rolls.",
-      "vi": "Pikachu phóng điện sang hai bên. Rất hiệu quả để trừng phạt đối thủ lăn né."
+      "en": "Pikachu headbutts the grabbed opponent with a small electric shock. 1% per pummel. Fast; use 1–2 times before throwing for optimal damage.",
+      "vi": "Pikachu húc đầu điện vào đối thủ đang bị tóm. 1% mỗi lần. Nhanh; sử dụng 1–2 lần trước khi ném để tối ưu sát thương."
     },
-    "category": "smash",
+    "category": "grab",
     "combos": [
       {
-        "handheld": [{ "buttons": ["left-stick", "a"], "direction": "down", "inputType": "Smash" }],
-        "single-joycon": [{ "buttons": ["stick", "a"], "direction": "down", "inputType": "Smash" }]
+        "handheld": [
+          { "buttons": ["l"], "inputType": "Hold" },
+          { "buttons": ["l", "a"], "buttonInputTypes": { "l": "Hold", "a": "Tap" } }
+        ],
+        "single-joycon": [
+          { "buttons": ["sl"], "inputType": "Hold" },
+          { "buttons": ["sl", "a"], "buttonInputTypes": { "sl": "Hold", "a": "Tap" } }
+        ]
       }
     ],
-    "mediaUrl": "https://www.youtube.com/watch?v=placeholder-pikachu-dsmash"
+    "mediaUrl": "https://ssb.wiki.gallery/images/1/1e/PikachuPummelSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/1/1e/PikachuPummelSSBU.gif"
+  },
+  {
+    "id": "forward-throw",
+    "name": {
+      "en": "Forward Throw",
+      "vi": "Ném trước (Forward Throw)"
+    },
+    "description": {
+      "en": "Pikachu throws the opponent forward with an electric burst. Multi-hit totaling ~10%. Good for pushing opponents offstage. Can combo into Thunder Jolt at low percents.",
+      "vi": "Pikachu ném đối thủ về phía trước kèm tia điện. Nhiều đòn ~10% tổng. Tốt để đẩy đối thủ ra ngoài sân. Có thể combo vào Thunder Jolt ở % thấp."
+    },
+    "tip": {
+      "en": "You can hold L/SL while pressing Right Stick to throw",
+      "vi": "Bạn có thể giữ L/SL trong khi nhấn Right Stick để ném"
+    },
+    "category": "grab",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["l"], "inputType": "Hold" },
+          { "buttons": ["left-stick"], "direction": "right", "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["sl"], "inputType": "Hold" },
+          { "buttons": ["stick"], "direction": "right", "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/4/41/PikachuFThrowSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/4/41/PikachuFThrowSSBU.gif"
+  },
+  {
+    "id": "back-throw",
+    "name": {
+      "en": "Back Throw",
+      "vi": "Ném sau (Back Throw)"
+    },
+    "description": {
+      "en": "Pikachu spins and slams the opponent backward. 9% damage. One of Pikachu's strongest throws for stage positioning. Can KO at high percents near the blast zone.",
+      "vi": "Pikachu quay và đập đối thủ ra sau. 9% sát thương. Đòn ném mạnh nhất về KO khi đối thủ ở % cao gần biên. Tốt để kiểm soát vị trí sân."
+    },
+    "tip": {
+      "en": "You can hold L/SL while pressing Left Stick to throw",
+      "vi": "Bạn có thể giữ L/SL trong khi nhấn Left Stick để ném"
+    },
+    "category": "grab",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["l"], "inputType": "Hold" },
+          { "buttons": ["left-stick"], "direction": "left", "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["sl"], "inputType": "Hold" },
+          { "buttons": ["stick"], "direction": "left", "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/4/41/PikachuBThrowSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/4/41/PikachuBThrowSSBU.gif"
+  },
+  {
+    "id": "up-throw",
+    "name": {
+      "en": "Up Throw",
+      "vi": "Ném lên (Up Throw)"
+    },
+    "description": {
+      "en": "Pikachu headbutts the opponent upward. 3% (hit) + 5% (throw) = ~8% total. Core combo throw at low and mid percents. Links into up air, up smash, or Thunder.",
+      "vi": "Pikachu húc đầu đối thủ lên trên. 3% (đánh) + 5% (ném) = ~8% tổng. Đòn ném combo chủ lực ở % thấp và trung bình. Kết nối vào up air, up smash, hoặc Thunder."
+    },
+    "tip": {
+      "en": "You can hold L/SL while pressing Right Stick to throw",
+      "vi": "Bạn có thể giữ L/SL trong khi nhấn Right Stick để ném"
+    },
+    "category": "grab",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["l"], "inputType": "Hold" },
+          { "buttons": ["left-stick"], "direction": "up", "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["sl"], "inputType": "Hold" },
+          { "buttons": ["stick"], "direction": "up", "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/2/21/PikachuUThrowSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/2/21/PikachuUThrowSSBU.gif"
+  },
+  {
+    "id": "down-throw",
+    "name": {
+      "en": "Down Throw",
+      "vi": "Ném xuống (Down Throw)"
+    },
+    "description": {
+      "en": "Pikachu hip-presses the opponent into the ground. 5% damage. Useful combo starter at low percents into up tilt, neutral air, or forward air.",
+      "vi": "Pikachu ngồi đè đối thủ xuống đất. 5% sát thương. Mở combo hữu ích ở % thấp vào up tilt, neutral air, hoặc forward air."
+    },
+    "tip": {
+      "en": "You can hold L/SL while pressing Left Stick to throw",
+      "vi": "Bạn có thể giữ L/SL trong khi nhấn Left Stick để ném"
+    },
+    "category": "grab",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["l"], "inputType": "Hold" },
+          { "buttons": ["left-stick"], "direction": "down", "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["sl"], "inputType": "Hold" },
+          { "buttons": ["stick"], "direction": "down", "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/2/25/PikachuDThrowSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/2/25/PikachuDThrowSSBU.gif"
+  },
+  {
+    "id": "ledge-attack",
+    "name": {
+      "en": "Ledge Attack",
+      "vi": "Đòn tấn công từ mép sân (Ledge Attack)"
+    },
+    "description": {
+      "en": "Pikachu swings its tail in an overhead arc while climbing back onto the stage. 9% damage. Decent range and comes out quickly enough to be a viable ledge option.",
+      "vi": "Pikachu quét đuôi theo vòng cung khi leo lên sân. 9% sát thương. Tầm xa tốt và ra đòn đủ nhanh để là lựa chọn ledge đáng dùng."
+    },
+    "category": "other",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["a"], "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["a"], "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/4/4e/PikachuLedgeAttackSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/4/4e/PikachuLedgeAttackSSBU.gif"
+  },
+  {
+    "id": "floor-attack-face-up",
+    "name": {
+      "en": "Floor Attack (Face Up)",
+      "vi": "Đòn đứng dậy (Ngửa mặt)"
+    },
+    "description": {
+      "en": "Pikachu spins its tail around while getting up face-up from the ground. 7% damage. Hits both sides. Standard getup attack option.",
+      "vi": "Pikachu quét đuôi khi đứng dậy từ tư thế nằm ngửa. 7% sát thương. Đánh cả hai bên. Đòn đứng dậy tiêu chuẩn."
+    },
+    "category": "other",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["a"], "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["a"], "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/4/44/PikachuGetupAttackFrontSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/4/44/PikachuGetupAttackFrontSSBU.gif"
+  },
+  {
+    "id": "floor-attack-face-down",
+    "name": {
+      "en": "Floor Attack (Face Down)",
+      "vi": "Đòn đứng dậy (Úp mặt)"
+    },
+    "description": {
+      "en": "Pikachu spins its tail around while getting up face-down from the ground. 7% damage. Hits both sides.",
+      "vi": "Pikachu quét đuôi khi đứng dậy từ tư thế nằm úp. 7% sát thương. Đánh cả hai bên."
+    },
+    "category": "other",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["a"], "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["a"], "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/b/b0/PikachuGetupAttackBackSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/b/b0/PikachuGetupAttackBackSSBU.gif"
+  },
+  {
+    "id": "floor-attack-trip",
+    "name": {
+      "en": "Floor Attack (Trip)",
+      "vi": "Đòn đứng dậy (Vấp ngã)"
+    },
+    "description": {
+      "en": "Pikachu sweeps its tail while rising from a tripped state. 5% damage. Shorter range than standard getup attacks. Use quickly to regain neutral position.",
+      "vi": "Pikachu quét đuôi khi đứng dậy sau khi vấp. 5% sát thương. Tầm ngắn hơn đòn dậy bình thường. Sử dụng nhanh để lấy lại thế trung lập."
+    },
+    "category": "other",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["a"], "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["a"], "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/b/b6/PikachuTripAttackSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/b/b6/PikachuTripAttackSSBU.gif"
+  },
+  {
+    "id": "volt-tackle",
+    "name": {
+      "en": "Volt Tackle (Final Smash)",
+      "vi": "Volt Tackle (Smash Tối thượng)"
+    },
+    "description": {
+      "en": "Pikachu transforms into a ball of electricity and dashes around the screen in a rapid multi-hit frenzy. Up to ~20% total, with the final hit sending opponents flying. Requires Smash Ball or meter.",
+      "vi": "Pikachu biến thành quả cầu điện và lao vun vút khắp màn hình theo kiểu đa đòn. Tổng ~20%, đòn cuối bắn đối thủ đi xa. Cần Smash Ball hoặc thanh năng lượng."
+    },
+    "category": "other",
+    "combos": [
+      {
+        "handheld": [
+          { "buttons": ["b"], "inputType": "Tap" }
+        ],
+        "single-joycon": [
+          { "buttons": ["b"], "inputType": "Tap" }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/5/5a/Pikachu_Final_Smash_SSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/5/5a/Pikachu_Final_Smash_SSBU.gif"
   }
 ]

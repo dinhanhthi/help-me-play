@@ -133,7 +133,7 @@ function MediaContent({
     media.provider === "dailymotion"
   ) {
     return (
-      <div className="flex flex-col gap-0.5 items-center justify-center">
+      <div className="flex flex-col gap-0.5 items-center justify-center h-full">
         <div
           className="relative max-h-[250px] overflow-hidden rounded-xl w-full"
           style={{ aspectRatio: "16 / 9" }}
@@ -156,7 +156,7 @@ function MediaContent({
 
   if (media.type === "video") {
     return (
-      <div className="flex flex-col gap-0.5 items-center justify-center">
+      <div className="flex flex-col gap-0.5 items-center justify-center h-full">
         <div className="relative max-h-[250px] overflow-hidden rounded-xl w-full">
           {!loaded && <MediaSkeleton />}
           <video
@@ -176,7 +176,7 @@ function MediaContent({
   }
 
   return (
-    <div className="flex flex-col gap-0.5 items-center justify-center">
+    <div className="flex flex-col gap-0.5 items-center justify-center h-full">
       <div className="relative max-h-[250px] overflow-hidden rounded-xl w-full">
         {!loaded && <MediaSkeleton />}
         <img

@@ -610,9 +610,17 @@
       "en": "Swings a cape dealing 7%. Reflector active frame 9, damage hitbox frame 12. REFLECTS projectiles at 1.5x damage and REVERSES opponent facing direction. In air, briefly stalls momentum for recovery mixups. Devastating for gimping recoveries.",
       "vi": "Vung áo choàng gây 7% sát thương. Phản chiếu hoạt động frame 9, hitbox sát thương frame 12. PHẢN CHIẾU đạn với 1.5 lần sát thương và ĐẢO NGƯỢC hướng mặt đối thủ. Trên không, tạm dừng đà di chuyển để mixup hồi phục. Cực hiệu quả để gimp đối thủ đang hồi phục."
     },
+    "tip": {
+      "en": "Although you need to press Left Stick and B at the same time, you can press Left Stick first \"one frame\" early, then press B quickly to create the effect",
+      "vi": "Tuy phải nhấn đồng thời Left Stick và B nhưng bạn có thể nhấn Left Stick trước \"một frame/khắc\" rồi nhanh tay nhấn B để tạo hiệu ứng"
+    },
     "category": "special",
     "combos": [
       {
+        "label": {
+          "en": "Stand",
+          "vi": "Đứng"
+        },
         "handheld": [
           {
             "buttons": ["left-stick", "b"],
@@ -621,6 +629,36 @@
           }
         ],
         "single-joycon": [
+          {
+            "buttons": ["stick", "b"],
+            "direction": "right",
+            "inputType": "Tap"
+          }
+        ]
+      },
+      {
+        "label": {
+          "en": "Move",
+          "vi": "Di chuyển"
+        },
+        "handheld": [
+          {
+            "buttons": ["left-stick"],
+            "direction": "right",
+            "inputType": "Tap"
+          },
+          {
+            "buttons": ["left-stick", "b"],
+            "direction": "right",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": ["stick"],
+            "direction": "right",
+            "inputType": "Tap"
+          },
           {
             "buttons": ["stick", "b"],
             "direction": "right",
@@ -697,36 +735,6 @@
     "sourceUrl": "https://ssb.wiki.gallery/images/8/8a/Mario_Down_B_SSBU.gif"
   },
   {
-    "id": "grab",
-    "name": {
-      "en": "Grab",
-      "vi": "Tóm (Grab)"
-    },
-    "description": {
-      "en": "Mario reaches out to grab the opponent. Frame 6 startup — tied for fastest grab in the game. Essential for Mario's combo game. Use after shield or landing nair.",
-      "vi": "Mario vươn tay tóm đối thủ. Khởi động frame 6 — ngang bằng tóm nhanh nhất trong game. Thiết yếu cho lối chơi combo của Mario. Dùng sau khi giữ khiên hoặc tiếp đất nair."
-    },
-    "category": "grab",
-    "combos": [
-      {
-        "handheld": [
-          {
-            "buttons": ["zl"],
-            "inputType": "Tap"
-          }
-        ],
-        "single-joycon": [
-          {
-            "buttons": ["sl", "sr"],
-            "inputType": "Tap"
-          }
-        ]
-      }
-    ],
-    "mediaUrl": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773500010/help-me-play/smash-bros/mario/grab.webp",
-    "sourceUrl": "https://static.wikia.nocookie.net/ssb/images/0/0d/Mario_Grab_%26_Pummel_SSBU.gif"
-  },
-  {
     "id": "pummel",
     "name": {
       "en": "Pummel",
@@ -741,13 +749,21 @@
       {
         "handheld": [
           {
-            "buttons": ["a"],
+            "buttons": ["l"],
+            "inputType": "Hold"
+          },
+          {
+            "buttons": ["l", "a"],
             "inputType": "Tap"
           }
         ],
         "single-joycon": [
           {
-            "buttons": ["a"],
+            "buttons": ["sl"],
+            "inputType": "Hold"
+          },
+          {
+            "buttons": ["sl", "a"],
             "inputType": "Tap"
           }
         ]

@@ -43,6 +43,7 @@ export interface Move {
   id: string;
   name: LocalizedString;
   description?: LocalizedString;
+  tip?: LocalizedString;
   /** Category: e.g. "special", "smash", "tilt", "throw", "other" */
   category: string;
   /** Array of input methods. First item is the primary method; additional items are alternatives. */

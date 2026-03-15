@@ -113,6 +113,11 @@ function MoveCard({
             {localize(move.description, locale)}
           </p>
         )}
+        {localize(move.tip, locale) && (
+          <p className="mt-1.5 pt-1.5 border-t border-border text-[0.85em] text-muted leading-relaxed">
+            💡 {localize(move.tip, locale)}
+          </p>
+        )}
       </div>
 
       {/* Side-by-side */}
@@ -145,12 +150,15 @@ function MoveCard({
           {(activeButtons.length > 0 || direction) &&
             (() => {
               const color = inputType ? (inputTypeColors[inputType] ?? "#38bdf8") : "#38bdf8";
+              const inputTooltip = inputType
+                ? ((t.controls.inputTypes as Record<string, string>)[inputType] ?? undefined)
+                : undefined;
               const visibleButtons = activeButtons.filter(
                 (btn) => !(direction && btn.includes("stick")),
               );
               const items: React.ReactNode[] = [];
               if (direction) {
-                items.push(
+                const dirSpan = (
                   <span
                     key="dir"
                     className="inline-flex h-5 w-5 items-center justify-center rounded-full font-mono text-sm font-bold text-white text-shadow-lg"
@@ -165,7 +173,16 @@ function MoveCard({
                     ) : (
                       <ChevronRight className="h-4 w-4" />
                     )}
-                  </span>,
+                  </span>
+                );
+                items.push(
+                  inputTooltip ? (
+                    <Tooltip key="dir" text={inputTooltip}>
+                      {dirSpan}
+                    </Tooltip>
+                  ) : (
+                    dirSpan
+                  ),
                 );
               }
               visibleButtons.forEach((btn) => {
@@ -175,14 +192,23 @@ function MoveCard({
                       +
                     </span>,
                   );
-                items.push(
+                const btnSpan = (
                   <span
                     key={btn}
                     className="inline-flex h-5 min-w-5 px-1 items-center justify-center rounded-full font-mono text-sm font-bold text-white text-shadow-lg"
                     style={{ backgroundColor: color }}
                   >
                     {getButtonLabel(btn)}
-                  </span>,
+                  </span>
+                );
+                items.push(
+                  inputTooltip ? (
+                    <Tooltip key={btn} text={inputTooltip}>
+                      {btnSpan}
+                    </Tooltip>
+                  ) : (
+                    btnSpan
+                  ),
                 );
               });
               return <div className="flex items-center gap-1">{items}</div>;

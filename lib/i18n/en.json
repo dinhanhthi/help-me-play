@@ -42,7 +42,7 @@
     "categoryDescriptions": {
       "ground": "Basic attacks performed while standing or running",
       "tilt": "Gently tilt stick + A (or walk/crouch then A). Faster, weaker — great for combos",
-      "smash": "Quickly flick stick to max + A at the same time. Slower, powerful KO moves. Can be charged by holding A",
+      "smash": "Quickly flick stick to max + A at the same time (💡 You can lightly flick stick before one frame, then quickly press A to create the effect). Slower, powerful KO moves. Can be charged by holding A",
       "aerial": "Attacks performed while airborne (You can use X or Y for jump)",
       "special": "Unique character moves using the B button",
       "grab": "Grab, pummel, and throw attacks",

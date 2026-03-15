@@ -42,7 +42,7 @@
     "categoryDescriptions": {
       "ground": "Đòn cơ bản khi đứng hoặc chạy",
       "tilt": "Nghiêng nhẹ cần + A (hoặc đi bộ/ngồi rồi bấm A). Nhanh, yếu hơn — tốt cho combo",
-      "smash": "Đẩy mạnh cần tới cùng + A cùng lúc. Chậm hơn, mạnh, dùng để hạ gục. Giữ A để tích lực",
+      "smash": "Đẩy mạnh cần tới cùng + A cùng lúc (💡 Bạn có thể khẽ nhấn cần tới trước 1 frame rồi nhanh tay nhấn A để tạo hiệu ứng). Chậm hơn, mạnh, dùng để hạ gục. Giữ A để tích lực",
       "aerial": "Đòn tấn công khi ở trên không",
       "special": "Chiêu đặc biệt riêng của nhân vật dùng nút B",
       "grab": "Tóm, đánh khi tóm, và ném",

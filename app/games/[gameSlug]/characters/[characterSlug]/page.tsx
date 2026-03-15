@@ -2,6 +2,7 @@ import { getAllGames, getCharacters, getCharacter, getGameMeta, getMoves } from 
 import type { Move } from "@/lib/types";
 import CharacterPageClient from "./CharacterPageClient";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 
 interface CharacterPageProps {
   params: Promise<{ gameSlug: string; characterSlug: string }>;
@@ -39,14 +40,16 @@ export default async function CharacterPage({ params }: CharacterPageProps) {
   }
 
   return (
-    <CharacterPageClient
-      characterName={character.name}
-      characterDescription={character.description}
-      characterPortrait={character.portrait}
-      gameTitle={gameMeta.title}
-      moves={moves}
-      gameSlug={gameSlug}
-      characterSlug={characterSlug}
-    />
+    <Suspense>
+      <CharacterPageClient
+        characterName={character.name}
+        characterDescription={character.description}
+        characterPortrait={character.portrait}
+        gameTitle={gameMeta.title}
+        moves={moves}
+        gameSlug={gameSlug}
+        characterSlug={characterSlug}
+      />
+    </Suspense>
   );
 }

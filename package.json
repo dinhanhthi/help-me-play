@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "migrate": "node scripts/migrate-media-to-cloudinary.mjs",
+    "migrate:dry": "node scripts/migrate-media-to-cloudinary.mjs --dry-run"
   },
   "dependencies": {
     "@radix-ui/react-tooltip": "^1.2.8",

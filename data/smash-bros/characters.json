@@ -19,5 +19,26 @@
     "portrait": "https://res.cloudinary.com/dy6lsuaad/image/upload/v1773563050/help-me-play/smash-bros/characters/pikachu_hiw5pq.webp",
     "description": "A fast and agile electric Pokémon with excellent recovery and combo potential.",
     "tags": ["lightweight", "speedster", "combo-heavy"]
+  },
+  {
+    "slug": "little-mac",
+    "name": "Little Mac",
+    "portrait": "https://static.wikia.nocookie.net/ssb/images/e/e8/Little_Mac_-_Super_Smash_Bros._Ultimate.png/revision/latest?cb=20180612204955",
+    "description": "The hardest-hitting boxer in the game with the strongest ground game. Poor in the air but devastating on the ground.",
+    "tags": ["lightweight", "ground-fighter", "high-risk"]
+  },
+  {
+    "slug": "min-min",
+    "name": "Min Min",
+    "portrait": "https://static.wikia.nocookie.net/ssb/images/3/35/Min_Min_SSBU.png/revision/latest?cb=20200622171658",
+    "description": "ARMS fighter with long-range extending arm attacks. Unique playstyle with left-stick for left arm, A for right arm.",
+    "tags": ["middleweight", "long-range", "unique-mechanic"]
+  },
+  {
+    "slug": "donkey-kong",
+    "name": "Donkey Kong",
+    "portrait": "https://static.wikia.nocookie.net/ssb/images/5/5f/Donkey_Kong_-_Super_Smash_Bros._Ultimate.png/revision/latest?cb=20180612204654",
+    "description": "A powerful heavyweight with great range and combo potential. High damage output but slow movement.",
+    "tags": ["super-heavyweight", "power", "combo-heavy"]
   }
 ]

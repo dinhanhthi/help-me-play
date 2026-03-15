@@ -1,0 +1,1309 @@
+[
+  {
+    "id": "jab",
+    "name": {
+      "en": "Neutral Attack (Jab)",
+      "vi": "Đấm liên hoàn (Jab)"
+    },
+    "description": {
+      "en": "A lightning-fast one-two punch combo: left jab then right hook. 1.5% + 2.5% = 4% total, or mash for a rapid flurry finishing with an uppercut (~14% total). Frame 1 startup — tied for the fastest move in the game. Core close-range pressure tool.",
+      "vi": "Combo đấm nhanh trái-phải: jab trái rồi hook phải. 1.5% + 2.5% = 4% tổng, hoặc liên tục nhấn để đấm liên hoàn kết thúc bằng uppercut (~14% tổng). Ra đòn frame 1 — đồng nhanh nhất trong game. Công cụ gây áp lực cận chiến chủ lực."
+    },
+    "category": "ground",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "a"
+            ],
+            "inputType": "Tap"
+          },
+          {
+            "buttons": [
+              "a"
+            ],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "a"
+            ],
+            "inputType": "Tap"
+          },
+          {
+            "buttons": [
+              "a"
+            ],
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/4/47/LittleMacJab1SSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/4/47/LittleMacJab1SSBU.gif"
+  },
+  {
+    "id": "dash-attack",
+    "name": {
+      "en": "Dash Attack",
+      "vi": "Đòn tấn công khi chạy (Dash Attack)"
+    },
+    "description": {
+      "en": "A running lunge with a straight punch. 12% (clean) / 8% (late). Startup frame 8. Good range and speed for punishing missed attacks at a distance. Decent combo starter at low percents.",
+      "vi": "Lao thẳng ra một cú đấm khi đang chạy. 12% (sớm) / 8% (muộn). Ra đòn frame 8. Tầm xa và tốc độ tốt để trừng phạt đòn hụt từ xa. Mở combo khá ở % thấp."
+    },
+    "category": "ground",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "left-stick"
+            ],
+            "direction": "right",
+            "inputType": "Hold"
+          },
+          {
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
+            "direction": "right",
+            "buttonInputTypes": {
+              "left-stick": "Hold",
+              "a": "Tap"
+            }
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "stick"
+            ],
+            "direction": "right",
+            "inputType": "Hold"
+          },
+          {
+            "buttons": [
+              "stick",
+              "a"
+            ],
+            "direction": "right",
+            "buttonInputTypes": {
+              "stick": "Hold",
+              "a": "Tap"
+            }
+          }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/7/79/LittleMacDashAttackSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/7/79/LittleMacDashAttackSSBU.gif"
+  },
+  {
+    "id": "forward-tilt",
+    "name": {
+      "en": "Forward Tilt",
+      "vi": "Đòn nghiêng trước (Forward Tilt)"
+    },
+    "description": {
+      "en": "A quick one-two combination punch: straight left followed by a right hook. 3% + 6% = 9% total. Startup frame 4. Excellent speed and power for a tilt — can KO near the ledge at around 130%. One of the best forward tilts in the game.",
+      "vi": "Combo đấm nhanh trái-phải: thẳng trái rồi hook phải. 3% + 6% = 9% tổng. Ra đòn frame 4. Tốc độ và uy lực xuất sắc cho một tilt — có thể KO gần mép sân ở khoảng 130%. Một trong những forward tilt tốt nhất trong game."
+    },
+    "category": "ground",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
+            "direction": "right",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "stick",
+              "a"
+            ],
+            "direction": "right",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/0/04/LittleMacFTiltSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/0/04/LittleMacFTiltSSBU.gif"
+  },
+  {
+    "id": "up-tilt",
+    "name": {
+      "en": "Up Tilt",
+      "vi": "Đòn nghiêng trên (Up Tilt)"
+    },
+    "description": {
+      "en": "An overhead arcing backfist that swings above Little Mac's head. 7% damage. Startup frame 5. Fast anti-air and juggling tool. Can combo into itself at low percents and leads into Rising Uppercut (Up Special).",
+      "vi": "Cú đấm vòng cung phía trên đầu Little Mac. 7% sát thương. Ra đòn frame 5. Chống không và tung hứng nhanh. Có thể combo vào chính nó ở % thấp và dẫn vào Rising Uppercut (Up Special)."
+    },
+    "category": "ground",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
+            "direction": "up",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "stick",
+              "a"
+            ],
+            "direction": "up",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/d/db/LittleMacUTiltSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/d/db/LittleMacUTiltSSBU.gif"
+  },
+  {
+    "id": "down-tilt",
+    "name": {
+      "en": "Down Tilt",
+      "vi": "Đòn nghiêng dưới (Down Tilt)"
+    },
+    "description": {
+      "en": "A crouching short straight-punch that hits low. 7% damage. Startup frame 3 — one of the fastest moves overall. Consistently combos into Jolt Haymaker (Side Special) at mid percents. Excellent low poke.",
+      "vi": "Cú đấm thẳng ngắn khi cúi thấp. 7% sát thương. Ra đòn frame 3 — một trong những đòn nhanh nhất. Liên tục combo vào Jolt Haymaker (Side Special) ở % trung bình. Đòn chọc thấp xuất sắc."
+    },
+    "category": "ground",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
+            "direction": "down",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "stick",
+              "a"
+            ],
+            "direction": "down",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/2/2b/LittleMacDTiltSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/2/2b/LittleMacDTiltSSBU.gif"
+  },
+  {
+    "id": "forward-smash",
+    "name": {
+      "en": "Forward Smash",
+      "vi": "Smash trước (Forward Smash)"
+    },
+    "description": {
+      "en": "A powerful straight punch with super armor during startup. 20%–28% (uncharged to fully charged). Startup frame 12. One of the strongest forward smashes in the game. The super armor lets it plow through many attacks. KOs around 60–80% when charged. Can be angled up or down.",
+      "vi": "Cú đấm thẳng mạnh có super armor khi ra đòn. 20%–28% (không nạp đến nạp đầy). Ra đòn frame 12. Một trong những smash trước mạnh nhất trong game. Super armor cho phép xuyên qua nhiều đòn. KO ở khoảng 60–80% khi nạp đầy. Có thể chỉnh góc lên hoặc xuống."
+    },
+    "category": "ground",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
+            "direction": "right",
+            "inputType": "Smash"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "stick",
+              "a"
+            ],
+            "direction": "right",
+            "inputType": "Smash"
+          }
+        ]
+      },
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "right-stick"
+            ],
+            "direction": "right",
+            "inputType": "Smash"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/6/6b/LittleMacFSmashSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/6/6b/LittleMacFSmashSSBU.gif"
+  },
+  {
+    "id": "up-smash",
+    "name": {
+      "en": "Up Smash",
+      "vi": "Smash trên (Up Smash)"
+    },
+    "description": {
+      "en": "An explosive uppercut that launches opponents vertically. 18%–25.2% (uncharged to fully charged). Startup frame 8. Super armor on frames 1–13 makes it trade favorably with many attacks. KOs around 80–100%. Exceptional out-of-shield option.",
+      "vi": "Cú đấm móc trên nổ tung đối thủ lên thẳng đứng. 18%–25.2% (không nạp đến nạp đầy). Ra đòn frame 8. Super armor từ frame 1–13 giúp đổi đòn có lợi. KO ở khoảng 80–100%. Thoát khiên xuất sắc."
+    },
+    "category": "ground",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
+            "direction": "up",
+            "inputType": "Smash"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "stick",
+              "a"
+            ],
+            "direction": "up",
+            "inputType": "Smash"
+          }
+        ]
+      },
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "right-stick"
+            ],
+            "direction": "up",
+            "inputType": "Smash"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/5/54/LittleMacUSmashSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/5/54/LittleMacUSmashSSBU.gif"
+  },
+  {
+    "id": "down-smash",
+    "name": {
+      "en": "Down Smash",
+      "vi": "Smash dưới (Down Smash)"
+    },
+    "description": {
+      "en": "A sweeping low punch that hits both sides in sequence: front then back. 14%–19.6% front / 12%–16.8% back (uncharged to charged). Startup frame 8. Super armor on startup. Excellent for punishing rolls and two-framing opponents at ledge.",
+      "vi": "Cú đấm quét thấp đánh cả hai phía liên tiếp: trước rồi sau. 14%–19.6% trước / 12%–16.8% sau (không nạp đến nạp). Ra đòn frame 8. Super armor khi ra đòn. Xuất sắc để trừng phạt lăn né và two-frame đối thủ ở mép sân."
+    },
+    "category": "ground",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
+            "direction": "down",
+            "inputType": "Smash"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "stick",
+              "a"
+            ],
+            "direction": "down",
+            "inputType": "Smash"
+          }
+        ]
+      },
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "right-stick"
+            ],
+            "direction": "down",
+            "inputType": "Smash"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/c/c3/LittleMacDSmashSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/c/c3/LittleMacDSmashSSBU.gif"
+  },
+  {
+    "id": "neutral-air",
+    "name": {
+      "en": "Neutral Air",
+      "vi": "Đòn không trung trung tính (Neutral Air)"
+    },
+    "description": {
+      "en": "Little Mac spins with a kick that extends outward. 9% (clean) / 6% (late). Startup frame 8. One of Little Mac's better aerial options but still below average. Can be used as a landing option or to cover landings.",
+      "vi": "Little Mac xoay với cú đá vươn ra ngoài. 9% (sớm) / 6% (muộn). Ra đòn frame 8. Một trong những đòn trên không khá hơn của Little Mac nhưng vẫn dưới trung bình. Có thể dùng để tiếp đất hoặc che chắn khi đáp xuống."
+    },
+    "category": "aerial",
+    "combos": [
+      {
+        "label": {
+          "en": "Stand",
+          "vi": "Đứng"
+        },
+        "handheld": [
+          {
+            "buttons": [
+              "x"
+            ],
+            "inputType": "Tap"
+          },
+          {
+            "buttons": [
+              "a"
+            ],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "x"
+            ],
+            "inputType": "Tap"
+          },
+          {
+            "buttons": [
+              "a"
+            ],
+            "inputType": "Tap"
+          }
+        ]
+      },
+      {
+        "label": {
+          "en": "Move",
+          "vi": "Chạy"
+        },
+        "handheld": [
+          {
+            "buttons": [
+              "left-stick",
+              "x"
+            ],
+            "direction": "right",
+            "buttonInputTypes": {
+              "left-stick": "Hold",
+              "x": "Tap"
+            }
+          },
+          {
+            "buttons": [
+              "a"
+            ],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "stick",
+              "x"
+            ],
+            "direction": "right",
+            "buttonInputTypes": {
+              "stick": "Hold",
+              "x": "Tap"
+            }
+          },
+          {
+            "buttons": [
+              "a"
+            ],
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/0/06/LittleMacNAirSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/0/06/LittleMacNAirSSBU.gif"
+  },
+  {
+    "id": "forward-air",
+    "name": {
+      "en": "Forward Air",
+      "vi": "Đòn không trung trước (Forward Air)"
+    },
+    "description": {
+      "en": "A forward punch in the air. 9% (clean) / 6% (late). Startup frame 9. Very weak by SSBU standards — Little Mac's aerial game is one of the worst in the game. Best used only when already airborne.",
+      "vi": "Cú đấm về phía trước trên không. 9% (sớm) / 6% (muộn). Ra đòn frame 9. Rất yếu theo tiêu chuẩn SSBU — khả năng chiến đấu trên không của Little Mac là một trong tệ nhất trong game. Chỉ nên dùng khi đã ở trên không."
+    },
+    "category": "aerial",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "left-stick",
+              "x"
+            ],
+            "direction": "right",
+            "buttonInputTypes": {
+              "left-stick": "Hold",
+              "x": "Tap"
+            }
+          },
+          {
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
+            "direction": "right",
+            "buttonInputTypes": {
+              "left-stick": "Hold",
+              "a": "Tap"
+            }
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "stick",
+              "x"
+            ],
+            "direction": "right",
+            "buttonInputTypes": {
+              "stick": "Hold",
+              "x": "Tap"
+            }
+          },
+          {
+            "buttons": [
+              "stick",
+              "a"
+            ],
+            "direction": "right",
+            "buttonInputTypes": {
+              "stick": "Hold",
+              "a": "Tap"
+            }
+          }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/9/99/LittleMacFAirSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/9/99/LittleMacFAirSSBU.gif"
+  },
+  {
+    "id": "back-air",
+    "name": {
+      "en": "Back Air",
+      "vi": "Đòn không trung sau (Back Air)"
+    },
+    "description": {
+      "en": "A backward elbow strike in the air. 11% (clean) / 7% (late). Startup frame 7. Little Mac's strongest aerial in terms of knockback. Still weak compared to other characters' back airs, but can serve as a last-resort edgeguard.",
+      "vi": "Cú đánh cùi chỏ ra sau trên không. 11% (sớm) / 7% (muộn). Ra đòn frame 7. Đòn trên không mạnh nhất của Little Mac về knockback. Vẫn yếu so với back air của nhân vật khác, nhưng có thể dùng như biện pháp cuối để canh edgeguard."
+    },
+    "category": "aerial",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "left-stick",
+              "x"
+            ],
+            "direction": "right",
+            "inputType": "Tap"
+          },
+          {
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
+            "direction": "left",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "stick",
+              "x"
+            ],
+            "direction": "right",
+            "inputType": "Tap"
+          },
+          {
+            "buttons": [
+              "stick",
+              "a"
+            ],
+            "direction": "left",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/5/56/LittleMacBAirSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/5/56/LittleMacBAirSSBU.gif"
+  },
+  {
+    "id": "up-air",
+    "name": {
+      "en": "Up Air",
+      "vi": "Đòn không trung trên (Up Air)"
+    },
+    "description": {
+      "en": "An upward headbutt. 9% (clean) / 6% (late). Startup frame 8. Low knockback makes it a weak juggling tool. Should be avoided in favor of landing and using ground moves. Little Mac's aerial game is notoriously poor.",
+      "vi": "Cú húc đầu lên trên. 9% (sớm) / 6% (muộn). Ra đòn frame 8. Knockback thấp khiến nó trở thành công cụ tung hứng yếu. Nên tránh và thay vào đó hạ cánh để dùng đòn mặt đất. Khả năng chiến đấu trên không của Little Mac nổi tiếng là tệ."
+    },
+    "category": "aerial",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "x"
+            ],
+            "inputType": "Tap"
+          },
+          {
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
+            "direction": "up",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "x"
+            ],
+            "inputType": "Tap"
+          },
+          {
+            "buttons": [
+              "stick",
+              "a"
+            ],
+            "direction": "up",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/2/2e/LittleMacUAirSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/2/2e/LittleMacUAirSSBU.gif"
+  },
+  {
+    "id": "down-air",
+    "name": {
+      "en": "Down Air",
+      "vi": "Đòn không trung dưới (Down Air)"
+    },
+    "description": {
+      "en": "A downward stomp in the air. 12% (clean) / 9% (late). Startup frame 13. Little Mac's slowest aerial. Extremely high landing lag — avoid using this offstage at all costs. Can occasionally be used as a stall tactic near the ground.",
+      "vi": "Cú giậm chân xuống trên không. 12% (sớm) / 9% (muộn). Ra đòn frame 13. Đòn trên không chậm nhất của Little Mac. Lag tiếp đất cực cao — tuyệt đối tránh dùng ngoài sân. Đôi khi có thể dùng như chiến thuật trì hoãn gần mặt đất."
+    },
+    "category": "aerial",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "x"
+            ],
+            "inputType": "Tap"
+          },
+          {
+            "buttons": [
+              "left-stick",
+              "a"
+            ],
+            "direction": "down",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "x"
+            ],
+            "inputType": "Tap"
+          },
+          {
+            "buttons": [
+              "stick",
+              "a"
+            ],
+            "direction": "down",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/a/aa/LittleMacDAirSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/a/aa/LittleMacDAirSSBU.gif"
+  },
+  {
+    "id": "grab",
+    "name": {
+      "en": "Grab",
+      "vi": "Tóm (Grab)"
+    },
+    "description": {
+      "en": "Little Mac reaches out to grab the opponent. Standing grab startup frame 6. Dash grab startup frame 8. Pivot grab startup frame 10. Grabbing leads into powerful throw combos at low percents.",
+      "vi": "Little Mac vươn tay tóm đối thủ. Grab đứng ra đòn frame 6. Dash grab ra đòn frame 8. Pivot grab ra đòn frame 10. Tóm dẫn vào combo ném mạnh ở % thấp."
+    },
+    "category": "grab",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "l"
+            ],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "sl"
+            ],
+            "inputType": "Tap"
+          }
+        ]
+      },
+      {
+        "label": {
+          "en": "Alt",
+          "vi": "Thay thế"
+        },
+        "handheld": [
+          {
+            "buttons": [
+              "zl"
+            ],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "zl"
+            ],
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/3/30/LittleMacGrabSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/3/30/LittleMacGrabSSBU.gif"
+  },
+  {
+    "id": "pummel",
+    "name": {
+      "en": "Pummel",
+      "vi": "Đánh khi tóm (Pummel)"
+    },
+    "description": {
+      "en": "Little Mac hits the grabbed opponent with a quick punch to the gut. 1.3% per pummel. Fast — use 2–3 times before throwing for optimal damage without losing grab advantage.",
+      "vi": "Little Mac đánh đối thủ đang bị tóm bằng cú đấm nhanh vào bụng. 1.3% mỗi lần. Nhanh — sử dụng 2–3 lần trước khi ném để tối ưu sát thương mà không mất lợi thế tóm."
+    },
+    "category": "grab",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "l"
+            ],
+            "inputType": "Hold"
+          },
+          {
+            "buttons": [
+              "l",
+              "a"
+            ],
+            "buttonInputTypes": {
+              "l": "Hold",
+              "a": "Tap"
+            }
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "sl"
+            ],
+            "inputType": "Hold"
+          },
+          {
+            "buttons": [
+              "sl",
+              "a"
+            ],
+            "buttonInputTypes": {
+              "sl": "Hold",
+              "a": "Tap"
+            }
+          }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/0/00/LittleMacPummelSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/0/00/LittleMacPummelSSBU.gif"
+  },
+  {
+    "id": "forward-throw",
+    "name": {
+      "en": "Forward Throw",
+      "vi": "Ném trước (Forward Throw)"
+    },
+    "description": {
+      "en": "Little Mac punches the opponent forward. 10% damage. Launches at a low angle — excellent for pushing opponents offstage for edgeguard situations. Can combo into Jolt Haymaker at low percents.",
+      "vi": "Little Mac đấm đối thủ về phía trước. 10% sát thương. Bắn ở góc thấp — xuất sắc để đẩy đối thủ ra ngoài sân cho tình huống edgeguard. Có thể combo vào Jolt Haymaker ở % thấp."
+    },
+    "tip": {
+      "en": "You can hold L/SL while pressing Right Stick to throw",
+      "vi": "Bạn có thể giữ L/SL trong khi nhấn Right Stick để ném"
+    },
+    "category": "grab",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "l"
+            ],
+            "inputType": "Hold"
+          },
+          {
+            "buttons": [
+              "left-stick"
+            ],
+            "direction": "right",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "sl"
+            ],
+            "inputType": "Hold"
+          },
+          {
+            "buttons": [
+              "stick"
+            ],
+            "direction": "right",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/f/f7/LittleMacFThrowSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/f/f7/LittleMacFThrowSSBU.gif"
+  },
+  {
+    "id": "back-throw",
+    "name": {
+      "en": "Back Throw",
+      "vi": "Ném sau (Back Throw)"
+    },
+    "description": {
+      "en": "Little Mac spins and hurls the opponent backward. 10% damage. Can KO at very high percents near the side blast zone (~170%). Best throw for stage control and setting up edgeguard.",
+      "vi": "Little Mac xoay và ném mạnh đối thủ ra sau. 10% sát thương. Có thể KO ở % rất cao gần vùng nổ bên (~170%). Đòn ném tốt nhất để kiểm soát sân và setup edgeguard."
+    },
+    "tip": {
+      "en": "You can hold L/SL while pressing Left Stick to throw",
+      "vi": "Bạn có thể giữ L/SL trong khi nhấn Left Stick để ném"
+    },
+    "category": "grab",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "l"
+            ],
+            "inputType": "Hold"
+          },
+          {
+            "buttons": [
+              "left-stick"
+            ],
+            "direction": "left",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "sl"
+            ],
+            "inputType": "Hold"
+          },
+          {
+            "buttons": [
+              "stick"
+            ],
+            "direction": "left",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/2/2f/LittleMacBThrowSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/2/2f/LittleMacBThrowSSBU.gif"
+  },
+  {
+    "id": "up-throw",
+    "name": {
+      "en": "Up Throw",
+      "vi": "Ném lên (Up Throw)"
+    },
+    "description": {
+      "en": "Little Mac tosses the opponent upward with a fierce uppercut. 9% damage. Useful combo throw at low percents — can follow up with up tilt or up smash. KOs around 180% near the top blast zone.",
+      "vi": "Little Mac tung đối thủ lên bằng một cú uppercut dữ dội. 9% sát thương. Đòn ném combo hữu ích ở % thấp — có thể tiếp theo bằng up tilt hoặc up smash. KO ở khoảng 180% gần vùng nổ trên."
+    },
+    "tip": {
+      "en": "You can hold L/SL while pressing Right Stick to throw",
+      "vi": "Bạn có thể giữ L/SL trong khi nhấn Right Stick để ném"
+    },
+    "category": "grab",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "l"
+            ],
+            "inputType": "Hold"
+          },
+          {
+            "buttons": [
+              "left-stick"
+            ],
+            "direction": "up",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "sl"
+            ],
+            "inputType": "Hold"
+          },
+          {
+            "buttons": [
+              "stick"
+            ],
+            "direction": "up",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/6/6d/LittleMacUThrowSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/6/6d/LittleMacUThrowSSBU.gif"
+  },
+  {
+    "id": "down-throw",
+    "name": {
+      "en": "Down Throw",
+      "vi": "Ném xuống (Down Throw)"
+    },
+    "description": {
+      "en": "Little Mac slams the opponent into the ground. 6% damage. Best combo starter at low percents — leads into forward tilt, up tilt, up smash, or Jolt Haymaker. Tech-chase tool at mid percents.",
+      "vi": "Little Mac đập đối thủ mạnh xuống đất. 6% sát thương. Mở combo tốt nhất ở % thấp — dẫn vào forward tilt, up tilt, up smash, hoặc Jolt Haymaker. Công cụ tech-chase ở % trung bình."
+    },
+    "tip": {
+      "en": "You can hold L/SL while pressing Left Stick to throw",
+      "vi": "Bạn có thể giữ L/SL trong khi nhấn Left Stick để ném"
+    },
+    "category": "grab",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "l"
+            ],
+            "inputType": "Hold"
+          },
+          {
+            "buttons": [
+              "left-stick"
+            ],
+            "direction": "down",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "sl"
+            ],
+            "inputType": "Hold"
+          },
+          {
+            "buttons": [
+              "stick"
+            ],
+            "direction": "down",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/0/08/LittleMacDThrowSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/0/08/LittleMacDThrowSSBU.gif"
+  },
+  {
+    "id": "neutral-special",
+    "name": {
+      "en": "Straight Lunge / KO Punch",
+      "vi": "Straight Lunge / KO Punch"
+    },
+    "description": {
+      "en": "Hold B to charge a straight punch — the longer you charge, the more damage and knockback. Uncharged: 6%, fully charged: 30%. When the KO Meter is completely full, this move becomes KO Uppercut — a single-hit KO at almost any percent. The KO Meter fills as Little Mac takes damage.",
+      "vi": "Giữ B để tích lực cú đấm thẳng — tích càng lâu, sát thương và knockback càng cao. Không tích: 6%, tích đầy: 30%. Khi KO Meter đầy hoàn toàn, đòn này trở thành KO Uppercut — hạ gục một đòn ở hầu hết mọi %. KO Meter tăng khi Little Mac nhận sát thương."
+    },
+    "category": "special",
+    "combos": [
+      {
+        "label": {
+          "en": "Uncharged",
+          "vi": "Không tích"
+        },
+        "handheld": [
+          {
+            "buttons": [
+              "b"
+            ],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "b"
+            ],
+            "inputType": "Tap"
+          }
+        ]
+      },
+      {
+        "label": {
+          "en": "Charged",
+          "vi": "Tích lực"
+        },
+        "handheld": [
+          {
+            "buttons": [
+              "b"
+            ],
+            "inputType": "Hold"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "b"
+            ],
+            "inputType": "Hold"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/8/8e/LittleMacNSpecialGroundedSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/8/8e/LittleMacNSpecialGroundedSSBU.gif"
+  },
+  {
+    "id": "ko-punch",
+    "name": {
+      "en": "KO Uppercut",
+      "vi": "KO Uppercut"
+    },
+    "description": {
+      "en": "When the KO Meter (shown above Little Mac's damage counter) is fully charged, Neutral Special becomes this devastating uppercut. Deals around 50% and KOs at nearly any percent. The star symbol above his head indicates the meter is full. The most feared move in his arsenal.",
+      "vi": "Khi KO Meter (hiển thị phía trên chỉ số sát thương của Little Mac) nạp đầy, Neutral Special trở thành cú uppercut tàn khốc này. Gây khoảng 50% và KO ở hầu hết mọi %. Biểu tượng ngôi sao trên đầu cho biết meter đã đầy. Đòn đáng sợ nhất trong kho vũ khí của anh ta."
+    },
+    "category": "special",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "b"
+            ],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "b"
+            ],
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/3/3f/LittleMacNSpecialKOPunchGroundedSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/3/3f/LittleMacNSpecialKOPunchGroundedSSBU.gif"
+  },
+  {
+    "id": "side-special",
+    "name": {
+      "en": "Jolt Haymaker",
+      "vi": "Jolt Haymaker"
+    },
+    "description": {
+      "en": "Little Mac lunges forward with a powerful overhead hook. 13% (grounded) / 12% (aerial). Startup frame 17. Travels a long horizontal distance — used for horizontal recovery and aggressive approach. Leaves Little Mac helpless if used in the air, so it should be saved for desperate recovery attempts.",
+      "vi": "Little Mac lao thẳng về phía trước với cú móc trên mạnh mẽ. 13% (mặt đất) / 12% (trên không). Ra đòn frame 17. Di chuyển khoảng cách ngang dài — dùng để hồi phục ngang và tiếp cận tấn công. Khiến Little Mac bất lực nếu dùng trên không, vì vậy chỉ nên dùng khi thực sự cần hồi phục."
+    },
+    "category": "special",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "left-stick",
+              "b"
+            ],
+            "direction": "right",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "stick",
+              "b"
+            ],
+            "direction": "right",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/5/56/LittleMacSSpecialGroundedSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/5/56/LittleMacSSpecialGroundedSSBU.gif"
+  },
+  {
+    "id": "up-special",
+    "name": {
+      "en": "Rising Uppercut",
+      "vi": "Rising Uppercut"
+    },
+    "description": {
+      "en": "Little Mac leaps upward with a spinning uppercut. 15% (first hit) + 2% (subsequent hits) = ~20% total. Startup frame 4. Very short vertical recovery — one of the worst recovery moves in the game. Use on the ground as an anti-air or combo finisher instead.",
+      "vi": "Little Mac bật lên với cú uppercut xoay tròn. 15% (đòn đầu) + 2% (các đòn tiếp theo) = ~20% tổng. Ra đòn frame 4. Hồi phục dọc rất ngắn — một trong những đòn hồi phục tệ nhất trong game. Thay vào đó hãy dùng trên mặt đất như chống không hoặc kết thúc combo."
+    },
+    "category": "special",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "left-stick",
+              "b"
+            ],
+            "direction": "up",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "stick",
+              "b"
+            ],
+            "direction": "up",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/e/ee/LittleMacUSpecialSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/e/ee/LittleMacUSpecialSSBU.gif"
+  },
+  {
+    "id": "down-special",
+    "name": {
+      "en": "Slip Counter",
+      "vi": "Slip Counter"
+    },
+    "description": {
+      "en": "Little Mac slips to the side and counters any incoming hit. Counter window: frames 4–27. If triggered: 1.3× the absorbed attack damage (min 10%). Startup frame 4. One of the fastest counters in the game. Grounded version sends the opponent flying laterally; aerial version has a unique swinging counter attack.",
+      "vi": "Little Mac né sang bên và phản đòn mọi cú đánh đến. Cửa sổ phản đòn: frame 4–27. Khi kích hoạt: 1.3× sát thương đòn bị hấp thụ (tối thiểu 10%). Ra đòn frame 4. Một trong những counter nhanh nhất trong game. Phiên bản mặt đất bắn đối thủ bay ngang; phiên bản trên không có đòn counter đặc biệt theo kiểu xoay."
+    },
+    "category": "special",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "left-stick",
+              "b"
+            ],
+            "direction": "down",
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "stick",
+              "b"
+            ],
+            "direction": "down",
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/5/54/LittleMacDSpecialSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/5/54/LittleMacDSpecialSSBU.gif"
+  },
+  {
+    "id": "final-smash",
+    "name": {
+      "en": "Giga Mac Rush (Final Smash)",
+      "vi": "Giga Mac Rush (Final Smash)"
+    },
+    "description": {
+      "en": "Little Mac transforms into the massive Giga Mac and unleashes a rapid barrage of punches before finishing with a massive uppercut. Total damage: ~50–60%. Requires landing the initial hit to trigger the full combo. Requires Smash Ball or Final Smash Meter.",
+      "vi": "Little Mac biến thành Giga Mac khổng lồ và tung ra loạt đấm liên hoàn cực nhanh trước khi kết thúc bằng một cú uppercut khổng lồ. Tổng sát thương: ~50–60%. Cần trúng đòn đầu để kích hoạt toàn bộ combo. Cần Smash Ball hoặc Final Smash Meter."
+    },
+    "category": "special",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "b"
+            ],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "b"
+            ],
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/e/ee/LittleMacUSpecialSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/e/ee/LittleMacUSpecialSSBU.gif"
+  },
+  {
+    "id": "floor-attack",
+    "name": {
+      "en": "Floor Attack",
+      "vi": "Đòn đứng dậy (Floor Attack)"
+    },
+    "description": {
+      "en": "Little Mac punches both sides while getting up from the ground. 7% damage. Hits in front and behind simultaneously. Standard getup attack — use quickly to create space when knocked down.",
+      "vi": "Little Mac đấm cả hai bên khi đứng dậy từ mặt đất. 7% sát thương. Đánh cả phía trước và phía sau đồng thời. Đòn dậy tiêu chuẩn — sử dụng nhanh để tạo khoảng cách khi bị knock down."
+    },
+    "category": "misc",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "a"
+            ],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "a"
+            ],
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/4/46/LittleMacGetupAttackFrontSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/4/46/LittleMacGetupAttackFrontSSBU.gif"
+  },
+  {
+    "id": "ledge-attack",
+    "name": {
+      "en": "Ledge Attack",
+      "vi": "Đòn tấn công từ mép sân (Ledge Attack)"
+    },
+    "description": {
+      "en": "Little Mac swings a punch outward while climbing back onto the stage from the ledge. 9% damage. Standard ledge attack with decent range. Given Little Mac's terrible recovery, getting back to the ledge is already an achievement.",
+      "vi": "Little Mac tung cú đấm ra ngoài khi leo lên sân từ mép. 9% sát thương. Đòn ledge tiêu chuẩn với tầm xa khá. Với khả năng hồi phục tệ hại của Little Mac, chỉ trở về được mép sân đã là một thành tích."
+    },
+    "category": "misc",
+    "combos": [
+      {
+        "handheld": [
+          {
+            "buttons": [
+              "a"
+            ],
+            "inputType": "Tap"
+          }
+        ],
+        "single-joycon": [
+          {
+            "buttons": [
+              "a"
+            ],
+            "inputType": "Tap"
+          }
+        ]
+      }
+    ],
+    "mediaUrl": "https://ssb.wiki.gallery/images/e/eb/LittleMacLedgeAttackSSBU.gif",
+    "sourceUrl": "https://ssb.wiki.gallery/images/e/eb/LittleMacLedgeAttackSSBU.gif"
+  }
+]

@@ -67,10 +67,24 @@ The static site is generated in the `out/` directory.
 ### Lint & Format
 
 ```bash
-npm run lint        # Run ESLint
-npm run format      # Format with Prettier
+npm run lint         # Run ESLint
+npm run format       # Format with Prettier
 npm run format:check # Check formatting without writing
 ```
+
+### Media Migration
+
+Images (`coverImage`, `portrait`) and move GIFs are hosted on Cloudinary. To migrate any non-Cloudinary image URL in the data files:
+
+```bash
+# Dry run — preview what would be migrated
+npm run migrate:dry
+
+# Run migration (requires Cloudinary credentials)
+CLOUDINARY_CLOUD_NAME=xxx CLOUDINARY_API_KEY=xxx CLOUDINARY_API_SECRET=xxx npm run migrate
+```
+
+The script skips URLs already on Cloudinary and preserves the original URL in a `sourceUrl` field for move media.
 
 ## Project Structure
 

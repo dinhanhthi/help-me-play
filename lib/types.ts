@@ -70,7 +70,7 @@ export interface GameMeta {
   slug: string;
   title: string;
   description: string;
-  /** Path to cover image relative to /public */
+  /** URL or path to cover image */
   coverImage?: string;
   /** General tips for the game */
   tips?: string[];

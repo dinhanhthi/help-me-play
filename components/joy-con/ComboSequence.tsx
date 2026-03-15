@@ -65,6 +65,9 @@ export interface ComboSequenceState {
   currentStep: number;
   stepCount: number;
   isPlaying: boolean;
+  activeButtons: string[];
+  direction?: string;
+  inputType?: string;
 }
 
 interface ComboSequenceProps {
@@ -152,15 +155,26 @@ const ComboSequence = forwardRef<ComboSequenceHandle, ComboSequenceProps>(functi
     });
   }, [stepCount, stepsMatch]);
 
-  useImperativeHandle(
-    ref,
-    () => ({ togglePlayPause, goToPrevStep, goToNextStep, restart }),
-    [togglePlayPause, goToPrevStep, goToNextStep, restart],
-  );
+  useImperativeHandle(ref, () => ({ togglePlayPause, goToPrevStep, goToNextStep, restart }), [
+    togglePlayPause,
+    goToPrevStep,
+    goToNextStep,
+    restart,
+  ]);
 
   useEffect(() => {
-    onStateChange?.({ currentStep, stepCount, isPlaying });
-  }, [currentStep, stepCount, isPlaying, onStateChange]);
+    const btns = isGap ? [] : (step?.buttons ?? []);
+    const dir = isGap ? undefined : step?.direction;
+    const iType = isGap ? undefined : step?.inputType;
+    onStateChange?.({
+      currentStep,
+      stepCount,
+      isPlaying,
+      activeButtons: btns,
+      direction: dir,
+      inputType: iType,
+    });
+  }, [currentStep, stepCount, isPlaying, isGap, step, onStateChange]);
 
   // Brief gap (150ms) between identical consecutive steps — works in both play and pause modes
   useEffect(() => {

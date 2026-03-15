@@ -3,7 +3,16 @@
 import { useState, useMemo, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronRight, ChessKnight, Pause, Play, ChevronLeft, RotateCcw } from "lucide-react";
+import {
+  ChevronRight,
+  ChevronUp,
+  ChevronDown,
+  ChessKnight,
+  Pause,
+  Play,
+  ChevronLeft,
+  RotateCcw,
+} from "lucide-react";
 import type { ControllerMode, Move } from "@/lib/types";
 import { useI18n } from "@/lib/i18n/context";
 import { localize, type Locale } from "@/lib/i18n";
@@ -13,6 +22,7 @@ import ComboSequence, {
   type ComboSequenceState,
 } from "@/components/joy-con/ComboSequence";
 import MediaEmbed from "@/components/media/MediaEmbed";
+import { getButtonLabel } from "@/lib/button-labels";
 import { inputTypeColors } from "@/components/joy-con/ControllerShell";
 import { Tooltip } from "@/components/ui/Tooltip";
 
@@ -68,9 +78,12 @@ function MoveCard({
     currentStep: 0,
     stepCount: 0,
     isPlaying: true,
+    activeButtons: [],
+    direction: undefined,
+    inputType: undefined,
   });
 
-  const { currentStep, stepCount, isPlaying } = comboState;
+  const { currentStep, stepCount, isPlaying, activeButtons, direction, inputType } = comboState;
 
   return (
     <div className="overflow-hidden rounded-2xl border border-border bg-card">
@@ -123,9 +136,56 @@ function MoveCard({
 
       {/* Card footer: step counter + controls */}
       <div className="border-t border-border px-4 py-2 flex flex-row gap-4 items-center justify-between h-11">
-        <div className="h-6 font-mono text-xs text-muted flex items-center gap-1">
-          {t.controls.step} <span className="font-semibold text-foreground">{currentStep + 1}</span>
-          /{stepCount}
+        <div className="flex items-center gap-2">
+          <div className="font-mono text-xs text-muted flex items-center gap-1">
+            {t.controls.step}{" "}
+            <span className="font-semibold text-foreground">{currentStep + 1}</span>/{stepCount}
+          </div>
+          {(activeButtons.length > 0 || direction) &&
+            (() => {
+              const color = inputType ? (inputTypeColors[inputType] ?? "#38bdf8") : "#38bdf8";
+              const visibleButtons = activeButtons.filter(
+                (btn) => !(direction && btn.includes("stick")),
+              );
+              const items: React.ReactNode[] = [];
+              if (direction) {
+                items.push(
+                  <span
+                    key="dir"
+                    className="inline-flex h-5 w-5 items-center justify-center rounded-full font-mono text-sm font-bold text-white text-shadow-lg"
+                    style={{ backgroundColor: color }}
+                  >
+                    {direction === "up" ? (
+                      <ChevronUp className="h-4 w-4" />
+                    ) : direction === "down" ? (
+                      <ChevronDown className="h-4 w-4" />
+                    ) : direction === "left" ? (
+                      <ChevronLeft className="h-4 w-4" />
+                    ) : (
+                      <ChevronRight className="h-4 w-4" />
+                    )}
+                  </span>,
+                );
+              }
+              visibleButtons.forEach((btn) => {
+                if (items.length > 0)
+                  items.push(
+                    <span key={`plus-${btn}`} className="text-sm text-muted">
+                      +
+                    </span>,
+                  );
+                items.push(
+                  <span
+                    key={btn}
+                    className="inline-flex h-5 min-w-5 px-1 items-center justify-center rounded-full font-mono text-sm font-bold text-white text-shadow-lg"
+                    style={{ backgroundColor: color }}
+                  >
+                    {getButtonLabel(btn)}
+                  </span>,
+                );
+              });
+              return <div className="flex items-center gap-1">{items}</div>;
+            })()}
         </div>
 
         {stepCount > 1 && (
@@ -137,14 +197,14 @@ function MoveCard({
                   className={btnClass}
                   aria-label={t.controls.previousStep}
                 >
-                  <ChevronLeft className="h-3.5 w-3.5" />
+                  <ChevronLeft className="h-4 w-4" />
                 </button>
                 <button
                   onClick={() => comboRef.current?.goToNextStep()}
                   className={btnClass}
                   aria-label={t.controls.nextStep}
                 >
-                  <ChevronRight className="h-3.5 w-3.5" />
+                  <ChevronRight className="h-4 w-4" />
                 </button>
                 <button
                   onClick={() => comboRef.current?.restart()}

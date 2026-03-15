@@ -14,7 +14,8 @@ interface ControllerShellProps {
 const outline = "border border-[#3a4560]";
 const filled = "bg-[#1a1f2e] border border-[#2a3040]";
 const capStyle = "bg-[#2a3348] border border-[#3a4560]";
-const btnBase = "rounded-full flex items-center justify-center transition-colors duration-150";
+const btnBase =
+  "rounded-full flex items-center justify-center transition-colors duration-150 text-shadow-lg";
 
 /** Color per input type */
 export const inputTypeColors: Record<string, string> = {
